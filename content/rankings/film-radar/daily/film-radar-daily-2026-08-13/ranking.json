@@ -1,0 +1,54 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-13",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "克拉克森的农场 第五季（Clarkson's Farm S5）",
+      "url": "https://www.primevideo.com",
+      "description": "豆瓣9.6·IMDb 9.0，连续5季维持9.5+无烂季。",
+      "type": "真人秀",
+      "platform": "Prime Video",
+      "score": "95/100 🏆",
+      "tags": [
+        "真人秀",
+        "农场",
+        "英国"
+      ],
+      "comment": "快乐外壳+沉重内核——每集都是\"农场大型事故现场\"，但笑点背后是英国农业体系性问题。"
+    },
+    {
+      "rank": 2,
+      "name": "狂怒追缉（Furious）",
+      "url": "https://www.hulu.com",
+      "description": "RT 98% Certified Fresh·Metacritic 81。",
+      "type": "犯罪惊悚",
+      "platform": "Hulu / Disney+",
+      "score": "88/100 ⭐",
+      "tags": [
+        "犯罪",
+        "心理惊悚",
+        "双女主"
+      ],
+      "comment": "双女主心理战+罪案悬疑，跳出传统罪案剧的\"警察抓坏人\"模板，呈现人物的内心拉扯。"
+    },
+    {
+      "rank": 3,
+      "name": "护工不是人（Ann Droid）",
+      "url": "https://www.bbc.co.uk/iplayer",
+      "description": "豆瓣8.4·BBC首播400万观众。",
+      "type": "情景喜剧",
+      "platform": "BBC iPlayer",
+      "score": "82/100 🧪",
+      "tags": [
+        "情景喜剧",
+        "AI",
+        "英国"
+      ],
+      "comment": "笑点真实+泪点不刻意——\"AI机器人情商为零\"的喜剧外壳，内里是对\"养儿防老\"幻想的彻底撕碎。"
+    }
+  ]
+}

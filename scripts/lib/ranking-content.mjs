@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import matter from 'gray-matter';
 
-const allowedCategories = new Set(['github', 'movie', 'tv', 'ai', 'other']);
+const allowedCategories = new Set(['github', 'movie', 'tv', 'ai', 'film-radar', 'other']);
 const allowedPeriods = new Set(['daily', 'weekly', 'monthly']);
 
 export async function discoverBundles(root) {

@@ -24,6 +24,7 @@ enableGitInfo = false
   movie = '影视'
   tv = '剧集'
   ai = 'AI'
+  film-radar = '影视雷达'
   other = '其他'
 
 [params.periodLabels]

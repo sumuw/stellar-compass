@@ -1,0 +1,129 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-11",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "Re:Zero Season 4（Re:从零开始的异世界生活 第四季）",
+      "url": "https://www.crunchyroll.com",
+      "description": "MAL 9.16，IMDb 9.4，异世界动画第四季，MAL 历史第二高分。",
+      "type": "TV动画",
+      "platform": "Crunchyroll",
+      "score": "95/100 🏆",
+      "tags": [
+        "动画",
+        "异世界",
+        "日本"
+      ],
+      "comment": "MAL 历史第二高分动画（仅次于葬送的芙莉莲 S1），IMDb 单集一度满分。第四季被誉为此系列最佳表现。"
+    },
+    {
+      "rank": 2,
+      "name": "铁拳教育（Glory）",
+      "url": "https://www.netflix.com",
+      "description": "Netflix 2026上半年韩剧播放量冠军，豆瓣8.7·IMDb8.5。",
+      "type": "韩剧",
+      "platform": "Netflix",
+      "score": "93/100 🔥",
+      "tags": [
+        "韩剧",
+        "动作",
+        "社会议题"
+      ],
+      "comment": "Netflix 2026上半年韩剧播放量冠军（4820万次观看），进入91个国家Top10。导演洪钟灿（《少年法庭》）操刀。"
+    },
+    {
+      "rank": 3,
+      "name": "寡妇湾（Widow's Bay）",
+      "url": "https://tv.apple.com",
+      "description": "RT 98%影评/93%观众，斯蒂芬·金公开推荐。",
+      "type": "恐怖喜剧",
+      "platform": "Apple TV+",
+      "score": "91/100 🔥",
+      "tags": [
+        "恐怖喜剧",
+        "悬疑",
+        "美国"
+      ],
+      "comment": "RT 98%近满分认证新鲜，新英格兰沿海小镇的超自然诅咒+冷面黑色幽默。已续订第二季。"
+    },
+    {
+      "rank": 4,
+      "name": "猫猫的奇幻漂流（Flow）",
+      "url": "https://v.qq.com",
+      "description": "第97届奥斯卡最佳动画长片，豆瓣8.5。",
+      "type": "动画电影",
+      "platform": "腾讯视频",
+      "score": "90/100 🔥",
+      "tags": [
+        "动画",
+        "冒险",
+        "奥斯卡"
+      ],
+      "comment": "全片无对白，以一只猫的视角展开末日洪水中的生存旅程。拉脱维亚独立动画奇迹。"
+    },
+    {
+      "rank": 5,
+      "name": "BLEACH 境·境界 千年血战篇 - 训神谭",
+      "url": "https://www.hulu.com",
+      "description": "MAL 9.04，千年血战篇第三季。",
+      "type": "TV动画",
+      "platform": "Hulu / Disney+",
+      "score": "89/100 🔥",
+      "tags": [
+        "动画",
+        "热血",
+        "日本"
+      ],
+      "comment": "小丑社倾力制作，战斗场面与文戏兼具，是BLEACH系列动画化的巅峰表现。"
+    },
+    {
+      "rank": 6,
+      "name": "迷恋（Obsession）",
+      "url": "https://www.peacocktv.com",
+      "description": "IMDb 8.1 + RT双94%的惊悚片。",
+      "type": "惊悚电影",
+      "platform": "PVOD / Peacock",
+      "score": "85/100 ⭐",
+      "tags": [
+        "惊悚",
+        "剧情",
+        "美国"
+      ],
+      "comment": "IMDb 8.1 + RT双94%的惊悚片，口碑扎实。院线转PVOD后可通过数字租赁观看。"
+    },
+    {
+      "rank": 7,
+      "name": "暗影蜘蛛人（Spider-Noir）",
+      "url": "https://www.primevideo.com",
+      "description": "RT 92%·IMDb 7.7，尼古拉斯·凯奇首次领衔电视剧。",
+      "type": "犯罪剧",
+      "platform": "Prime Video",
+      "score": "83/100 🧪",
+      "tags": [
+        "犯罪",
+        "黑色电影",
+        "美国"
+      ],
+      "comment": "纯粹的1930年代硬派黑色侦探风格，雾气缭绕的纽约街头+爵士乐配乐，美学野心极高。"
+    },
+    {
+      "rank": 8,
+      "name": "斯特林角（Sterling Point）",
+      "url": "https://www.primevideo.com",
+      "description": "RT 92%影评/86%观众，刚上线一周的新剧。",
+      "type": "悬疑剧",
+      "platform": "Prime Video",
+      "score": "81/100 🧪",
+      "tags": [
+        "剧情",
+        "悬疑",
+        "美国"
+      ],
+      "comment": "RT影评92%开局亮眼，作为本周最新上线的作品，值得关注后续口碑走向。"
+    }
+  ]
+}

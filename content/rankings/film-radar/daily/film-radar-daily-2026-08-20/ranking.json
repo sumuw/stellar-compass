@@ -1,0 +1,69 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-20",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "绿灯军团（Lanterns）",
+      "url": "https://www.max.com",
+      "description": "RT 95%影评/88%观众·IMDb 8.6。",
+      "type": "超级英雄",
+      "platform": "HBO Max",
+      "score": "91/100 🔥",
+      "tags": [
+        "超级英雄",
+        "犯罪悬疑",
+        "DC"
+      ],
+      "comment": "放弃超级英雄宇宙奇观路线，走True Detective式接地侦探剧。角色塑造优先于特效。"
+    },
+    {
+      "rank": 2,
+      "name": "百年孤独 第二部（One Hundred Years of Solitude Part 2）",
+      "url": "https://www.netflix.com",
+      "description": "Part 1豆瓣9.2·RT 96%·IMDb单集最高9.5。",
+      "type": "文学改编",
+      "platform": "Netflix",
+      "score": "89/100 ⭐",
+      "tags": [
+        "文学改编",
+        "魔幻现实主义",
+        "拉美"
+      ],
+      "comment": "Netflix对加西亚·马尔克斯\"不可能被影视化\"的文学巨著的改编，魔幻现实主义被当作叙事语言而非视觉奇观。"
+    },
+    {
+      "rank": 3,
+      "name": "太平年（Taiping Year）",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.5·白玉兰最佳中国电视剧+最佳原创编剧+国际传播奖。",
+      "type": "历史正剧",
+      "platform": "爱奇艺 / 芒果TV / 腾讯视频",
+      "score": "88/100 ⭐",
+      "tags": [
+        "历史正剧",
+        "朝堂权谋",
+        "中国大陆"
+      ],
+      "comment": "对历史的尊重达到近年国剧罕见程度，白宇把\"放下王位换太平\"的复杂君主演活了。"
+    },
+    {
+      "rank": 4,
+      "name": "侠探杰克 第四季（Reacher S4）",
+      "url": "https://www.primevideo.com",
+      "description": "RT 91%影评/92%观众·IMDb 8.3。",
+      "type": "动作犯罪",
+      "platform": "Prime Video",
+      "score": "87/100 ⭐",
+      "tags": [
+        "动作",
+        "犯罪",
+        "惊悚"
+      ],
+      "comment": "动作剧罕见的影评-观众双向高认可，S4观众分飙升至92%+，被多份影评称为\"系列最佳一季\"。"
+    }
+  ]
+}

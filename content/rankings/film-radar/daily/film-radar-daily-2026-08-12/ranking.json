@@ -1,0 +1,39 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-12",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "重器（Heavy Weapon）",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.7开分，CCTV-8黄金档收视破2全国第一。",
+      "type": "年代法治剧",
+      "platform": "CCTV-8 / 爱奇艺",
+      "score": "91/100 🔥",
+      "tags": [
+        "法治剧",
+        "年代剧",
+        "中国大陆"
+      ],
+      "comment": "全景式呈现1979-1997年中国法治建设拓荒历程，法律专业度+人性温度+群像张力三方同时发力。"
+    },
+    {
+      "rank": 2,
+      "name": "异形：地球（Alien: Earth）",
+      "url": "https://www.hulu.com",
+      "description": "RT 87-93% Certified Fresh，IMDb 7.1。",
+      "type": "科幻惊悚",
+      "platform": "FX / Hulu",
+      "score": "90/100 🔥",
+      "tags": [
+        "科幻",
+        "惊悚",
+        "异形IP"
+      ],
+      "comment": "Fargo与Legion的诺亚·霍利首次将Alien IP剧化，世界观建构+角色驱动+类型片本能三者同时稳固。"
+    }
+  ]
+}
