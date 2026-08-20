@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <section class="not-found" aria-labelledby="not-found-title">
+    <p>404</p>
+    <h1 id="not-found-title">页面没有找到</h1>
+    <p>你访问的页面可能已移动或不存在。</p>
+    <a href="{{ "/" | relURL }}">返回首页</a>
+  </section>
+{{ end }}
