@@ -2,6 +2,48 @@
 
 > **面向 AI 代理的工作者：** 必需子技能：使用 superpowers:subagent-driven-development（推荐）或 superpowers:executing-plans 逐任务实现此计划。步骤使用复选框（`- [ ]`）语法跟踪进度。
 
+## 执行进度（已暂停）
+
+**暂停时间：** 2026-08-20 11:44:50 +08:00
+**状态：** 用户要求停止，四个子代理均已关闭。未收到新的明确恢复指令前，不继续编码、测试、提交、推送或部署。
+
+**工作位置：**
+
+- 主工作区：`D:\work\workspace\codex\Stellar Compass`，分支 `main`，停在 `51088db`。
+- 隔离 worktree：`D:\work\workspace\codex\Stellar Compass\.worktrees\hugo-blog`。
+- 实现分支：`feature/hugo-blog`，当前 HEAD 为 `1da3561`。
+- 远程：`origin = https://github.com/sumuw/Stellar-Compass.git`，尚未 push，远程仍未写入本次实现。
+
+**已提交：**
+
+- `51088db chore: establish Hugo project plan`：初始化本地 Git、保存本计划和忽略规则。
+- `bb5bb7d chore: initialize Hugo toolchain`：Hugo 0.165.0 配置、npm 锁文件、本地 Hugo 安装/包装脚本；已验证 `npm run setup:hugo` 和 `npm run hugo -- version`。
+- `aa120b9 feat: add Stellar Compass hero asset`：保存品牌首屏 PNG，并配置 `/rankings/:slug/` permalink。
+- `1da3561 ci: add Pages deployment and site output checks`：已提交 Pages workflow、README、404、robots 和站点产物测试；该提交尚未经过集成构建或审查。
+
+**已写入但未跟踪、未提交、未验证的草稿：**
+
+- 内容层：`scripts/lib/ranking-content.mjs`、`scripts/validate-content.mjs`、`scripts/import-reference-rankings.mjs`。
+- 内容测试：`tests/content-validation.test.mjs`、`tests/import-reference-rankings.test.mjs`。
+- 模板层：`layouts/_default/**`、`layouts/home.html`、`layouts/partials/**`、`layouts/rankings/**`。
+- 视觉层：`assets/css/main.css`。
+- 上述草稿由运行中的子代理在被中止前写入；不得视为完成实现，恢复后必须先逐文件审查再决定保留或修改。
+
+**尚未完成：**
+
+- `archetypes/rankings.md`、`content/**` 尚未创建，参考项目的 10 篇榜单尚未迁移。
+- 内容测试、导入测试、内容校验、Hugo production build、站点产物测试均未形成最终通过证据。
+- 未启动本地 Hugo 服务，未做桌面/移动浏览器、控制台、可访问性或溢出检查。
+- 未完成规格合规审查、代码质量审查、最终 verification、合并到 `main`、push 或 GitHub Pages 线上验收。
+
+**恢复顺序：**
+
+1. 在 `feature/hugo-blog` worktree 重新检查 `git status --short`，保持当前未跟踪草稿不丢失。
+2. 先审查内容层草稿并运行两个聚焦测试，补齐 `archetypes/` 和 10 个 content bundles。
+3. 再审查模板/CSS 草稿，运行 Hugo build，根据真实错误逐项修复。
+4. 运行 `npm run check` 和真实浏览器验收，通过双阶段审查后再提交剩余文件。
+5. 最后合并到 `main`，核对 remote 后 push，并验证 GitHub Pages。
+
 **目标：** 在当前空目录中实现并发布一个名为 Stellar Compass 的 Hugo 排行榜博客，复刻参考站点的分类置顶、榜单时间倒序列表、详情榜单和 GitHub Pages 自动部署能力。
 
 **架构：** 使用自定义 Hugo 模板，不引入第三方主题。每篇榜单采用 leaf bundle，将 AI 解读放在 `index.md`，将排名、链接、星标等事实数据放在同目录 `ranking.json`；Hugo taxonomy 生成分类页与周期页，公共 partial 统一列表和详情表格。Node 仅用于内容契约测试与构建产物断言，站点运行时仍是纯静态 HTML/CSS。
