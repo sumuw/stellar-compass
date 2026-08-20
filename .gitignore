@@ -1,0 +1,10 @@
+.tools/
+.worktrees/
+node_modules/
+public/
+resources/_gen/
+.hugo_build.lock
+.env
+.env.*
+!.env.example
+*.log
