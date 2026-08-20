@@ -549,6 +549,86 @@ main {
   font-size: 0.875em;
 }
 
+/* ===== Prose tables (Markdown-rendered) ===== */
+
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 var(--space-4);
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: 0.9375rem;
+  border-collapse: collapse;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+}
+
+.prose table > thead,
+.prose table > tbody {
+  display: table;
+  width: 100%;
+}
+
+.prose table th,
+.prose table td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.prose table th {
+  background: var(--color-surface-subtle);
+  color: var(--color-text);
+  font-size: 0.8125rem;
+  font-weight: 750;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.prose table tbody tr:last-child th,
+.prose table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.prose table tbody tr:hover {
+  background: #f5f9f9;
+}
+
+.prose table a {
+  color: var(--color-accent-strong);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+}
+
+.prose table strong {
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+/* 两列 key-value 表格（thead 第二个 th 是 last-child）：
+   第一列做成窄 label 风格，第二列占剩余宽度 */
+.prose table:has(> thead > tr > th:nth-child(2):last-child) > thead,
+.prose table:has(> thead > tr > th:nth-child(2):last-child) > tbody {
+  table-layout: fixed;
+}
+
+.prose table:has(> thead > tr > th:nth-child(2):last-child) > thead > tr > th:first-child,
+.prose table:has(> thead > tr > th:nth-child(2):last-child) > tbody > tr > td:first-child {
+  width: 9.5rem;
+  background: var(--color-surface-subtle);
+  color: var(--color-text);
+  font-weight: 750;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
 /* ===== Ranking detail ===== */
 
 .ranking-detail {
@@ -844,6 +924,12 @@ main {
   .site-footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .prose table:has(> thead > tr > th:nth-child(2):last-child) > thead > tr > th:first-child,
+  .prose table:has(> thead > tr > th:nth-child(2):last-child) > tbody > tr > td:first-child {
+    width: 6.5rem;
+    white-space: normal;
   }
 }
 

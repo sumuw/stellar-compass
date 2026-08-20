@@ -9,3 +9,4 @@ resources/_gen/
 .env.*
 !.env.example
 *.log
+screenshots/
