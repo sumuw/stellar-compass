@@ -1,0 +1,44 @@
+baseURL = 'https://sumuw.github.io/Stellar-Compass/'
+languageCode = 'zh-CN'
+title = 'Stellar Compass'
+defaultContentLanguage = 'zh-cn'
+enableRobotsTXT = true
+enableGitInfo = false
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  category = 'categories'
+  period = 'periods'
+  tag = 'tags'
+
+[params]
+  description = '追踪 GitHub、AI 与数字文化趋势的排行榜内容站。'
+
+[params.categoryLabels]
+  github = 'GitHub'
+  movie = '影视'
+  tv = '剧集'
+  ai = 'AI'
+  other = '其他'
+
+[params.periodLabels]
+  daily = '日榜'
+  weekly = '周榜'
+  monthly = '月榜'
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+  taxonomy = ['HTML', 'RSS']
+  term = ['HTML', 'RSS']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false

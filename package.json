@@ -1,0 +1,24 @@
+{
+  "name": "stellar-compass",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Hugo-powered ranking blog for GitHub Pages.",
+  "scripts": {
+    "setup:hugo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-hugo.ps1",
+    "hugo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/hugo.ps1",
+    "dev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/hugo.ps1 server --disableFastRender --buildDrafts --baseURL http://127.0.0.1:1313/",
+    "validate:content": "node scripts/validate-content.mjs",
+    "test:content": "node --test tests/content-validation.test.mjs",
+    "test:import": "node --test tests/import-reference-rankings.test.mjs",
+    "test": "npm run test:content && npm run test:import",
+    "build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/hugo.ps1 --gc --minify",
+    "test:site": "node --test tests/site-output.test.mjs",
+    "check": "npm run validate:content && npm test && npm run build && npm run test:site"
+  },
+  "devDependencies": {
+    "gray-matter": "4.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
