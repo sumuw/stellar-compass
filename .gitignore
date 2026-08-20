@@ -10,3 +10,4 @@ resources/_gen/
 !.env.example
 *.log
 screenshots/
+outputs/
