@@ -9,10 +9,10 @@
 
 **工作位置：**
 
-- 主工作区：`D:\work\workspace\codex\Stellar Compass`，分支 `main`，停在 `51088db`。
-- 隔离 worktree：`D:\work\workspace\codex\Stellar Compass\.worktrees\hugo-blog`。
-- 实现分支：`feature/hugo-blog`，当前 HEAD 为 `1da3561`。
-- 远程：`origin = https://github.com/sumuw/Stellar-Compass.git`，尚未 push，远程仍未写入本次实现。
+- 主工作区：`D:\work\workspace\codex\Stellar Compass-workbuddy`，分支 `main`，停在 `51088db`。
+- 隔离 worktree：`D:\work\workspace\codex\Stellar Compass-workbuddy\.worktrees\hugo-blog`。
+- 实现分支：`feature/hugo-blog`，当前 HEAD 为 `e73623f`。
+- 远程：`origin = https://github.com/sumuw/Stellar-Compass.git`，`origin/main` 已指向 `51088db`；实现提交尚未 push。
 
 **已提交：**
 
@@ -20,6 +20,7 @@
 - `bb5bb7d chore: initialize Hugo toolchain`：Hugo 0.165.0 配置、npm 锁文件、本地 Hugo 安装/包装脚本；已验证 `npm run setup:hugo` 和 `npm run hugo -- version`。
 - `aa120b9 feat: add Stellar Compass hero asset`：保存品牌首屏 PNG，并配置 `/rankings/:slug/` permalink。
 - `1da3561 ci: add Pages deployment and site output checks`：已提交 Pages workflow、README、404、robots 和站点产物测试；该提交尚未经过集成构建或审查。
+- `e73623f docs: record paused implementation state`：记录暂停状态与恢复顺序，即本文件「执行进度」一节。
 
 **已写入但未跟踪、未提交、未验证的草稿：**
 
@@ -55,7 +56,7 @@
 ## 1. 已确认上下文
 
 - 当前目录 `D:\work\workspace\codex\Stellar Compass` 为空，尚未初始化 Git。
-- 远程仓库 `https://github.com/sumuw/Stellar-Compass.git` 可访问且没有 refs，可作为全新 `main` 仓库初始化。
+- 远程仓库 `https://github.com/sumuw/Stellar-Compass.git` 可访问；`origin/main` 已存在并指向 `51088db`，实现提交（feature 分支领先的 4 个提交）尚未推送。
 - 本机已有 Node.js `v22.20.0`，没有全局 Hugo 或 Go。
 - 参考项目位于 `D:\work\workspace\codex\my`，现有 9 篇 GitHub 日榜和 1 篇 GitHub 周榜，可迁移为 Hugo 内容样例。
 - 目标是 GitHub 项目站，默认线上地址为 `https://sumuw.github.io/Stellar-Compass/`。
@@ -110,6 +111,7 @@
 ├─ .codex/plan/2026-08-20-stellar-compass-hugo-blog-plan.md
 ├─ archetypes/rankings.md                   # 新榜单内容模板
 ├─ assets/css/main.css                      # 全站响应式样式
+├─ assets/images/stellar-compass-hero.png   # 首屏背景位图
 ├─ content/
 │  ├─ _index.md
 │  └─ rankings/
@@ -131,7 +133,6 @@
 │  ├─ import-reference-rankings.mjs         # 参考项目到 leaf bundle 的转换器
 │  └─ validate-content.mjs                  # 内容契约校验入口
 ├─ static/
-│  ├─ images/stellar-compass-hero.webp
 │  └─ robots.txt
 ├─ tests/
 │  ├─ content-validation.test.mjs
@@ -367,11 +368,11 @@ git commit -m "feat: add ranking blog templates"
 
 **文件：**
 - 创建：`assets/css/main.css`
-- 创建：`static/images/stellar-compass-hero.webp`
+- 已有：`assets/images/stellar-compass-hero.png`（已由提交 `aa120b9` 生成并提交）
 
-- [ ] **步骤 1：生成品牌位图**
+- [x] **步骤 1：生成品牌位图（已完成）**
 
-使用 imagegen 生成 1600x900 横向位图：深色天文观测图与数据坐标感、清晰星点和罗盘轨迹、青色/琥珀/绿色有限强调色、无文字、无徽标、无模糊光斑。图片作为紧凑首屏背景，文本由 HTML 覆盖。
+1600x900 横向位图已生成并提交至 `assets/images/stellar-compass-hero.png`：深色天文观测图与数据坐标感、清晰星点和罗盘轨迹、青色/琥珀/绿色有限强调色、无文字、无徽标、无模糊光斑。图片作为紧凑首屏背景，文本由 HTML 覆盖。
 
 - [ ] **步骤 2：实现桌面样式**
 
