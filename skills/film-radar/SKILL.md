@@ -222,9 +222,13 @@ HOLD 状态在满足稳定高口碑条件后可**第一次**升级为正式推�
 
 按 `template-report.md` 模板组装最终报告。
 
-### 第六步（可选）：Stellar Compass 集成
+### 第六步：发布到 Stellar Compass（完整闭环：生成 → 提交 → 推送 → 上线）
 
-如果当前项目是 Stellar Compass（含 `content/rankings/` 目录），额外生成 Hugo leaf bundle：
+报告生成后，将其发布到 Stellar Compass 站点并推送上线。
+
+#### 6.1 生成 Hugo leaf bundle
+
+如果当前项目是 Stellar Compass（含 `content/rankings/` 目录），在项目根目录下创建：
 
 ```
 content/rankings/film-radar/daily/film-radar-daily-<date>/
@@ -277,6 +281,51 @@ draft: false
   ]
 }
 ```
+
+#### 6.2 更新状态追踪文件
+
+更新 `skills/film-radar/status-tracker.json`：追加本次新推荐作品、更新统计数字和 `$updatedAt`。
+
+#### 6.3 运行发布脚本（自动完成验证 → 构建 → 提交 → 推送）
+
+```bash
+cd <Stellar Compass 项目根目录>
+node scripts/publish-daily.mjs --category film-radar
+```
+
+发布脚本自动执行完整管道：
+
+| 步骤 | 内容 | 失败行为 |
+|------|------|----------|
+| 1 | 定位当日 bundle | 缺失则中止，提示先生成 |
+| 2 | 内容验证（validate-content.mjs） | 中止，不提交 |
+| 3 | 单元测试 | 中止，不提交 |
+| 4 | Hugo 构建（含权限问题自动清理重试） | 中止，不提交 |
+| 5 | 站点输出测试 | 中止，不提交 |
+| 6 | git add/commit + push origin main | push 失败降级（见下） |
+
+常用参数：`--date YYYY-MM-DD`（默认今天）、`--dry-run`（只跑门禁不发布）、`--skip-push`（提交不推送）、`--message "..."`（自定义提交信息）。
+
+脚本已内置处理 **PortableGit loose ref rename bug**（commit 后 `refs/heads/main` 丢失的问题会自动修复，无需人工干预）。
+
+#### 6.4 推送降级（无凭据环境）
+
+当前自动化环境无 GitHub 凭据时，脚本完成本地提交后输出手动推送命令：
+
+```bash
+cd <项目根目录> && git push origin main
+```
+
+此时应在报告末尾注明：**"站点待手动推送后更新"**，并附上站点地址。
+
+#### 6.5 报告部署状态
+
+- push 成功：报告 GitHub Actions 构建地址和站点地址（`https://sumuw.github.io/Stellar-Compass/rankings/film-radar-daily-<date>/`，约 2-3 分钟后生效）
+- push 降级：注明待手动推送，附手动命令
+
+### 第七步（备选）：0 部推荐时
+
+当日无达标作品时**仍需运行发布脚本**（提交 status-tracker 更新），但站点不会产生新 bundle。报告正文直接写"今天没有发现达到正式推荐标准的新作品。"
 
 ## 每日目标
 

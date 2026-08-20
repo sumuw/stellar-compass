@@ -131,6 +131,16 @@ draft: false
 }
 ```
 
+### 第五步：发布（验证 → 构建 → 提交 → 推送）
+
+生成 bundle 后，运行项目发布管道（在 Stellar Compass 项目根目录）：
+
+```bash
+node scripts/publish-daily.mjs --category github --period <period>
+```
+
+脚本自动执行：内容验证 → 单元测试 → Hugo 构建 → 站点测试 → git 提交（自动修复 PortableGit ref bug）→ `git push origin main`。push 因无凭据失败时脚本输出手动推送命令。详见 `skills/film-radar/SKILL.md` 第六步（发布流程通用）。
+
 ## 注意事项
 
 - GitHub Trending 页面可能因地区或时间不同而内容不同
