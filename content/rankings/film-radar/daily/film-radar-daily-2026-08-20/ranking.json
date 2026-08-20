@@ -7,63 +7,75 @@
   "items": [
     {
       "rank": 1,
+      "id": "F014",
       "name": "绿灯军团（Lanterns）",
       "url": "https://www.max.com",
-      "description": "RT 95%影评/88%观众·IMDb 8.6。",
-      "type": "超级英雄",
+      "description": "RT 95%影评/88%观众·IMDb 8.6·与企鹅人并列DC真人剧历史最高影评分",
+      "type": "超级英雄悬疑剧",
       "platform": "HBO Max",
       "score": "91/100 🔥",
-      "tags": [
-        "超级英雄",
-        "犯罪悬疑",
-        "DC"
-      ],
+      "tags": ["超级英雄", "犯罪悬疑", "DC", "美国"],
       "comment": "放弃超级英雄宇宙奇观路线，走True Detective式接地侦探剧。角色塑造优先于特效。"
     },
     {
       "rank": 2,
-      "name": "百年孤独 第二部（One Hundred Years of Solitude Part 2）",
+      "id": "F019",
+      "name": "金特务:本色回归（김부장 / Agent Kim）",
       "url": "https://www.netflix.com",
-      "description": "Part 1豆瓣9.2·RT 96%·IMDb单集最高9.5。",
-      "type": "文学改编",
-      "platform": "Netflix",
-      "score": "89/100 ⭐",
-      "tags": [
-        "文学改编",
-        "魔幻现实主义",
-        "拉美"
-      ],
-      "comment": "Netflix对加西亚·马尔克斯\"不可能被影视化\"的文学巨著的改编，魔幻现实主义被当作叙事语言而非视觉奇观。"
+      "description": "SBS台内2026最高收视纪录(峰值27.1%)·Netflix 79国Top10/28国#1·豆瓣8.0·IMDb 8.1",
+      "type": "动作复仇剧",
+      "platform": "SBS + Netflix",
+      "score": "91/100 🔥",
+      "tags": ["动作", "复仇", "韩剧", "父爱"],
+      "comment": "2026韩国现象级：收视从9.5%飙至23%，全国累计触达率52%，两周Netflix破千万观看。苏志燮50岁仍亲身上阵硬桥硬马。"
     },
     {
       "rank": 3,
-      "name": "太平年（Taiping Year）",
-      "url": "https://www.iqiyi.com",
-      "description": "豆瓣8.5·白玉兰最佳中国电视剧+最佳原创编剧+国际传播奖。",
-      "type": "历史正剧",
-      "platform": "爱奇艺 / 芒果TV / 腾讯视频",
-      "score": "88/100 ⭐",
-      "tags": [
-        "历史正剧",
-        "朝堂权谋",
-        "中国大陆"
-      ],
-      "comment": "对历史的尊重达到近年国剧罕见程度，白宇把\"放下王位换太平\"的复杂君主演活了。"
+      "id": "F018",
+      "name": "泛美航空103炸弹案（The Bombing of Pan Am 103）",
+      "url": "https://www.netflix.com",
+      "description": "RT 100%影评(6评全正面)·RT 84%观众·IMDb 7.5·Netflix全球#2",
+      "type": "真实罪案限定剧",
+      "platform": "Netflix（BBC首播于2025）",
+      "score": "89/100 ⭐",
+      "tags": ["真实罪案", "悬疑", "英美合作", "事故还原"],
+      "comment": "1988年洛克比空难的6集还原，注重受害者与苏格兰小镇而非侦探英雄主义。RT影评100%但样本仅6条需观察。"
     },
     {
       "rank": 4,
+      "id": "F015",
+      "name": "百年孤独 第二部（Cien años de soledad Parte 2）",
+      "url": "https://www.netflix.com",
+      "description": "Part 1豆瓣9.2·RT 96%·IMDb单集最高9.5·Part 2专业评价与Part 1一致",
+      "type": "文学改编限定剧",
+      "platform": "Netflix",
+      "score": "89/100 ⭐",
+      "tags": ["文学改编", "魔幻现实主义", "拉美"],
+      "comment": "Netflix对加西亚·马尔克斯「不可能被影视化」的文学巨著的改编，魔幻现实主义被当作叙事语言而非视觉奇观。"
+    },
+    {
+      "rank": 5,
+      "id": "F016",
+      "name": "太平年（Taiping Year）",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.5·白玉兰最佳中国电视剧+最佳原创编剧+国际传播奖",
+      "type": "历史正剧",
+      "platform": "爱奇艺 / 芒果TV / 腾讯视频",
+      "score": "88/100 ⭐",
+      "tags": ["历史正剧", "朝堂权谋", "中国大陆"],
+      "comment": "对历史的尊重达到近年国剧罕见程度，白宇把「放下王位换太平」的复杂君主演活了。"
+    },
+    {
+      "rank": 6,
+      "id": "F017",
       "name": "侠探杰克 第四季（Reacher S4）",
       "url": "https://www.primevideo.com",
-      "description": "RT 91%影评/92%观众·IMDb 8.3。",
-      "type": "动作犯罪",
+      "description": "RT 91%影评/92%观众·IMDb 8.3·首播登顶41国/地区Prime Video榜首",
+      "type": "动作犯罪剧",
       "platform": "Prime Video",
       "score": "87/100 ⭐",
-      "tags": [
-        "动作",
-        "犯罪",
-        "惊悚"
-      ],
-      "comment": "动作剧罕见的影评-观众双向高认可，S4观众分飙升至92%+，被多份影评称为\"系列最佳一季\"。"
+      "tags": ["动作", "犯罪", "惊悚"],
+      "comment": "动作剧罕见的影评-观众双向高认可，S4观众分飙升至92%+，被多份影评称为「系列最佳一季」。"
     }
   ]
 }
