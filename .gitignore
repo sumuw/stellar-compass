@@ -1,4 +1,5 @@
 .tools/
+.workbuddy/
 .worktrees/
 node_modules/
 public/
