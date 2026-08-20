@@ -8,6 +8,9 @@ enableGitInfo = false
 [pagination]
   pagerSize = 20
 
+[permalinks]
+  rankings = '/rankings/:slug/'
+
 [taxonomies]
   category = 'categories'
   period = 'periods'
