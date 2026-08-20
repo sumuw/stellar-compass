@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $pageTitle := site.Title -}}
+{{- if not .IsHome -}}
+  {{- $pageTitle = printf "%s | %s" .Title site.Title -}}
+{{- end -}}
+{{- $description := .Description | default site.Params.description -}}
+<title>{{ $pageTitle }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .RelPermalink }}">
+{{- with .OutputFormats.Get "rss" }}
+  <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $pageTitle }}" href="{{ .RelPermalink }}">
+{{- end }}
+{{- with resources.Get "css/main.css" }}
+  {{- $styles := . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{- end }}

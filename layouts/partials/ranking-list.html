@@ -1,0 +1,51 @@
+{{- $pages := .Pages.ByDate.Reverse -}}
+{{- $showCategory := .ShowCategory -}}
+{{- if gt (len $pages) 0 }}
+  <div class="ranking-list">
+    {{- range $pages }}
+      {{- $description := .Description -}}
+      {{- if not $description -}}
+        {{- $description = .Summary | plainify -}}
+      {{- end -}}
+      <article class="ranking-list-item">
+        <div class="date-block">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            <span class="date-day">{{ .Date | time.Format "02" }}</span>
+            <span class="date-month">{{ .Date | time.Format "2006-01" }}</span>
+          </time>
+        </div>
+        <div class="item-main">
+          <div class="meta-row">
+            <span class="ranking-key">{{ .Param "rankingKey" | default (.Date.Format "2006-01-02") }}</span>
+            {{- range (.GetTerms "periods") }}
+              {{- $periodKey := .Data.Term -}}
+              {{- $periodLabel := .LinkTitle -}}
+              {{- with index site.Params.periodlabels $periodKey -}}
+                {{- $periodLabel = . -}}
+              {{- end }}
+              <span class="period-label">{{ $periodLabel }}</span>
+            {{- end }}
+            {{- if $showCategory -}}
+              {{- range (.GetTerms "categories") }}
+                {{- $categoryKey := .Data.Term -}}
+                {{- $categoryLabel := .LinkTitle -}}
+                {{- with index site.Params.categorylabels $categoryKey -}}
+                  {{- $categoryLabel = . -}}
+                {{- end }}
+                <a class="category-link" href="{{ .RelPermalink }}">{{ $categoryLabel }}</a>
+              {{- end }}
+            {{- end }}
+          </div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{- with $description }}
+            <p>{{ . }}</p>
+          {{- end }}
+        </div>
+      </article>
+    {{- end }}
+  </div>
+{{- else }}
+  <div class="empty-state" role="status">
+    <p>暂时没有已发布的榜单，内容正在整理中。</p>
+  </div>
+{{- end }}

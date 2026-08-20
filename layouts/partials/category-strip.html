@@ -1,0 +1,36 @@
+<section class="category-strip" aria-labelledby="category-strip-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">主题导航</p>
+      <h2 id="category-strip-title">分类榜单</h2>
+    </div>
+  </div>
+  {{- $categories := site.Taxonomies.categories.Alphabetical -}}
+  {{- if $categories }}
+    <ul class="category-list">
+      {{- range $categories }}
+        {{- $categoryLabel := .Page.LinkTitle -}}
+        {{- with index site.Params.categorylabels .Term -}}
+          {{- $categoryLabel = . -}}
+        {{- end -}}
+        <li class="category-item" data-category="{{ .Term }}">
+          <a href="{{ .Page.RelPermalink }}">
+            <span class="category-name">{{ $categoryLabel }}</span>
+            <span class="category-count">{{ .Count }} 篇</span>
+            {{- if gt .Count 0 }}
+              {{- $recentPage := index .Page.Pages.ByDate.Reverse 0 -}}
+              <span class="category-updated">
+                最近更新
+                <time datetime="{{ $recentPage.Date.Format "2006-01-02" }}">{{ $recentPage.Date | time.Format "2006-01-02" }}</time>
+              </span>
+            {{- end }}
+          </a>
+        </li>
+      {{- end }}
+    </ul>
+  {{- else }}
+    <div class="empty-state" role="status">
+      <p>分类榜单正在整理中。</p>
+    </div>
+  {{- end }}
+</section>

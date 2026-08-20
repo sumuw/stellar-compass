@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="{{ site.Home.RelPermalink }}">Stellar Compass</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="{{ site.Home.RelPermalink }}">首页</a>
+      {{- with site.GetPage "/rankings" }}
+        <a href="{{ .RelPermalink }}">全部榜单</a>
+      {{- else }}
+        <a href="{{ "rankings/" | relURL }}">全部榜单</a>
+      {{- end }}
+      {{- with site.GetPage "/categories/github" }}
+        <a href="{{ .RelPermalink }}">GitHub</a>
+      {{- else }}
+        <a href="{{ "categories/github/" | relURL }}">GitHub</a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{- $termKey := .Data.Term -}}
+  {{- $termLabel := .Title -}}
+  {{- if eq .Data.Plural "categories" -}}
+    {{- with index site.Params.categorylabels $termKey -}}
+      {{- $termLabel = . -}}
+    {{- end -}}
+  {{- else if eq .Data.Plural "periods" -}}
+    {{- with index site.Params.periodlabels $termKey -}}
+      {{- $termLabel = . -}}
+    {{- end -}}
+  {{- end -}}
+  <section class="page-heading" aria-labelledby="term-title">
+    <p class="eyebrow">分类归档</p>
+    <h1 id="term-title">{{ $termLabel }}</h1>
+    <p>共 {{ len .Pages }} 篇榜单，按发布日期从新到旧排列。</p>
+  </section>
+
+  <section class="ranking-archive" aria-labelledby="term-rankings-title">
+    <h2 id="term-rankings-title">榜单列表</h2>
+    {{ partial "ranking-list.html" (dict
+      "Pages" .Pages
+      "ShowCategory" (ne .Data.Plural "categories")
+    ) }}
+  </section>
+{{ end }}

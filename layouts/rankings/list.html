@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="page-heading" aria-labelledby="rankings-title">
+    <p class="eyebrow">排行榜归档</p>
+    <h1 id="rankings-title">{{ .Title }}</h1>
+    {{- with .Description }}
+      <p>{{ . }}</p>
+    {{- else }}
+      <p>按发布日期从新到旧浏览全部榜单。</p>
+    {{- end }}
+  </section>
+
+  <section class="ranking-archive" aria-labelledby="all-rankings-title">
+    <h2 id="all-rankings-title">全部榜单</h2>
+    {{ partial "ranking-list.html" (dict "Pages" .RegularPagesRecursive "ShowCategory" true) }}
+  </section>
+{{ end }}

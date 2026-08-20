@@ -1,0 +1,45 @@
+{{ define "main" }}
+  <section class="hero" aria-labelledby="hero-title">
+    {{- with resources.Get "images/stellar-compass-hero.png" }}
+      {{- $hero := .Process "resize 1600x webp q82" }}
+      <img
+        class="hero-media"
+        src="{{ $hero.RelPermalink }}"
+        width="{{ $hero.Width }}"
+        height="{{ $hero.Height }}"
+        alt=""
+        aria-hidden="true"
+        decoding="async"
+        fetchpriority="high"
+      >
+    {{- else }}
+      {{- errorf "home template requires assets/images/stellar-compass-hero.png" -}}
+    {{- end }}
+    <div class="hero-content">
+      <h1 id="hero-title">Stellar Compass</h1>
+      <p>追踪 GitHub、AI 与数字文化趋势，用持续更新的排行榜发现值得关注的项目与作品。</p>
+    </div>
+  </section>
+
+  {{ partial "category-strip.html" . }}
+
+  {{- $rankingPages := where site.RegularPages "Section" "rankings" -}}
+  {{- with site.GetPage "/rankings" -}}
+    {{- $rankingPages = .RegularPagesRecursive -}}
+  {{- end -}}
+  {{- $latestRankings := first 8 $rankingPages.ByDate.Reverse -}}
+  <section class="latest-rankings" aria-labelledby="latest-rankings-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">持续更新</p>
+        <h2 id="latest-rankings-title">最新榜单</h2>
+      </div>
+      {{- with site.GetPage "/rankings" }}
+        <a class="more-link" href="{{ .RelPermalink }}">更多榜单</a>
+      {{- else }}
+        <a class="more-link" href="{{ "rankings/" | relURL }}">更多榜单</a>
+      {{- end }}
+    </div>
+    {{ partial "ranking-list.html" (dict "Pages" $latestRankings "ShowCategory" true) }}
+  </section>
+{{ end }}

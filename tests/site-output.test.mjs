@@ -12,8 +12,9 @@ function publicPath(...segments) {
 }
 
 function classTokenIndex(html, className) {
+  // Matches class attribute in both quoted ("...") and unquoted (minified) HTML.
   const match = new RegExp(
-    `class=["'][^"']*\\b${className}\\b[^"']*["']`,
+    `class=(?:"[^"]*\\b${className}\\b[^"]*"|'[^']*\\b${className}\\b[^']*'|[^"'>\\s]*\\b${className}\\b[^"'>\\s]*)`,
     'i',
   ).exec(html);
 
@@ -32,7 +33,13 @@ function assertTextOrder(html, values) {
 }
 
 function attribute(tag, name) {
-  return new RegExp(`\\b${name}=["']([^"']+)["']`, 'i').exec(tag)?.[1];
+  // Extracts attribute value from both quoted and unquoted (minified) HTML tags.
+  const match = new RegExp(
+    `\\b${name}=(?:"([^"]*)"|'([^']*)'|([^"'>\\s]+))`,
+    'i',
+  ).exec(tag);
+
+  return match?.[1] ?? match?.[2] ?? match?.[3];
 }
 
 test('homepage renders the category strip before the ranking list', async () => {
@@ -94,7 +101,7 @@ test('ranking detail includes the table heading and first project', async () => 
 
   assert.match(detail, /榜单明细/);
   assert.match(detail, /#1/);
-  assert.match(detail, /https:\/\/github\.com\/openai\/codex/);
+  assert.match(detail, /https:\/\/github\.com\/harry0703\/MoneyPrinterTurbo/);
 });
 
 test('homepage stylesheet and image URLs preserve the project base path', async () => {

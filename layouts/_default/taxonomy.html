@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <section class="page-heading" aria-labelledby="taxonomy-title">
+    <p class="eyebrow">内容索引</p>
+    <h1 id="taxonomy-title">{{ .Title }}</h1>
+    <p>浏览全部分类及其已发布榜单数量。</p>
+  </section>
+
+  <section class="taxonomy-index" aria-labelledby="taxonomy-list-title">
+    <h2 id="taxonomy-list-title">全部条目</h2>
+    {{- $taxonomy := .Data.Plural -}}
+    {{- $terms := .Data.Terms.Alphabetical -}}
+    {{- if $terms }}
+      <ul class="taxonomy-list">
+        {{- range $terms }}
+          {{- $termKey := .Term -}}
+          {{- $termLabel := .Page.LinkTitle -}}
+          {{- if eq $taxonomy "categories" -}}
+            {{- with index site.Params.categorylabels $termKey -}}
+              {{- $termLabel = . -}}
+            {{- end -}}
+          {{- else if eq $taxonomy "periods" -}}
+            {{- with index site.Params.periodlabels $termKey -}}
+              {{- $termLabel = . -}}
+            {{- end -}}
+          {{- end -}}
+          <li class="taxonomy-list-item">
+            <a href="{{ .Page.RelPermalink }}">{{ $termLabel }}</a>
+            <span>{{ .Count }} 篇</span>
+          </li>
+        {{- end }}
+      </ul>
+    {{- else }}
+      <div class="empty-state" role="status">
+        <p>暂时没有可浏览的分类。</p>
+      </div>
+    {{- end }}
+  </section>
+{{ end }}

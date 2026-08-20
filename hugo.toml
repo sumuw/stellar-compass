@@ -1,5 +1,5 @@
 baseURL = 'https://sumuw.github.io/Stellar-Compass/'
-languageCode = 'zh-CN'
+locale = 'zh-CN'
 title = 'Stellar Compass'
 defaultContentLanguage = 'zh-cn'
 enableRobotsTXT = true

@@ -1,0 +1,49 @@
+{{- $rankingResource := .Resources.Get "ranking.json" -}}
+{{- if not $rankingResource -}}
+  {{- errorf "ranking page %q is missing its ranking.json page resource" .File.Path -}}
+{{- else -}}
+  {{- $ranking := $rankingResource.Content | transform.Unmarshal -}}
+  <section class="ranking-table-section" aria-labelledby="ranking-table-title">
+    <h2 id="ranking-table-title">榜单明细</h2>
+    <div class="table-scroll">
+      <table class="ranking-table">
+        <caption>{{ .Title }}榜单明细</caption>
+        <thead>
+          <tr>
+            <th scope="col">排名</th>
+            <th scope="col">项目</th>
+            <th scope="col">语言</th>
+            <th scope="col">星标</th>
+            <th scope="col">变化</th>
+            <th scope="col">标签</th>
+            <th scope="col">简评</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{- range $ranking.items }}
+            <tr>
+              <th scope="row">#{{ .rank }}</th>
+              <td>
+                <a href="{{ .url }}" target="_blank" rel="noreferrer">{{ .name }}</a>
+                {{- with .description }}<p>{{ . }}</p>{{ end }}
+              </td>
+              <td>{{ .language | default "未标注" }}</td>
+              <td>{{ .stars | default "—" }}</td>
+              <td>{{ .delta | default "—" }}</td>
+              <td>
+                {{- with .tags }}
+                  <ul class="tag-list">
+                    {{- range . }}<li>{{ . }}</li>{{ end }}
+                  </ul>
+                {{- else }}
+                  <span>—</span>
+                {{- end }}
+              </td>
+              <td>{{ .comment | default "暂无简评" }}</td>
+            </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </section>
+{{- end }}
