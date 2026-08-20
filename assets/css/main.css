@@ -26,7 +26,7 @@
   --space-12: 3rem;
   --radius-sm: 4px;
   --radius-md: 8px;
-  --content-width: 72rem;
+  --content-width: 84rem;
   --reading-width: 48rem;
   --font-sans: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
   --font-mono: "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -485,7 +485,7 @@ main {
 /* ===== Prose (article body) ===== */
 
 .prose {
-  width: min(100%, var(--reading-width));
+  width: min(100%, var(--content-width));
   margin-bottom: var(--space-6);
   color: var(--color-text);
 }
@@ -551,19 +551,33 @@ main {
 
 /* ===== Prose tables (Markdown-rendered) ===== */
 
-.prose table {
+.prose > .table-wrap {
   display: block;
   width: 100%;
   max-width: 100%;
-  margin: 0 0 var(--space-4);
   overflow-x: auto;
+  margin: 0 0 var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+}
+
+.prose table {
+  display: table;
+  width: 100%;
+  margin: 0 0 var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
   font-size: 0.9375rem;
   border-collapse: collapse;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-inline: contain;
+  table-layout: auto;
+}
+
+.prose table:has(> thead > tr > th:nth-child(2):last-child) {
+  table-layout: fixed;
 }
 
 .prose table > thead,
@@ -678,12 +692,12 @@ main {
 
 .ranking-table {
   width: 100%;
-  min-width: 45rem;
   border-collapse: collapse;
   color: var(--color-text);
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
   line-height: 1.45;
+  table-layout: auto;
 }
 
 .ranking-table caption {
@@ -711,6 +725,7 @@ main {
 
 .ranking-table tbody th[scope="row"] {
   width: 4rem;
+  min-width: 4rem;
   color: var(--color-text);
   font-weight: 800;
   font-variant-numeric: tabular-nums;
@@ -930,6 +945,10 @@ main {
   .prose table:has(> thead > tr > th:nth-child(2):last-child) > tbody > tr > td:first-child {
     width: 6.5rem;
     white-space: normal;
+  }
+
+  .prose table {
+    font-size: 0.875rem;
   }
 }
 
