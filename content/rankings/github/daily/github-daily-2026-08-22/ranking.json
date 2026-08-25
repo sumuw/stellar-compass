@@ -1,0 +1,283 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-22",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "stars": 112522,
+      "delta": "4,159 stars today",
+      "tags": [
+        "AI",
+        "编码助手",
+        "Rust",
+        "终端工具",
+        "OpenAI"
+      ],
+      "comment": "OpenAI 官方推出的终端版轻量编码智能体，Rust 重写后今日暴增 4,159 star，成为日榜绝对焦点。"
+    },
+    {
+      "rank": 2,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 231255,
+      "delta": "2,684 stars today",
+      "tags": [
+        "AI",
+        "Skills",
+        "开发工作流",
+        "Shell"
+      ],
+      "comment": "TypeScript 大佬 Matt Pocock 分享的 Agent skills 实战集，连续多日高热度，代表个人 Agent 工作流标准化趋势。"
+    },
+    {
+      "rank": 3,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 242041,
+      "delta": "357 stars today",
+      "tags": [
+        "AI",
+        "Agent",
+        "性能优化",
+        "JavaScript"
+      ],
+      "comment": "面向多编码 Agent 的性能优化与能力增强框架，今日虽增速放缓但体量巨大，显示 Agent 增强赛道仍在持续。"
+    },
+    {
+      "rank": 4,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 275995,
+      "delta": "592 stars today",
+      "tags": [
+        "AI",
+        "Skills",
+        "开发方法论",
+        "Shell"
+      ],
+      "comment": "强调可落地的 Agentic skills 框架与软件工程方法论，近几日稳居榜单，说明开发者对系统级方法论的认可。"
+    },
+    {
+      "rank": 5,
+      "name": "Wei-Shaw/sub2api",
+      "url": "https://github.com/Wei-Shaw/sub2api",
+      "description": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+      "language": "Go",
+      "stars": 38721,
+      "delta": "673 stars today",
+      "tags": [
+        "API",
+        "Go",
+        "订阅共享",
+        "LLM"
+      ],
+      "comment": "国内开发者推出的 LLM API 订阅中转与拼车服务，解决多模型付费接入痛点，今日增速不错。"
+    },
+    {
+      "rank": 6,
+      "name": "makeplane/plane",
+      "url": "https://github.com/makeplane/plane",
+      "description": "Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "language": "TypeScript",
+      "stars": 57099,
+      "delta": "263 stars today",
+      "tags": [
+        "项目管理",
+        "开源",
+        "TypeScript",
+        "SaaS"
+      ],
+      "comment": "老牌开源项目管理平台回归榜单，近期在项目协作赛道持续受到关注。"
+    },
+    {
+      "rank": 7,
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "language": "TypeScript",
+      "stars": 201651,
+      "delta": "193 stars today",
+      "tags": [
+        "自动化",
+        "工作流",
+        "AI",
+        "TypeScript"
+      ],
+      "comment": "自带 AI 能力的可视化工作流自动化平台，持续在榜说明企业级自动化需求仍然旺盛。"
+    },
+    {
+      "rank": 8,
+      "name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "language": "Python",
+      "stars": 142404,
+      "delta": "141 stars today",
+      "tags": [
+        "AI",
+        "编码助手",
+        "Python",
+        "Anthropic"
+      ],
+      "comment": "Anthropic 官方终端编码智能体，与 OpenAI Codex 同台竞技，增速相对温和但基础盘稳固。"
+    },
+    {
+      "rank": 9,
+      "name": "AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "description": "A native, local-first alternative to Logitech Options+, written in Rust - remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "language": "Rust",
+      "stars": 13545,
+      "delta": "959 stars today",
+      "tags": [
+        "Rust",
+        "硬件工具",
+        "本地优先",
+        "开源"
+      ],
+      "comment": "Rust 写的罗技 Options+ 本地替代方案，无账号无遥测，近期多次上榜且增速接近千星。"
+    },
+    {
+      "rank": 10,
+      "name": "modular/modular",
+      "url": "https://github.com/modular/modular",
+      "description": "The Modular Platform (includes MAX & Mojo)",
+      "language": "Mojo",
+      "stars": 28787,
+      "delta": "395 stars today",
+      "tags": [
+        "Mojo",
+        "AI",
+        "编程语言",
+        "基础设施"
+      ],
+      "comment": "Modular 公司旗下 MAX 与 Mojo 平台官方仓库，Mojo 持续登上主榜，显示 AI 原生语言的 niche 关注度。"
+    },
+    {
+      "rank": 11,
+      "name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "Unknown",
+      "stars": 205114,
+      "delta": "589 stars today",
+      "tags": [
+        "AI",
+        "Skills",
+        "Claude",
+        "提示工程"
+      ],
+      "comment": "基于 Andrej Karpathy 对 LLM 编程陷阱的观察提炼的 Claude Code 行为优化指南，轻量单文件却获得高星。"
+    },
+    {
+      "rank": 12,
+      "name": "mahlernim/google-timeline-visualizer",
+      "url": "https://github.com/mahlernim/google-timeline-visualizer",
+      "description": "Visualize your year in travel using your Google Location History (Timeline) data",
+      "language": "Kotlin",
+      "stars": 2489,
+      "delta": "441 stars today",
+      "tags": [
+        "Kotlin",
+        "数据可视化",
+        "旅行",
+        "隐私"
+      ],
+      "comment": "用 Google 位置历史数据生成年度旅行可视化，小而美的隐私友好型工具，近期异军突起。"
+    },
+    {
+      "rank": 13,
+      "name": "ripienaar/free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "language": "HTML",
+      "stars": 133715,
+      "delta": "915 stars today",
+      "tags": [
+        "资源清单",
+        "免费额度",
+        "DevOps",
+        "开源"
+      ],
+      "comment": "经典开发者免费资源清单，今日新增近 1k star，通常伴随社区传播或更新回归榜单。"
+    },
+    {
+      "rank": 14,
+      "name": "microsoft/TypeScript",
+      "url": "https://github.com/microsoft/TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "language": "TypeScript",
+      "stars": 110476,
+      "delta": "65 stars today",
+      "tags": [
+        "TypeScript",
+        "编程语言",
+        "微软",
+        "前端"
+      ],
+      "comment": "TypeScript 官方仓库，作为 JavaScript 生态的类型系统基石，今日稳健增长。"
+    },
+    {
+      "rank": 15,
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 4570,
+      "delta": "286 stars today",
+      "tags": [
+        "Cursor",
+        "插件",
+        "TypeScript",
+        "AI"
+      ],
+      "comment": "Cursor 官方插件规范与示例插件集，反映主流 AI IDE 正在构建开放插件生态。"
+    },
+    {
+      "rank": 16,
+      "name": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "description": "PostHog is the leading platform for building self-driving products. Our developer tools - AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more - capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+      "language": "Python",
+      "stars": 38487,
+      "delta": "288 stars today",
+      "tags": [
+        "数据分析",
+        "可观测性",
+        "AI",
+        "Python"
+      ],
+      "comment": "集成了 AI 可观测性、分析、会话回放等功能的产品数据平台，强调为 Agent 提供诊断上下文。"
+    },
+    {
+      "rank": 17,
+      "name": "Tencent/AI-Infra-Guard",
+      "url": "https://github.com/Tencent/AI-Infra-Guard",
+      "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+      "language": "Python",
+      "stars": 5390,
+      "delta": "161 stars today",
+      "tags": [
+        "安全",
+        "AI",
+        "红队测试",
+        "Python",
+        "腾讯"
+      ],
+      "comment": "腾讯开源的全栈 AI 红队测试平台，覆盖 Agent、Skills、MCP 等多层 AI 基础设施安全扫描。"
+    }
+  ]
+}

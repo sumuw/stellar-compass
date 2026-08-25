@@ -1,0 +1,315 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-23",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "stars": 114867,
+      "delta": "2,729 stars today",
+      "tags": [
+        "AI",
+        "编码助手",
+        "Rust",
+        "终端工具",
+        "OpenAI"
+      ],
+      "comment": "OpenAI 官方终端编码智能体，Rust 重写后持续高热，连续两日霸榜榜首。轻量、快速、无需 IDE，代表\"终端优先\"的 AI 编码范式正在成型。"
+    },
+    {
+      "rank": 2,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 233356,
+      "delta": "2,448 stars today",
+      "tags": [
+        "AI",
+        "Skills",
+        "开发工作流",
+        "Shell",
+        "Agent"
+      ],
+      "comment": "TypeScript 大佬 Matt Pocock 的个人 Agent skills 实战集，连续多日高热度。从个人 .agents 目录直接开源，体现了\"实战优先、可复制\"的 Agent 技能分享趋势。"
+    },
+    {
+      "rank": 3,
+      "name": "AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+      "language": "Rust",
+      "stars": 14530,
+      "delta": "1,008 stars today",
+      "tags": [
+        "Rust",
+        "硬件驱动",
+        "罗技替代",
+        "本地优先",
+        "开源"
+      ],
+      "comment": "罗技 Options+ 的开源替代品，纯 Rust 实现，无需账号、无遥测。连续多日上榜，精准击中\"隐私优先+本地化\"痛点，是非 AI 项目在 AI 榜单中的亮眼存在。"
+    },
+    {
+      "rank": 4,
+      "name": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "stars": 47677,
+      "delta": "1,040 stars today",
+      "tags": [
+        "AI",
+        "免费LLM",
+        "Python",
+        "多平台",
+        "工具集成"
+      ],
+      "comment": "让 Claude Code、Codex 等付费 AI 编码工具免费使用的方案聚合器，支持终端/App/IDE/手机全平台，声称提供 13 亿+ 免费 Token。开发者对\"降低 AI 编码门槛\"的需求可见一斑。"
+    },
+    {
+      "rank": 5,
+      "name": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Beautiful, Modern & Opinionated Linux",
+      "language": "Shell",
+      "stars": 28750,
+      "delta": "803 stars today",
+      "tags": [
+        "Linux",
+        "桌面环境",
+        "Shell",
+        "开源",
+        "开发体验"
+      ],
+      "comment": "Basecamp（Ruby on Rails 创始人 DHH 的公司）出品的 Linux 桌面环境，主打\"美观、现代、有主见\"。从 Web 框架跨界到操作系统桌面层，DHH 团队的审美与工程哲学延伸到 Linux 领域。"
+    },
+    {
+      "rank": 6,
+      "name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "language": "JavaScript",
+      "stars": 12526,
+      "delta": "628 stars today",
+      "tags": [
+        "AI",
+        "提示词工程",
+        "GPT-Image",
+        "模板库",
+        "案例库"
+      ],
+      "comment": "GPT-Image2 提示词的工业级案例库与模板引擎，470+ 逆向工程案例 + 20+ 套模板，已提炼为 Skills。\"Prompt as Code\"理念将提示词从经验走向工程化。"
+    },
+    {
+      "rank": 7,
+      "name": "ripienaar/free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+      "language": "HTML",
+      "stars": 134232,
+      "delta": "593 stars today",
+      "tags": [
+        "开发资源",
+        "免费服务",
+        "SaaS",
+        "DevOps",
+        "清单"
+      ],
+      "comment": "经典的\"开发者免费服务大全\"，收录所有有免费层的 SaaS/PaaS/IaaS。常青树项目，13 万+ Star，每次上 Trending 都是对开发者\"降本\"需求的再次确认。"
+    },
+    {
+      "rank": 8,
+      "name": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
+      "language": "Rust",
+      "stars": 29936,
+      "delta": "564 stars today",
+      "tags": [
+        "Rust",
+        "通信平台",
+        "协作",
+        "去中心化",
+        "Block"
+      ],
+      "comment": "Block（Square 母公司）出品的\"蜂巢思维\"通信平台，Rust 构建。定位为群体智能协作工具，Block 在 AI 时代重新定义团队通信基础设施。"
+    },
+    {
+      "rank": 9,
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars": 234719,
+      "delta": "443 stars today",
+      "tags": [
+        "AI",
+        "Agent",
+        "Python",
+        "成长型AI",
+        "NousResearch"
+      ],
+      "comment": "NousResearch 推出的\"与你共同成长\"的 AI Agent，强调持续学习与个性化。23 万+ Star 显示开源 AI Agent 赛道的巨大吸引力。"
+    },
+    {
+      "rank": 10,
+      "name": "virgiliojr94/book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "language": "Python",
+      "stars": 24401,
+      "delta": "423 stars today",
+      "tags": [
+        "AI",
+        "PDF转Skill",
+        "知识提取",
+        "Python",
+        "Claude Code"
+      ],
+      "comment": "将技术书籍 PDF 自动转化为 Claude Code 可用的 Skill，打通\"知识→能力\"的自动化链路。代表了 Agent Skills 生态从\"手写 skills\"走向\"自动生成 skills\"的演进。"
+    },
+    {
+      "rank": 11,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 242402,
+      "delta": "427 stars today",
+      "tags": [
+        "AI",
+        "Agent增强",
+        "性能优化",
+        "JavaScript",
+        "多平台"
+      ],
+      "comment": "面向多编码 Agent 的性能优化框架，覆盖 Skills/记忆/安全/研究优先开发全链路。24 万+ Star 体量巨大，连续多日稳居榜单，Agent 增强赛道仍在深化。"
+    },
+    {
+      "rank": 12,
+      "name": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "language": "未标注",
+      "stars": 31079,
+      "delta": "237 stars today",
+      "tags": [
+        "AI",
+        "Skills市场",
+        "1000+技能",
+        "多平台",
+        "社区"
+      ],
+      "comment": "1000+ Agent Skills 精选合集，兼容 Claude Code/Codex/Gemini CLI/Cursor 等主流工具。从\"个人 skills\"到\"skills 市场\"，Agent 生态正在走向标准化与平台化。"
+    },
+    {
+      "rank": 13,
+      "name": "anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "language": "Python",
+      "stars": 773,
+      "delta": "190 stars today",
+      "tags": [
+        "AI",
+        "Anthropic",
+        "插件市场",
+        "Claude Code",
+        "社区"
+      ],
+      "comment": "Anthropic 官方的 Claude 插件社区市场镜像，支持 Claude Cowork 和 Claude Code。虽然 Star 还不多（773），但作为官方渠道，标志着 Claude 插件生态正式启动。"
+    },
+    {
+      "rank": 14,
+      "name": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+      "language": "Python",
+      "stars": 129201,
+      "delta": "179 stars today",
+      "tags": [
+        "AI",
+        "图像生成",
+        "Stable Diffusion",
+        "节点编辑器",
+        "Python"
+      ],
+      "comment": "最强模块化扩散模型 GUI/API/后端，节点式图形界面。12 万+ Star 的常青项目，AIGC 图像生成领域的基础设施级工具，持续迭代中。"
+    },
+    {
+      "rank": 15,
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems.",
+      "language": "TypeScript",
+      "stars": 68955,
+      "delta": "134 stars today",
+      "tags": [
+        "AI",
+        "多Agent编排",
+        "TypeScript",
+        "自适应记忆",
+        "RAG"
+      ],
+      "comment": "Agent 元框架，支持多 Agent 群体编排、自适应记忆、RAG 集成，原生兼容 Claude Code/Codex 等。从\"单 Agent\"走向\"多 Agent 协作\"的代表项目。"
+    },
+    {
+      "rank": 16,
+      "name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "language": "Rust",
+      "stars": 36569,
+      "delta": "51 stars today",
+      "tags": [
+        "AI",
+        "个人助手",
+        "Rust",
+        "本地记忆",
+        "Agent编排"
+      ],
+      "comment": "个人 AI 超级智能，本地优先记忆 + Agent 舰队编排 + 深度研究三合一。Rust 构建，主打隐私与本地化，是\"个人 AI\"赛道的又一重磅选手。"
+    },
+    {
+      "rank": 17,
+      "name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "language": "TypeScript",
+      "stars": 2220,
+      "delta": "49 stars today",
+      "tags": [
+        "AI",
+        "Apache孵化",
+        "Agent工作区",
+        "TypeScript",
+        "本地优先"
+      ],
+      "comment": "Apache 孵化中的本地优先 AI Agent 工作区，将模型消息/工具调用/权限决策/终止事件全部记录为只追加日志。Apache 基金会入场 AI Agent 基础设施，规范化意义大于体量。"
+    },
+    {
+      "rank": 18,
+      "name": "dani-garcia/vaultwarden",
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+      "language": "项目数 | 占比 | 代表项目",
+      "stars": 65900,
+      "delta": "68 stars today",
+      "tags": [
+        "Rust",
+        "密码管理",
+        "Bitwarden",
+        "自托管",
+        "安全"
+      ],
+      "comment": "Bitwarden 兼容服务器的 Rust 轻量实现（前 bitwarden_rs），6 万+ Star 的自托管密码管理经典项目。每次上榜都是对\"数据自主权\"需求的提醒。\n**Rust 与 Python 首次并列榜首（各 5 席）**。Rust 集中在系统级基建（编码Agent/硬件驱动/通信/密码管理/个人AI），Python 集中在 AI 应用层（免费LLM/Agent框架/知识提取/图像生成）。两条技术路线泾渭分明。\n1. **Agent Skills 生态三浪叠加**：mattpocock/skills（个人实战集）+ VoltAgent/awesome-agent-skills（1000+市场）+ virgiliojr94/book-to-skill（PDF自动转skill），从\"有 skills\"→\"有 skills 商店\"→\"自动生产 skills\"，全链路成型。\n2. **Rust 在 AI 基建层加速渗透**：5 个 Rust 项目覆盖编码Agent（codex）、硬件层（OpenLogi）、通信（buzz）、个人AI（openhuman）、安全（vaultwarden），系统级 Rust + AI 已成稳定组合。\n3. **\"免费/本地优先\"诉求强烈**：free-claude-code（免费Token）、OpenLogi（无账号无遥测）、openhuman（本地记忆）、vaultwarden（自托管）、maka（本地优先），\"数据自主+降低门槛\"持续驱动热度。\n4. **Apache 入场 AI Agent**：apache/maka 进入孵化器，虽然 Star 仅 2,220，但 Apache 基金会背书意味着 Agent 工作区正在走向标准化。\n5. **大厂动作**：OpenAI（codex 持续霸榜）、Block（buzz 通信平台）、Anthropic（claude-plugins-community 官方插件市场）、Basecamp（omarchy Linux 桌面），四家大厂/名企同日上榜。"
+    }
+  ]
+}
