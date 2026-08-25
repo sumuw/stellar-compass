@@ -1,0 +1,77 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-24",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F030",
+      "name": "现在不是出轨的问题（이제 괜찮은 건 아니지만）",
+      "url": "https://www.coupangplay.com",
+      "description": "豆瓣8.2(3,371评价·4+5星78.4%)·Coupang Play历代自制剧累计观看量第1·韩国都市剧口碑榜第1",
+      "type": "都市剧",
+      "platform": "Coupang Play",
+      "score": "88/100 ⭐",
+      "tags": [
+        "都市剧",
+        "罗生门",
+        "双女主",
+        "韩剧"
+      ],
+      "comment": "罗生门式多视角叙事+金惠秀×赵汝贞双女主+李昌熙导演，8集小体量。围绕出不出轨的真问题不是道德判断而是中年女性处境的精准呈现。比The Terror更普世易接近。"
+    },
+    {
+      "rank": 2,
+      "id": "F031",
+      "name": "The Terror: Devil in Silver",
+      "url": "https://www.amc.com",
+      "description": "RT Tomatometer 95%(本系列三季最高)·改编Victor LaValle同名爱伦·坡奖小说·Ridley Scott监制·Dan Stevens主演",
+      "type": "恐怖",
+      "platform": "Sky / NOW TV / AMC+",
+      "score": "91/100 🔥",
+      "tags": [
+        "恐怖",
+        "心理惊悚",
+        "限定剧",
+        "英美"
+      ],
+      "comment": "精神病院中中世纪女巫化身的怪物被惊醒，改编自Victor LaValle同名小说，Ridley Scott再度监制。95% Tomatometer+6集限定剧体量可一次追完。系列距离神作需待长期口碑发酵。"
+    },
+    {
+      "rank": 3,
+      "id": "F032",
+      "name": "Bandar",
+      "url": "https://www.zee5.com",
+      "description": "The Week盛赞\"One of the best prison dramas ever made\"·Anurag Kashyap(《Gangs of Wasseypur》)导演·Bobby Deol×Sanya Malhotra双主演",
+      "type": "监狱剧",
+      "platform": "ZEE5",
+      "score": "87/100 ⭐",
+      "tags": [
+        "监狱剧",
+        "社会现实",
+        "印度",
+        "性别反转"
+      ],
+      "comment": "印度监狱政变视角+#MeTooForMen性别反转社会议题，Anurag Kashyap印度最擅长政治寓言剧的导演之一。8/28才上线，目前仅靠制作团队+评论界背书，尚无观众评分数据。"
+    },
+    {
+      "rank": 4,
+      "id": "F033",
+      "name": "Re:Zero S4 Part 2 夺还篇 第13集",
+      "url": "https://www.crunchyroll.com",
+      "description": "第13集IMDb单集9.9(蕾姆回归篇·加长29分钟)·2026夏季番第7周动画榜登顶(投票率10.76%)·Anime Corner 19项奖",
+      "type": "异世界动画",
+      "platform": "AT-X / Crunchyroll",
+      "score": "87/100 ⭐",
+      "tags": [
+        "异世界",
+        "动画",
+        "日本",
+        "续作"
+      ],
+      "comment": "阔别近5年的蕾姆回归立即引爆单集评分，9.9 IMDb相当于接近满分，是S4全季口碑巅峰集。9/30全季大结局迫近，等收官后好判断S4 Part 2全段评分。"
+    }
+  ]
+}

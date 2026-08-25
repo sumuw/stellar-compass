@@ -5,9 +5,14 @@
  * Each bundle gets:
  *   index.md     — front matter + original report body (minus the H1 heading)
  *   ranking.json — structured items from the "今日新推荐" section
+ *
+ * Bundles that already exist on disk are skipped (idempotent — never
+ * overwrites a previously committed bundle, e.g. the hand-curated 08-20
+ * ranking.json that carries `id` fields the script does not track).
  */
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -17,6 +22,8 @@ const sourceDir = 'D:/cache/WorkBuddy/automation-2026-08-11-09-21-56/outputs';
 const contentRoot = join(projectRoot, 'content/rankings/film-radar/daily');
 
 // Ranking items extracted from each report's "今日新推荐" section.
+// `id` mirrors the report's F-number; URLs are platform homepages (the
+// source reports name platforms, not deep links, so we don't fabricate them).
 const rankingData = {
   '2026-08-11': [
     { rank: 1, name: 'Re:Zero Season 4（Re:从零开始的异世界生活 第四季）', url: 'https://www.crunchyroll.com', description: 'MAL 9.16，IMDb 9.4，异世界动画第四季，MAL 历史第二高分。', type: 'TV动画', platform: 'Crunchyroll', score: '95/100 🏆', tags: ['动画', '异世界', '日本'], comment: 'MAL 历史第二高分动画（仅次于葬送的芙莉莲 S1），IMDb 单集一度满分。第四季被誉为此系列最佳表现。' },
@@ -43,6 +50,26 @@ const rankingData = {
     { rank: 3, name: '太平年（Taiping Year）', url: 'https://www.iqiyi.com', description: '豆瓣8.5·白玉兰最佳中国电视剧+最佳原创编剧+国际传播奖。', type: '历史正剧', platform: '爱奇艺 / 芒果TV / 腾讯视频', score: '88/100 ⭐', tags: ['历史正剧', '朝堂权谋', '中国大陆'], comment: '对历史的尊重达到近年国剧罕见程度，白宇把"放下王位换太平"的复杂君主演活了。' },
     { rank: 4, name: '侠探杰克 第四季（Reacher S4）', url: 'https://www.primevideo.com', description: 'RT 91%影评/92%观众·IMDb 8.3。', type: '动作犯罪', platform: 'Prime Video', score: '87/100 ⭐', tags: ['动作', '犯罪', '惊悚'], comment: '动作剧罕见的影评-观众双向高认可，S4观众分飙升至92%+，被多份影评称为"系列最佳一季"。' },
   ],
+  '2026-08-22': [
+    { rank: 1, id: 'F020', name: `生命树（The Tree of Life）`, url: 'https://www.iqiyi.com', description: `豆瓣8.4·白玉兰8项提名(最佳导演+最佳女演员杨紫)·连续19天酷云全频道收视TOP1·累计触达10.7亿人次`, type: '现实题材', platform: 'CCTV-8 / 爱奇艺', score: '92/100 🔥', tags: ['现实题材', '高原守护', '中国大陆', '正午阳光'], comment: `海拔4800米高原无人区188天实景拍摄，巡山队长与基层女警守护三江源藏羚羊的故事，全程素颜+冰雹沙尘暴。杨紫白玉兰封后，胡歌特别出演。` },
+    { rank: 2, id: 'F021', name: `主角（The Protagonist）`, url: 'https://v.qq.com', description: `豆瓣8.1–8.2·央视一套收视峰值4.487%·腾讯热度30236+·全网播放破13亿(2026央视一套历史收视纪录)`, type: '年代剧', platform: 'CCTV-1 / 腾讯视频', score: '87/100 ⭐', tags: ['年代剧', '秦腔', '中国大陆', '张艺谋监制'], comment: `秦腔名伶忆秦娥从放羊娃到一代秦腔大家的半生沉浮，张艺谋监制、茅盾文学奖改编。张嘉益演舅舅封神，刘浩存争议但未拖后腿。` },
+    { rank: 3, id: 'F022', name: `Ride or Die`, url: 'https://www.primevideo.com', description: `RT 97–98% Tomatometer(Certified Fresh)·RT Audience 82–84%·Prime Video全球#1共17天`, type: '间谍喜剧', platform: 'Prime Video', score: '88/100 ⭐', tags: ['间谍喜剧', '公路逃亡', '双女主', '美国'], comment: `间谍喜剧+公路逃亡版末路狂花，会计师老婆+英国女刺客双女主，Hannah Waddingham与Octavia Spencer火花四溅。RT 97%是2026年Prime Video喜剧/动作类开分最高分之一。` },
+    { rank: 4, id: 'F023', name: `在超市后门吸烟的二人（Smoking Behind the Supermarket with You）`, url: 'https://www.crunchyroll.com', description: `豆瓣8.0·Crunchyroll综合好评率82%·原作漫画累计销量300万册以上·2026现象级动画`, type: '治愈动画', platform: 'TBS / Crunchyroll / Netflix', score: '86/100 ⭐', tags: ['治愈', '恋爱', '社畜共鸣', '日本动画'], comment: `46岁社畜佐佐木每天去超市看收银员山田的笑容治愈自己，某晚撞见田山女士邀他在超市后门抽烟——成年人的偷来角落成社畜共鸣神作。大陆未上线(有吸烟镜头)。` },
+    { rank: 5, id: 'F024', name: `蝉（CICADA）`, url: 'https://www.iqiyi.com', description: `12集精品司法悬疑·首播鹅厂热度15000+·豆瓣预测8.6(尚未开分)·#司法悬疑神剧#话题爆量`, type: '悬疑短剧', platform: '浙江卫视 / 爱奇艺 / 腾讯视频 / 咪咕', score: '83/100 🧪', tags: ['悬疑', '司法', '精品短剧', '中国大陆'], comment: `12集精品短剧不注水，刑辩律师×法官×律政精英三人在12年悬案中的法律博弈。袁玉梅(《白夜追凶》金牌制片)首次亲自执导，钟楚曦+吴镇宇。首播即出爆款相，观望至8/26看豆瓣是否站稳8.4+。` },
+  ],
+  '2026-08-23': [
+    { rank: 1, id: 'F025', name: `Widow's Bay`, url: 'https://tv.apple.com', description: `RT 98%批评家/92%观众·IMDb 8.1–8.4·19项Emmy提名(含最佳喜剧)·Apple TV+ 2026年度大爆款`, type: '喜剧恐怖', platform: 'Apple TV+', score: '88/100 ⭐', tags: ['喜剧恐怖', '悬疑', '美国', 'Apple TV+'], comment: `小岛旅游业+都市传说+一只小丑，Guillermo del Toro公开称赞可能是有史以来最好的流媒体剧集。Betty Gilpin获Emmy客串提名，已续订S2。全季完结可一口追完。` },
+    { rank: 2, id: 'F026', name: `Bleach 千年血战篇 The Calamity（Thousand-Year Blood War — The Calamity）`, url: 'https://www.hulu.com', description: `MAL 9.041(143,307评·全球第10)·IMDB整TYBW系列8.9·Studio Pierrot制作·系列最终季`, type: '动画', platform: 'Hulu / Disney+ / Ani-One', score: '88/100 ⭐', tags: ['动画', '热血', '日本', '最终季'], comment: `22年Bleach动画史上第一次把Tite Kubo真正结局搬上银幕，改编自漫画第55-74卷含原作结局。建议先看前366集或关键篇章，否则角色情感线会失重。` },
+    { rank: 3, id: 'F027', name: `A Bona Fide Killer`, url: 'https://www.viki.com', description: `Nielsen Korea全国收视10.2%(第6集)·峰值11.8%·周五周六时段冠军·MBC双位数收视爆款`, type: '动作犯罪', platform: 'Rakuten Viki / Kocowa', score: '90/100 🔥', tags: ['动作犯罪', '家庭伦理', '韩剧', '双女主'], comment: `家庭主妇×退役狙击手×同床异梦的丈夫是调查她的记者，韩国MBC罕见双位数收视爆款。Gong Hyo-jin时隔15年回归MBC，收视率零下滑走势罕见。金Eun-hee编剧。` },
+    { rank: 4, id: 'F028', name: `Blood Sacrifice`, url: 'https://www.netflix.com', description: `RT 86%·Nordic Watchlist 4.5/5·IMDb 6.6(争议型)·12国Netflix Top1·本季北欧剧最强黑马`, type: '北欧犯罪', platform: 'Netflix', score: '86/100 ⭐', tags: ['北欧犯罪', '家庭剧情', 'Netflix', '瑞典'], comment: `猎杀警察的连环杀手+失和父子侦探组合，主创George Kay(Lupin/Hijack)。5集4小时可一口追完，不学酒鬼侦探模板。IMDb 6.6与RT 86%差距大，反映批评家与观众严重分歧。` },
+    { rank: 5, id: 'F029', name: `花开锦绣`, url: 'https://v.qq.com', description: `豆瓣8.0(10万人+评价)·微博开分8.4·8/21有效播放市占率15.4%(开播以来单日新高)·腾讯站内热度27000+`, type: '古装', platform: '腾讯视频 / 东方卫视', score: '86/100 ⭐', tags: ['古装', '女性成长', '权谋轻喜', '中国大陆'], comment: `草莽私盐贩×落难世家千金的古装公路片，邓科导演+南镇编剧+800多套明制汉服+山西敦煌实景。跳出宅斗古偶框架，女本位叙事引发讨论。开播前3集铺垫偏慢，可从第4集追。` },
+  ],
+  '2026-08-24': [
+    { rank: 1, id: 'F030', name: `现在不是出轨的问题（이제 괜찮은 건 아니지만）`, url: 'https://www.coupangplay.com', description: `豆瓣8.2(3,371评价·4+5星78.4%)·Coupang Play历代自制剧累计观看量第1·韩国都市剧口碑榜第1`, type: '都市剧', platform: 'Coupang Play', score: '88/100 ⭐', tags: ['都市剧', '罗生门', '双女主', '韩剧'], comment: `罗生门式多视角叙事+金惠秀×赵汝贞双女主+李昌熙导演，8集小体量。围绕出不出轨的真问题不是道德判断而是中年女性处境的精准呈现。比The Terror更普世易接近。` },
+    { rank: 2, id: 'F031', name: `The Terror: Devil in Silver`, url: 'https://www.amc.com', description: `RT Tomatometer 95%(本系列三季最高)·改编Victor LaValle同名爱伦·坡奖小说·Ridley Scott监制·Dan Stevens主演`, type: '恐怖', platform: 'Sky / NOW TV / AMC+', score: '91/100 🔥', tags: ['恐怖', '心理惊悚', '限定剧', '英美'], comment: `精神病院中中世纪女巫化身的怪物被惊醒，改编自Victor LaValle同名小说，Ridley Scott再度监制。95% Tomatometer+6集限定剧体量可一次追完。系列距离神作需待长期口碑发酵。` },
+    { rank: 3, id: 'F032', name: `Bandar`, url: 'https://www.zee5.com', description: `The Week盛赞"One of the best prison dramas ever made"·Anurag Kashyap(《Gangs of Wasseypur》)导演·Bobby Deol×Sanya Malhotra双主演`, type: '监狱剧', platform: 'ZEE5', score: '87/100 ⭐', tags: ['监狱剧', '社会现实', '印度', '性别反转'], comment: `印度监狱政变视角+#MeTooForMen性别反转社会议题，Anurag Kashyap印度最擅长政治寓言剧的导演之一。8/28才上线，目前仅靠制作团队+评论界背书，尚无观众评分数据。` },
+    { rank: 4, id: 'F033', name: `Re:Zero S4 Part 2 夺还篇 第13集`, url: 'https://www.crunchyroll.com', description: `第13集IMDb单集9.9(蕾姆回归篇·加长29分钟)·2026夏季番第7周动画榜登顶(投票率10.76%)·Anime Corner 19项奖`, type: '异世界动画', platform: 'AT-X / Crunchyroll', score: '87/100 ⭐', tags: ['异世界', '动画', '日本', '续作'], comment: `阔别近5年的蕾姆回归立即引爆单集评分，9.9 IMDb相当于接近满分，是S4全季口碑巅峰集。9/30全季大结局迫近，等收官后好判断S4 Part 2全段评分。` },
+  ],
 };
 
 const reportMeta = {
@@ -50,12 +77,21 @@ const reportMeta = {
   '2026-08-12': { title: '今日全球高分影视雷达 2026-08-12', description: '第2次执行，2 部正式推荐：国产年代法治大剧《重器》与 FX 科幻剧《异形：地球》。', tags: ['影视', '推荐', '评分'] },
   '2026-08-13': { title: '今日全球高分影视雷达 2026-08-13', description: '第3次执行，3 部正式推荐：《克拉克森的农场》S5、《狂怒追缉》、《护工不是人》。', tags: ['影视', '推荐', '评分'] },
   '2026-08-20': { title: '今日全球高分影视雷达 2026-08-20', description: '第4次执行，4 部正式推荐：《绿灯军团》、《百年孤独》Part 2、《太平年》、《侠探杰克》S4。', tags: ['影视', '推荐', '评分'] },
+  '2026-08-22': { title: '今日全球高分影视雷达 2026-08-22', description: '第5次执行（cron 00:05），5 部正式推荐：国产现实大剧《生命树》、秦腔年代剧《主角》、间谍喜剧《Ride or Die》、治愈动画《在超市后门吸烟的二人》、精品悬疑《蝉》。', tags: ['影视', '推荐', '评分'] },
+  '2026-08-23': { title: '今日全球高分影视雷达 2026-08-23', description: '第6次执行，5 部正式推荐：《Widow\'s Bay》、《Bleach 千年血战篇 The Calamity》、《A Bona Fide Killer》、《Blood Sacrifice》、《花开锦绣》（观察池升级）。', tags: ['影视', '推荐', '评分'] },
+  '2026-08-24': { title: '今日全球高分影视雷达 2026-08-24', description: '第7次执行，4 部正式推荐：《现在不是出轨的问题》、《The Terror: Devil in Silver》、《Bandar》、《Re:Zero S4 Part 2 夺还篇 第13集》。', tags: ['影视', '推荐', '评分'] },
 };
 
 async function importReport(dateKey) {
   const sourceFile = join(sourceDir, `daily-film-radar-${dateKey}.md`);
   const slug = `film-radar-daily-${dateKey}`;
   const bundleDir = join(contentRoot, slug);
+
+  // Idempotent guard: never clobber an already-committed bundle.
+  if (existsSync(bundleDir)) {
+    console.log(`⏭ ${slug}: bundle already exists, skip`);
+    return;
+  }
 
   const rawMarkdown = await readFile(sourceFile, 'utf8');
 
@@ -115,7 +151,7 @@ async function main() {
   for (const dateKey of Object.keys(rankingData)) {
     await importReport(dateKey);
   }
-  console.log('All film-radar bundles imported.');
+  console.log('Film-radar bundle sync complete.');
 }
 
 main().catch((error) => {

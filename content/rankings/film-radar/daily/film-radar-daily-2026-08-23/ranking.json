@@ -1,0 +1,94 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-23",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F025",
+      "name": "Widow's Bay",
+      "url": "https://tv.apple.com",
+      "description": "RT 98%批评家/92%观众·IMDb 8.1–8.4·19项Emmy提名(含最佳喜剧)·Apple TV+ 2026年度大爆款",
+      "type": "喜剧恐怖",
+      "platform": "Apple TV+",
+      "score": "88/100 ⭐",
+      "tags": [
+        "喜剧恐怖",
+        "悬疑",
+        "美国",
+        "Apple TV+"
+      ],
+      "comment": "小岛旅游业+都市传说+一只小丑，Guillermo del Toro公开称赞可能是有史以来最好的流媒体剧集。Betty Gilpin获Emmy客串提名，已续订S2。全季完结可一口追完。"
+    },
+    {
+      "rank": 2,
+      "id": "F026",
+      "name": "Bleach 千年血战篇 The Calamity（Thousand-Year Blood War — The Calamity）",
+      "url": "https://www.hulu.com",
+      "description": "MAL 9.041(143,307评·全球第10)·IMDB整TYBW系列8.9·Studio Pierrot制作·系列最终季",
+      "type": "动画",
+      "platform": "Hulu / Disney+ / Ani-One",
+      "score": "88/100 ⭐",
+      "tags": [
+        "动画",
+        "热血",
+        "日本",
+        "最终季"
+      ],
+      "comment": "22年Bleach动画史上第一次把Tite Kubo真正结局搬上银幕，改编自漫画第55-74卷含原作结局。建议先看前366集或关键篇章，否则角色情感线会失重。"
+    },
+    {
+      "rank": 3,
+      "id": "F027",
+      "name": "A Bona Fide Killer",
+      "url": "https://www.viki.com",
+      "description": "Nielsen Korea全国收视10.2%(第6集)·峰值11.8%·周五周六时段冠军·MBC双位数收视爆款",
+      "type": "动作犯罪",
+      "platform": "Rakuten Viki / Kocowa",
+      "score": "90/100 🔥",
+      "tags": [
+        "动作犯罪",
+        "家庭伦理",
+        "韩剧",
+        "双女主"
+      ],
+      "comment": "家庭主妇×退役狙击手×同床异梦的丈夫是调查她的记者，韩国MBC罕见双位数收视爆款。Gong Hyo-jin时隔15年回归MBC，收视率零下滑走势罕见。金Eun-hee编剧。"
+    },
+    {
+      "rank": 4,
+      "id": "F028",
+      "name": "Blood Sacrifice",
+      "url": "https://www.netflix.com",
+      "description": "RT 86%·Nordic Watchlist 4.5/5·IMDb 6.6(争议型)·12国Netflix Top1·本季北欧剧最强黑马",
+      "type": "北欧犯罪",
+      "platform": "Netflix",
+      "score": "86/100 ⭐",
+      "tags": [
+        "北欧犯罪",
+        "家庭剧情",
+        "Netflix",
+        "瑞典"
+      ],
+      "comment": "猎杀警察的连环杀手+失和父子侦探组合，主创George Kay(Lupin/Hijack)。5集4小时可一口追完，不学酒鬼侦探模板。IMDb 6.6与RT 86%差距大，反映批评家与观众严重分歧。"
+    },
+    {
+      "rank": 5,
+      "id": "F029",
+      "name": "花开锦绣",
+      "url": "https://v.qq.com",
+      "description": "豆瓣8.0(10万人+评价)·微博开分8.4·8/21有效播放市占率15.4%(开播以来单日新高)·腾讯站内热度27000+",
+      "type": "古装",
+      "platform": "腾讯视频 / 东方卫视",
+      "score": "86/100 ⭐",
+      "tags": [
+        "古装",
+        "女性成长",
+        "权谋轻喜",
+        "中国大陆"
+      ],
+      "comment": "草莽私盐贩×落难世家千金的古装公路片，邓科导演+南镇编剧+800多套明制汉服+山西敦煌实景。跳出宅斗古偶框架，女本位叙事引发讨论。开播前3集铺垫偏慢，可从第4集追。"
+    }
+  ]
+}

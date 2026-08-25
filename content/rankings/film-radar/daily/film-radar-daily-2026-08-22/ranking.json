@@ -1,0 +1,94 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-22",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F020",
+      "name": "生命树（The Tree of Life）",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.4·白玉兰8项提名(最佳导演+最佳女演员杨紫)·连续19天酷云全频道收视TOP1·累计触达10.7亿人次",
+      "type": "现实题材",
+      "platform": "CCTV-8 / 爱奇艺",
+      "score": "92/100 🔥",
+      "tags": [
+        "现实题材",
+        "高原守护",
+        "中国大陆",
+        "正午阳光"
+      ],
+      "comment": "海拔4800米高原无人区188天实景拍摄，巡山队长与基层女警守护三江源藏羚羊的故事，全程素颜+冰雹沙尘暴。杨紫白玉兰封后，胡歌特别出演。"
+    },
+    {
+      "rank": 2,
+      "id": "F021",
+      "name": "主角（The Protagonist）",
+      "url": "https://v.qq.com",
+      "description": "豆瓣8.1–8.2·央视一套收视峰值4.487%·腾讯热度30236+·全网播放破13亿(2026央视一套历史收视纪录)",
+      "type": "年代剧",
+      "platform": "CCTV-1 / 腾讯视频",
+      "score": "87/100 ⭐",
+      "tags": [
+        "年代剧",
+        "秦腔",
+        "中国大陆",
+        "张艺谋监制"
+      ],
+      "comment": "秦腔名伶忆秦娥从放羊娃到一代秦腔大家的半生沉浮，张艺谋监制、茅盾文学奖改编。张嘉益演舅舅封神，刘浩存争议但未拖后腿。"
+    },
+    {
+      "rank": 3,
+      "id": "F022",
+      "name": "Ride or Die",
+      "url": "https://www.primevideo.com",
+      "description": "RT 97–98% Tomatometer(Certified Fresh)·RT Audience 82–84%·Prime Video全球#1共17天",
+      "type": "间谍喜剧",
+      "platform": "Prime Video",
+      "score": "88/100 ⭐",
+      "tags": [
+        "间谍喜剧",
+        "公路逃亡",
+        "双女主",
+        "美国"
+      ],
+      "comment": "间谍喜剧+公路逃亡版末路狂花，会计师老婆+英国女刺客双女主，Hannah Waddingham与Octavia Spencer火花四溅。RT 97%是2026年Prime Video喜剧/动作类开分最高分之一。"
+    },
+    {
+      "rank": 4,
+      "id": "F023",
+      "name": "在超市后门吸烟的二人（Smoking Behind the Supermarket with You）",
+      "url": "https://www.crunchyroll.com",
+      "description": "豆瓣8.0·Crunchyroll综合好评率82%·原作漫画累计销量300万册以上·2026现象级动画",
+      "type": "治愈动画",
+      "platform": "TBS / Crunchyroll / Netflix",
+      "score": "86/100 ⭐",
+      "tags": [
+        "治愈",
+        "恋爱",
+        "社畜共鸣",
+        "日本动画"
+      ],
+      "comment": "46岁社畜佐佐木每天去超市看收银员山田的笑容治愈自己，某晚撞见田山女士邀他在超市后门抽烟——成年人的偷来角落成社畜共鸣神作。大陆未上线(有吸烟镜头)。"
+    },
+    {
+      "rank": 5,
+      "id": "F024",
+      "name": "蝉（CICADA）",
+      "url": "https://www.iqiyi.com",
+      "description": "12集精品司法悬疑·首播鹅厂热度15000+·豆瓣预测8.6(尚未开分)·#司法悬疑神剧#话题爆量",
+      "type": "悬疑短剧",
+      "platform": "浙江卫视 / 爱奇艺 / 腾讯视频 / 咪咕",
+      "score": "83/100 🧪",
+      "tags": [
+        "悬疑",
+        "司法",
+        "精品短剧",
+        "中国大陆"
+      ],
+      "comment": "12集精品短剧不注水，刑辩律师×法官×律政精英三人在12年悬案中的法律博弈。袁玉梅(《白夜追凶》金牌制片)首次亲自执导，钟楚曦+吴镇宇。首播即出爆款相，观望至8/26看豆瓣是否站稳8.4+。"
+    }
+  ]
+}
