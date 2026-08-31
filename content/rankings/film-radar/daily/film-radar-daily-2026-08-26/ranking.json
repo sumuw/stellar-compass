@@ -1,0 +1,60 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-26",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F034",
+      "name": "铁拳教育（Get Schooled / 참교육）",
+      "url": "https://www.netflix.com",
+      "description": "豆瓣8.8(约13万+评价·5星52.3%)·IMDb 8.6·Netflix非英语剧集全球第1·89国TOP10",
+      "type": "动作/社会讽刺单元剧",
+      "platform": "Netflix 全球",
+      "score": "92/100 🔥",
+      "tags": [
+        "动作",
+        "社会讽刺",
+        "校园",
+        "韩剧"
+      ],
+      "comment": "改编自网漫《Get Schooled》，导演洪忠灿（《少年法庭》），以架空“教权保护局”切入校园霸凌与教师权益，爽感与社会痛点兼具。争议：被韩国教师团体批评“美化暴力”。今日如果只看一部。"
+    },
+    {
+      "rank": 2,
+      "id": "F035",
+      "name": "A Useful Ghost（一个有用的幽灵）",
+      "url": "https://mubi.com",
+      "description": "Metacritic 84(13位影评人·Universal Acclaim·100%正面)·Metacritic用户8.0·戛纳影评周Grand Prix",
+      "type": "奇幻/黑色喜剧寓言",
+      "platform": "MUBI + Prime Video",
+      "score": "86/100 ⭐",
+      "tags": [
+        "奇幻",
+        "黑色喜剧",
+        "泰国",
+        "隐藏宝藏"
+      ],
+      "comment": "泰国导演Ratchapoom Boonbunchachoke长片首作，戛纳影评周最高奖。妻子因尘肺病去世后附身吸尘器回到丈夫身边，荒诞设定包裹阶级焦虑、历史失忆与政治寓言。兼今日隐藏宝藏。"
+    },
+    {
+      "rank": 3,
+      "id": "F036",
+      "name": "Obsession（执念）",
+      "url": "https://www.peacocktv.com",
+      "description": "RT影评人94%/观众94%(双高)·全球票房约4.27亿美元·成本<100万美元·Blumhouse出品",
+      "type": "恐怖/超自然惊悚",
+      "platform": "Peacock（仅美国）",
+      "score": "90/100 🔥",
+      "tags": [
+        "恐怖",
+        "超自然",
+        "美国",
+        "Blumhouse"
+      ],
+      "comment": "改编自W.W. Jacobs经典短篇《猴爪》（The Monkey's Paw），成本不足百万撬动4.27亿票房的现象级恐怖片；影评与观众双94%在恐怖类型中极为罕见。提示：恐怖片存在粉丝集中风险，需观察长尾。"
+    }
+  ]
+}

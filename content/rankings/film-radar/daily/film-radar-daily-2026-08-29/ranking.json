@@ -1,0 +1,77 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-29",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F048",
+      "name": "尼尔瓦纳乐队秀 电影版（Nirvanna the Band the Show the Movie）",
+      "url": "https://www.hulu.com",
+      "description": "RT影评人96%(Certified Fresh)/观众95%·Metacritic 80·Letterboxd 4.2/5(2026叙事长片第2高)·2026加拿大银幕奖最佳影片",
+      "type": "电影/喜剧/科幻/伪纪录片",
+      "platform": "Hulu（美）/ Disney+（加）/ VOD",
+      "score": "90/100 🔥",
+      "tags": [
+        "喜剧",
+        "伪纪录片",
+        "加拿大",
+        "隐藏宝藏"
+      ],
+      "comment": "Matt Johnson（《BlackBerry》导演）与Jay McCarrol自导自演，把两人为“在多伦多Rivoli酒吧演一场”折腾20年的执念，拍成200万美元成本的《回到未来》式时间旅行闹剧，大量镜头用隐藏摄像机对不知情路人实拍。兼今日隐藏宝藏：无宣发却双95%+，中文世界认知度接近为零。"
+    },
+    {
+      "rank": 2,
+      "id": "F049",
+      "name": "激情邀约 / 诱人饭聚（The Invite）",
+      "url": "https://www.primevideo.com",
+      "description": "RT 97%(265+影评人·Certified Fresh)/观众89%·IMDb 7.8(约31,000人)·Letterboxd 4.02/5·豆瓣7.6(4,205人)",
+      "type": "电影/喜剧/剧情",
+      "platform": "Prime Video / Apple TV / PVOD租赁",
+      "score": "89/100 ⭐",
+      "tags": [
+        "喜剧",
+        "婚姻",
+        "美国",
+        "A24"
+      ],
+      "comment": "奥利维亚·王尔德执导并主演，与塞斯·罗根饰演“楼上夜夜笙歌、楼下形同室友”的夫妻，佩内洛普·克鲁兹与爱德华·诺顿饰演奉行开放式关系的楼上邻居。几乎只发生在一张餐桌上，靠四位演员刮开一段死于每天剐一片的婚姻。豆瓣7.6是唯一分歧点。"
+    },
+    {
+      "rank": 3,
+      "id": "F050",
+      "name": "无名传奇（Legends）",
+      "url": "https://www.netflix.com",
+      "description": "RT影评人97%/观众85%·Metacritic 75·IMDb 7.8(约23,187人)·上线10天破1,000万次观看·已续订S2",
+      "type": "限定剧/犯罪/剧情",
+      "platform": "Netflix（全球）",
+      "score": "87/100 ⭐",
+      "tags": [
+        "犯罪",
+        "真实改编",
+        "英国",
+        "限定剧"
+      ],
+      "comment": "改编自前英国海关卧底Guy Stanton回忆录《The Betrayer》——90年代英国海关把毫无训练的普通人编造假身份塞进最危险的贩毒团伙。核心张力是“扮演另一个人十年会造成什么损伤”。Steve Coogan卸掉喜剧面孔，Tom Burke表演被反复点名。终场字幕：这批人协助查获超12吨海洛因。"
+    },
+    {
+      "rank": 4,
+      "id": "F051",
+      "name": "天幕的贾杜加 / 蒙古的女巫（Tenmaku no Jaadugar）",
+      "url": "https://www.crunchyroll.com",
+      "description": "MyAnimeList 8.27–8.46(约2,252人)·IGN夏季中期排名本季值得看前三·社区周榜第7位",
+      "type": "电视动画/历史/剧情",
+      "platform": "Crunchyroll（全球）/ TV Asahi",
+      "score": "83/100 🧪",
+      "tags": [
+        "动画",
+        "历史",
+        "日本",
+        "样本不足"
+      ],
+      "comment": "Science SARU制作，山田尚子任总导演、Abel Góngora联合执导，改编自Tomato Soup获奖漫画《蒙古魔女传》。13世纪波斯图斯城，少女Sitara靠知识而非武力在蒙古帝国扩张下求生，罕见地把动画规格用在考据中亚历史上。目前仅MAL单一平台有足量样本，标记样本不足待观察。"
+    }
+  ]
+}

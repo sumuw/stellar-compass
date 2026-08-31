@@ -1,0 +1,94 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-28",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F043",
+      "name": "我父亲的影子（My Father's Shadow）",
+      "url": "https://mubi.com",
+      "description": "RT 97–98%(82位影评人)·Metacritic 85(17评·Universal Acclaim)·Letterboxd 4.1/5(26,374评)·TMDb 8.0",
+      "type": "电影/剧情",
+      "platform": "MUBI（北美/英/爱等授权区·中国大陆无MUBI服务）",
+      "score": "91/100 🔥",
+      "tags": [
+        "剧情",
+        "家庭",
+        "尼日利亚",
+        "隐藏宝藏"
+      ],
+      "comment": "首部入围戛纳主竞赛单元的尼日利亚电影，以1993年大选为背景，讲两兄弟与父亲在拉各斯度过的最后一天。导演Akinola Davies Jr.获BAFTA杰出处女作、哥谭突破导演奖，男主Sope Dirisu获哥谭最佳主演。兼今日隐藏宝藏，填补非洲盲点。"
+    },
+    {
+      "rank": 2,
+      "id": "F044",
+      "name": "诗人（A Poet / Un Poeta）",
+      "url": "https://mubi.com",
+      "description": "RT 100%(54–82位影评人)·Metacritic 85(13评)·IMDb 7.9(约2K评)",
+      "type": "电影/喜剧/剧情",
+      "platform": "MUBI（授权区·中国大陆暂无）",
+      "score": "87/100 ⭐",
+      "tags": [
+        "黑色喜剧",
+        "西语电影",
+        "哥伦比亚",
+        "隐藏宝藏"
+      ],
+      "comment": "Simón Mesa Soto执导，戛纳一种关注评审团奖、哥伦比亚申奥片。麦德林酗酒潦倒的老诗人与天才少女的师徒闹剧，被《纽约时报》称为“苦难的浪漫”。兼今日隐藏宝藏，填补拉美盲点；观众样本偏小是唯一保留项。"
+    },
+    {
+      "rank": 3,
+      "id": "F045",
+      "name": "低智商犯罪",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.2(开分后稳定)·云合市占率峰值26%·爱奇艺热度破万登顶同期",
+      "type": "电视剧/悬疑/犯罪/黑色喜剧",
+      "platform": "爱奇艺 / 咪咕视频 / 江苏卫视 / 东方卫视",
+      "score": "87/100 ⭐",
+      "tags": [
+        "悬疑",
+        "黑色喜剧",
+        "中国大陆",
+        "紫金陈"
+      ],
+      "comment": "紫金陈最特别的“喜剧孤本”，刘海波（《尘封十三载》）执导，《无证之罪》《隐秘的角落》原班制作，王骁/田曦薇/王传君主演。多线荒诞叙事（国产版《两杆大烟枪》），“过程全错、结果全对”的反套路破案。"
+    },
+    {
+      "rank": 4,
+      "id": "F046",
+      "name": "猎犬 第二季（Bloodhounds S2 / 사냥개들 시즌2）",
+      "url": "https://www.netflix.com",
+      "description": "MyDramaList 8.6(19,195评)·IMDb 8.1·上线次周740万观看·登顶非英语剧集全球第1",
+      "type": "电视剧/动作/犯罪",
+      "platform": "Netflix（全球）",
+      "score": "87/100 ⭐",
+      "tags": [
+        "动作",
+        "犯罪",
+        "韩剧",
+        "韩国"
+      ],
+      "comment": "Jason Kim执导，Woo Do-hwan、Lee Sang-yi回归，Rain（郑智薰）首次出演反派。7集零注水，较第一季更浓缩、打斗更狠，是2026上半年全球热度最高的非英语动作剧之一。"
+    },
+    {
+      "rank": 5,
+      "id": "F047",
+      "name": "攻壳机动队（The Ghost in the Shell / 2026）",
+      "url": "https://www.primevideo.com",
+      "description": "MyAnimeList 8.02·AniList 78/100·Kitsu 81/100",
+      "type": "动画/科幻/赛博朋克",
+      "platform": "Prime Video / 富士电视台",
+      "score": "82/100 🧪",
+      "tags": [
+        "动画",
+        "赛博朋克",
+        "科幻",
+        "日本"
+      ],
+      "comment": "Science SARU（《恶魔人 Crybaby》）重制士郎正宗原作，而非SAC_2045续作，视觉语言自成一家，首集即冲上Prime Video美区Top 10。评分稳健但尚未达本季头部，样本不足待观察，列🧪值得关注。"
+    }
+  ]
+}

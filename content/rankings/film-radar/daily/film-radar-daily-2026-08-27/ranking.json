@@ -1,0 +1,111 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-08-27",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F037",
+      "name": "死神：千年血战篇 - 祸（Bleach: Sennen Kessen-hen - Kashin-tan）",
+      "url": "https://www.hulu.com",
+      "description": "MyAnimeList 9.03/133K·AniList高位·日本口碑顶端",
+      "type": "动画/动作/奇幻",
+      "platform": "Hulu / Disney+ / B站（国内待确认）",
+      "score": "92/100 🔥",
+      "tags": [
+        "动画",
+        "热血",
+        "日本",
+        "最终章"
+      ],
+      "comment": "二十年等待的死神动画最终决战章（一护 vs 友哈巴赫），Pierrot Films制作升级，前三集先行剧场放映造势。本季动画口碑顶点，评分稳居9.0+，收官党必看。"
+    },
+    {
+      "rank": 2,
+      "id": "F038",
+      "name": "蝉（The Cicada）",
+      "url": "https://www.iqiyi.com",
+      "description": "豆瓣8.9(上万评价·稳定企稳)·骨朵/云合有效播放暑期档前列",
+      "type": "剧情/悬疑/犯罪/律政",
+      "platform": "爱奇艺 / 腾讯视频 / 咪咕视频 / 浙江卫视",
+      "score": "89/100 ⭐",
+      "tags": [
+        "悬疑",
+        "律政",
+        "司法",
+        "中国大陆"
+      ],
+      "comment": "袁玉梅（《白夜追凶》操盘手）执导，钟楚曦/吴镇宇/郑云龙三强对戏，21集无注水司法心理悬疑，十二年旧案+法庭博弈+人性反转。由8/26观察池升级为正式推荐，8/30大结局。"
+    },
+    {
+      "rank": 3,
+      "id": "F039",
+      "name": "无职转生III（Mushoku Tensei: Jobless Reincarnation S3）",
+      "url": "https://www.bilibili.com",
+      "description": "MyAnimeList 8.70/288K·Animate Times夏季票选「最期待」冠军",
+      "type": "动画/奇幻/异世界",
+      "platform": "各大动画平台 / B站（国内）",
+      "score": "89/100 ⭐",
+      "tags": [
+        "动画",
+        "异世界",
+        "奇幻",
+        "日本"
+      ],
+      "comment": "Studio Bind制作，鲁迪故事进入关键篇章，作画与叙事年度顶尖。本季异世界动画口碑第一，样本量极大且稳定。"
+    },
+    {
+      "rank": 4,
+      "id": "F040",
+      "name": "The Christophers（克里斯托弗们）",
+      "url": "https://www.hulu.com",
+      "description": "RT 95–97%(108–158位影评人)·Metacritic 78·Letterboxd 3.5/5·IMDb 6.8",
+      "type": "电影/喜剧/犯罪",
+      "platform": "Hulu（美）/ 后续全球数字发行",
+      "score": "88/100 ⭐",
+      "tags": [
+        "喜剧",
+        "犯罪",
+        "美国",
+        "艺术伪造"
+      ],
+      "comment": "索德伯格近年最佳之一，87岁Ian McKellen封神演技 + Michaela Coel克制反差，艺术伪造家族喜剧，台词犀利。影评近满分、观众偏冷静的“叫好不叫座”型，仍属优质。"
+    },
+    {
+      "rank": 5,
+      "id": "F041",
+      "name": "努力克服自卑的我们（JTBC）",
+      "url": "https://www.netflix.com",
+      "description": "豆瓣8.6(29,061评)·IMDb 8.4",
+      "type": "电视剧/剧情/心理治愈",
+      "platform": "JTBC / Netflix",
+      "score": "87/100 ⭐",
+      "tags": [
+        "韩剧",
+        "心理治愈",
+        "群像",
+        "韩国"
+      ],
+      "comment": "以“自卑”为切口的群像心理治愈，JTBC品质，全16集已完结，评分稳居年度韩剧前列。按“半年内仍高热”条款补入的春季黑马遗珠。"
+    },
+    {
+      "rank": 6,
+      "id": "F042",
+      "name": "幼女战记II（Youjo Senki II / Saga of Tanya the Evil S2）",
+      "url": "https://www.bilibili.com",
+      "description": "MyAnimeList 8.36/249K·本季口碑前列·时隔9年回归",
+      "type": "动画/军事/奇幻",
+      "platform": "各大动画平台 / B站（国内）",
+      "score": "86/100 ⭐",
+      "tags": [
+        "动画",
+        "军事",
+        "奇幻",
+        "日本"
+      ],
+      "comment": "九年磨一季，谭雅与STAFF全员回归，战争伦理+魔导军事硬核。老牌IP回归即站稳本季口碑前列，军事奇幻动画头部。"
+    }
+  ]
+}
