@@ -151,12 +151,46 @@ function parseMarkdownItems(markdown) {
   const lines = markdown.split(/\r?\n/);
   const items = [];
   let current = null;
+  // 只在「榜单详情 / 项目详情」章节内解析条目；进入其它二级章节（整体观察、
+  // 今日速览、主题分布、今日主题观察等）时立即结束当前条目，避免章节正文
+  // 被当成最后一条项目的简评。
+  // 默认为 true：兼容项目条目直接写在 H1 之下、没有二级章节标题的旧报告。
+  let inDetailSection = true;
 
   for (const line of lines) {
-    const heading = /^###\s+\d+\.\s+([A-Za-z0-9._-]+\/[A-Za-z0-9._-]+)/.exec(line);
+    if (/^##\s+/.test(line)) {
+      if (current) {
+        items.push(current);
+        current = null;
+      }
+      inDetailSection = /详情|项目|榜单/.test(line);
+      continue;
+    }
+    if (!inDetailSection) continue;
+
+    // 两种标题格式都要支持：
+    //   旧版：### 1. owner/repo 🆕
+    //   新版：### 1. [owner/repo](https://github.com/owner/repo) — ★ +4,260
+    const heading =
+      /^###\s+\d+\.\s+(?:\[([^\]]+)\]\(([^)]+)\)|([A-Za-z0-9._-]+\/[A-Za-z0-9._-]+))/.exec(
+        line,
+      );
     if (heading) {
       if (current) items.push(current);
-      current = { rank: items.length + 1, name: heading[1], tags: [], language: '未标注' };
+      const name = heading[1] ?? heading[3];
+      // 新版把 URL 放在标题链接里，且不再单独列出「今日新增」，改从标题尾部的 ★ 数值提取
+      const url = heading[2] ?? '';
+      const rest = line.slice(heading[0].length);
+      const starMatch = /★\s*\+?([\d,]+)/.exec(rest);
+      const delta = starMatch ? normalizeDelta(starMatch[1]) : undefined;
+      current = {
+        rank: items.length + 1,
+        name,
+        url,
+        tags: [],
+        language: '未标注',
+        ...(delta ? { delta } : {}),
+      };
       continue;
     }
     if (!current) continue;
@@ -350,7 +384,7 @@ function extractTrendBullets(markdown) {
 
   for (let i = 0; i < lines.length; i += 1) {
     const h2 = /^##\s+(.+)$/.exec(lines[i]);
-    if (h2 && /今日趋势观察|趋势观察|关键趋势|整体观察|今日趋势/.test(h2[1])) {
+    if (h2 && /今日趋势观察|趋势观察|主题观察|关键趋势|整体观察|今日趋势/.test(h2[1])) {
       sectionStart = i;
       break;
     }

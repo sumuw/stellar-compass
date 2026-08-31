@@ -1,0 +1,281 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-29",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill，用于生成美观、可验证的架构图、工作流图、时序图、数据流图和生命周期图；输出为自包含、自带 motion 动效的 HTML，并支持清晰导出。",
+      "language": "JavaScript",
+      "delta": "3,927 stars today",
+      "tags": [
+        "Agent Skills",
+        "可视化",
+        "架构设计"
+      ],
+      "comment": "连续两日断层第一（08-27 +4,260 → 今日 +3,927），累计已破 30k。把\"画图\"封装成 Agent 可直接调用的 skill，且输出是可验证、可导出的自包含 HTML，精准命中\"AI 协作缺一张好图\"的刚需。增速小幅回落但仍遥遥领先，是本周最稳的头部项目。"
+    },
+    {
+      "rank": 2,
+      "name": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "浏览器里的间谍卫星模拟器——但数据是真的。在照片级真实的 3D 地球上呈现实时的开源空间情报。",
+      "language": "JavaScript",
+      "delta": "1,870 stars today",
+      "tags": [
+        "空间智能",
+        "3D 可视化",
+        "卫星数据"
+      ],
+      "comment": "今日最强黑马，空降第二。把\"间谍卫星视角\"这个极具冲击力的概念与真实开源卫星数据结合，在 3D 地球上做实时可视化，观感与话题性都拉满。是今日榜单里少见的\"非 AI Agent 类\"爆款，靠视觉叙事取胜。"
+    },
+    {
+      "rank": 3,
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "把任意 AI Agent 变成 AI 科学家。科学领域排名第一的 Agent Skills 库，被全球 19 万+ 科学家使用；165 个即用已验证 skill + 100+ 科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor / Claude Code / Codex / Pi / Antigravity 及开放 Agent Skills 标准。",
+      "language": "Python",
+      "delta": "1,604 stars today",
+      "tags": [
+        "Agent Skills",
+        "科研",
+        "资源集"
+      ],
+      "comment": "较 08-27（+494）增速翻了三倍多，Skill 数从 163 增至 165、用户数从 17.5 万涨到 19 万。新增 Antigravity 兼容说明，可见其在快速跟进各家 Agent 运行时。垂直领域的 skills 集大成者，已具备真实科研生产力而非玩具。"
+    },
+    {
+      "rank": 4,
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "让你的 AI Agent 像\"房间里最懒的高级工程师\"一样思考——最好的代码是你从没写过的代码。",
+      "language": "JavaScript",
+      "delta": "1,171 stars today",
+      "tags": [
+        "Agent Skills",
+        "编程方法论"
+      ],
+      "comment": "总星已达 116k，稳居榜单前列。用\"懒=少写代码\"的反直觉口号切中 Agent 过度编码的通病，传播力极强。相比 08-27 的 +1,610 略有回落，但仍是心智模型类 skill 的标杆。"
+    },
+    {
+      "rank": 5,
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "全球首个开源的 Agent 化视频生产系统。12 条生产流水线、100+ 工具、700+ 个 Agent skill 与生产知识文件，把你的 AI 编程助手变成整间视频工作室。",
+      "language": "Python",
+      "delta": "809 stars today",
+      "tags": [
+        "AI 视频",
+        "Agent",
+        "生产力"
+      ],
+      "comment": "连续多日上榜（08-27 +1,284 → 今日 +809），总星破 53k。把完整影视生产链路拆解成 12 条 Agent 流水线，700+ skill 文件的体量说明其生态雏形已成。增速放缓进入沉淀期。"
+    },
+    {
+      "rank": 6,
+      "name": "tailscale/tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "description": "像 netcat，但跑在 Tailscale 的数据平面上，且不需要 Tailscale 的控制平面。",
+      "language": "Go",
+      "delta": "790 stars today",
+      "tags": [
+        "网络工具",
+        "内网穿透",
+        "CLI"
+      ],
+      "comment": "Tailscale 官方出品（bradfitz、danderson 等核心成员亲自动手），一句话讲清定位：把 nc 的体验搬到 WireGuard 网格上，还去掉了对控制面的依赖。老牌基建团队的\"小而美\"作品，今日新上榜即冲到第六。"
+    },
+    {
+      "rank": 7,
+      "name": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code｜GPT-Image2 工业级提示词引擎与模板库，530+ 案例逆向工程、20+ 套工业级模板，并提炼成 Skills，持续更新。",
+      "language": "JavaScript",
+      "delta": "767 stars today",
+      "tags": [
+        "提示词工程",
+        "图像生成",
+        "资源集"
+      ],
+      "comment": "常青树，连续多日上榜（08-27 +2,093 → 今日 +767），总星近 25k。530+ 逆向案例使其成为最实用的 GPT-Image 出图参考库，沉淀价值高、长尾流量稳定。"
+    },
+    {
+      "rank": 8,
+      "name": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "每月 74 亿 token 额度；34 家免费 LLM 提供商；635 个免费模型端点——全部收敛到一个 `/v1` 接口，并支持任意自定义 OpenAI 兼容端点。智能路由、自动故障转移、密钥加密。仅供个人实验。",
+      "language": "TypeScript",
+      "delta": "612 stars today",
+      "tags": [
+        "LLM 网关",
+        "免费额度",
+        "路由"
+      ],
+      "comment": "今日新上榜。把散落各家的免费 LLM 额度聚合成统一 OpenAI 兼容网关，还带智能路由与自动 failover——对想零成本跑 Agent 实验的个人开发者来说吸引力极大。\"每月 74 亿 token\"这个数字本身就是最好的广告。"
+    },
+    {
+      "rank": 9,
+      "name": "abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "description": "丢进一张截图，转换成干净的代码（HTML / Tailwind / React / Vue）。",
+      "language": "Python",
+      "delta": "558 stars today",
+      "tags": [
+        "AI 编程",
+        "前端生成"
+      ],
+      "comment": "75.8k 星的老牌项目回榜。截图转代码赛道的启蒙者，在视觉模型能力跃迁后又迎来一波关注。相比今天的 Agent 类新星，它走的是\"单点极致\"路线，仍有稳定受众。"
+    },
+    {
+      "rank": 10,
+      "name": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra，软件逆向工程（SRE）框架。",
+      "language": "Java",
+      "delta": "375 stars today",
+      "tags": [
+        "逆向工程",
+        "安全",
+        "官方工具"
+      ],
+      "comment": "NSA 开源的逆向工程旗舰工具，73.5k 星。今日上榜大概率因新版本/功能更新触发关注。是今日榜单中\"重量级非 AI 基建\"的代表。"
+    },
+    {
+      "rank": 11,
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.（学、造、为他人交付）",
+      "language": "Python",
+      "delta": "359 stars today",
+      "tags": [
+        "教程",
+        "AI 工程"
+      ],
+      "comment": "连续上榜（08-27 +547 → 今日 +359），总星 50.9k。口号式仓库，主打\"从零构建 AI 工程能力\"，体系化、偏入门，适合想补齐 AI 应用工程栈的学习者。"
+    },
+    {
+      "rank": 12,
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Anthropic 官方维护的高质量 Claude Code 插件目录。",
+      "language": "Python",
+      "delta": "356 stars today",
+      "tags": [
+        "Agent Skills",
+        "官方目录"
+      ],
+      "comment": "连续上榜且增速小幅上扬（08-27 +290 → 今日 +356）。与 Cursor 官方 `cursor/plugins` 同日出现在榜单，是\"各家厂商定义插件标准\"竞赛的直接体现。作为官方白名单，后续大概率成为 Claude Code 插件分发的核心枢纽。"
+    },
+    {
+      "rank": 13,
+      "name": "JetBrains/go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "description": "帮助 AI 编程 Agent 写出现代化的 Go 代码。",
+      "language": "Go",
+      "delta": "294 stars today",
+      "tags": [
+        "编程规范",
+        "AI 辅助编程"
+      ],
+      "comment": "连续两日上榜（08-27 +314 → 今日 +294），增速稳定。JetBrains 官方下场给 AI 编码定 Go 规范，典型\"厂商给 Agent 喂最佳实践\"思路，对 Go + AI 协作的代码质量有现实意义。"
+    },
+    {
+      "rank": 14,
+      "name": "abhigyanpatwari/GitNexus",
+      "url": "https://github.com/abhigyanpatwari/GitNexus",
+      "description": "零服务器的代码智能引擎——完全在浏览器里运行的客户端知识图谱构建器。丢进一个 git 仓库（GitHub / GitLab / Azure / 本地）或 ZIP 文件，得到可交互的知识图谱，并内置 Graph RAG Agent。非常适合代码探索。",
+      "language": "TypeScript",
+      "delta": "273 stars today",
+      "tags": [
+        "代码智能",
+        "知识图谱",
+        "Graph RAG"
+      ],
+      "comment": "今日新上榜。46.3k 星的成熟项目，\"全浏览器端 + 零服务端\"是最大卖点——代码不上传、无需部署，契合当下对数据主权的敏感。内置 Graph RAG Agent 让它从\"看图谱\"升级到\"问代码\"。"
+    },
+    {
+      "rank": 15,
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor 插件规范与官方插件。",
+      "language": "TypeScript",
+      "delta": "257 stars today",
+      "tags": [
+        "Agent Skills",
+        "官方规范"
+      ],
+      "comment": "Cursor 官方定义的插件规范仓库，今日新上榜。与 Anthropic 的 `claude-plugins-official` 同榜，标志着 Agent 插件生态正式进入\"标准之争\"阶段——谁定义规范，谁就握住生态入口。"
+    },
+    {
+      "rank": 16,
+      "name": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "description": "用于构建实时语音 AI Agent 的框架。",
+      "language": "Python",
+      "delta": "256 stars today",
+      "tags": [
+        "语音 Agent",
+        "实时通信"
+      ],
+      "comment": "LiveKit 官方的语音 Agent 框架，13.5k 星。实时语音交互是 Agent 落地最自然的形态之一（客服、陪练、会议助手），LiveKit 凭借 WebRTC 基建积累在这一层有先天优势。今日回榜。"
+    },
+    {
+      "rank": 17,
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "给编程 Agent 用的 Chrome DevTools。",
+      "language": "TypeScript",
+      "delta": "215 stars today",
+      "tags": [
+        "MCP",
+        "浏览器自动化",
+        "官方"
+      ],
+      "comment": "Google 官方出品的 MCP 服务器，50.1k 星。让 Agent 真正获得\"打开浏览器→调试→抓取\"的能力，是 MCP 生态里最基础也最刚需的一块拼图。"
+    },
+    {
+      "rank": 18,
+      "name": "swoole/typephp",
+      "url": "https://github.com/swoole/typephp",
+      "description": "把 PHP 编译成原生二进制。",
+      "language": "PHP",
+      "delta": "188 stars today",
+      "tags": [
+        "编译器",
+        "PHP",
+        "原生二进制"
+      ],
+      "comment": "Swoole 团队（matyhtf）新项目，今日新上榜，仅 911 星但增速不俗。把 PHP 直接编译成 native binary 是个相当硬核的方向，若能跑通将极大改变 PHP 的部署形态（无需解释器、单文件分发）。值得观察。"
+    },
+    {
+      "rank": 19,
+      "name": "marin-community/marin",
+      "url": "https://github.com/marin-community/marin",
+      "description": "用于基础模型研发的开源框架。",
+      "language": "Python",
+      "delta": "163 stars today",
+      "tags": [
+        "基础模型",
+        "框架",
+        "科研"
+      ],
+      "comment": "连续上榜（08-27 +255 → 今日 +163）。开源基础模型训练/研究框架，社区化运作，对想从零理解并复现大模型训练链路的研究者价值高。"
+    },
+    {
+      "rank": 20,
+      "name": "google/googletest",
+      "url": "https://github.com/google/googletest",
+      "description": "GoogleTest——Google 的测试与 Mock 框架。",
+      "language": "C++",
+      "delta": "125 stars today",
+      "tags": [
+        "测试框架",
+        "基础设施"
+      ],
+      "comment": "C++ 测试基石，39.2k 星。今日较 08-27 的 +4 大幅回升至 +125，可能由新版本发布触发。属于经典长期项目的周期性波动。"
+    }
+  ]
+}
