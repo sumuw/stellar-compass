@@ -320,7 +320,7 @@ cd <项目根目录> && git push origin main
 
 #### 6.5 报告部署状态
 
-- push 成功：报告 GitHub Actions 构建地址和站点地址（`https://sumuw.github.io/Stellar-Compass/rankings/film-radar-daily-<date>/`，约 2-3 分钟后生效）
+- push 成功：报告 GitHub Actions 构建地址和站点地址（`https://sumuw.github.io/stellar-compass/rankings/film-radar-daily-<date>/`，约 2-3 分钟后生效）
 - push 降级：注明待手动推送，附手动命令
 
 ### 第七步（备选）：0 部推荐时

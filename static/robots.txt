@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sumuw.github.io/Stellar-Compass/sitemap.xml
+Sitemap: https://sumuw.github.io/stellar-compass/sitemap.xml

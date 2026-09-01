@@ -1,4 +1,4 @@
-baseURL = 'https://sumuw.github.io/Stellar-Compass/'
+baseURL = 'https://sumuw.github.io/stellar-compass/'
 locale = 'zh-CN'
 title = 'Stellar Compass'
 defaultContentLanguage = 'zh-cn'

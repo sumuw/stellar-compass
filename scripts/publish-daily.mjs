@@ -31,8 +31,8 @@ import { promisify } from 'node:util';
 const exec = promisify(execFile);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '..');
-const SITE_URL = 'https://sumuw.github.io/Stellar-Compass/';
-const ACTIONS_URL = 'https://github.com/sumuw/Stellar-Compass/actions';
+const SITE_URL = 'https://sumuw.github.io/stellar-compass/';
+const ACTIONS_URL = 'https://github.com/sumuw/stellar-compass/actions';
 
 // ---------------------------------------------------------------------------
 // CLI 参数解析

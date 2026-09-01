@@ -2,7 +2,7 @@
 
 Stellar Compass 是一个由 Hugo 生成的中文静态排行榜博客，用于整理 GitHub、AI 与数字文化趋势。站点提供分类导航、按日期倒序的榜单归档、日榜/周榜/月榜周期页、Markdown 解读、结构化榜单明细、RSS 和 GitHub Pages 自动部署。
 
-线上地址：<https://sumuw.github.io/Stellar-Compass/>
+线上地址：<https://sumuw.github.io/stellar-compass/>
 
 ## 项目目录
 
