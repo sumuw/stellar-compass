@@ -21,6 +21,13 @@ function classTokenIndex(html, className) {
   return match?.index ?? -1;
 }
 
+function collectDates(html) {
+  // Ranking keys rendered as either YYYY-MM-DD (daily) or YYYY-Www (weekly).
+  const matches = html.matchAll(/\b\d{4}-(?:W\d{2}|\d{2}-\d{2})\b/g);
+
+  return [...new Set([...matches].map(([value]) => value))];
+}
+
 function assertTextOrder(html, values) {
   let previousIndex = -1;
 
@@ -61,12 +68,16 @@ test('homepage rankings are ordered and link to the full archive', async () => {
 
   assert.notEqual(rankingListIndex, -1, 'expected homepage ranking-list');
 
-  assertTextOrder(home.slice(rankingListIndex), [
-    '2026-08-20',
-    '2026-08-19',
-    '2026-08-18',
-    '2026-W34',
-  ]);
+  // The homepage shows only the newest rankings, so the expected order is
+  // derived from the archive instead of hard-coded dates.
+  const archive = await readFile(publicPath('rankings', 'index.html'), 'utf8');
+  const homeDates = collectDates(home.slice(rankingListIndex));
+  const expectedDates = collectDates(archive).filter((date) =>
+    homeDates.includes(date),
+  );
+
+  assert.ok(expectedDates.length > 0, 'expected ranking dates on homepage');
+  assertTextOrder(home.slice(rankingListIndex), expectedDates);
 
   const moreLink = [...home.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/gi)].find(
     ([link]) => link.includes('更多'),
@@ -75,7 +86,7 @@ test('homepage rankings are ordered and link to the full archive', async () => {
   assert.ok(moreLink, 'expected a 更多 link');
   assert.match(
     attribute(moreLink, 'href') ?? '',
-    /\/Stellar-Compass\/rankings\//,
+    /\/stellar-compass\/rankings\//,
   );
 });
 
@@ -120,8 +131,8 @@ test('homepage stylesheet and image URLs preserve the project base path', async 
   for (const url of [...stylesheetUrls, ...imageUrls]) {
     assert.ok(url, 'expected asset URL');
     assert.ok(
-      url.includes('/Stellar-Compass/'),
-      `expected ${url} to include /Stellar-Compass/`,
+      url.includes('/stellar-compass/'),
+      `expected ${url} to include /stellar-compass/`,
     );
   }
 });
