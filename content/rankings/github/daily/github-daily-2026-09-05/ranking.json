@@ -1,0 +1,280 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-09-05",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "`Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.` —— 向 Claude Code / Codex / Copilot CLI / Gemini 注入\"懒人资深开发者\"思维的 Node.js 技能插件。",
+      "language": "JavaScript",
+      "stars": 127387,
+      "delta": "2,813 stars today",
+      "tags": [
+        "Agent 技能",
+        "极简主义",
+        "降本",
+        "代码审查",
+        "做减法"
+      ],
+      "comment": "**一日之内夺回第一**（+1,683 → +2,813，**+67.1%**）。昨日的 -21.3% 回落现在看是一次插曲而非拐点——这是它五个交易日里第四次拿下增量第一。核心方法论不变：**七级懒人阶梯**（跳过 → 复用 → 标准库 → 平台原生 → 依赖 → 单行 → 最小实现），逼 Agent 先回答\"这段代码能不能不写\"。作者实测（Claude Code + FastAPI/React 对比基线）：代码行数 **-54%**（最高 94%）、token **-22%**、成本 **-20%**、时间 **-27%**。Fork/Star 仅 5.3%，说明用户以\"装上就用\"为主，二次开发极少——对技能类项目这是正常的健康形态。"
+    },
+    {
+      "rank": 2,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "`Skills for Real Engineers. Straight from my .agents directory.` —— 面向真实工程师的技能集，直接取自作者的 `.agents` 目录。",
+      "language": "Shell",
+      "stars": 251764,
+      "delta": "2,666 stars today",
+      "tags": [
+        "Agent 技能",
+        "TDD",
+        "架构治理",
+        "反 vibe coding",
+        "工程实践"
+      ],
+      "comment": "**连续三日加速终结，但只是走平**（+2,757 → +2,666，**-3.3%**），让出第一。四日走势 +1,103 → +1,576 → +2,757 → +2,666，累计 8,102，仍然是本周累计增量最高的项目。内容面：需求不对齐 → `/grill-me`、`/grill-with-docs` 拷问式提问；表达冗长 → 建共享语言、维护 `CONTEXT.md` 与 ADR；代码不可靠 → `/tdd` 红-绿-重构、`/diagnosing-bugs` 系统排错；架构腐化 → `/to-spec`、`/improve-codebase-architecture`。立场鲜明：**反对 vibe coding**，用一组轻量可组合的技能替代 GSD / BMAD 那类重型流程。它跨过 25 万星后进入高位平台期，属于自然减速而非掉队。"
+    },
+    {
+      "rank": 3,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "Agent Harness 性能优化系统——为 Claude Code、Codex、Opencode、Cursor 等提供 Skills、instincts（直觉规则）、记忆、安全约束与研究优先的开发范式。",
+      "language": "JavaScript",
+      "stars": 249294,
+      "delta": "1,325 stars today",
+      "tags": [
+        "Agent Harness",
+        "工程方法论",
+        "记忆系统",
+        "多平台",
+        "安全约束"
+      ],
+      "comment": "**连续三日走强**（+749 → +1,139 → +1,325，今日 +16.3%），是榜单上斜率最稳的项目之一。它不是单个工具，而是\"怎么让 Agent 稳定干好活\"的方法论封装——Skills 管能力、instincts 管行为惯性、记忆管跨会话连续性、安全约束管边界。Fork/Star 15.1% 在头部项目里偏高，说明有大量团队在做定制改造。注意一个关联：今日第 14 位的 everything-claude-code 的 built-by 名单里同样有作者 affaan-m，两条产品线同源。"
+    },
+    {
+      "rank": 4,
+      "name": "humanlayer/skills",
+      "url": "https://github.com/humanlayer/skills",
+      "description": "HumanLayer 出品的 Claude Code 技能集，通过 `npx skills add humanlayer/skills --skill SKILLNAME` 单技能粒度安装。",
+      "language": "TypeScript",
+      "stars": 2551,
+      "delta": "1,141 stars today",
+      "tags": [
+        "Claude Code",
+        "工程技能",
+        "控制回路",
+        "CI 自动化",
+        "React"
+      ],
+      "comment": "**今日最值得注意的新面孔**，也是全榜最反常的一个数据点——**Star 总数仅 2,551，却拿到 +1,141 单日增量**：今日增量相当于现有 Star 总数的 44.7%，也就是说它从约 1,410 Star 一天涨到 2,551（**增幅约 +81%**）。它的技能清单明显比同类更\"工程化\"：`improve-claude-md` 用 `<important if>` 条件块重写 CLAUDE.md 以提升指令遵循率；`narrow-react-prop-types` 按真实代码路径收窄 React 组件 prop 类型，排除 Storybook / 测试 / mock 独有的状态；`build-iterated-agentic-loop` 生成仓库本地技能 + 迭代式编码 Agent 的 GitHub Actions 工作流、提示词、记忆文件与参考模板；`design-control-loop` 先访谈你，按你的代码库设计\"传感器-控制器-执行器-扰动\"的 Agent 控制回路，再落地成本地可运行组件 + 定时 Agent 工作流；`show-me` 用简图、代码形状草图和 HTML 产物解释当前话题。前四个都指向同一件事：**把 Agent 从\"一次性问答\"改造成\"可持续运行的闭环系统\"**——这是今天榜单上唯一明确提出这个方向的技能包。Fork/Star 2.8% 说明还处在\"围观 + 尝鲜\"阶段，尚未进入改造期。"
+    },
+    {
+      "rank": 5,
+      "name": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "description": "`Agent skill that removes signs of AI-generated writing from text` —— 去除文本中 AI 写作痕迹的 Agent 技能。",
+      "language": "Python",
+      "stars": 43217,
+      "delta": "988 stars today",
+      "tags": [
+        "去AI味",
+        "文本改写",
+        "Agent Skills",
+        "写作",
+        "风格迁移"
+      ],
+      "comment": "**连续第四日在榜，走势极稳**（+545 → +1,214 → +1,132 → +988），波动幅度远小于同赛道其他项目。它把维基百科《Signs of AI writing》提炼成 **35 条可检测模式**——破折号滥用、强行三段式、空洞的 -ing 分析、\"not X but Y\"、过度加粗、标题式大写、Chatbot 客套话、假意深刻等。流程是：不把原文结构当圣旨先改一版 → 对照 35 条自纠 → 重写残留问题，且**把改写过程展示出来**而非只给结果。硬规则是不编造事实：名字、数字、日期、引用必须来自原文，缺失就回头问你。给一段自己的文字还能做\"声纹匹配\"。在 ponytail（治理代码）与它（治理文字）之间，\"给 Agent 做减法\"这条主线已经连续四日占据榜单核心位置。"
+    },
+    {
+      "rank": 6,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "`38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.` —— 为 Agent 提供 38 种编辑级图表类型，自包含 HTML + SVG，无阴影，拒绝 Mermaid 默认样式。",
+      "language": "HTML",
+      "stars": 31456,
+      "delta": "852 stars today",
+      "tags": [
+        "图表生成",
+        "Agent Skills",
+        "编辑级设计",
+        "HTML+SVG",
+        "审美治理"
+      ],
+      "comment": "**上榜第二日即翻倍**（+426 → +852，**+100.0%**），是今日涨幅第二。它解决的痛点很精准：**Agent 画出来的图很丑**——默认走 Mermaid 的 Agent 产出往往带着廉价感，阴影、圆角、配色全不对。项目为 Claude Code / Codex / Factory Droid / Pi 等 Agent Skills 兼容主机提供 **38 种图表类型**（README 内实际列出 39 种），含 Architecture、Sequence、State machine、ER、Timeline、Swimlane、Quadrant、Radar、Sankey、Fishbone、Wardley map、Kanban、User journey、UML class、Story map、Database schema 等，每种有 **minimal light / dark / full-editorial** 三种静态变体。设计规则定得很死：**单强调色、1–2 个焦点元素**；三字体组合（Instrument Serif / Geist / Geist Mono）；**1px 线、无阴影、圆角 ≤10px**；坐标间距均被 4 整除；默认静态无 JS。支持从 draw.io / Mermaid 重绘，导出 SVG / PNG，输出须通过 `self_check.py` 自检。昨日判断它是\"治理主线从代码 / 文字扩展到视觉输出\"的新分支——今日翻倍验证了这个方向的需求是真实的。"
+    },
+    {
+      "rank": 7,
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "`The open source coding agent.` —— 开源 AI 编码 Agent。",
+      "language": "TypeScript",
+      "stars": 204487,
+      "delta": "725 stars today",
+      "tags": [
+        "编码 Agent",
+        "TUI",
+        "多模型",
+        "客户端服务端",
+        "开源"
+      ],
+      "comment": "**上榜第二日大涨**（+314 → +725，**+130.9%**）。形态是**终端 TUI 优先**，同时提供桌面应用（macOS / Windows / Linux，Beta）与客户端-服务端架构。内置两个可 `Tab` 切换的 agent：**build**（默认，全权限开发）与 **plan**（只读，默认拒绝文件编辑、执行 bash 前询问，适合探索陌生代码库与规划改动），另有 `general` 子代理处理复杂检索与多步任务。安装渠道极全：npm / bun / pnpm / yarn、Homebrew、Scoop、Chocolatey、pacman、AUR、mise、Nix 全覆盖，README 提供 22 种语言版本。今日榜单上 hermes-agent、ECC 都把它列为适配目标，magnitude 也把它列入兼容清单——**它已经是 Agent 生态里的\"被适配层\"**，这个位置比 Star 数更能说明问题。"
+    },
+    {
+      "rank": 8,
+      "name": "magnitudedev/magnitude",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "description": "开源推理服务器，为你的硬件挑选并运行最合适的本地模型，然后接进你已经在用的 Agent。兼容 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Oh My Pi、Cline。",
+      "language": "TypeScript",
+      "stars": 2937,
+      "delta": "686 stars today",
+      "tags": [
+        "本地推理",
+        "推理服务器",
+        "Agent 后端",
+        "离线",
+        "硬件自适应"
+      ],
+      "comment": "**连续第三日在榜、连续第三日加速**（+130 → +395 → +686，今日 +73.7%），三日累计 1,211，是本周斜率最漂亮的上升曲线。解决的是\"Agent 帮你配本地模型\"这件事——Agent 自己不知道你的硬件能跑什么量化、速度多少，Magnitude 先给机器做硬件画像（芯片 / 内存 / 带宽），推荐并下载最合适的模型，再做好投机解码与并发调优，最后改写你的 harness 配置。真正的卖点一句话说完：`magnitude docs onboarding`，把这段提示词发给 Agent，它自己走完全流程。特性：无 token 成本、无 API Key、全离线、模型按需加载 / 空闲或内存紧张时卸载、支持从 Hugging Face 拉目录外的 GGUF、Apache 2.0。支持 macOS / Linux，Windows 走 WSL。三日累计 Star 从 1.8k 涨到 2.9k，**是今日榜单上最值得持续跟踪的种子选手**。"
+    },
+    {
+      "rank": 9,
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "description": "`The agent that grows with you` —— 自我改进型开源 AI Agent，自动创建与优化技能、持久化记忆。",
+      "language": "Python",
+      "stars": 241817,
+      "delta": "573 stars today",
+      "tags": [
+        "自我改进",
+        "长期记忆",
+        "自托管",
+        "多端接入",
+        "MCP"
+      ],
+      "comment": "回落（+721 → +573，-20.5%），但 Fork 绝对数 49,654 仍是全场最高，二次开发活跃度无人能及。核心差异是 **closed learning loop（闭环学习）**：复杂任务后自主创建技能 → 技能在使用中自我改进 → 周期性把知识写入持久存储 → FTS5 全文检索 + LLM 摘要回溯历史会话 → 借 Honcho 建立跨会话用户画像。7 种终端后端（本地 / Docker / SSH / Singularity / Modal / Daytona / Vercel Sandbox），Telegram / Discord / Slack / WhatsApp / Signal 远程指挥，内置 cron 与并行子代理，官方称可跑在 5 美元 VPS 上。本榜工程完整度最高的\"长期 Agent\"方案，走势属高位正常波动。"
+    },
+    {
+      "rank": 10,
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "`Public repository for Agent Skills` —— Anthropic 官方的 Agent Skills 公共仓库。",
+      "language": "Python",
+      "stars": 174410,
+      "delta": "472 stars today",
+      "tags": [
+        "Agent Skills",
+        "官方",
+        "参考实现",
+        "规范样本",
+        "Claude"
+      ],
+      "comment": "连续第三日在榜，微降（+512 → +472，-7.8%），是今日留存项里最平稳的一个。它的价值从来不在\"多了几个技能\"，而在于**官方如何定义 Skill 这件事本身**——对正在做 Agent 平台或自建技能体系的人，这是必读的规范样本。三日走势 +277 → +512 → +472，已经形成稳定的基础盘，不再是脉冲型项目。"
+    },
+    {
+      "rank": 11,
+      "name": "bikini/exploitarium",
+      "url": "https://github.com/bikini/exploitarium",
+      "description": "公开 Exploit PoC 与漏洞研究文章的**单一归档仓库**。作者自述归档时点上的条目均未被上报，并声明目的是吸引新人入行。",
+      "language": "Python",
+      "stars": 4631,
+      "delta": "232 stars today",
+      "tags": [
+        "漏洞归档",
+        "PoC 集合",
+        "安全研究",
+        "合规敏感"
+      ],
+      "comment": "**涨幅第一（+68 → +232，+241.2%）**，但要注意基数极小。Fork/Star 27.0% 仍是全场最高——典型的\"拉下来自己用\"而非\"点个星围观\"，用户行为与其他项目完全不同。内容性质决定了它天然是小众高粘性仓库。此处仅作数据记录，不作任何推荐。"
+    },
+    {
+      "rank": 12,
+      "name": "fmtlib/fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "description": "`A modern formatting library` —— C++ 事实标准的格式化库，类型安全、高性能的 printf 替代品，设计已被吸纳进 C++20 `std::format`。",
+      "language": "C++",
+      "stars": 25545,
+      "delta": "133 stars today",
+      "tags": [
+        "格式化",
+        "C++20",
+        "基础库",
+        "类型安全",
+        "高性能"
+      ],
+      "comment": "**今日跌幅第一（+681 → +133，-80.5%）**，四日走势 +955 → +681 → +133，二次曝光脉冲基本结束。此前已排查过：**近三个月无新版本发布**（最近为 12.2.0，2026-06-16），这轮热度与版本无关，属于老牌基建的一次偶然上榜。它的完整曲线（冲高 → 衰减 → 归零）是本周最典型的一次\"存量巨头脉冲\"，可以当作识别同类项目的模板。"
+    },
+    {
+      "rank": 13,
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "`🌊 The original agent meta-harness.` —— 部署多玩家智能体集群（multi-player swarms）、协调自主工作流、构建对话式 AI 系统。特性含自适应记忆、自学习智能、RAG 集成，原生适配 Claude Code / Codex / Hermes 等。",
+      "language": "TypeScript",
+      "stars": 70589,
+      "delta": "127 stars today",
+      "tags": [
+        "多智能体",
+        "Swarm",
+        "自适应记忆",
+        "RAG",
+        "元框架"
+      ],
+      "comment": "新上榜，7 万星体量的老项目重返日榜。定位是**元框架（meta-harness）**——不自己做编码 Agent，而是编排一群 Agent 协同工作，这与 hermes-agent（自我改进单体）、opencode（终端编码 Agent）形成三种完全不同的路线。+127 的增量与它的体量不匹配，更像是一次低强度的重新曝光，而非新一轮增长启动。是否持续需要看明日是否留存。"
+    },
+    {
+      "rank": 14,
+      "name": "WorldFlowAI/everything-claude-code",
+      "url": "https://github.com/WorldFlowAI/everything-claude-code",
+      "description": "`Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development` —— Claude Code 工具箱，提供 agents、commands、skills、rules 与 hooks。",
+      "language": "JavaScript",
+      "stars": 2214,
+      "delta": "87 stars today",
+      "tags": [
+        "Claude Code",
+        "工具箱",
+        "Hooks",
+        "子代理",
+        "工作流"
+      ],
+      "comment": "新上榜，小体量（2.2k Star）但 Fork/Star 16.0%，在今日榜单里排第二高——说明早期用户里有相当比例在动手改造而非单纯收藏。定位是**全景式工具箱**：一次性给你 agents、commands、skills、rules、hooks 五类配置，与 humanlayer/skills 那种\"单技能粒度按需安装\"的路线正好相反。值得注意的关联：它的 built-by 名单里有 **affaan-m**（今日第 3 位 ECC 的作者）与 zbennett10，与 ECC 同源。今日榜单上已有 5 个 Claude Code 相关技能/工具箱项目（mattpocock、ECC、humanlayer、everything-claude-code、ponytail），**Claude Code 是目前技能生态最拥挤的宿主**。"
+    },
+    {
+      "rank": 15,
+      "name": "BraveOPotato/FckSignups",
+      "url": "https://github.com/BraveOPotato/FckSignups",
+      "description": "`A list of tools that are open-source, in-browser, and require no-signups!` —— 收录开源、浏览器内运行、且**无需注册**的工具清单。",
+      "language": "TypeScript",
+      "stars": 2711,
+      "delta": "50 stars today",
+      "tags": [
+        "工具导航",
+        "免注册",
+        "浏览器端",
+        "开源替代",
+        "资源聚合"
+      ],
+      "comment": "新上榜，今日**唯一纯资源聚合类**项目，也是唯一与 Agent 生态无关的新面孔。切入点很朴素但击中真实痛点——现在绝大多数在线工具都强制注册、限制免费额度，这个清单只收\"打开就能用\"的。+50 的增量说明它还在缓慢爬升阶段，属于典型的列表型仓库增长曲线（长尾、低斜率、长周期）。在一片 Agent 声浪里能有一席之地，对榜单多样性是好事。"
+    },
+    {
+      "rank": 16,
+      "name": "nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "description": "`Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.` —— 管理多个 Node.js 版本的 POSIX bash 脚本。",
+      "language": "Shell",
+      "stars": 94864,
+      "delta": "17 stars today",
+      "tags": [
+        "版本管理",
+        "Node.js",
+        "Shell",
+        "开发者工具",
+        "存量基建"
+      ],
+      "comment": "新上榜但**增量垫底（+17）**，9.5 万星的存量基建。作为几乎所有 Node 开发者的装机必备工具，它出现在日榜上通常意味着两件事之一：Node 生态当天有重大版本动作，或者日榜长尾项目供给不足。今日属于后者——16 席里 **12 席是 Agent 相关**，非 Agent 项目只剩 4 个（exploitarium +232、fmt +133、FckSignups +50、nvm +17），四者合计增量仅 **432，占 3.4%**。"
+    }
+  ]
+}

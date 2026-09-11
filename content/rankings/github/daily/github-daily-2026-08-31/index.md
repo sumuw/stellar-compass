@@ -1,0 +1,187 @@
+---
+title: GitHub 每日趋势榜 2026-08-31
+description: 2026-08-31 GitHub Trending 榜首为 tt-a1i/archify，当日共收录 16 个项目。
+date: '2026-08-31T08:00:00+08:00'
+rankingKey: '2026-08-31'
+slug: github-daily-2026-08-31
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-08-31 GitHub Trending 共收录 16 个项目，榜首 tt-a1i/archify（3,993 stars today）。语言分布：Python 7、JavaScript 2、TypeScript 2、PowerShell 1、C# 1、Go 1。
+
+## 重点项目
+
+### 1. tt-a1i/archify
+
+- 地址：https://github.com/tt-a1i/archify
+- 简介：Agent skill，用于生成美观、可验证的架构图、工作流图、时序图、数据流图和生命周期图；输出为自包含、自带 motion 动效的 HTML，并支持清晰导出。
+- 语言：JavaScript
+- 今日新增：3,993 stars today
+- 标签：Agent Skills、架构可视化、HTML 动效、可导出
+
+连续三日霸榜且**增速不降反升**——08-27 +4,260 → 08-29 +3,927 → 今日 +3,993，总星两日从 30,007 涨到 37,573（净增 7,566）。它的胜负手不在"画图"本身，而在把输出物定义为**自包含、可验证、可导出**的 HTML：AI 生成的东西终于能直接交付给人类评审，而不只是一段贴不进文档的 Mermaid。这是本周最稳的头部项目，且尚未出现增速拐点。
+
+### 2. THU-MAIC/OpenMAIC
+
+- 地址：https://github.com/THU-MAIC/OpenMAIC
+- 简介：Open Multi-Agent Interactive Classroom —— 一键获得沉浸式多智能体学习体验。
+- 语言：TypeScript
+- 今日新增：2,819 stars today
+- 标签：多智能体、AI 教育、论文配套、Next.js
+
+今日最强黑马，空降第二且从未上过本榜。清华大学 THU-MAIC 团队出品，有 JCST'26 论文背书，技术栈为 Next.js 16 + React 19 + TypeScript 5 + LangGraph 1.1 + Tailwind 4。**Fork 数 4,691 相当于第二名的两倍多**，说明它不是"看看就好"的 demo——提供了 Live Demo、Vercel 一键部署、中英双语用户指南，还集成了 OpenClaw、Lemonade 本地 AI 与 FunASR 本地语音识别。把多智能体从"命令行对话"搬进"课堂场景"，是今日最值得跟进的新面孔。
+
+### 3. K-Dense-AI/scientific-agent-skills
+
+- 地址：https://github.com/K-Dense-AI/scientific-agent-skills
+- 简介：把任意 AI Agent 变成 AI 科学家。科学领域排名第一的 Agent Skills 库，被全球 19 万+ 科学家使用；165 个即用已验证 skill + 100+ 科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor / Claude Code / Codex / Pi / Antigravity 及开放 Agent Skills 标准。
+- 语言：Python
+- 今日新增：1,968 stars today
+- 标签：Agent Skills、科研、资源集、生物医药
+
+持续加速——08-27 +494 → 08-29 +1,604 → 今日 +1,968，总星突破 40k。三天内增速翻了四倍，且总星已超过 archify。它证明了 Agent Skills 这条路在**垂直专业领域**比在通用编程场景更有壁垒：165 个 skill 的背后是真实的学科知识与 100+ 数据库对接，不是提示词模板能复制的。目前是本榜"最能打"的资源集型项目。
+
+### 4. zhaoxuya520/reverse-skill
+
+- 地址：https://github.com/zhaoxuya520/reverse-skill
+- 简介：逆向工程 / 授权渗透测试 / 安全研究技能路由包 —— AI 自动路由 + 按需自举工具链 + 自进化经验库，支持 Claude Code、Kiro、Cursor、Cline 等 AI 编程客户端。
+- 语言：PowerShell
+- 今日新增：1,439 stars today
+- 标签：安全、逆向工程、渗透测试、Skill 路由、中文项目
+
+首次上榜即冲到第四，中文项目。设计上有个很聪明的点：它不是一个"大而全的安全技能包"，而是**路由包**——由 AI 判断任务类型再动态装载对应工具链，配一个会自动积累经验的经验库。这解决了安全类 skill 的通病（工具链太重、一次全塞进上下文必然爆炸）。v1.0.1 / MIT，Fork 4,447 说明社区接受度高。注意其定位强调"授权渗透测试"，建议仅用于合规的安全研究与自查场景。
+
+### 5. k1tbyte/Wand-Enhancer
+
+- 地址：https://github.com/k1tbyte/Wand-Enhancer
+- 简介：Wand（WeMod）应用的高级 UX 与互操作性扩展，一个用于扩展本地客户端配置、改善 Wand 使用体验的开源互操作工具。
+- 语言：C#
+- 今日新增：718 stars today
+- 标签：桌面工具、Electron 补丁、UX 增强、C
+
+**今日数据最反常的项目**：Fork 59,267 是 Star 23,210 的 2.5 倍，这个比例在 GitHub 上极为罕见。原因是官方**不发布任何编译好的 exe**，用户必须用 GitHub Actions 从自己的 fork 构建——海量 fork 是构建流程的产物，而非真实贡献。另外两点值得注意：README 顶部有醒目的**反诈骗警告**（有人冒用项目名在 YouTube 发假教程、在简介里投放木马和密码窃取器，官方 release 只有 release notes，没有 exe）；它自带一个局域网 Remote Web Panel（端口 3223，明文 HTTP、无配对码，作者明确提醒只能在可信局域网/VPN 内使用）。功能上涵盖本地配置管理、新版客户端自动兼容、布局主题定制、AI 特性与手机远程面板。属于今日榜单中少数与 AI 无关、但工程完整度相当高的项目。
+
+### 6. every-app/open-seo
+
+- 地址：https://github.com/every-app/open-seo
+- 简介：Semrush 与 Ahrefs 的开源替代品 —— 面向普通人的 SEO 工具，按量付费、自己掌控。
+- 语言：TypeScript
+- 今日新增：608 stars today
+- 标签：SEO、MCP、Agent Skills、开源替代
+
+典型的"AI 原生化改造传统 SaaS"样本。它没有止步于"做个开源界面"，而是把**MCP 服务器 + Agent Skills** 作为头号卖点写在最前面，让 Claude Code、OpenClaw、Hermes 等 Agent 能直接调用 SEO 数据。商业模式也清晰：自带 DataForSEO API key 按量付费，无订阅；托管版 $10/月。覆盖关键词研究、排名追踪、竞品洞察、外链、站点审计、AI 可见性六条工作流。
+
+### 7. handsomestWei/patent-disclosure-skill
+
+- 地址：https://github.com/handsomestWei/patent-disclosure-skill
+- 简介：中国专利.skill —— 专利点挖掘与交底书（发明/实用新型/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。
+- 语言：Python
+- 今日新增：571 stars today
+- 标签：中国专利、Agent Skills、专利挖掘、Obsidian
+
+今日最有"人味"的项目。作者在项目初衷里写道："做了多年核心研发，专利发明人那一栏从没写过我的名字"——它解决的是一线工程师**技术贡献无法沉淀为专利资产**的真实痛点。技术上用 Playwright 对接 CNIPA，把结构图与外观图读进交底书，产出可改的 Word；反向还能把晦涩公开专利读成通俗笔记并入库 Obsidian，逐步长成个人专利情报层。这是一个把 Agent Skills 用在极窄但极刚需场景的优秀范例。
+
+### 8. p-e-w/heretic
+
+- 地址：https://github.com/p-e-w/heretic
+- 简介：全自动移除语言模型审查（censorship）的工具，无需昂贵的后训练。
+- 语言：Python
+- 今日新增：536 stars today
+- 标签：LLM、去对齐、abliteration、Optuna
+
+技术上相当扎实：把方向性消融（abliteration，源自 Arditi et al. 2024 与 Lai 2025 的投影/保范双投影改进）与 Optuna 的 TPE 参数寻优结合，**共同最小化拒答率与原模型的 KL 散度**，从而在去审查的同时尽量保住模型智能水平——这是它比早期 abliteration 脚本强的地方，也是它敢宣称"效果媲美人工专家调参"的底气。支持多数 dense 模型、多模态模型、若干 MoE 架构乃至 Qwen3.5 这类混合架构，暂不支持纯状态空间模型。**需要说明的是**：该工具用于移除模型的安全对齐，使用者应自行确保符合所在地区法规与模型使用条款，本条仅作技术记录。
+
+### 9. affaan-m/ECC
+
+- 地址：https://github.com/affaan-m/ECC
+- 简介：Agent harness 性能优化系统 —— 为 Claude Code、Codex、Opencode、Cursor 等提供 skills、instincts、memory、security 与 research-first 开发范式。
+- 语言：JavaScript
+- 今日新增：490 stars today
+- 标签：Agent Harness、性能优化、工程方法论、多语言
+
+今日总星最高的项目（245k），此前在 08-22（第 3 名）、08-23（第 11 名）已两度上榜，属于常青树。它把自己定位为"agent harness 操作系统"，覆盖的不只是提示词，还有 instincts（直觉规则）、memory（记忆）、security（安全）与 research-first 工作流，是对"怎么让 Agent 干活更靠谱"的系统性工程化尝试。提供 13 种语言 README，国际化程度在榜首屈一指。
+
+### 10. jingyaogong/minimind
+
+- 地址：https://github.com/jingyaogong/minimind
+- 简介：🧠 2 小时从零训练一个 64M 参数的 LLM。
+- 语言：Python
+- 今日新增：472 stars today
+- 标签：LLM 教学、从零训练、入门友好、中文项目
+
+老牌中文教学项目，总星 55.9k 位居今日第二高。在"万物皆 Agent"的榜单里，它代表另一条朴素路线：**把大模型拆开给人看**。2 小时、64M 参数、单卡可跑的设定，让它成为无数人理解预训练/SFT 的第一站。今日回榜说明基层学习需求始终稳定，与热点周期无关。
+
+### 11. kaifcodec/user-scanner
+
+- 地址：https://github.com/kaifcodec/user-scanner
+- 简介：🕵️‍♂️ 二合一邮箱与用户名 OSINT 套件，仅凭一个邮箱或用户名即可深度提取数据，覆盖 465+ 个持续维护的扫描向量（175+ 邮箱 / 290+ 用户名），用于安全研究、调查与数字足迹梳理。
+- 语言：Python
+- 今日新增：462 stars today
+- 标签：OSINT、安全研究、情报收集、CLI
+
+今日第二小的高增速项目（总星仅 4,045）。465+ 扫描向量这个数字是它的核心资产——OSINT 工具的价值几乎完全取决于覆盖面和维护频率，而"持续维护"正是多数同类开源项目死掉的地方。适用于合规的安全研究与自查，请务必在授权范围内使用。
+
+### 12. pollen-robotics/microduck_rl
+
+- 地址：https://github.com/pollen-robotics/microduck_rl
+- 简介：Microduck 的强化学习训练环境 —— 一款约 800g、25cm 高的双足机器人，基于 mjlab（MuJoCo Warp）与 PPO 构建。
+- 语言：Python
+- 今日新增：384 stars today
+- 标签：机器人、强化学习、sim2real、MuJoCo
+
+**今日最硬核、也最被低估的项目**。总星仅 1,075，却有 +384 的日增与 186 fork，增速比高达 36%，说明它被精准的小圈子疯传。Pollen Robotics 把完整的 sim2real 配方开源了：50Hz 训练 → 导出 ONNX → 真机部署，包含 BAM 执行器物理建模、域随机化、齿隙（backlash）仿真，以及一份写在 AGENTS.md 里的奖励设计经验手册。4096 并行环境下单卡 1-2 小时出可用步态。对做具身智能的人来说，这份"踩坑记录"比论文值钱。
+
+### 13. majd/ipatool
+
+- 地址：https://github.com/majd/ipatool
+- 简介：命令行工具，用于从 App Store 搜索和下载 iOS、iPadOS、tvOS 与 visionOS 的应用包（ipa 文件）。
+- 语言：Go
+- 今日新增：376 stars today
+- 标签：CLI、iOS、App Store、逆向工具
+
+Go 写的老牌实用工具，久违回榜。在苹果生态里，能稳定拿到 ipa 包的开源方案一直是刚需，多用于安全审计、依赖分析与合规检查。注意下载受 DRM 加密的应用需配合相应凭据，且请遵守 App Store 条款与当地法规。
+
+### 14. Osmantic/ODS
+
+- 地址：https://github.com/Osmantic/ODS
+- 简介：Osmantic Deployment System —— 把你的 PC、Mac 或 Linux 机器变成一台私有 AI 服务器，支持 LLM 推理、聊天界面、语音、Agent、工作流、RAG 与图像生成。
+- 语言：Python
+- 今日新增：331 stars today
+- 标签：AI 服务器、Homelab、本地部署、Apache 2.0
+
+瞄准的是"本地 AI 环境搭建"这个已被反复验证的痛点：不用再手工拼装 Ollama + Open WebUI + n8n + ComfyUI，ODS 一次装好并打通，外加控制面板（模型/服务/GPU 状态）、RAG、语音、图像生成与隐私运维一栈式管理。Apache 2.0 协议，且文档里有一套相当严肃的"发布验证"流程（零前置引导、全新安装、全模型能力、生命周期恢复、User Green 门禁），工程态度在同类 homelab 项目里少见。
+
+### 15. checkstyle/checkstyle
+
+- 地址：https://github.com/checkstyle/checkstyle
+- 简介：帮助程序员编写符合编码规范 Java 代码的开发工具，默认支持 Google Java Style Guide 与 Sun Code Conventions，可高度配置，支持 ANT 任务与命令行调用。
+- 语言：Java
+- 今日新增：199 stars today
+- 标签：代码规范、静态分析、Java、老牌基建
+
+今日榜单里唯一的纯 Java 老牌基建，Fork/Star 比高达 0.45，是典型的"被深度定制使用"的基础设施项目画像。在 AI 生成代码成为常态的今天，代码规范检查工具的价值不降反升——生成得越多，越需要机器来兜住风格底线。
+
+### 16. firecrawl/pdf-inspector
+
+- 地址：https://github.com/firecrawl/pdf-inspector
+- 简介：高性能 Rust PDF 检查、分类与文本提取库，智能识别扫描件与文本型 PDF 以实现智能路由决策。
+- 语言：Rust
+- 今日新增：199 stars today
+- 标签：PDF、文档解析、Rust、WASM
+
+08-07 曾上榜，今日回榜。价值主张极其清晰：约 54% 的 PDF 根本不需要 OCR，先用 10-50ms 采样内容流判定类型（TextBased / Scanned / ImageBased / Mixed，带置信度与逐页路由），再决定走不走 OCR，Firecrawl 宣称文本型 PDF 本地 200ms 内处理完。细节做得很到位——位置感知提取、多栏阅读顺序、CID 字体 ToUnicode 解码、编码损坏自动标记回退 OCR，还同时提供 Python / Node.js / 浏览器 WASM 绑定。是那种"把一件事做穿"的 infra 项目。
+
+## 观察
+
+- Wand-Enhancer 的 Fork/Star 比达到 2.55:1（59,267 / 23,210），源于官方不发布二进制、强制用户 fork 自建；同时作者专门发布反诈骗声明，提醒有人冒名投放木马。看星级排名时需注意这类"流程性 fork"。
+- 前四名合计 +10,219 star，占全榜 16 个项目总增量（+15,565）的 65.7%，头部集中度较 08-29 进一步提高。

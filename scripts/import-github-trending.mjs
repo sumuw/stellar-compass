@@ -181,8 +181,8 @@ function parseMarkdownItems(markdown) {
       // 新版把 URL 放在标题链接里，且不再单独列出「今日新增」，改从标题尾部的 ★ 数值提取
       const url = heading[2] ?? '';
       const rest = line.slice(heading[0].length);
-      const starMatch = /★\s*\+?([\d,]+)/.exec(rest);
-      const delta = starMatch ? normalizeDelta(starMatch[1]) : undefined;
+      const deltaValue = extractHeadingDelta(rest);
+      const delta = deltaValue ? normalizeDelta(deltaValue) : undefined;
       current = {
         rank: items.length + 1,
         name,
@@ -201,7 +201,8 @@ function parseMarkdownItems(markdown) {
   return items.map((item, index) => ({
     rank: index + 1,
     name: item.name,
-    url: item.url ?? '',
+    // 部分版式的标题与详情都不含地址，用 owner/repo 兜底出仓库 URL
+    url: item.url || fallbackUrl(item.name),
     description: item.description ?? '',
     language: item.language ?? '未标注',
     ...(item.stars != null ? { stars: item.stars } : {}),
@@ -209,6 +210,21 @@ function parseMarkdownItems(markdown) {
     tags: item.tags ?? [],
     comment: item.comment ?? '',
   }));
+}
+
+// 报告在一行内串联多个字段时用到的分隔符
+const FULLWIDTH_BAR = '\uFF5C';
+const MIDDLE_DOT = '\u00B7';
+
+function matchKeyValue(segment) {
+  const text = (segment ?? '').trim();
+
+  return (
+    /^(?:[-*]\s+)?\*\*(.+?)\*\*\s*[：:]\s*(.+)$/.exec(text) ||
+    /^[-*]\s+(.+?)\s*[：:]\s*(.+)$/.exec(text) ||
+    // 无冒号写法：Star 23,941 / Fork 2,969（…）
+    /^(star|fork|stars|forks)\s*[：:]?\s*([\d,]+)/i.exec(text)
+  );
 }
 
 function applyFieldLine(item, line) {
@@ -221,7 +237,9 @@ function applyFieldLine(item, line) {
   }
 
   // 表格行（两列）：| **字段** | 值 |（值内部可能含字面 |）
-  if (line.includes('|')) {
+  // 必须要求行以 | 开头：否则「简介：Prompt as Code | GPT-Image2…」这类
+  // 值内含单个 | 的普通键值行会被误判成表格而整行丢弃。
+  if (trimmed.startsWith('|')) {
     const firstPipe = line.indexOf('|');
     const secondPipe = line.indexOf('|', firstPipe + 1);
     const lastPipe = line.lastIndexOf('|');
@@ -235,9 +253,7 @@ function applyFieldLine(item, line) {
   }
 
   // 键值行：**字段**：值 / - **字段**：值 / - 字段：值
-  const kv =
-    /^(?:[-*]\s+)?\*\*(.+?)\*\*\s*[：:]\s*(.+)$/.exec(line) ||
-    /^(?:[-*]\s+)(.+?)\s*[：:]\s*(.+)$/.exec(line);
+  const kv = matchKeyValue(trimmed);
   if (kv) {
     captureField(item, kv[1], kv[2]);
     return;
@@ -249,14 +265,36 @@ function applyFieldLine(item, line) {
 
 function captureField(item, rawKey, rawValue) {
   const key = rawKey.replace(/\*\*/g, '').trim().toLowerCase();
-  const value = rawValue.trim();
+  let value = rawValue.trim();
+
+  // 一个字段行里常把多个字段用全角竖线串在一起：
+  //   **主要语言**：JavaScript｜**Star 总数**：252,464｜**Fork**：37,883
+  // 第一段是本字段的值，其余片段递归解析，避免把整行塞进 language。
+  // 分隔写法有两种：全角竖线（JavaScript｜**Star 总数**：252,464）和
+  // 中间点（语言 / 数据：C++ · Star 23,941 · Fork 2,969）。后者只在语言类
+  // 字段上拆，避免把简介里出现的 · 误切。
+  let separator = null;
+  if (value.includes(FULLWIDTH_BAR)) separator = FULLWIDTH_BAR;
+  else if (/语言|数据/.test(key) && value.includes(MIDDLE_DOT)) separator = MIDDLE_DOT;
+
+  if (separator) {
+    const parts = value.split(separator);
+    value = parts[0].trim();
+
+    for (const part of parts.slice(1)) {
+      const nested = matchKeyValue(part);
+      if (nested) captureField(item, nested[1], nested[2]);
+    }
+  }
 
   if (/简评|评论/.test(key)) {
     item.comment = value;
     return;
   }
   if (/项目地址|地址/.test(key)) {
-    item.url = value;
+    // 报告里地址常写成 <https://…> 的自动链接形式，需剥掉尖括号
+    const url = extractUrl(value);
+    if (url) item.url = url;
     return;
   }
   if (/主要语言|语言/.test(key) && !/分布/.test(key)) {
@@ -267,7 +305,8 @@ function captureField(item, rawKey, rawValue) {
     item.description = value;
     return;
   }
-  if (/总\s*star/.test(key)) {
+  // 报告里 Star 字段名顺序不固定：「Star 总数」/「总 Star」/「Stars」都要认
+  if (/star/.test(key) && !/fork/.test(key)) {
     const num = parseNumber(value);
     if (num != null) item.stars = num;
     return;
@@ -287,6 +326,32 @@ function captureField(item, rawKey, rawValue) {
     item.tags = parseTags(value);
     return;
   }
+}
+
+function extractHeadingDelta(rest) {
+  // 标题里的当日增量写法一直在变，按顺序尝试：
+  //   ★ +3,993    —— 星号在前（08-27 / 08-31 版式）
+  //   +3 ⭐       —— 星号在后（09-02 版式）
+  //   ，+2,206    —— 无星号，直接跟在说明后（09-06 版式）
+  //   +1,539      —— 无星号，破折号后直接是增量（09-06 版式变体）
+  return (
+    /[★⭐]\s*\+?([\d,]+)/.exec(rest)?.[1] ??
+    /\+?([\d,]+)\s*[★⭐]/.exec(rest)?.[1] ??
+    /[，,]\s*\+([\d,]+)/.exec(rest)?.[1] ??
+    /\+([\d,]+)/.exec(rest)?.[1] ??
+    null
+  );
+}
+
+function extractUrl(value) {
+  const match = /<?(https?:\/\/[^\s<>）)】\]]+)>?/.exec(value ?? '');
+  return match ? match[1] : null;
+}
+
+function fallbackUrl(name) {
+  return /^[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+$/.test(name ?? '')
+    ? `https://github.com/${name}`
+    : '';
 }
 
 function parseTags(value) {
