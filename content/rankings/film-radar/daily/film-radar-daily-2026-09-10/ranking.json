@@ -1,0 +1,26 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-09-10",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F080",
+      "name": "鬼灭之刃：无限城篇 第一章 猗窝座再袭 / Demon Slayer: Infinity Castle Part 1 — Akaza Returns",
+      "url": "https://www.netflix.com",
+      "description": "豆瓣8.5(212,811人·本库开库以来中文端样本最大)·MyAnimeList 8.65(230,466人·国际端样本最大)·RT 98%(62篇)·全球票房8.05亿美元(日本影史第二)",
+      "type": "动画电影/动作/奇幻/冒险",
+      "platform": "Netflix / Disney+ / Crunchyroll（全球多区）· 中国大陆哔哩哔哩、爱奇艺（豆瓣playable实测true）",
+      "score": "93/100 🔥",
+      "tags": [
+        "动画电影",
+        "动作",
+        "日本",
+        "现象级"
+      ],
+      "comment": "本轮唯一在中文社区、国际核心动画社区、专业影评三个互不重叠的评价体系里同时拿到顶级分数、且每一端样本都超过20万的作品——这一条在本库30期以来没有第二部做到。ufotable把无限城这个层层嵌套的扭曲空间做成真正的视觉奇观，三场核心对决各自有独立情绪落点，不是单纯的打斗堆砌。须提前知道：它是三部曲第一章，叙事在高潮处截断，且未看过TV系列会缺失大量情感前提。超窗触发规则#7“新上线重要流媒体”豁免。"
+    }
+  ]
+}

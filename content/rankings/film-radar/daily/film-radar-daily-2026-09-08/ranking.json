@@ -1,0 +1,60 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-09-08",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F075",
+      "name": "星球大战：摩尔-暗影之王 / Star Wars: Maul – Shadow Lord",
+      "url": "https://www.disneyplus.com",
+      "description": "豆瓣8.7(1,960人)·RT专业98%(51篇·官方页JSON-LD直连核实)·S2已获续订确认",
+      "type": "动画/科幻/动作",
+      "platform": "Disney+（全球同步·中国大陆无官方服务）",
+      "score": "88/100 ⭐",
+      "tags": [
+        "动画",
+        "科幻",
+        "美国",
+        "星战"
+      ],
+      "comment": "星战动画线（《克隆人战争》《义军崛起》Dave Filoni一脉）近年最完整的一次收束，把摩尔从“酷炫反派”改写成一个会犹豫、会计算、也会心软的角色，同时让原创角色Devon Izara承担真正的道德支点。多个独立评测集中肯定两件事：光剑编排被形容为动画史上最好的几场之一，以及它敢让主角在结局做出不可逆的黑暗选择。争议：需前作背景；第9–10集同日放出致结局节奏过赶；达斯·维达因James Earl Jones去世无台词。"
+    },
+    {
+      "rank": 2,
+      "id": "F076",
+      "name": "达顿牧场 第一季 / Dutton Ranch Season 1",
+      "url": "https://www.paramountplus.com",
+      "description": "豆瓣8.4(6,582人)·RT专业90%(39篇·官方页JSON-LD直连核实)·IMDb/MC未取得",
+      "type": "电视剧/西部/剧情",
+      "platform": "Paramount+（全集可看）/ Paramount Network（美国有线）",
+      "score": "86/100 ⭐",
+      "tags": [
+        "西部",
+        "剧情",
+        "美国",
+        "衍生剧"
+      ],
+      "comment": "《黄石》正传结束后，Beth与Rip被整体搬到南得州，从“守成”变成“开荒”——这个位移让剧集摆脱了正传后期越写越像肥皂剧的问题。真正的变量是Annette Bening饰演的敌对牧场女主人：不是脸谱化反派，而是用控制欲掩盖失控恐惧，把Beth逼出少见的被动局面。中文6,582人的8.4与RT 90%同向，说明这不是《黄石》粉丝的自嗨。争议：未看过《黄石》会缺失大量前史，情感重量打折扣。"
+    },
+    {
+      "rank": 3,
+      "id": "F077",
+      "name": "孤独的美食家 第十一季 / 孤独のグルメ Season 11",
+      "url": "https://www.linetv.tw",
+      "description": "豆瓣8.5(2,856人)·TMDb条目存在但无有效聚合评分·MAL/AniList/IMDb无可靠数据(AniList连续第3期403停用)",
+      "type": "电视剧/剧情/美食",
+      "platform": "LINE TV、Hami Video（中国台湾·官方同步跟播）/ 东京电视台（日本）",
+      "score": "84/100 🧪",
+      "tags": [
+        "美食",
+        "剧情",
+        "日本",
+        "治愈"
+      ],
+      "comment": "时隔三年半回归的常规季，松重丰的五郎依旧是那个不制造戏剧冲突、只用一顿饭解决一天的男人。这一季最被反复提及的细节是五郎第一次戴上老花镜看菜单——一个不煽情的镜头，把15年时间感直接放进画面里；剧组还时隔14年复刻了第二季的经典场面。单集完全独立，不需要补前十季。短板：国际端零样本、中国大陆无正版渠道、8.5对这个IP属温和回落。由观察池升级为首次正式推荐。"
+    }
+  ]
+}
