@@ -8,6 +8,7 @@
  *   node scripts/publish-daily.mjs --category film-radar --date 2026-08-21
  *   node scripts/publish-daily.mjs --category film-radar --dry-run      # 只跑质量门禁，不提交不推送
  *   node scripts/publish-daily.mjs --category film-radar --skip-push    # 提交但不推送
+ *   node scripts/publish-daily.mjs --category github --add-path <path>  # 只提交指定路径（可重复传）
  *
  * 完整流程:
  *   [1] 定位当日 bundle（content/rankings/<category>/<period>/<slug>/）
@@ -46,12 +47,14 @@ function parseArgs(argv) {
     dryRun: false,
     skipPush: false,
     message: null,
+    addPaths: [],
   };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--category') args.category = argv[++i];
     else if (a === '--period') args.period = argv[++i];
     else if (a === '--date') args.date = argv[++i];
+    else if (a === '--add-path') args.addPaths.push(argv[++i]);
     else if (a === '--dry-run') args.dryRun = true;
     else if (a === '--skip-push') args.skipPush = true;
     else if (a === '--message' || a === '-m') args.message = argv[++i];
@@ -196,13 +199,16 @@ async function gateSiteTests() {
 // ---------------------------------------------------------------------------
 
 async function gitCommitAndPush(args, bundleSlug) {
-  // 暂存变更
-  await run('git', ['add', '-A']);
-  const { stdout: statusOut } = await run('git', ['status', '--short']);
-  const hasChanges = statusOut.trim().length > 0;
+  // 暂存变更。默认 git add -A；传入 --add-path 时只暂存这些路径，
+  // 避免把工作区里无关的未提交改动一并卷进榜单提交。
+  const addArgs = args.addPaths.length > 0 ? ['add', '--', ...args.addPaths] : ['add', '-A'];
+  await run('git', addArgs);
+  // 看暂存区而不是整个工作区：--add-path 模式下工作区可能还有别处未提交的改动
+  const { stdout: stagedOut } = await run('git', ['diff', '--cached', '--name-only']);
+  const hasChanges = stagedOut.trim().length > 0;
 
   if (!hasChanges) {
-    ok('工作树无变更（bundle 已提交过），跳过 commit');
+    ok('暂存区无变更（bundle 已提交过），跳过 commit');
   } else {
     const message = args.message ?? `content: add ${args.category} ${args.period} ranking ${args.date}`;
     const { stdout: commitOut } = await run('git', ['commit', '-m', message]);

@@ -8,6 +8,7 @@ Stellar Compass 是一个由 Hugo 生成的中文静态排行榜博客，用于�
 
 ```text
 content/rankings/    排行榜 leaf bundle 内容
+raw/                 每日榜单的原始报告归档（纳入 Git）
 layouts/             Hugo 页面模板和公共 partial
 assets/css/          由 Hugo Pipes 处理的样式
 static/              图片、robots.txt 等静态文件
@@ -86,6 +87,28 @@ npm run validate:content
 ```
 
 导入器不会静默覆盖内容不一致的现有文件；确认需要覆盖时显式追加 `--overwrite`。导入逻辑的独立测试可用 `npm run test:import` 执行。
+
+## 每日自动化（GitHub 热榜 + 影视雷达）
+
+统一入口 `scripts/run-daily.mjs` 把「原始报告 → leaf bundle → 质量门禁 → Git 提交」串成一条命令：
+
+```powershell
+node scripts/run-daily.mjs                    # 处理今天（Asia/Shanghai）
+node scripts/run-daily.mjs --date 2026-10-08   # 处理指定日期
+node scripts/run-daily.mjs --only github       # 只跑 GitHub 榜
+node scripts/run-daily.mjs --dry-run           # 只跑门禁，不提交不推送
+```
+
+它按顺序做四件事：
+
+1. `scripts/import-github-trending.mjs` 解析 `raw/github/github-daily-trending-<date>.md`
+2. `scripts/import-film-radar.mjs` 解析 `raw/film-radar/daily-film-radar-<date>.md`
+3. 两个榜单各自跑 `scripts/publish-daily.mjs`（内容校验 → 单元测试 → Hugo 构建 → 站点测试）
+4. 按榜单分别提交，`--add-path` 限定提交范围，不会卷入工作区里无关的改动
+
+两个榜单互不影响：单个失败不会中断另一个；某榜当日没有产出（例如影视雷达零新增，导入脚本会跳过生成 bundle）时跳过发布，不算失败。
+
+定时任务只需产出两份原始报告到 `raw/` 下，再执行上面的命令即可。
 
 ## GitHub Pages
 
