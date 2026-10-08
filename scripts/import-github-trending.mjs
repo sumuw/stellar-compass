@@ -158,6 +158,29 @@ function parseMarkdownItems(markdown) {
   let inDetailSection = true;
 
   for (const line of lines) {
+    // 条目标题可能出现在不同层级：
+    //   最早期（08-07 等）：## 1. TencentCloud / TencentDB-Agent-Memory
+    //   旧版：### 1. owner/repo 🆕
+    //   新版：### 1. [owner/repo](https://github.com/owner/repo) — ★ +4,260
+    // 因此标题匹配必须放在章节处理之前，否则 H2 版式的条目会先被当成章节标题吞掉。
+    const heading = matchItemHeading(line);
+    if (heading) {
+      if (current) items.push(current);
+      // 新版把 URL 放在标题链接里，且不再单独列出「今日新增」，改从标题尾部的 ★ 数值提取
+      const deltaValue = extractHeadingDelta(heading.rest);
+      const delta = deltaValue ? normalizeDelta(deltaValue) : undefined;
+      current = {
+        rank: items.length + 1,
+        name: heading.name,
+        url: heading.url,
+        tags: [],
+        language: '未标注',
+        ...(delta ? { delta } : {}),
+      };
+      inDetailSection = true;
+      continue;
+    }
+
     if (/^##\s+/.test(line)) {
       if (current) {
         items.push(current);
@@ -168,48 +191,150 @@ function parseMarkdownItems(markdown) {
     }
     if (!inDetailSection) continue;
 
-    // 两种标题格式都要支持：
-    //   旧版：### 1. owner/repo 🆕
-    //   新版：### 1. [owner/repo](https://github.com/owner/repo) — ★ +4,260
-    const heading =
-      /^###\s+\d+\.\s+(?:\[([^\]]+)\]\(([^)]+)\)|([A-Za-z0-9._-]+\/[A-Za-z0-9._-]+))/.exec(
-        line,
-      );
-    if (heading) {
-      if (current) items.push(current);
-      const name = heading[1] ?? heading[3];
-      // 新版把 URL 放在标题链接里，且不再单独列出「今日新增」，改从标题尾部的 ★ 数值提取
-      const url = heading[2] ?? '';
-      const rest = line.slice(heading[0].length);
-      const deltaValue = extractHeadingDelta(rest);
-      const delta = deltaValue ? normalizeDelta(deltaValue) : undefined;
-      current = {
-        rank: items.length + 1,
-        name,
-        url,
-        tags: [],
-        language: '未标注',
-        ...(delta ? { delta } : {}),
-      };
-      continue;
-    }
     if (!current) continue;
     applyFieldLine(current, line);
   }
   if (current) items.push(current);
 
-  return items.map((item, index) => ({
-    rank: index + 1,
-    name: item.name,
-    // 部分版式的标题与详情都不含地址，用 owner/repo 兜底出仓库 URL
-    url: item.url || fallbackUrl(item.name),
-    description: item.description ?? '',
-    language: item.language ?? '未标注',
-    ...(item.stars != null ? { stars: item.stars } : {}),
-    ...(item.delta != null ? { delta: item.delta } : {}),
-    tags: item.tags ?? [],
-    comment: item.comment ?? '',
-  }));
+  // 新版报告常把「今日新增 / Star 总数 / 标签」只写在速览表里，逐项详情里
+  // 要么没有、要么用脚本没覆盖的分隔符写法。这里用速览表为每条补齐缺失字段，
+  // 详情优先，速览表只做兜底。
+  const overviewIndex = parseOverviewIndex(markdown);
+
+  return items.map((item, index) => {
+    const extra = overviewIndex.get(item.name) ?? {};
+    const language = item.language && item.language !== '未标注' ? item.language : (extra.language ?? '未标注');
+    return {
+      rank: index + 1,
+      name: item.name,
+      // 部分版式的标题与详情都不含地址，用 owner/repo 兜底出仓库 URL
+      url: item.url || extra.url || fallbackUrl(item.name),
+      description: item.description ?? '',
+      language,
+      ...(item.stars != null ? { stars: item.stars } : {}),
+      ...(item.stars == null && extra.stars != null ? { stars: extra.stars } : {}),
+      ...(item.delta != null ? { delta: item.delta } : {}),
+      ...(item.delta == null && extra.delta ? { delta: extra.delta } : {}),
+      tags: item.tags?.length ? item.tags : (extra.tags ?? []),
+      comment: item.comment ?? '',
+    };
+  });
+}
+
+// ---- 速览表索引 ----
+
+function parseOverviewIndex(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  const index = new Map();
+  let columns = null;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed.startsWith('|')) continue;
+    const cells = splitTableRow(trimmed);
+
+    if (columns === null) {
+      const mapped = mapOverviewColumns(cells);
+      if (mapped) columns = mapped;
+      continue;
+    }
+    if (cells.every((cell) => /^[-:\s]*$/.test(cell))) continue; // 表头分隔行
+
+    const nameCell = cells[columns.project] ?? '';
+    const linkName = /\[([^\]]+)\]\([^)]*\)/.exec(nameCell)?.[1];
+    const name = (linkName ?? nameCell.replace(/\*\*/g, '').replace(/`/g, '').trim());
+    if (!/^[A-Za-z0-9._-]+\/[A-Za-z0-9._-]+$/.test(name)) continue;
+
+    const url = /\[[^\]]+\]\(([^)]+)\)/.exec(nameCell)?.[1] ?? '';
+    const stars = columns.stars != null ? parseNumber(cells[columns.stars] ?? '') : null;
+    const delta = columns.delta != null ? normalizeDelta(cells[columns.delta] ?? '') : null;
+    const tags = columns.tags != null ? parseOverviewTags(cells[columns.tags] ?? '') : [];
+    const language = columns.language != null ? (cells[columns.language] ?? '').replace(/\*\*/g, '').trim() : '';
+
+    if (!index.has(name)) index.set(name, {});
+    const entry = index.get(name);
+    if (url && !entry.url) entry.url = url;
+    if (stars != null && entry.stars == null) entry.stars = stars;
+    if (delta && !entry.delta) entry.delta = delta;
+    if (tags.length && !entry.tags?.length) entry.tags = tags;
+    if (language && !entry.language) entry.language = language;
+  }
+
+  return index;
+}
+
+function splitTableRow(line) {
+  return line
+    .trim()
+    .replace(/^\|/, '')
+    .replace(/\|$/, '')
+    .split('|')
+    .map((cell) => cell.trim());
+}
+
+function mapOverviewColumns(cells) {
+  const find = (pattern) => cells.findIndex((cell) => pattern.test(cell.replace(/\*\*/g, '')));
+  const project = find(/项目|仓库/);
+  if (project === -1) return null;
+  const columns = {
+    project,
+    language: find(/语言/),
+    delta: find(/新增|增量|today/i),
+    stars: find(/star|星/i),
+    tags: find(/标签|主题/),
+  };
+  // 至少要能补出一项有效数据，否则这张表不是速览表（如主题分布表）
+  if (columns.delta === -1 && columns.stars === -1 && columns.tags === -1) return null;
+  return columns;
+}
+
+function parseOverviewTags(value) {
+  const text = (value ?? '').replace(/\*\*/g, '').replace(/`/g, '').trim();
+  if (!text) return [];
+  const parts = text.includes('/') ? text.split('/') : text.split('、');
+  const seen = new Set();
+  const tags = [];
+  for (const part of parts) {
+    const cleaned = part.trim();
+    if (!cleaned) continue;
+    if (seen.has(cleaned)) continue;
+    seen.add(cleaned);
+    tags.push(cleaned);
+  }
+  return tags;
+}
+
+function matchItemHeading(line) {
+  const matched = /^(#{2,3})\s+\d+\.\s+(.+)$/.exec(line);
+  if (!matched) return null;
+  const isH2 = matched[1].length === 2;
+  const rest = matched[2];
+
+  const link = /^\[([^\]]+)\]\(([^)]+)\)(.*)$/.exec(rest);
+  if (link) {
+    return { name: link[1], url: link[2], rest: link[3] };
+  }
+
+  // 最早期版式（08-07 等）用 H2 写条目，且把仓库名写成「owner / repo」
+  // （斜杠两侧带空格），需归一化成 owner/repo，否则既取不到规范名也拼不出 fallback URL。
+  // H3 层级则严格要求仓库名紧跟在序号后、不含空格——否则
+  // 「### 1. AI Agent / Skills 赛道继续主导」这类趋势小结会被误当成条目。
+  const repo = isH2
+    ? /([A-Za-z0-9._-]+\s*\/\s*[A-Za-z0-9._-]+)/.exec(rest)
+    : /^([A-Za-z0-9._-]+\/[A-Za-z0-9._-]+)/.exec(rest);
+  if (!repo) return null;
+
+  const tail = rest.slice(repo.index + repo[0].length);
+  // 仅 H2 层级需要这条防护：老版式允许仓库名带空格，容易把
+  // 「## 1. AI Agent / Skills 赛道…」这类小结误判成条目。
+  // H3 层级不能加——新版标题普遍是「### 1. owner/repo — 增量第一…」，尾部必有中文。
+  if (isH2 && /[\u4e00-\u9fa5]/.test(tail)) return null;
+
+  return {
+    name: repo[1].replace(/\s*\/\s*/g, '/'),
+    url: '',
+    rest: tail,
+  };
 }
 
 // 报告在一行内串联多个字段时用到的分隔符
@@ -222,8 +347,8 @@ function matchKeyValue(segment) {
   return (
     /^(?:[-*]\s+)?\*\*(.+?)\*\*\s*[：:]\s*(.+)$/.exec(text) ||
     /^[-*]\s+(.+?)\s*[：:]\s*(.+)$/.exec(text) ||
-    // 无冒号写法：Star 23,941 / Fork 2,969（…）
-    /^(star|fork|stars|forks)\s*[：:]?\s*([\d,]+)/i.exec(text)
+    // 无冒号写法：Star 23,941 / Fork 2,969 / 总 Star：17,224（…）
+    /^(总\s*star|star|fork|stars|forks)\s*[：:]?\s*([\d,]+)/i.exec(text)
   );
 }
 
@@ -274,8 +399,22 @@ function captureField(item, rawKey, rawValue) {
   // 中间点（语言 / 数据：C++ · Star 23,941 · Fork 2,969）。后者只在语言类
   // 字段上拆，避免把简介里出现的 · 误切。
   let separator = null;
-  if (value.includes(FULLWIDTH_BAR)) separator = FULLWIDTH_BAR;
-  else if (/语言|数据/.test(key) && value.includes(MIDDLE_DOT)) separator = MIDDLE_DOT;
+  if (value.includes(FULLWIDTH_BAR)) {
+    separator = FULLWIDTH_BAR;
+  } else {
+    // 半角竖线与中间点都可能被当成分隔符，但只有在后续片段确实形如
+    // 「**字段**：值」时才拆——否则会把简介里出现的 · 或 | 误切成字段。
+    // 例：**Star 总数**：17,430 · **今日新增**：+843
+    //     **主要语言**：Python | **今日新增**：+683 | **总 Star**：88,119
+    for (const candidate of ['|', MIDDLE_DOT]) {
+      if (!value.includes(candidate)) continue;
+      const parts = value.split(candidate);
+      if (parts.slice(1).some((part) => matchKeyValue(part))) {
+        separator = candidate;
+        break;
+      }
+    }
+  }
 
   if (separator) {
     const parts = value.split(separator);
@@ -305,8 +444,11 @@ function captureField(item, rawKey, rawValue) {
     item.description = value;
     return;
   }
-  // 报告里 Star 字段名顺序不固定：「Star 总数」/「总 Star」/「Stars」都要认
-  if (/star/.test(key) && !/fork/.test(key)) {
+  // 报告里 Star 字段名顺序不固定：「Star 总数」/「总 Star」/「Stars」都要认，
+  // 「Star / Fork：49,965 / 5,550」这类合并字段取第一个数字当 Star 总数；
+  // 但纯 Fork 字段（「Fork 数」/「Fork / Star」）不能当成 Star。
+  // 「今日新增 Star」这类字段名同时含 star 与新增语义，必须让给 delta 分支处理
+  if (/star/i.test(key) && !/^\W*fork/i.test(key) && !/新增|增量|delta|today/i.test(key)) {
     const num = parseNumber(value);
     if (num != null) item.stars = num;
     return;
@@ -432,14 +574,23 @@ function buildObservation(markdown, items) {
   const bullets = extractTrendBullets(markdown);
   if (bullets.length > 0) return bullets;
 
-  // 无文本趋势段落时，从数据中生成 Top 3 增量观察
+  // 无文本趋势段落时，从数据中生成 Top 3 增量观察。
+  // 注意：必须按 delta 数值降序取，不能按 rank 取——rank 越大代表排名越靠后，
+  // 早期版本按 rank 降序取到的是榜单末位项目，却仍标注「增量最高」，与实际相反。
   const movers = [...items]
     .filter((item) => item.delta)
-    .sort((a, b) => b.rank - a.rank)
+    .sort((a, b) => deltaValue(b) - deltaValue(a))
     .slice(0, 3);
   return movers.map(
-    (item) => `${item.name} 今日 ${item.delta ?? '—'}，是当日增量最高的项目之一。`,
+    (item, index) => `${item.name} 今日 ${item.delta ?? '—'}，居当日增量第 ${index + 1} 位。`,
   );
+}
+
+function deltaValue(item) {
+  const match = /[\d,]+/.exec(item.delta ?? '');
+  if (!match) return 0;
+  const num = Number(match[0].replace(/,/g, ''));
+  return Number.isFinite(num) ? num : 0;
 }
 
 function extractTrendBullets(markdown) {
