@@ -11,7 +11,7 @@
       "url": "https://github.com/PrimeIntellect-ai/prime-agent",
       "description": "一个自我进化的 RLM（Recursive Language Model）智能体，专注于编程工作流和长时间自主任务的执行。",
       "language": "TypeScript",
-      "delta": "+2,293",
+      "delta": "2,293 stars today",
       "tags": [
         "AI Agent",
         "RLM",
@@ -26,7 +26,7 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "\"给真正工程师的技能\"，直接来自作者 .agents 目录的实战经验沉淀。",
       "language": "Shell",
-      "delta": "+2,152",
+      "delta": "2,152 stars today",
       "tags": [
         "AI Agent",
         "Engineering Skills",
@@ -41,7 +41,7 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "面向 AI 编程 Agent 的生产级工程技能合集。",
       "language": "JavaScript",
-      "delta": "+1,131",
+      "delta": "1,131 stars today",
       "tags": [
         "AI Coding Agent",
         "Engineering Skills",
@@ -56,7 +56,7 @@
       "url": "https://github.com/cloudflare/computer",
       "description": "给你的 Agent 一台\"电脑\"，让 Agent 在受控沙箱环境中执行任务。",
       "language": "TypeScript",
-      "delta": "+872",
+      "delta": "872 stars today",
       "tags": [
         "Computer Use",
         "AI Agent",
@@ -71,7 +71,7 @@
       "url": "https://github.com/obra/superpowers",
       "description": "一个 Agentic 技能框架与软件开发方法论，主打\"真正可用\"。",
       "language": "Shell",
-      "delta": "+782",
+      "delta": "782 stars today",
       "tags": [
         "AI Agent",
         "Methodology",
@@ -86,7 +86,7 @@
       "url": "https://github.com/goauthentik/authentik",
       "description": "身份认证的\"粘合层\"，提供统一的 SSO、用户目录和授权能力。",
       "language": "Python",
-      "delta": "+530",
+      "delta": "530 stars today",
       "tags": [
         "Authentication",
         "IAM",
@@ -101,7 +101,7 @@
       "url": "https://github.com/denoland/celld",
       "description": "自托管、分布式的 Durable Objects 运行时。",
       "language": "Rust",
-      "delta": "+516",
+      "delta": "516 stars today",
       "tags": [
         "Durable Objects",
         "Distributed Systems",
@@ -116,7 +116,7 @@
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
       "description": "AutoGPT 的愿景是让每个人都能使用和构建 AI，提供工具让人专注于真正重要的事情。",
       "language": "Python",
-      "delta": "+355",
+      "delta": "355 stars today",
       "tags": [
         "AI Agent",
         "Autonomous AI",
@@ -131,7 +131,7 @@
       "url": "https://github.com/google/skills",
       "description": "Google 自家的 Agent Skills 集合，覆盖其产品和相关技术栈。",
       "language": "Python",
-      "delta": "+327",
+      "delta": "327 stars today",
       "tags": [
         "AI Agent",
         "Agent Skills",
@@ -146,15 +146,14 @@
       "url": "https://github.com/pranshuparmar/witr",
       "description": "\"Why is this running?\"——回溯任意进程、端口、容器或文件最初为何启动，提供 CLI + TUI。",
       "language": "Go",
-      "delta": "+234",
+      "delta": "234 stars today",
       "tags": [
         "CLI",
         "TUI",
         "DevOps",
-        "Go",
-        "ps/lsof"
+        "Go"
       ],
-      "comment": "Linux/macOS 下排障的轻量小工具，TUI 友好，可作为 ps/lsof 体系的现代化补充。注意进程追踪需要权限，开箱前留意权限要求。"
+      "comment": "Linux/macOS 下排障的轻量小工具，TUI 友好，可作为 `ps/lsof` 体系的现代化补充。注意进程追踪需要权限，开箱前留意权限要求。"
     },
     {
       "rank": 11,
@@ -162,7 +161,7 @@
       "url": "https://github.com/google/guava",
       "description": "Google 的 Java 核心库，集合、缓存、并发、字符串处理等常用工具集。",
       "language": "Java",
-      "delta": "+152",
+      "delta": "152 stars today",
       "tags": [
         "Java",
         "Core Libraries",
@@ -177,7 +176,7 @@
       "url": "https://github.com/666ghj/MiroFish",
       "description": "一个简洁通用的群体智能引擎，号称\"预测万物\"。",
       "language": "Python",
-      "delta": "+141",
+      "delta": "141 stars today",
       "tags": [
         "Swarm Intelligence",
         "Prediction",
@@ -192,7 +191,7 @@
       "url": "https://github.com/jdx/mise",
       "description": "开发工具、环境变量与任务运行器，前 asdf 生态延伸。",
       "language": "Rust",
-      "delta": "+135",
+      "delta": "135 stars today",
       "tags": [
         "Dev Tools",
         "Env Manager",
@@ -207,7 +206,7 @@
       "url": "https://github.com/semantica-agi/semantica",
       "description": "面向\"上下文与可问责 AI 系统\"的图原生基础设施。",
       "language": "Python",
-      "delta": "+122",
+      "delta": "122 stars today",
       "tags": [
         "Knowledge Graph",
         "Context Engine",
@@ -222,7 +221,7 @@
       "url": "https://github.com/K2SOsint/Legendary_OSINT",
       "description": "面向欺诈调查、CTI 分析、KYC/AML 等方向的开源 OSINT 工具与资源汇总清单。",
       "language": "—（未在榜单标注）",
-      "delta": "+109",
+      "delta": "109 stars today",
       "tags": [
         "OSINT",
         "Cybersecurity",
@@ -237,7 +236,7 @@
       "url": "https://github.com/unclebob/swarm-forge",
       "description": "一个用于协调多个 AI Agent 的简洁工具。",
       "language": "Clojure",
-      "delta": "+81",
+      "delta": "81 stars today",
       "tags": [
         "Multi-Agent",
         "Coordination",
@@ -252,13 +251,12 @@
       "url": "https://github.com/chenyme/grok2api",
       "description": "面向 Grok Build、Grok Web 与 Grok Console 的多账号 API 网关。",
       "language": "Go",
-      "delta": "+55",
+      "delta": "55 stars today",
       "tags": [
         "API Gateway",
         "Grok",
         "Multi-Account",
-        "Go",
-        "prime-agent"
+        "Go"
       ],
       "comment": "通过统一网关屏蔽多账号调用细节，方便集成。但需关注 xAI 的 ToS 与账号稳定性风险，生产环境慎用。"
     }

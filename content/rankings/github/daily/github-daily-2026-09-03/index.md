@@ -213,6 +213,6 @@ Nous Research 出品，MIT 许可，24 万 Star。核心差异是 **closed learn
 
 ## 观察
 
-- obra/superpowers 今日 470 stars today，是当日增量最高的项目之一。
-- f/prompts.chat 今日 201 stars today，是当日增量最高的项目之一。
-- debpalash/VoiceStudio 今日 1,738 stars today，是当日增量最高的项目之一。
+- DietrichGebert/ponytail 今日 2,138 stars today，居当日增量第 1 位。
+- debpalash/VoiceStudio 今日 1,738 stars today，居当日增量第 2 位。
+- google-research/timesfm 今日 1,626 stars today，居当日增量第 3 位。

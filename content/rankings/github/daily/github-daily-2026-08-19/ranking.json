@@ -11,8 +11,7 @@
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
       "language": "Python",
-      "stars": 109001,
-      "delta": "+2,304",
+      "delta": "2,304 stars today",
       "tags": [
         "AI视频生成",
         "短视频自动化",
@@ -27,8 +26,7 @@
       "url": "https://github.com/public-apis/public-apis",
       "description": "免费的 API 合集（一个聚合了上千个免费 API 的列表项目）。",
       "language": "Python",
-      "stars": 464933,
-      "delta": "+1,005",
+      "delta": "1,005 stars today",
       "tags": [
         "API合集",
         "AwesomeList",
@@ -43,8 +41,7 @@
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "description": "为 AI Agent 准备 817 个结构化网络安全技能，覆盖 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3 共 6 大框架，兼容 20+ Agent 平台。",
       "language": "Python",
-      "stars": 29363,
-      "delta": "+730",
+      "delta": "730 stars today",
       "tags": [
         "AI安全",
         "AgentSkills",
@@ -60,8 +57,7 @@
       "url": "https://github.com/akitaonrails/ai-memory",
       "description": "为 Agent 编码 CLI 提供长期记忆解决方案，并支持不同 Agent 厂商之间的上下文交接。",
       "language": "Rust",
-      "stars": 2892,
-      "delta": "+648",
+      "delta": "648 stars today",
       "tags": [
         "Agent记忆",
         "Rust",
@@ -77,8 +73,7 @@
       "url": "https://github.com/agalwood/Motrix",
       "description": "一款功能全面的下载管理器，支持 HTTP、FTP、BT、磁力链等多种协议。",
       "language": "TypeScript",
-      "stars": 53832,
-      "delta": "+609",
+      "delta": "609 stars today",
       "tags": [
         "下载工具",
         "桌面应用",
@@ -93,8 +88,7 @@
       "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
       "description": "GenLayer 项目模板。GenLayer 是一个支持链上 AI 推理与共识的智能合约网络。",
       "language": "TypeScript",
-      "stars": 16040,
-      "delta": "+535",
+      "delta": "535 stars today",
       "tags": [
         "区块链",
         "智能合约",
@@ -109,8 +103,7 @@
       "url": "https://github.com/jundot/omlx",
       "description": "面向 Apple Silicon 的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏管理。",
       "language": "Python",
-      "stars": 19521,
-      "delta": "+370",
+      "delta": "370 stars today",
       "tags": [
         "LLM推理",
         "AppleSilicon",
@@ -126,8 +119,7 @@
       "url": "https://github.com/basecamp/omarchy",
       "description": "Basecamp 官方推出的\"漂亮、现代、强观点\"的 Linux 发行版。",
       "language": "Shell",
-      "stars": 26528,
-      "delta": "+356",
+      "delta": "356 stars today",
       "tags": [
         "Linux发行版",
         "DHH",
@@ -143,8 +135,7 @@
       "url": "https://github.com/chaitanyagiri/munder-difflin",
       "description": "本地多 Agent 编排框架（local multi-agent harness）。",
       "language": "TypeScript",
-      "stars": 2232,
-      "delta": "+306",
+      "delta": "306 stars today",
       "tags": [
         "多Agent",
         "本地化",
@@ -160,8 +151,7 @@
       "url": "https://github.com/volcengine/OpenViking",
       "description": "字节跳动开源的自演进上下文数据库，统一管理 Agent 记忆、知识 RAG 与技能。",
       "language": "Python",
-      "stars": 29614,
-      "delta": "+213",
+      "delta": "213 stars today",
       "tags": [
         "字节跳动",
         "AI基础设施",
@@ -177,8 +167,7 @@
       "url": "https://github.com/OpenCut-app/OpenCut",
       "description": "开源版的 CapCut（剪映国际版）替代品。",
       "language": "TypeScript",
-      "stars": 84938,
-      "delta": "+192",
+      "delta": "192 stars today",
       "tags": [
         "视频剪辑",
         "CapCut替代",
@@ -194,8 +183,7 @@
       "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
       "description": "开源的低成本 10.5 GHz PLFM 相控阵雷达系统。",
       "language": "PLSQL",
-      "stars": 24396,
-      "delta": "+192",
+      "delta": "192 stars today",
       "tags": [
         "相控阵雷达",
         "开源硬件",

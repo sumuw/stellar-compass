@@ -1,6 +1,6 @@
 ---
 title: GitHub 每日趋势榜 2026-08-18
-description: 2026-08-18 GitHub Trending 共收录 11 个项目，主要覆盖 Python、TypeScript、Rust。
+description: 2026-08-18 GitHub Trending 榜首为 harry0703/MoneyPrinterTurbo，当日共收录 11 个项目。
 date: '2026-08-18T08:00:00+08:00'
 rankingKey: '2026-08-18'
 slug: github-daily-2026-08-18
@@ -17,9 +17,7 @@ draft: false
 
 ## 今日概览
 
-2026-08-18 GitHub Trending 共收录 11 个项目，主要覆盖 Python、TypeScript、Rust。
-
-榜单事实数据保存在对应 JSON 文件中，页面下方表格展示完整排名、项目地址、语言、星标变化、标签和简评。
+2026-08-18 GitHub Trending 共收录 11 个项目，榜首 harry0703/MoneyPrinterTurbo（1,189 stars today）。语言分布：Python 4、TypeScript 3、Rust 3、JavaScript 1。
 
 ## 重点项目
 
@@ -28,7 +26,7 @@ draft: false
 - 地址：https://github.com/harry0703/MoneyPrinterTurbo
 - 简介：利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。
 - 语言：Python
-- 今日新增：-
+- 今日新增：1,189 stars today
 - 标签：AI视频、自动化、短视频、内容创作、AIGC
 
 连续两日霸榜第一，是当前 AI 短视频流水线最成熟的开源方案之一。集成文案生成、配音、素材匹配、剪辑全流程，对自媒体创作者非常友好。产品化程度极高，README 直接面向"零代码也能跑"的用户，门槛低、输出稳定，是少数能"开箱即用"批量产出短视频的项目。
@@ -38,7 +36,7 @@ draft: false
 - 地址：https://github.com/cordiverse/cordis
 - 简介：Meta-Framework of Spatiotemporal Composability（时空组合性的元框架）。
 - 语言：TypeScript
-- 今日新增：-
+- 今日新增：957 stars today
 - 标签：元框架、时空数据、组合性、TypeScript、基建
 
 今日最大"黑马"，单日 +957 涨粉近 17%，绝对值不算最高但增速惊人。Koishi 团队出品的元框架，强调"时间+空间"维度的可组合性，适合需要复杂插件/事件编排的场景，对游戏服务器、IoT 编排、复杂 Bot 框架的开发者值得关注。
@@ -48,7 +46,7 @@ draft: false
 - 地址：https://github.com/usestrix/strix
 - 简介：Open-source AI penetration testing tool to find and fix your app's vulnerabilities.
 - 语言：Python
-- 今日新增：-
+- 今日新增：598 stars today
 - 标签：AI安全、渗透测试、漏洞扫描、DevSecOps、Python
 
 开源 AI 渗透测试工具，正面回应近期 Wiz 团队"AI 代理会写漏洞"的行业讨论——"AI 代理也能找漏洞"。把传统渗透测试流程 AI 化，能自动识别 Web 应用的漏洞并给出修复建议，是 AI+安全领域的实用派项目，企业安全团队可重点关注。
@@ -58,7 +56,7 @@ draft: false
 - 地址：https://github.com/agalwood/Motrix
 - 简介：A full-featured download manager（全功能下载管理器）。
 - 语言：TypeScript
-- 今日新增：-
+- 今日新增：344 stars today
 - 标签：下载工具、桌面应用、Electron、BT下载、工具
 
 经典老牌项目再次回榜。Motrix 是 Windows/macOS/Linux 三端覆盖的全功能下载管理器，支持 HTTP/HTTPS/FTP/BT/磁力链，UI 干净、无广告。在 uTorrent、迅雷等老牌工具"作恶"越来越多的今天，这类清爽的开源下载器依然有稳定的市场需求。
@@ -68,7 +66,77 @@ draft: false
 - 地址：https://github.com/santifer/career-ops
 - 简介：Open-source AI job search：自动扫描招聘网站、用 A-F 评分体系评估岗位、定制简历、跟踪求职流程。
 - 语言：JavaScript
-- 今日新增：-
+- 今日新增：218 stars today
 - 标签：AI求职、简历优化、工具、LLM应用、求职
 
 把 AI 落地到"找工作"这个真实痛点上。能在 Claude Code / Codex / OpenCode 等 CLI 中本地运行，自动扫岗位、A-F 评分、定制 CV、跟踪申请进度。适合当下被 AI 转型焦虑裹挟、想换方向的工程师。从赞助商（Sponsor）标签看，作者已经在做商业化尝试。
+
+### 6. akitaonrails/ai-memory
+
+- 地址：https://github.com/akitaonrails/ai-memory
+- 简介：Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors.
+- 语言：Rust
+- 今日新增：207 stars today
+- 标签：AI记忆、Agent基建、Rust、ClaudeCode、跨CLI
+
+Akita（巴西 Ruby/Rails 大神）下场做 AI Agent 基建了。这套方案解决一个真实痛点：Claude Code / Cursor / Codex 各家 Agent 互不联通、记忆断层。ai-memory 提供统一的长期记忆层，让不同 CLI 之间能交接上下文。是 Agent 时代"基础设施"层的关键拼图。
+
+### 7. AlexsJones/llmfit
+
+- 地址：https://github.com/AlexsJones/llmfit
+- 简介：Hundreds of models & providers. One command to find what runs on your hardware.
+- 语言：Rust
+- 今日新增：198 stars today
+- 标签：LLM选型、本地推理、硬件匹配、Rust、工具
+
+一条命令告诉你"你的显卡能跑哪些 LLM"。覆盖数百个模型和供应商，能根据显存/算力给出推荐列表。在 ollama / LM Studio 越来越普及的今天，这种"选型辅助"工具很受欢迎。本地推理玩家、想用旧显卡跑模型的极客必备。
+
+### 8. mukul975/Anthropic-Cybersecurity-Skills
+
+- 地址：https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+- 简介：817 个结构化网络安全 skills，映射 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS 等 6 大框架，兼容 Claude Code、GitHub Copilot、Cursor 等 20+ 平台。
+- 语言：Python
+- 今日新增：198 stars today
+- 标签：AISkills、网络安全、MITRE、合规框架、Agent
+
+网络安全的"Agent Skills 标准化"代表项目。覆盖 29 个安全域、6 大合规框架，对企业安全团队做 AI 化转型非常友好。延续了过去一周"Anthropic skills 生态爆发"的热度——当 Anthropic 官方下场做 skills 标准时，社区已经开始按垂直领域做专精仓库。
+
+### 9. immich-app/immich
+
+- 地址：https://github.com/immich-app/immich
+- 简介：High performance self-hosted photo and video management solution（高性能自托管照片和视频管理方案）。
+- 语言：TypeScript
+- 今日新增：175 stars today
+- 标签：自托管、相册、NAS、隐私、家庭云
+
+Google Photos 开源替代品的"事实标准"。机器学习自动识别人脸/地点/物体，端到端加密，移动端 App 完整。在隐私焦虑和云盘收费的双重夹击下，越来越多人选择自托管相册。111k Star 已经是 GitHub 自托管类项目的顶流，今天回榜说明用户活跃度持续旺盛。
+
+### 10. nautechsystems/nautilus_trader
+
+- 地址：https://github.com/nautechsystems/nautilus_trader
+- 简介：Production-grade Rust-native trading engine with deterministic event-driven architecture（生产级 Rust 原生交易引擎，确定性事件驱动架构）。
+- 语言：Rust
+- 今日新增：120 stars today
+- 标签：量化交易、Rust、事件驱动、回测、低延迟
+
+Rust 在金融交易领域的标杆项目。"确定性事件驱动"是高频/量化交易系统的核心要求，Rust 性能 + 类型安全 + 无 GC 的特性正好契合。日增 120 Star 在硬核金融项目里算高热度，对量化交易员、Rust 系统程序员都有参考价值。
+
+### 11. jundot/omlx
+
+- 地址：https://github.com/jundot/omlx
+- 简介：LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar（为 Apple Silicon 设计的 LLM 推理服务，支持连续批处理 + SSD 缓存，菜单栏管理）。
+- 语言：Python
+- 今日新增：78 stars today
+- 标签：AppleSilicon、本地推理、LLM服务、macOS、MLX
+
+Mac 用户做本地 LLM 推理的"开箱即用"方案。亮点是 SSD 缓存——大模型权重放 SSD、按需调度到内存，对内存不够的 MacBook 特别友好。配合 macOS 菜单栏的图形化管理，做到了"装上就能用"。M 系列 Mac 用户的本地 AI 推理工具箱又多一件利器。
+
+## 观察
+
+- AI Agent 基建持续深化：`ai-memory`（跨 CLI 记忆层）、`Anthropic-Cybersecurity-Skills`（垂直领域 skills）、`career-ops`（真实场景 Agent）三个不同切面同时上榜，说明 Agent 生态正从"概念验证"走向"生产可用"。
+- AI + 安全双向奔赴：`usestrix/strix`（AI 找漏洞）和 `mukul975/Anthropic-Cybersecurity-Skills`（AI 安全 skills）一起上榜，呼应近期 Wiz 等安全厂商对"AI 既是武器也是攻击面"的讨论。
+- Rust 在 AI 基建层反超：今日 Rust 项目占 27%（3/11），且都是"系统级 AI 基础设施"——长期记忆、模型选型、量化交易引擎。Rust 正在 AI 基建层建立稳定位置。
+- 本地推理两连击：`llmfit`（选型）+ `omlx`（Mac 推理服务端）同日上榜，端侧 AI 持续升温。
+- 产品化路线吃香：`MoneyPrinterTurbo` 单日 +1,189，是榜单里绝对值最高且最稳的项目，证明"AI + 内容生产自动化"的需求真实且付费意愿强。
+- 黑马：`cordiverse/cordis` 单日涨粉 17%，是从 Koishi 生态外溢的"时空组合性元框架"，值得长期跟踪。
+- 对比昨日：昨天霸榜的 `cathrynlavery/diagram-design` (+2,855)、`msitarzewski/agency-agents` (+1,873) 等今天全部跌出 Top 11，榜单大洗牌明显。

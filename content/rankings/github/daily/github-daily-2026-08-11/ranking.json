@@ -11,7 +11,8 @@
       "url": "https://github.com/PrimeIntellect-ai/prime-agent",
       "description": "一个自我改进的 RLM（Reinforcement Learning Memory）Agent，专注于编码工作流和长时间运行的自主任务。能够在执行过程中不断学习并优化自身策略。",
       "language": "TypeScript",
-      "delta": "+2,642",
+      "stars": 13348,
+      "delta": "2,642 stars today",
       "tags": [
         "AI-Agent",
         "自我改进",
@@ -27,7 +28,8 @@
       "url": "https://github.com/msitarzewski/agency-agents",
       "description": "一个完整的 AI Agent 代理集合——从前端魔法师到 Reddit 社区忍者，从创意注入器到现实检查员。每个 Agent 都是拥有独特个性、流程和交付物的专业化专家。",
       "language": "Shell",
-      "delta": "+1,349",
+      "stars": 142018,
+      "delta": "1,349 stars today",
       "tags": [
         "AI-Agent",
         "多角色协作",
@@ -43,7 +45,8 @@
       "url": "https://github.com/semantica-agi/semantica",
       "description": "面向上下文管理和可问责 AI 系统的图原生基础设施（Graph-Native Infrastructure）。通过知识图谱为 AI 提供结构化的上下文追踪和责任归属能力。",
       "language": "Python",
-      "delta": "+970",
+      "stars": 4350,
+      "delta": "970 stars today",
       "tags": [
         "知识图谱",
         "AI基础设施",
@@ -59,7 +62,8 @@
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "description": "最强大、最模块化的扩散模型 GUI、API 和后端，采用图形/节点式界面。支持灵活的模型组合和工作流编排。",
       "language": "Python",
-      "delta": "+922",
+      "stars": 126500,
+      "delta": "922 stars today",
       "tags": [
         "AI绘图",
         "扩散模型",
@@ -75,7 +79,8 @@
       "url": "https://github.com/firecrawl/firecrawl",
       "description": "用于大规模搜索、抓取和与 Web 交互的上下文 API。提供强大的网页数据提取能力，为 AI 应用提供高质量的网络数据输入。",
       "language": "TypeScript",
-      "delta": "+835",
+      "stars": 165305,
+      "delta": "835 stars today",
       "tags": [
         "网页爬虫",
         "数据提取",
@@ -91,7 +96,8 @@
       "url": "https://github.com/vitali87/code-graph-rag",
       "description": "为 Monorepo 打造的终极 RAG 解决方案。结合 AI 和知识图谱，支持跨多语言代码库的查询、理解和编辑。",
       "language": "Python",
-      "delta": "+682",
+      "stars": 3613,
+      "delta": "682 stars today",
       "tags": [
         "RAG",
         "代码理解",
@@ -107,7 +113,8 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "面向 AI 编码 Agent 的生产级工程技能集合。提供一系列标准化、可复用的工程能力定义，让 AI Agent 能够执行更复杂的开发任务。",
       "language": "JavaScript",
-      "delta": "+659",
+      "stars": 85887,
+      "delta": "659 stars today",
       "tags": [
         "AI-Agent",
         "技能框架",
@@ -123,7 +130,8 @@
       "url": "https://github.com/pingdotgg/t3code",
       "description": "由 T3 Stack 创始人 Theo（t3.gg）推出的代码生成与开发工具，专注于提升全栈开发效率。",
       "language": "TypeScript",
-      "delta": "+389",
+      "stars": 18100,
+      "delta": "389 stars today",
       "tags": [
         "开发工具",
         "T3生态",
@@ -139,7 +147,8 @@
       "url": "https://github.com/google-deepmind/weathernext",
       "description": "Google DeepMind 的下一代天气预报 AI 模型研究项目，探索用深度学习替代传统数值天气预报方法。",
       "language": "Python",
-      "delta": "+325",
+      "stars": 7404,
+      "delta": "325 stars today",
       "tags": [
         "AI科研",
         "天气预报",
@@ -155,7 +164,8 @@
       "url": "https://github.com/danielmiessler/LifeOS",
       "description": "一个通用的\"爬山法\"AI 框架，帮助你在生活和工作中从\"当前状态\"走向\"理想状态\"。通过 AI 驱动的目标管理和迭代优化实现个人效能提升。",
       "language": "TypeScript",
-      "delta": "+315",
+      "stars": 18075,
+      "delta": "315 stars today",
       "tags": [
         "个人效率",
         "AI助手",
@@ -171,7 +181,8 @@
       "url": "https://github.com/NanmiCoder/MediaCrawler",
       "description": "支持小红书、抖音、快手、B站、微博、百度贴吧、知乎等多个平台的笔记/视频/评论爬虫工具。",
       "language": "Python",
-      "delta": "+259",
+      "stars": 61351,
+      "delta": "259 stars today",
       "tags": [
         "爬虫",
         "社交媒体",
@@ -187,7 +198,8 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "开源的工作场所 Agent 管理应用，帮助团队统一管理和编排各类 AI Agent。",
       "language": "TypeScript",
-      "delta": "+198",
+      "stars": 76700,
+      "delta": "198 stars today",
       "tags": [
         "Agent管理",
         "企业工具",
@@ -203,7 +215,8 @@
       "url": "https://github.com/TauricResearch/TradingAgents",
       "description": "基于多 Agent LLM 的金融交易框架，通过多个专业化 AI Agent 协作完成市场分析、风险评估和交易决策。",
       "language": "Python",
-      "delta": "+177",
+      "stars": 97370,
+      "delta": "177 stars today",
       "tags": [
         "金融交易",
         "多Agent协作",
@@ -219,7 +232,8 @@
       "url": "https://github.com/ruvnet/RuView",
       "description": "将普通 WiFi 信号转化为实时空间智能——生命体征监测、存在检测，全程无需任何摄像头。",
       "language": "Rust",
-      "delta": "+154",
+      "stars": 89451,
+      "delta": "154 stars today",
       "tags": [
         "WiFi感知",
         "空间智能",
@@ -235,7 +249,8 @@
       "url": "https://github.com/opa334/Dopamine",
       "description": "iOS 15 至 26(.0.1) 的半完美越狱工具。利用系统漏洞实现非完美越狱，重启后需重新执行。",
       "language": "C",
-      "delta": "+111",
+      "stars": 6093,
+      "delta": "111 stars today",
       "tags": [
         "iOS越狱",
         "系统安全",
@@ -251,7 +266,8 @@
       "url": "https://github.com/LadybirdBrowser/ladybird",
       "description": "真正独立的网页浏览器。从零开始构建，不依赖 Chromium/Gecko 等现有引擎，旨在为 Web 平台提供多元化的浏览器选择。",
       "language": "C++",
-      "delta": "+56",
+      "stars": 65313,
+      "delta": "56 stars today",
       "tags": [
         "浏览器",
         "独立引擎",

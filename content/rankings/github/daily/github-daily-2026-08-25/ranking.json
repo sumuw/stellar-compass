@@ -9,10 +9,10 @@
       "rank": 1,
       "name": "freestylefly/awesome-gpt-image-2",
       "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code ｜ GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出 Skills。",
+      "description": "Prompt as Code",
       "language": "JavaScript",
-      "stars": 15962,
-      "delta": "2,449 stars today",
+      "stars": 16897,
+      "delta": "1,698 stars today",
       "tags": [
         "GPT-Image2",
         "提示词工程",
@@ -20,16 +20,33 @@
         "工业模板",
         "AI绘图"
       ],
-      "comment": "今日最大黑马，把 GPT-Image-2 跑出来的视觉案例反向蒸馏为可复用模板和 Skill，适合做电商图、品牌物料和短视频封面的团队直接 fork 套用。"
+      "comment": "连续霸榜的提示词工程黑马，把 GPT-Image-2 跑出的视觉案例反向蒸馏为可复用模板与 Skill，电商图、品牌物料、短视频封面团队可直接 fork 套用。"
     },
     {
       "rank": 2,
+      "name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 34906,
+      "delta": "1,266 stars today",
+      "tags": [
+        "求职Agent",
+        "ClaudeCode",
+        "简历定制",
+        "面试准备",
+        "本地部署"
+      ],
+      "comment": "基于 Claude Code 的本地求职 Agent 框架：评估岗位 → 定制 CV → 写求职信 → 准备面试一条龙，数据全留本机，应届生与转码党神器，晚高峰新晋即冲上第二。"
+    },
+    {
+      "rank": 3,
       "name": "openai/codex",
       "url": "https://github.com/openai/codex",
       "description": "Lightweight coding agent that runs in your terminal.",
       "language": "Rust",
-      "stars": 117400,
-      "delta": "1,994 stars today",
+      "stars": 117895,
+      "delta": "1,183 stars today",
       "tags": [
         "AI编程Agent",
         "CLI",
@@ -37,24 +54,7 @@
         "OpenAI官方",
         "终端IDE"
       ],
-      "comment": "OpenAI 官方 CLI 编码代理，Rust 重写后稳定保持 Trending Top 3，是评测 GPT-5 系列代码能力的最佳本地客户端，支持 IDE/CLI/SDK 多端接入。"
-    },
-    {
-      "rank": 3,
-      "name": "AprilNEA/OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "description": "⚡ A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "language": "Rust",
-      "stars": 16020,
-      "delta": "1,097 stars today",
-      "tags": [
-        "罗技替代",
-        "本地优先",
-        "Rust",
-        "HID++",
-        "硬件改键"
-      ],
-      "comment": "开源本地优先的罗技鼠标配置工具，无需登录、无遥测，针对 Logitech Options+ 限制越来越多的痛点开发，硬件玩家刚需。"
+      "comment": "OpenAI 官方 CLI 编码代理，Rust 重写后稳定居 Trending 前三；日增由午间 +1,994 回落至 +1,183，仍是评测 GPT-5 系列代码能力的最佳本地客户端。"
     },
     {
       "rank": 4,
@@ -62,8 +62,8 @@
       "url": "https://github.com/basecamp/omarchy",
       "description": "Beautiful, Modern & Opinionated Linux.",
       "language": "Shell",
-      "stars": 30397,
-      "delta": "1,056 stars today",
+      "stars": 30881,
+      "delta": "1,080 stars today",
       "tags": [
         "Linux发行版",
         "Basecamp",
@@ -71,67 +71,33 @@
         "桌面系统",
         "Shell"
       ],
-      "comment": "Basecamp 团队维护的\"美观、现代、强观点\" Linux 发行版，号称开箱即用的开发者桌面，与 Hyprland 深度集成，适合想摆脱 Ubuntu 默认桌面美学的工程师。"
+      "comment": "Basecamp 维护的\"美观、现代、强观点\" Linux 发行版，开箱即用开发者桌面，与 Hyprland 深度集成，适合想摆脱 Ubuntu 默认桌面美学的工程师。"
     },
     {
       "rank": 5,
-      "name": "NousResearch/hermes-agent",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "description": "The agent that grows with you.",
-      "language": "Python",
-      "stars": 235962,
-      "delta": "896 stars today",
+      "name": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 110499,
+      "delta": "944 stars today",
       "tags": [
-        "NousResearch",
-        "自主Agent",
-        "成长型AI",
-        "Hermes模型",
-        "Python"
+        "Agent行为",
+        "最小代码",
+        "提示词",
+        "工程哲学",
+        "Karpathy风"
       ],
-      "comment": "Nous Research 推出的成长型 Agent 框架——能根据用户使用习惯持续学习和自我调整，是 Hermes 系列大模型之后的下一代行动层。"
+      "comment": "用一句\"最懒高级工程师\"心智模型约束 Agent——能不写代码就不写，主打减少过度实现与幻觉，是近期最出圈的工程哲学型提示词/行为库。"
     },
     {
       "rank": 6,
-      "name": "Alishahryar1/free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly).",
-      "language": "Python",
-      "stars": 49226,
-      "delta": "891 stars today",
-      "tags": [
-        "免费Token",
-        "ClaudeCode",
-        "OpenClaw",
-        "多端",
-        "ToS友好"
-      ],
-      "comment": "免费使用 Claude Code 的统一客户端，整合 13 亿+ Token 的免费额度，支持终端/IDE/手机并兼容 OpenClaw 语音工作流，是薅羊毛派的甜点。"
-    },
-    {
-      "rank": 7,
-      "name": "VoltAgent/awesome-agent-skills",
-      "url": "https://github.com/VoltAgent/awesome-agent-skills",
-      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
-      "language": "未标注",
-      "stars": 32015,
-      "delta": "602 stars today",
-      "tags": [
-        "AgentSkills",
-        "精选列表",
-        "ClaudeCode",
-        "Codex",
-        "多CLI兼容"
-      ],
-      "comment": "社区精选 1000+ Agent Skills 索引，覆盖 Claude Code / Codex / Gemini CLI / Cursor 等主流 Agent 客户端，是 Agent Skill 跨工具复用的发现入口。"
-    },
-    {
-      "rank": 8,
       "name": "multica-ai/andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
       "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
       "language": "未标注",
-      "stars": 206697,
-      "delta": "588 stars today",
+      "stars": 206986,
+      "delta": "828 stars today",
       "tags": [
         "CLAUDE.md",
         "Karpathy",
@@ -139,7 +105,41 @@
         "提示词",
         "AgentSkill"
       ],
-      "comment": "把 Karpathy 对 LLM 编码陷阱的洞察蒸馏成单一 CLAUDE.md 文件，作为 Claude Code 的\"系统级 prompt\"使用，能显著减少幻觉与上下文漂移。"
+      "comment": "把 Karpathy 对 LLM 编码陷阱的洞察蒸馏成单一 CLAUDE.md 文件，作为 Claude Code 的\"系统级 prompt\"，显著减少幻觉与上下文漂移。"
+    },
+    {
+      "rank": 7,
+      "name": "AgriciDaniel/claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, PKM, and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "language": "Python",
+      "stars": 12414,
+      "delta": "810 stars today",
+      "tags": [
+        "Obsidian",
+        "ClaudeCode",
+        "第二大脑",
+        "PKM",
+        "Notion替代"
+      ],
+      "comment": "Obsidian Vault + Claude Code 组合成自组织第二大脑，扔进资料自动归档、链接并构建知识图谱，是 Karpathy \"LLM Wiki\" 模式最佳开源实践。"
+    },
+    {
+      "rank": 8,
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 48700,
+      "delta": "572 stars today",
+      "tags": [
+        "AI工程",
+        "教学",
+        "Python",
+        "从零开始",
+        "实战"
+      ],
+      "comment": "以\"learn → build → ship\"三段论组织 AI 工程实战教程，从底层原理到产品级落地，适合作为个人 AI 项目从学习到发布的路线图。"
     },
     {
       "rank": 9,
@@ -147,8 +147,8 @@
       "url": "https://github.com/tinyhumansai/openhuman",
       "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
       "language": "Rust",
-      "stars": 37387,
-      "delta": "515 stars today",
+      "stars": 37597,
+      "delta": "541 stars today",
       "tags": [
         "本地优先",
         "第二大脑",
@@ -160,12 +160,29 @@
     },
     {
       "rank": 10,
+      "name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "language": "TypeScript",
+      "stars": 3177,
+      "delta": "538 stars today",
+      "tags": [
+        "Apache",
+        "Local-First",
+        "Agent工作区",
+        "审计日志",
+        "孵化项目"
+      ],
+      "comment": "Apache 基金会首个面向 AI Agent 的孵化项目。append-only 日志让 Agent 的所有消息、工具调用、权限决策可追溯、可回放，是企业级可观测性的新基线。"
+    },
+    {
+      "rank": 11,
       "name": "anthropics/claude-plugins-community",
       "url": "https://github.com/anthropics/claude-plugins-community",
       "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "language": "Python",
-      "stars": 1453,
-      "delta": "489 stars today",
+      "stars": 1583,
+      "delta": "350 stars today",
       "tags": [
         "Anthropic官方",
         "插件市场",
@@ -176,157 +193,89 @@
       "comment": "Anthropic 官方运营的 Claude Code / Claude Cowork 社区插件市场镜像，所有 PR 通过提交链接流转，是 Claude 生态扩展的官方入口。"
     },
     {
-      "rank": 11,
-      "name": "MadsLorentzen/ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-      "language": "Python",
-      "stars": 34301,
-      "delta": "434 stars today",
-      "tags": [
-        "求职Agent",
-        "ClaudeCode",
-        "简历定制",
-        "面试准备",
-        "本地部署"
-      ],
-      "comment": "基于 Claude Code 的本地求职 Agent 框架：评估岗位 → 定制 CV → 写求职信 → 准备面试一条龙，所有数据留在本机，应届生与转码党神器。"
-    },
-    {
       "rank": 12,
-      "name": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "language": "TypeScript",
-      "stars": 3021,
-      "delta": "411 stars today",
+      "name": "marin-community/marin",
+      "url": "https://github.com/marin-community/marin",
+      "description": "Open-source framework for the research and development of foundation models.",
+      "language": "Python",
+      "stars": 1975,
+      "delta": "214 stars today",
       "tags": [
-        "Apache",
-        "Local-First",
-        "Agent工作区",
-        "审计日志",
-        "孵化项目"
+        "基础模型",
+        "训练框架",
+        "开源",
+        "AI研究",
+        "Python"
       ],
-      "comment": "Apache 基金会首个面向 AI Agent 的孵化项目。append-only 日志模式让 Agent 的所有消息、工具调用、权限决策都可追溯、可回放，企业级可观测性的新基线。"
+      "comment": "面向基础模型研发的开源框架，社区化运作（marin-community），覆盖从数据到训练的工程链路，是开源复刻前沿大模型训练流程的新选择。"
     },
     {
       "rank": 13,
-      "name": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
+      "name": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
       "language": "Python",
-      "stars": 48405,
-      "delta": "349 stars today",
+      "stars": 99946,
+      "delta": "191 stars today",
       "tags": [
-        "AI工程",
-        "教学",
+        "量化交易",
+        "多Agent",
+        "LLM金融",
         "Python",
-        "从零开始",
-        "实战"
+        "AI金融"
       ],
-      "comment": "以\"learn → build → ship\"三段论组织 AI 工程实战教程，从底层原理到产品级落地，适合作为个人 AI 项目从学习到发布的路线图。"
+      "comment": "多 Agent 协作的 LLM 金融交易框架，用不同角色 Agent 分工作业（分析/风控/执行）做投资决策，将 Agent 范式引入量化交易。"
     },
     {
       "rank": 14,
-      "name": "AgriciDaniel/claude-obsidian",
-      "url": "https://github.com/AgriciDaniel/claude-obsidian",
-      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, PKM, and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "language": "Python",
-      "stars": 12074,
-      "delta": "310 stars today",
+      "stars": 134060,
+      "delta": "161 stars today",
       "tags": [
-        "Obsidian",
-        "ClaudeCode",
-        "第二大脑",
-        "PKM",
-        "Notion替代"
+        "精选列表",
+        "LLM应用",
+        "AgentSkills",
+        "RAG",
+        "开源"
       ],
-      "comment": "把 Obsidian Vault + Claude Code 组合成自组织的第二大脑，扔进去任何资料 Claude 自动归档、链接并构建知识图谱，是 Karpathy \"LLM Wiki\"模式的最佳开源实践。"
+      "comment": "收录 100+ 个免费开源的 AI Agent、Agent Skills 与 RAG 应用，是上手 LLM 应用与 Skills 复用的精选入口，存量高星仓库（13.4 万）回流榜单。"
     },
     {
       "rank": 15,
-      "name": "makeplane/plane",
-      "url": "https://github.com/makeplane/plane",
-      "description": "🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
-      "language": "TypeScript",
-      "stars": 58061,
-      "delta": "243 stars today",
+      "name": "asciimoo/hister",
+      "url": "https://github.com/asciimoo/hister",
+      "description": "Your own search engine.",
+      "language": "Go",
+      "stars": 2628,
+      "delta": "142 stars today",
       "tags": [
-        "项目管理",
-        "Jira替代",
-        "TypeScript",
-        "团队协作",
-        "开源SaaS"
+        "搜索引擎",
+        "自托管",
+        "Go",
+        "隐私",
+        "开源"
       ],
-      "comment": "Jira/Linear 的开源替代品，主打\"现代化项目管理 + 任务/冲刺/文档/分流\"全流程，对不想被 Jira 复杂度折磨的中小团队非常友好。"
+      "comment": "开源自建搜索引擎（asciimoo 为 SearXNG 作者），主打隐私友好与自托管，是\"搜索引擎去平台化\"思潮下的轻量工具。"
     },
     {
       "rank": 16,
-      "name": "tashfeenahmed/freellmapi",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "stars": 19894,
-      "delta": "174 stars today",
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 33977,
+      "delta": "47 stars today",
       "tags": [
-        "免费LLM",
-        "OpenAI兼容",
-        "智能路由",
-        "自动故障转移",
-        "聚合网关"
+        "Anthropic官方",
+        "插件市场",
+        "ClaudeCode",
+        "官方目录",
+        "高质量"
       ],
-      "comment": "把 34 家免费 LLM 提供商的 635 个端点聚合到统一的 /v1 接口，并附带智能路由、故障转移、密钥加密，开发者无须在多个平台反复注册。"
-    },
-    {
-      "rank": 17,
-      "name": "dani-garcia/vaultwarden",
-      "url": "https://github.com/dani-garcia/vaultwarden",
-      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
-      "language": "Rust",
-      "stars": 66149,
-      "delta": "175 stars today",
-      "tags": [
-        "密码管理",
-        "Bitwarden兼容",
-        "自托管",
-        "Rust",
-        "安全"
-      ],
-      "comment": "Bitwarden 的非官方 Rust 自托管服务端，原名 bitwarden_rs，单二进制部署即可拥有完整密码同步能力，是隐私派自建密码库的事实标准。"
-    },
-    {
-      "rank": 18,
-      "name": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
-      "language": "TypeScript",
-      "stars": 387486,
-      "delta": "173 stars today",
-      "tags": [
-        "个人助理",
-        "跨平台",
-        "TypeScript",
-        "OpenClaw",
-        "AI助手"
-      ],
-      "comment": "以\"龙虾精神\"自居的跨平台个人 AI 助手，覆盖任何操作系统，主要承担日常对话与命令代理角色，与 free-claude-code 形成\"客户端+助手\"组合。"
-    },
-    {
-      "rank": 19,
-      "name": "PostHog/posthog",
-      "url": "https://github.com/PostHog/posthog",
-      "description": "🦔 PostHog is the leading platform for building self-driving products. AI observability, analytics, session replay, flags, experiments, error tracking, logs — all the context agents need, steerable from Slack, web, desktop, or MCP.",
-      "language": "项目数 | 占比",
-      "stars": 39048,
-      "delta": "83 stars today",
-      "tags": [
-        "产品分析",
-        "SessionReplay",
-        "A/B",
-        "MCP",
-        "自托管"
-      ],
-      "comment": "领先的开源产品分析平台，最近主推 AI 可观测性 + MCP 接口让 Agent 能直接调用 PostHog 数据，正从 SaaS 走向\"自驾驶产品\"基础设施。"
+      "comment": "与 community 镜像对应的 Anthropic 官方直管插件目录，强调\"高质量\"人工筛选，是 Claude Code 插件生态的权威来源。"
     }
   ]
 }

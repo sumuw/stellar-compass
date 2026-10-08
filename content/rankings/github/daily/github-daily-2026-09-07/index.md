@@ -173,6 +173,6 @@ MoonTV 系影视聚合播放器（Next.js 14 + Tailwind + TypeScript），支持
 
 ## 观察
 
-- lightpanda-io/browser 今日 116 stars today，是当日增量最高的项目之一。
-- jo-inc/camofox-browser 今日 117 stars today，是当日增量最高的项目之一。
-- pascalorg/editor 今日 136 stars today，是当日增量最高的项目之一。
+- affaan-m/ECC 今日 1,905 stars today，居当日增量第 1 位。
+- microsoft/markitdown 今日 771 stars today，居当日增量第 2 位。
+- heygen-com/hyperframes 今日 734 stars today，居当日增量第 3 位。

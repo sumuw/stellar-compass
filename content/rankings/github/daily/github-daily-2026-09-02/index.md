@@ -213,6 +213,6 @@ Nous Research 出品，体量已达 24 万 Star。核心差异是**学习闭环*
 
 ## 观察
 
-- firecrawl/pdf-inspector 今日 589 stars today，是当日增量最高的项目之一。
-- Gitlawb/openclaude 今日 776 stars today，是当日增量最高的项目之一。
-- mattpocock/skills 今日 1,103 stars today，是当日增量最高的项目之一。
+- DietrichGebert/ponytail 今日 1,364 stars today，居当日增量第 1 位。
+- mattpocock/skills 今日 1,103 stars today，居当日增量第 2 位。
+- pacifio/atlas 今日 895 stars today，居当日增量第 3 位。

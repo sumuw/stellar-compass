@@ -190,11 +190,6 @@ PostHog 是产品分析赛道的老牌选手，近期向"AI 可观测性 + 全�
 - 标签：Agent运行时、Go、基础设施、底层系统、新项目
 
 今日最神秘的项目，"核心系统"的描述相当抽象。从名字看，"Substrate"暗示这是 Agent 的"底层基质"——可能类似 Agent 的操作系统层。+245 增速不高但已上榜，说明 Agent 基础设施赛道的热度足以让早期项目获得关注。值得持续跟踪。
-1. **AI Agent 生态全栈化**：从 Skills 标准化（mattpocock/skills、obra/superpowers）到记忆层（ai-memory、OpenViking）到运行时（substrate）到安全（AI-Infra-Guard）再到插件标准（cursor/plugins），Agent 生态的每一层都有项目上榜，全栈化趋势明显。
-2. **Rust 占据 AI 基建三席**：OpenLogi（硬件层）、ai-memory（记忆层）、turbovec（向量索引层），Rust 在 AI 基础设施层的渗透持续加深，"Python 做应用 + Rust 做基建"的分工模式正在成型。
-3. **Skills 赛道持续火爆**：mattpocock/skills 连续多日霸榜，今日 +3,368 创新高。Agent Skills 正在从"概念"变为"标配"，标准化进程加速。
-4. **大厂四席同框**：字节跳动（OpenViking）、腾讯（AI-Infra-Guard）、Modular（modular/modular）、PostHog 同时上榜，大厂对 AI 基建的开源投入力度加大。
-5. **实用主义回归**：career-ops（求职）、OpenLogi（鼠标驱动）、google-timeline-visualizer（旅行可视化）、caveman（省 Token）等"解决具体问题"的项目增速亮眼，说明社区不只追概念，也认可真需求。
 
 ## 观察
 

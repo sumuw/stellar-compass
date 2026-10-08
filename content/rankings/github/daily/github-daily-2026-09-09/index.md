@@ -185,6 +185,6 @@ GPT Image 2.5 专区做得也扎实：Sunburst（生成与精确编辑）与 Fla
 
 ## 观察
 
-- earthtojake/text-to-cad 今日 97 stars today，是当日增量最高的项目之一。
-- TauricResearch/TradingAgents 今日 367 stars today，是当日增量最高的项目之一。
-- rohitg00/ai-engineering-from-scratch 今日 382 stars today，是当日增量最高的项目之一。
+- ayghri/i-have-adhd 今日 4,624 stars today，居当日增量第 1 位。
+- cathrynlavery/diagram-design 今日 2,286 stars today，居当日增量第 2 位。
+- affaan-m/ECC 今日 1,151 stars today，居当日增量第 3 位。

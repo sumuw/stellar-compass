@@ -34,7 +34,7 @@ draft: false
 ### 2. freestylefly/awesome-gpt-image-2
 
 - 地址：https://github.com/freestylefly/awesome-gpt-image-2
-- 简介：Prompt as Code ｜ GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出 Skills，持续更新中。
+- 简介：Prompt as Code
 - 语言：JavaScript
 - 今日新增：4,044 stars today
 - 标签：GPT-Image2、提示词工程、逆向工程、工业模板、AI绘图

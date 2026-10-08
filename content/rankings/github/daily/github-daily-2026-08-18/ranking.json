@@ -11,7 +11,8 @@
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
       "language": "Python",
-      "delta": "",
+      "stars": 106711,
+      "delta": "1,189 stars today",
       "tags": [
         "AI视频",
         "自动化",
@@ -27,7 +28,8 @@
       "url": "https://github.com/cordiverse/cordis",
       "description": "Meta-Framework of Spatiotemporal Composability（时空组合性的元框架）。",
       "language": "TypeScript",
-      "delta": "",
+      "stars": 5792,
+      "delta": "957 stars today",
       "tags": [
         "元框架",
         "时空数据",
@@ -43,7 +45,8 @@
       "url": "https://github.com/usestrix/strix",
       "description": "Open-source AI penetration testing tool to find and fix your app's vulnerabilities.",
       "language": "Python",
-      "delta": "",
+      "stars": 54478,
+      "delta": "598 stars today",
       "tags": [
         "AI安全",
         "渗透测试",
@@ -59,7 +62,8 @@
       "url": "https://github.com/agalwood/Motrix",
       "description": "A full-featured download manager（全功能下载管理器）。",
       "language": "TypeScript",
-      "delta": "",
+      "stars": 53241,
+      "delta": "344 stars today",
       "tags": [
         "下载工具",
         "桌面应用",
@@ -75,7 +79,8 @@
       "url": "https://github.com/santifer/career-ops",
       "description": "Open-source AI job search：自动扫描招聘网站、用 A-F 评分体系评估岗位、定制简历、跟踪求职流程。",
       "language": "JavaScript",
-      "delta": "",
+      "stars": 64964,
+      "delta": "218 stars today",
       "tags": [
         "AI求职",
         "简历优化",
@@ -91,7 +96,8 @@
       "url": "https://github.com/akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors.",
       "language": "Rust",
-      "delta": "",
+      "stars": 2268,
+      "delta": "207 stars today",
       "tags": [
         "AI记忆",
         "Agent基建",
@@ -107,7 +113,8 @@
       "url": "https://github.com/AlexsJones/llmfit",
       "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
       "language": "Rust",
-      "delta": "",
+      "stars": 32450,
+      "delta": "198 stars today",
       "tags": [
         "LLM选型",
         "本地推理",
@@ -123,7 +130,8 @@
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "description": "817 个结构化网络安全 skills，映射 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS 等 6 大框架，兼容 Claude Code、GitHub Copilot、Cursor 等 20+ 平台。",
       "language": "Python",
-      "delta": "",
+      "stars": 28611,
+      "delta": "198 stars today",
       "tags": [
         "AISkills",
         "网络安全",
@@ -139,7 +147,8 @@
       "url": "https://github.com/immich-app/immich",
       "description": "High performance self-hosted photo and video management solution（高性能自托管照片和视频管理方案）。",
       "language": "TypeScript",
-      "delta": "",
+      "stars": 111325,
+      "delta": "175 stars today",
       "tags": [
         "自托管",
         "相册",
@@ -155,7 +164,8 @@
       "url": "https://github.com/nautechsystems/nautilus_trader",
       "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture（生产级 Rust 原生交易引擎，确定性事件驱动架构）。",
       "language": "Rust",
-      "delta": "",
+      "stars": 26074,
+      "delta": "120 stars today",
       "tags": [
         "量化交易",
         "Rust",
@@ -171,7 +181,8 @@
       "url": "https://github.com/jundot/omlx",
       "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar（为 Apple Silicon 设计的 LLM 推理服务，支持连续批处理 + SSD 缓存，菜单栏管理）。",
       "language": "Python",
-      "delta": "",
+      "stars": 19090,
+      "delta": "78 stars today",
       "tags": [
         "AppleSilicon",
         "本地推理",

@@ -193,6 +193,6 @@ draft: false
 
 ## 观察
 
-- cathrynlavery/diagram-design 今日 426 stars today，是当日增量最高的项目之一。
-- clshortfuse/renodx 今日 759 stars today，是当日增量最高的项目之一。
-- anomalyco/opencode 今日 314 stars today，是当日增量最高的项目之一。
+- mattpocock/skills 今日 2,757 stars today，居当日增量第 1 位。
+- DietrichGebert/ponytail 今日 1,683 stars today，居当日增量第 2 位。
+- debpalash/VoiceStudio 今日 1,345 stars today，居当日增量第 3 位。

@@ -205,6 +205,6 @@ OpenAI 官方的 Codex 技能目录，分 `.system`（随 Codex 自动安装）/
 
 ## 观察
 
-- llvm/llvm-project 今日 35 stars today，是当日增量最高的项目之一。
-- openai/skills 今日 44 stars today，是当日增量最高的项目之一。
-- Stremio/stremio-web 今日 121 stars today，是当日增量最高的项目之一。
+- mattpocock/skills 今日 2,206 stars today，居当日增量第 1 位。
+- DietrichGebert/ponytail 今日 1,539 stars today，居当日增量第 2 位。
+- affaan-m/ECC 今日 1,486 stars today，居当日增量第 3 位。

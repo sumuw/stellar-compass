@@ -173,6 +173,6 @@ draft: false
 
 ## 观察
 
-- unclecode/crawl4ai 今日 179 stars today，是当日增量最高的项目之一。
-- affaan-m/ECC 今日 621 stars today，是当日增量最高的项目之一。
-- averygan/reclip 今日 21 stars today，是当日增量最高的项目之一。
+- THU-MAIC/OpenMAIC 今日 3,122 stars today，居当日增量第 1 位。
+- jingyaogong/minimind 今日 1,005 stars today，居当日增量第 2 位。
+- K-Dense-AI/scientific-agent-skills 今日 914 stars today，居当日增量第 3 位。

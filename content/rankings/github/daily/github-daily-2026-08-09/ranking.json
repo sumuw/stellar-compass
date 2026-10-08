@@ -11,7 +11,8 @@
       "url": "https://github.com/PrimeIntellect-ai/prime-agent",
       "description": "一个自我进化的 RLM（Recursive Language Model）智能体，专注于编程工作流和长时间自主任务的执行。",
       "language": "TypeScript",
-      "delta": "+2,483 ⭐",
+      "stars": 9374,
+      "delta": "2,483 stars today",
       "tags": [
         "AI Agent",
         "RLM",
@@ -24,15 +25,15 @@
       "rank": 2,
       "name": "mattpocock/skills",
       "url": "https://github.com/mattpocock/skills",
-      "description": "\"给真正工程师的技能\"，直接来自作者 .agents 目录的实战经验沉淀。",
+      "description": "\"给真正工程师的技能\"，直接来自作者 `.agents` 目录的实战经验沉淀。",
       "language": "Shell",
-      "delta": "+1,359 ⭐",
+      "stars": 210288,
+      "delta": "1,359 stars today",
       "tags": [
         "AI Agent",
         "工程技能",
         "Best Practices",
-        "Shell",
-        ".agents"
+        "Shell"
       ],
       "comment": "TypeScript 社区领袖 Matt Pocock 出品，总 star 已突破 21 万。内容偏实战工作流而非概念演示，涵盖 Code Review、测试策略等真实工程场景，适合团队作为沉淀 AI 编码规范和协作流程的事实起点。"
     },
@@ -42,7 +43,8 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "面向 AI 编程 Agent 的生产级工程技能合集。",
       "language": "JavaScript",
-      "delta": "+779 ⭐",
+      "stars": 84710,
+      "delta": "779 stars today",
       "tags": [
         "AI Coding",
         "工程技能",
@@ -57,7 +59,8 @@
       "url": "https://github.com/google/skills",
       "description": "面向 Google 产品和技术栈的 Agent Skills 库。",
       "language": "Python",
-      "delta": "+481 ⭐",
+      "stars": 16862,
+      "delta": "481 stars today",
       "tags": [
         "AI Agent",
         "Google",
@@ -72,7 +75,8 @@
       "url": "https://github.com/denoland/celld",
       "description": "自托管的分布式 Durable Objects 实现。",
       "language": "Rust",
-      "delta": "+432 ⭐",
+      "stars": 2679,
+      "delta": "432 stars today",
       "tags": [
         "分布式",
         "Durable Objects",
@@ -87,7 +91,8 @@
       "url": "https://github.com/goauthentik/authentik",
       "description": "\"The authentication glue you need\"——灵活的身份认证中间件。",
       "language": "Python",
-      "delta": "+467 ⭐",
+      "stars": 24032,
+      "delta": "467 stars today",
       "tags": [
         "身份认证",
         "SSO",
@@ -102,7 +107,8 @@
       "url": "https://github.com/TauricResearch/TradingAgents",
       "description": "多智能体 LLM 金融交易框架，用多角色 Agent 模拟交易决策链路。",
       "language": "Python",
-      "delta": "+153 ⭐",
+      "stars": 96636,
+      "delta": "153 stars today",
       "tags": [
         "多智能体",
         "LLM",
@@ -117,7 +123,8 @@
       "url": "https://github.com/TapXWorld/ChinaTextbook",
       "description": "收录所有小初高及大学 PDF 教材。",
       "language": "Roff",
-      "delta": "+118 ⭐",
+      "stars": 78053,
+      "delta": "118 stars today",
       "tags": [
         "教育资源",
         "PDF教材",
@@ -132,7 +139,8 @@
       "url": "https://github.com/bannedbook/fanqiang",
       "description": "翻墙/科学上网工具与教程集合。",
       "language": "Kotlin",
-      "delta": "+101 ⭐",
+      "stars": 50032,
+      "delta": "101 stars today",
       "tags": [
         "科学上网",
         "VPN",
@@ -147,7 +155,8 @@
       "url": "https://github.com/google/guava",
       "description": "Google Java 核心库，Java 生态基石级项目。",
       "language": "Java",
-      "delta": "+93 ⭐",
+      "stars": 51872,
+      "delta": "93 stars today",
       "tags": [
         "Java",
         "核心库",
@@ -162,7 +171,8 @@
       "url": "https://github.com/litu54/DevOps-Interview-Guide",
       "description": "DevOps 面试指南，覆盖 DevOps 全链路知识点。",
       "language": "—",
-      "delta": "+68 ⭐",
+      "stars": 754,
+      "delta": "68 stars today",
       "tags": [
         "DevOps",
         "面试指南",
@@ -177,7 +187,8 @@
       "url": "https://github.com/LadybirdBrowser/ladybird",
       "description": "真正独立的浏览器引擎，不基于 Chromium/Gecko/WebKit。",
       "language": "C++",
-      "delta": "+48 ⭐",
+      "stars": 65055,
+      "delta": "48 stars today",
       "tags": [
         "浏览器引擎",
         "C++",

@@ -17,7 +17,7 @@ draft: false
 
 ## 今日概览
 
-2026-08-23 GitHub Trending 共收录 18 个项目，榜首 openai/codex（2,729 stars today）。语言分布：Python 5、Rust 4、Shell 2、JavaScript 2、TypeScript 2、HTML 1。
+2026-08-23 GitHub Trending 共收录 18 个项目，榜首 openai/codex（2,729 stars today）。语言分布：Rust 5、Python 5、Shell 2、JavaScript 2、TypeScript 2、HTML 1。
 
 ## 重点项目
 
@@ -195,17 +195,11 @@ Apache 孵化中的本地优先 AI Agent 工作区，将模型消息/工具调�
 
 - 地址：https://github.com/dani-garcia/vaultwarden
 - 简介：Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs
-- 语言：项目数 | 占比 | 代表项目
+- 语言：Rust
 - 今日新增：68 stars today
 - 标签：Rust、密码管理、Bitwarden、自托管、安全
 
 Bitwarden 兼容服务器的 Rust 轻量实现（前 bitwarden_rs），6 万+ Star 的自托管密码管理经典项目。每次上榜都是对"数据自主权"需求的提醒。
-**Rust 与 Python 首次并列榜首（各 5 席）**。Rust 集中在系统级基建（编码Agent/硬件驱动/通信/密码管理/个人AI），Python 集中在 AI 应用层（免费LLM/Agent框架/知识提取/图像生成）。两条技术路线泾渭分明。
-1. **Agent Skills 生态三浪叠加**：mattpocock/skills（个人实战集）+ VoltAgent/awesome-agent-skills（1000+市场）+ virgiliojr94/book-to-skill（PDF自动转skill），从"有 skills"→"有 skills 商店"→"自动生产 skills"，全链路成型。
-2. **Rust 在 AI 基建层加速渗透**：5 个 Rust 项目覆盖编码Agent（codex）、硬件层（OpenLogi）、通信（buzz）、个人AI（openhuman）、安全（vaultwarden），系统级 Rust + AI 已成稳定组合。
-3. **"免费/本地优先"诉求强烈**：free-claude-code（免费Token）、OpenLogi（无账号无遥测）、openhuman（本地记忆）、vaultwarden（自托管）、maka（本地优先），"数据自主+降低门槛"持续驱动热度。
-4. **Apache 入场 AI Agent**：apache/maka 进入孵化器，虽然 Star 仅 2,220，但 Apache 基金会背书意味着 Agent 工作区正在走向标准化。
-5. **大厂动作**：OpenAI（codex 持续霸榜）、Block（buzz 通信平台）、Anthropic（claude-plugins-community 官方插件市场）、Basecamp（omarchy Linux 桌面），四家大厂/名企同日上榜。
 
 ## 观察
 

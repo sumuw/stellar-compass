@@ -11,208 +11,271 @@
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
-      "stars": 110504,
-      "delta": "2,221 stars today",
+      "delta": "2,774 stars today",
       "tags": [
-        "AI",
-        "自动化",
-        "LLM",
-        "Python"
+        "AI视频生成",
+        "短视频自动化",
+        "LLM工作流",
+        "自媒体",
+        "内容工厂"
       ],
-      "comment": "这个项目把大模型和自动化工作流用于短视频生成，入口是主题或关键词，使用门槛较低。它继续位居榜首，说明开发者对 AI 内容生产工具仍保持关注。"
+      "comment": "连续多日霸榜第一，今日 +2,774 较 14:45 的 +2,221 进一步抬升，再次刷新本周日增峰值。\"一句话出短视频\"的卖点精准命中自媒体创作与电商带货两条流量线，已成为 2026 年\"AI + 内容工厂\"最具代表性的开源产品。在抖音/视频号/小红书二次创作场景中已成事实标准，破 11 万星后曲线未见衰减。"
     },
     {
       "rank": 2,
-      "name": "volcengine/OpenViking",
-      "url": "https://github.com/volcengine/OpenViking",
-      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "language": "Python",
-      "stars": 30120,
-      "delta": "803 stars today",
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory —— 知名 TypeScript/AI 培训工程师 mattpocock 从其个人 `.agents` 目录开源的 Agent Skills 集合。",
+      "language": "Shell",
+      "delta": "2,267 stars today",
       "tags": [
-        "AI",
-        "Agent",
-        "数据库",
-        "RAG",
-        "Python"
+        "AgentSkills",
+        "工程方法论",
+        "CLI工具",
+        "开发者基础设施",
+        "实战模板"
       ],
-      "comment": "OpenViking 把 Agent 记忆、知识 RAG 和技能统一到上下文数据库方向，定位清晰。它的增长反映出 Agent 应用正在从单次调用转向更长期的上下文管理。"
+      "comment": "日增 +2,267 维持榜眼位置，本人 22 万星大仓的辐射力可见一斑。本质是\"真工程师写给 Agent 用\"的工作流 skills，标志着 Agent Skills 赛道从\"概念/规范阶段\"迈入\"实战模板阶段\"——开源工程师下场做模板即是大势所趋。"
     },
     {
       "rank": 3,
-      "name": "chaitanyagiri/munder-difflin",
-      "url": "https://github.com/chaitanyagiri/munder-difflin",
-      "description": "local multi-agent harness",
-      "language": "TypeScript",
-      "stars": 2645,
-      "delta": "797 stars today",
+      "name": "AprilNEA/OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "description": "⚡️ A native, local-first alternative to Logitech Options+, written in Rust 🦀 — 通过 HID++ 协议重映射按键、DPI 与 SmartShift，无需账号、无遥测。",
+      "language": "Rust",
+      "delta": "1,225 stars today",
       "tags": [
-        "Agent",
-        "自动化",
-        "开发工具",
-        "TypeScript"
+        "本地优先",
+        "Rust",
+        "硬件驱动",
+        "反遥测",
+        "罗技替代"
       ],
-      "comment": "这个项目聚焦本地多 Agent harness，适合观察开发者如何组织和运行多 Agent 流程。它以较小体量获得高日增，说明本地化 Agent 编排仍有明显需求。"
+      "comment": "今日最大黑马，国产开发者作品，单日 +1,225 直入 Top 3。用 Rust 重写罗技官方软件的替代品，切中\"反云账号化 + 反遥测\"两大隐私痛点；HID++ 直连意味着跨平台原生体验。反映 2026 年开源社区对\"硬件本地化主权\"的强烈诉求，是本周\"非 AI 系统级项目\"最具叙事张力的一例。"
     },
     {
       "rank": 4,
-      "name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills —— 字节跳动开源的\"自演化上下文数据库\"，统一 Agent 记忆 / 知识 RAG / 技能。",
       "language": "Python",
-      "stars": 29789,
-      "delta": "767 stars today",
+      "delta": "955 stars today",
       "tags": [
-        "安全",
-        "AI",
-        "Agent",
-        "自动化",
-        "Python"
+        "Agent记忆",
+        "RAG",
+        "上下文数据库",
+        "字节出品",
+        "AI基建"
       ],
-      "comment": "这个仓库把网络安全技能结构化并映射到多个安全框架，信息组织方式比较适合 Agent 调用。它值得关注的地方在于把安全知识从文档形态推向可组合的技能形态。"
+      "comment": "连续三日上榜，从 +213 → +804 → +955 节节攀升。定位很关键：把\"记忆 + RAG + 技能\"三件事合并成一个会自我演化的上下文层，瞄准的是 Agent 长期运行所需的\"上下文持久化\"基建。字节下场做开源 + 押注 Agent 记忆层，是国内大厂在 AI 基建方向为数不多的高质量开源动作。"
     },
     {
       "rank": 5,
-      "name": "nautechsystems/nautilus_trader",
-      "url": "https://github.com/nautechsystems/nautilus_trader",
-      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
-      "language": "Rust",
-      "stars": 26425,
-      "delta": "79 stars today",
+      "name": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "Open-source AI job search: 扫描招聘门户、按 A-F 评级量表（映射到 1.0-5.0 分）评估职位、定制简历、追踪投递——在本地 AI CLI（Claude Code / Codex / OpenCode / Antigravity 等）中运行。",
+      "language": "JavaScript",
+      "delta": "855 stars today",
       "tags": [
-        "基础设施",
-        "Rust",
-        "自动化",
-        "数据分析"
+        "AI求职",
+        "本地CLI",
+        "Agent自动化",
+        "开源",
+        "个人助理"
       ],
-      "comment": "Nautilus Trader 面向交易系统，强调 Rust 原生和确定性的事件驱动架构。它在 AI 项目密集的榜单中上榜，说明高性能领域基础设施仍有稳定关注。"
+      "comment": "将\"找工作\"这件高频且痛苦的事完全 Agent 化，A-F 评级量表是亮点——把\"匹配度\"量化成结构化评分比纯 LLM 推荐更可信。本地 CLI 运行意味着隐私可控。是本周\"AI Agent 落地真实生活场景\"最具示范性的项目之一。"
     },
     {
       "rank": 6,
-      "name": "mattpocock/skills",
-      "url": "https://github.com/mattpocock/skills",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works —— Agent 技能框架 + 软件开发方法论。",
       "language": "Shell",
-      "stars": 223672,
-      "delta": "1,214 stars today",
+      "delta": "749 stars today",
       "tags": [
-        "开发工具",
-        "自动化",
-        "生产力",
-        "Shell"
+        "AgentSkills框架",
+        "开发方法论",
+        "TDD",
+        "CLI驱动",
+        "工程实践"
       ],
-      "comment": "这个仓库直接公开工程实践中的 skills 内容，适合观察开发者如何沉淀可复用工作流。它的高关注度说明 agent skills 已经从概念讨论进入实际组织和复用阶段。"
+      "comment": "作为 Agent Skills 赛道的\"母级框架\"持续上榜，定位与 mattpocock/skills 形成\"框架层 vs 实战模板层\"互补。强调\"works\"（真的能用），是把头脑风暴 / 写计划 / TDD / 代码审查等开发流程封装为 Agent 可调用的 Skills，是\"工程方法论开源化\"的代表。"
     },
     {
       "rank": 7,
-      "name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "language": "Shell",
-      "stars": 274231,
-      "delta": "514 stars today",
+      "name": "RyanCodrai/turbovec",
+      "url": "https://github.com/RyanCodrai/turbovec",
+      "description": "A vector index built on TurboQuant, written in Rust with Python bindings —— 基于 TurboQuant 量化算法、Rust 实现 + Python 绑定的向量索引库。",
+      "language": "Rust",
+      "delta": "736 stars today",
       "tags": [
-        "Agent",
-        "开发工具",
-        "自动化",
-        "Shell"
+        "向量数据库",
+        "Rust",
+        "量化",
+        "RAG基建",
+        "Python绑定"
       ],
-      "comment": "Superpowers 同时覆盖 skills 框架和软件开发方法论，关注点不只是工具本身，也包括协作流程。它继续上榜，反映出开发者在寻找更稳定的 Agent 开发规范。"
+      "comment": "Rust 写向量索引 + Python 绑定，瞄准 RAG / 检索场景的\"性能 + 易用\"两端。\"TurboQuant\"量化算法是差异点——量化的目标是相同精度下内存占用更低、检索更快。是本周\"AI 基建工具链被 Rust 重写\"趋势中的又一例，与 OpenLogi、ai-memory 三席 Rust 同框形成强烈信号。"
     },
     {
       "rank": 8,
-      "name": "jundot/omlx",
-      "url": "https://github.com/jundot/omlx",
-      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-      "language": "Python",
-      "stars": 19815,
-      "delta": "467 stars today",
+      "name": "mahlernim/google-timeline-visualizer",
+      "url": "https://github.com/mahlernim/google-timeline-visualizer",
+      "description": "Visualize your year in travel using your Google Location History (Timeline) data —— 用 Google 位置历史（时间线）数据可视化你的\"年度旅行\"。",
+      "language": "Kotlin",
+      "delta": "575 stars today",
       "tags": [
-        "AI",
-        "LLM",
-        "基础设施",
-        "Python"
+        "数据可视化",
+        "位置数据",
+        "个人年度回顾",
+        "Kotlin",
+        "隐私本地化"
       ],
-      "comment": "omlx 面向 Apple Silicon 上的 LLM 推理服务，并突出连续批处理和 SSD 缓存。它说明本地推理的体验优化仍是开发者关注的具体方向。"
+      "comment": "非 AI 项目入榜的少数派。把 Google 已经在产品上停掉的\"时间线\"功能用本地数据可视化\"复活\"，命中\"个人年度回顾\"这种情感价值极高的场景。Kotlin 实现意味着 Android/Java 生态友好。爆点是\"Google 砍功能，社区捡回来做\"——开源社区对抗大厂产品裁剪的典型叙事。"
     },
     {
       "rank": 9,
-      "name": "santifer/career-ops",
-      "url": "https://github.com/santifer/career-ops",
-      "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
-      "language": "JavaScript",
-      "stars": 65726,
-      "delta": "193 stars today",
+      "name": "chaitanyagiri/munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "description": "local multi-agent harness —— 本地多 Agent 编排套件。",
+      "language": "TypeScript",
+      "delta": "517 stars today",
       "tags": [
-        "AI",
-        "自动化",
-        "生产力",
-        "JavaScript"
+        "多Agent编排",
+        "本地优先",
+        "AgentHarness",
+        "TypeScript",
+        "AI基建"
       ],
-      "comment": "career-ops 把职位扫描、评分、简历调整和申请跟踪放到本地 AI 编码 CLI 中。它把 AI 自动化落在求职流程这种高频个人场景上，应用边界比较具体。"
+      "comment": "连续多日上榜。名字玩梗《The Office》的\"Munder Difflin\"（纸业公司谐音），但产品本身做的是严肃的\"本地多 Agent 编排\"——切中的是\"不想把 Agent 编排依赖云服务\"的隐私与可控性诉求。本周\"本地化双线\"之一（另一线是 omlx Mac 推理）。"
     },
     {
       "rank": 10,
-      "name": "immich-app/immich",
-      "url": "https://github.com/immich-app/immich",
-      "description": "High performance self-hosted photo and video management solution.",
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins —— Cursor 编辑器官方插件规范与官方插件实现。",
       "language": "TypeScript",
-      "stars": 111823,
-      "delta": "137 stars today",
+      "delta": "473 stars today",
       "tags": [
-        "开源",
-        "生产力",
-        "前端",
-        "TypeScript"
+        "Cursor",
+        "插件规范",
+        "编辑器生态",
+        "官方出品",
+        "AI编程"
       ],
-      "comment": "Immich 是自托管照片和视频管理方案，长期受到家庭数据管理用户关注。它在今日榜单中代表了非 AI 工具的持续热度，也说明个人数据自主仍有稳定需求。"
+      "comment": "Cursor 官方下场做插件规范，意味着这家当红 AI 编辑器正式把\"插件生态\"作为下一阶段战略。规范本身的价值在于第三方开发者可以按标准为 Cursor 写扩展，是 AI 编辑器从\"单一产品\"走向\"平台\"的关键一步。榜单表现虽温和（+473）但战略意义重大。"
     },
     {
       "rank": 11,
-      "name": "amadeusprotocol/node",
-      "url": "https://github.com/amadeusprotocol/node",
-      "description": "Unknown",
-      "language": "Rust",
-      "stars": 4485,
-      "delta": "1,415 stars today",
+      "name": "modular/modular",
+      "url": "https://github.com/modular/modular",
+      "description": "The Modular Platform (includes MAX & Mojo) —— Modular 平台（含 MAX 推理框架与 Mojo 编程语言）。",
+      "language": "Mojo",
+      "delta": "340 stars today",
       "tags": [
-        "基础设施",
-        "Rust",
-        "开源"
+        "Mojo语言",
+        "AI原生语言",
+        "Modular",
+        "MAX推理",
+        "系统级"
       ],
-      "comment": "Trending 页面没有展示这个项目的简介，因此只能确认它是 Rust 项目并且今日新增较高。后续值得结合仓库 README 再判断具体技术方向。"
+      "comment": "Mojo 编程语言首次以 Trending 主榜项目身份上榜。Modular 公司由 LLVM/MLIR 之父 Chris Lattner 创立，Mojo 是\"AI 原生 + Python 超集 + 系统级性能\"三合一的新语言。本日上榜标志着 AI 编程语言赛道开始向 Trending 主舞台渗透——值得长期跟踪。"
     },
     {
       "rank": 12,
-      "name": "marceloprates/prettymaps",
-      "url": "https://github.com/marceloprates/prettymaps",
-      "description": "Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely",
-      "language": "Python",
-      "stars": 13065,
-      "delta": "58 stars today",
+      "name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors —— 面向 Agent 编码 CLI 的长期记忆方案，并支持跨 Agent 供应商切换。",
+      "language": "Rust",
+      "delta": "335 stars today",
       "tags": [
-        "数据分析",
-        "库",
-        "Python",
-        "开源"
+        "Agent记忆",
+        "跨CLI持久化",
+        "Rust",
+        "供应商解耦",
+        "AI基建"
       ],
-      "comment": "prettymaps 使用 OpenStreetMap 数据生成地图，并结合 osmnx、matplotlib 和 shapely。它说明数据可视化和地理数据处理类工具仍能在榜单中获得稳定曝光。"
+      "comment": "连续三日上榜。akitaonrails 本人（Rails 圈老人）下场做\"Agent 记忆层\"，亮点在\"跨供应商切换\"——意味着你今天用 Claude Code，明天换 Codex，记忆可以跟着走。是 Agent 时代对抗\"供应商锁定\"的关键基建，Rust 实现也保证了性能与正确性。"
     },
     {
       "rank": 13,
-      "name": "genlayerlabs/genlayer-project-boilerplate",
-      "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
-      "description": "Unknown",
-      "language": "TypeScript",
-      "stars": 16221,
-      "delta": "421 stars today",
+      "name": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick —— Claude Code skill that cuts 65% of tokens by talking like caveman（让 Claude Code 像\"穴居人\"一样说话以节省 65% token）。",
+      "language": "Go",
+      "delta": "286 stars today",
       "tags": [
-        "开发工具",
-        "框架",
-        "TypeScript",
-        "开源"
+        "Token节省",
+        "ClaudeCode",
+        "Prompt工程",
+        "成本优化",
+        "幽默"
       ],
-      "comment": "Trending 页面没有展示这个项目的简介，因此这里只记录可确认的语言、星标和排名信息。作为 boilerplate 类项目，它更适合作为后续查看仓库文档时的候选入口。"
+      "comment": "本周最具幽默感的项目。\"穴居人说话省 token\"看似玩笑，实则切中 LLM 真实痛点——冗长输出是 API 成本与延迟的主要来源。通过 Skill 强制 Claude 用极简风格回复，节省 65% token，是 Prompt 工程层面少见的\"成本可视化\"实践。Go 实现也轻量易部署。"
+    },
+    {
+      "rank": 14,
+      "name": "makeplane/plane",
+      "url": "https://github.com/makeplane/plane",
+      "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative —— 开源版 Jira/Linear/Monday/ClickUp 替代品，现代项目管理平台，管理任务、迭代、文档与 triage。",
+      "language": "TypeScript",
+      "delta": "54 stars today",
+      "tags": [
+        "项目管理",
+        "开源Jira",
+        "Linear替代",
+        "企业SaaS",
+        "协作平台"
+      ],
+      "comment": "老牌开源项目管理平台回榜。Linear 的成功让开源社区看到了\"现代项目管理 SaaS 的开源替代\"市场，Plane 把任务 / 迭代 / 文档 / triage 一体化做进去，是这条赛道最完整的开源选项之一。日增温和但项目持续运营多年，属\"稳定型上榜\"。"
+    },
+    {
+      "rank": 15,
+      "name": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "description": "🦔 PostHog is the leading platform for building self-driving products —— 面向\"自驱动产品\"的开发者工具平台，含 AI 可观测性、分析、会话回放、特性开关、实验、错误追踪、日志等，从 Slack/Web/桌面端/MCP 一体驱动。",
+      "language": "Python",
+      "delta": "41 stars today",
+      "tags": [
+        "可观测性",
+        "产品分析",
+        "特性开关",
+        "AI运维",
+        "一体化平台"
+      ],
+      "comment": "PostHog 把\"分析 + 回放 + 开关 + 实验 + 错误追踪 + 日志\"打包成一体化开发者平台，并强调\"为 Agent 提供诊断所需的全部上下文\"——这是可观测性赛道面向 AI 时代的产品定位升级。日增虽小但项目体量大、商业成熟，属\"基础设施型回榜\"。"
+    },
+    {
+      "rank": 16,
+      "name": "Tencent/AI-Infra-Guard",
+      "url": "https://github.com/Tencent/AI-Infra-Guard",
+      "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation —— 全栈 AI 红队平台，覆盖 Agent 扫描 / Skills 扫描 / MCP 扫描 / AI 基建扫描 / LLM 越狱评估。",
+      "language": "Python",
+      "delta": "28 stars today",
+      "tags": [
+        "AI红队",
+        "AI安全",
+        "腾讯出品",
+        "越狱评估",
+        "Agent安全"
+      ],
+      "comment": "腾讯安全出品，定位非常前瞻——把\"Agent / Skills / MCP\"都纳入红队扫描对象，意味着安全团队已经把 AI Agent 生态当成\"必须做渗透测试\"的攻击面。与同日上榜的字节 OpenViking 形成\"国内大厂 AI 基建双线同框\"：一边做基建、一边做安全，是国内 AI 工程化最完整的开源拼图。"
+    },
+    {
+      "rank": 17,
+      "name": "agent-substrate/substrate",
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system —— Agent 底层核心系统。",
+      "language": "Go",
+      "delta": "26 stars today",
+      "tags": [
+        "Agent基建",
+        "核心系统",
+        "Go",
+        "底层框架",
+        "新兴项目"
+      ],
+      "comment": "日增虽小（+26）但项目命名与定位很有想象空间——\"Substrate\"（基底）暗示要做 Agent 的运行时底座。Go 实现意味着对并发与部署友好。目前公开信息较少，星数也低，属\"早期值得关注\"而非\"立即可用\"的项目，建议持续观察。"
     }
   ]
 }

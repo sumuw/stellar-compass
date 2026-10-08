@@ -193,6 +193,6 @@ Cursor 官方插件规范与示例插件集，反映主流 AI IDE 正在构建�
 
 ## 观察
 
-- Tencent/AI-Infra-Guard 今日 161 stars today，是当日增量最高的项目之一。
-- PostHog/posthog 今日 288 stars today，是当日增量最高的项目之一。
-- cursor/plugins 今日 286 stars today，是当日增量最高的项目之一。
+- openai/codex 今日 4,159 stars today，居当日增量第 1 位。
+- mattpocock/skills 今日 2,684 stars today，居当日增量第 2 位。
+- AprilNEA/OpenLogi 今日 959 stars today，居当日增量第 3 位。

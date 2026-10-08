@@ -11,7 +11,8 @@
       "url": "https://github.com/cathrynlavery/diagram-design",
       "description": "为 Claude Code 设计的 29 种编辑级图表演型，采用自包含的 HTML + SVG 实现。不依赖阴影效果，不使用 Mermaid 风格的粗糙输出，追求出版级视觉品质。",
       "language": "HTML",
-      "delta": "+2,855",
+      "stars": 2855,
+      "delta": "2,855 stars today",
       "tags": [
         "Claude-Code",
         "图表设计",
@@ -27,7 +28,8 @@
       "url": "https://github.com/msitarzewski/agency-agents",
       "description": "一个完整的 AI Agent 代理集合——从前端魔法师到 Reddit 社区忍者，从创意注入器到现实检查员。每个 Agent 都是拥有独特个性、流程和交付物的专业化专家。",
       "language": "Shell",
-      "delta": "+1,873",
+      "stars": 1873,
+      "delta": "1,873 stars today",
       "tags": [
         "AI-Agent",
         "多角色协作",
@@ -43,7 +45,8 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca 是一个用于管理并行 Agent 舰队的 ADE（Agent Development Environment）。支持在任何编码 Agent 上使用自己的订阅，桌面端、移动端和 VPS 均可运行。",
       "language": "TypeScript",
-      "delta": "+1,235",
+      "stars": 1235,
+      "delta": "1,235 stars today",
       "tags": [
         "Agent管理",
         "并行计算",
@@ -59,7 +62,8 @@
       "url": "https://github.com/semantica-agi/semantica",
       "description": "面向上下文管理和可问责 AI 系统的图原生基础设施（Graph-Native Infrastructure）。通过知识图谱为 AI 提供结构化的上下文追踪和责任归属能力。",
       "language": "Python",
-      "delta": "+845",
+      "stars": 845,
+      "delta": "845 stars today",
       "tags": [
         "知识图谱",
         "AI基础设施",
@@ -75,7 +79,8 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "开源的工作场所 Agent 管理应用，帮助团队统一管理和编排各类 AI Agent，是工作中管理 Agent 的通用工具。",
       "language": "TypeScript",
-      "delta": "+571",
+      "stars": 571,
+      "delta": "571 stars today",
       "tags": [
         "Agent管理",
         "企业工具",
@@ -91,7 +96,7 @@
       "url": "https://github.com/hugohe3/ppt-master",
       "description": "AI 将文档或主题转化为真正的原生 PowerPoint 演示文稿——支持原生形状、过渡动画、数据驱动的图表和表格、来自演讲者备注的语音旁白，并支持自定义 .pptx 模板。",
       "language": "Python",
-      "delta": "+476",
+      "delta": "476 stars today",
       "tags": [
         "AI-PPT",
         "办公自动化",
@@ -107,7 +112,7 @@
       "url": "https://github.com/NVIDIA-NeMo/Switchyard",
       "description": "NVIDIA 出品的 LLM 流量路由代理和库。在 OpenAI Chat、Anthropic Messages 和 OpenAI Responses 三种 API 格式之间互转，让编码 Agent（如 Claude Code、Codex）能够无缝接入开源模型后端（vLLM、NVIDIA NIM、Ollama 等），并提供智能多后端路由和 Prometheus 运维指标。",
       "language": "Rust",
-      "delta": "+421",
+      "delta": "421 stars today",
       "tags": [
         "NVIDIA",
         "LLM路由",
@@ -123,7 +128,7 @@
       "url": "https://github.com/cactus-compute/needle",
       "description": "仅 14MB 的基础模型，专为微型设备设计——手机、可穿戴设备、智能家居和机器人。",
       "language": "Python",
-      "delta": "+315",
+      "delta": "315 stars today",
       "tags": [
         "边缘AI",
         "小模型",
@@ -139,7 +144,7 @@
       "url": "https://github.com/shiyu-coder/Kronos",
       "description": "Kronos——金融市场语言的基础模型（Foundation Model）。将金融市场数据视为一种\"语言\"，用基础模型的方法来理解和预测市场走势。",
       "language": "Python",
-      "delta": "+266",
+      "delta": "266 stars today",
       "tags": [
         "金融AI",
         "基础模型",
@@ -155,7 +160,7 @@
       "url": "https://github.com/macro-inc/macro",
       "description": "Macro 是面向团队的统一工作空间——邮件、聊天、文档、任务、Agent、通话和 CRM 通过 @ 关联整合在一起，共享 AI 记忆。",
       "language": "Rust",
-      "delta": "+227",
+      "delta": "227 stars today",
       "tags": [
         "团队协作",
         "统一工作空间",
@@ -171,7 +176,7 @@
       "url": "https://github.com/NanmiCoder/MediaCrawler",
       "description": "多平台社交媒体爬虫工具，支持小红书笔记/评论、抖音视频/评论、快手视频/评论、B站视频/评论、微博帖子/评论、百度贴吧帖子/评论回复、知乎问答文章/评论的数据采集。",
       "language": "Python",
-      "delta": "+215",
+      "delta": "215 stars today",
       "tags": [
         "爬虫",
         "社交媒体",
@@ -187,7 +192,7 @@
       "url": "https://github.com/localsend/localsend",
       "description": "开源的跨平台 AirDrop 替代方案。无需网络连接，通过局域网直接在设备间传输文件。",
       "language": "Dart",
-      "delta": "+213",
+      "delta": "213 stars today",
       "tags": [
         "跨平台",
         "文件传输",
@@ -203,7 +208,7 @@
       "url": "https://github.com/infiniflow/ragflow",
       "description": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与 Agent 能力融合，为 LLM 创建卓越的上下文层。",
       "language": "Go",
-      "delta": "+139",
+      "delta": "139 stars today",
       "tags": [
         "RAG",
         "检索增强",
@@ -219,7 +224,7 @@
       "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
       "description": "人人都能用英语——面向中文用户的英语学习工具，旨在帮助所有人提升英语实际使用能力。",
       "language": "TypeScript",
-      "delta": "+86",
+      "delta": "86 stars today",
       "tags": [
         "英语学习",
         "中文用户",
@@ -235,7 +240,7 @@
       "url": "https://github.com/smicallef/spiderfoot",
       "description": "SpiderFoot 自动化 OSINT（开源情报）收集，用于威胁情报和攻击面映射。自动从上百个数据源收集、关联和分析目标信息。",
       "language": "Python",
-      "delta": "+74",
+      "delta": "74 stars today",
       "tags": [
         "OSINT",
         "安全工具",
@@ -251,7 +256,7 @@
       "url": "https://github.com/Lightricks/LTX-2",
       "description": "LTX-2 音频-视频生成模型的官方 Python 推理和 LoRA 训练包。支持音视频联合生成和 LoRA 微调。",
       "language": "Python",
-      "delta": "+65",
+      "delta": "65 stars today",
       "tags": [
         "视频生成",
         "音频生成",
@@ -267,7 +272,7 @@
       "url": "https://github.com/embabel/embabel-agent",
       "description": "面向 JVM 的 Agent 框架。为 Java/Kotlin 生态提供 AI Agent 开发能力，发音为 Em-BAY-bel。",
       "language": "Kotlin",
-      "delta": "+40",
+      "delta": "40 stars today",
       "tags": [
         "Agent框架",
         "JVM",

@@ -183,6 +183,6 @@ draft: false
 
 ## 观察
 
-- nvm-sh/nvm 今日 17 stars today，是当日增量最高的项目之一。
-- BraveOPotato/FckSignups 今日 50 stars today，是当日增量最高的项目之一。
-- WorldFlowAI/everything-claude-code 今日 87 stars today，是当日增量最高的项目之一。
+- DietrichGebert/ponytail 今日 2,813 stars today，居当日增量第 1 位。
+- mattpocock/skills 今日 2,666 stars today，居当日增量第 2 位。
+- affaan-m/ECC 今日 1,325 stars today，居当日增量第 3 位。

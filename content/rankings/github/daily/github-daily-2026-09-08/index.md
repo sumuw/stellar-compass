@@ -207,6 +207,6 @@ README 已本地化到 7 种语言（含简体中文）。
 
 ## 观察
 
-- openai/plugins 今日 45 stars today，是当日增量最高的项目之一。
-- viarotel-org/escrcpy 今日 173 stars today，是当日增量最高的项目之一。
-- browser-use/browser-use 今日 320 stars today，是当日增量最高的项目之一。
+- heygen-com/hyperframes 今日 2,628 stars today，居当日增量第 1 位。
+- microsoft/markitdown 今日 2,045 stars today，居当日增量第 2 位。
+- affaan-m/ECC 今日 1,426 stars today，居当日增量第 3 位。

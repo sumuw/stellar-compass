@@ -11,7 +11,7 @@
       "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
       "description": "面向 AI Agent 的团队级记忆中心，将对话、文档和代码转化为四种可复用的记忆资产（聊天记忆、技能、LLM-Wiki、代码图谱），支持跨 Agent 和框架共享与治理。",
       "language": "TypeScript",
-      "delta": "+1,057",
+      "delta": "1,057 stars today",
       "tags": [
         "AI Agent",
         "Memory",
@@ -26,7 +26,7 @@
       "url": "https://github.com/cloudflare/computer",
       "description": "给 AI Agent 提供一台\"电脑\"，让 Agent 能够像人类一样操作计算机环境完成任务。",
       "language": "TypeScript",
-      "delta": "+2,802",
+      "delta": "2,802 stars today",
       "tags": [
         "AI Agent",
         "Computer Use",
@@ -41,7 +41,7 @@
       "url": "https://github.com/mattpocock/skills",
       "description": "\"给真正工程师的技能\"，直接来自作者 .agents 目录中的实战经验总结。",
       "language": "Shell",
-      "delta": "+1,873",
+      "delta": "1,873 stars today",
       "tags": [
         "Engineering Skills",
         "AI Agent",
@@ -56,7 +56,7 @@
       "url": "https://github.com/obra/superpowers",
       "description": "一个 Agentic 技能框架与软件开发方法论，旨在让 AI 驱动的开发流程真正可用。",
       "language": "Shell",
-      "delta": "+858",
+      "delta": "858 stars today",
       "tags": [
         "AI Agent",
         "Software Engineering",
@@ -71,7 +71,7 @@
       "url": "https://github.com/esengine/DeepSeek-Reasonix",
       "description": "面向终端的 DeepSeek 原生 AI 编程智能体，围绕前缀缓存稳定性进行工程优化，可长期运行。",
       "language": "Go",
-      "delta": "+888",
+      "delta": "888 stars today",
       "tags": [
         "AI Coding Agent",
         "DeepSeek",
@@ -86,7 +86,7 @@
       "url": "https://github.com/firecrawl/pdf-inspector",
       "description": "快速的 Rust PDF 检查、分类和文本提取库，可智能识别扫描版与文本版 PDF 以做出路由决策。",
       "language": "Rust",
-      "delta": "+1,190",
+      "delta": "1,190 stars today",
       "tags": [
         "PDF Processing",
         "Rust",
@@ -101,7 +101,7 @@
       "url": "https://github.com/huangruiteng/loopx",
       "description": "面向长期运行 AI Agent 团队的轻量级循环工程状态内核，兼容 Codex、Claude Code 等编码 Agent，支持持久目标、配额感知自动唤醒、可执行待办、证据日志和可验证交接。",
       "language": "Python",
-      "delta": "+847",
+      "delta": "847 stars today",
       "tags": [
         "AI Agent",
         "Loop Engineering",
@@ -116,7 +116,7 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "面向 AI 编码智能体的生产级工程技能集合。",
       "language": "JavaScript",
-      "delta": "+593",
+      "delta": "593 stars today",
       "tags": [
         "AI Coding Agent",
         "Engineering Skills",
@@ -131,7 +131,7 @@
       "url": "https://github.com/tirth8205/code-review-graph",
       "description": "本地优先的代码智能图谱，服务于 MCP 和 CLI。构建代码库的持久化地图，让 AI 编码工具只读取相关内容，并在代码审查和大仓库工作流中实现上下文压缩。",
       "language": "Python",
-      "delta": "+237",
+      "delta": "237 stars today",
       "tags": [
         "Code Review",
         "MCP",
@@ -146,7 +146,7 @@
       "url": "https://github.com/goauthentik/authentik",
       "description": "你需要的身份认证粘合剂，提供统一的身份认证与授权解决方案。",
       "language": "Python",
-      "delta": "+138",
+      "delta": "138 stars today",
       "tags": [
         "Authentication",
         "Identity",
@@ -161,7 +161,7 @@
       "url": "https://github.com/TapXWorld/ChinaTextbook",
       "description": "收录小学、初中、高中及大学 PDF 教材的资源仓库。",
       "language": "Roff",
-      "delta": "+134",
+      "delta": "134 stars today",
       "tags": [
         "Education",
         "Textbook",
@@ -176,7 +176,7 @@
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
       "description": "AutoGPT 的愿景是让每个人都能使用和构建 AI，提供工具让用户专注于重要之事。",
       "language": "Python",
-      "delta": "+37",
+      "delta": "37 stars today",
       "tags": [
         "AI Agent",
         "Autonomous AI",
@@ -191,7 +191,7 @@
       "url": "https://github.com/google/guava",
       "description": "Google 的 Java 核心库，提供集合、缓存、并发、字符串处理等常用工具。",
       "language": "Java",
-      "delta": "+13",
+      "delta": "13 stars today",
       "tags": [
         "Java",
         "Core Libraries",
