@@ -1,0 +1,247 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-09-15",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 27696,
+      "delta": "2,751 stars today",
+      "tags": [
+        "AI 代码评审",
+        "确定性+Agent 混合",
+        "阿里开源",
+        "行级评论",
+        "多语言规则集"
+      ],
+      "comment": "阿里内部用了两年、服务数万开发者的代码评审助手开源版。它真正的差别不在\"再包一层 LLM\"，而是**规则与模型分工**：内置 NPE、线程安全、XSS、SQL 注入的多语言规则集兜住确定性问题，LLM Agent 负责需要跨文件上下文的深度判断，Agent 能读全文、搜代码库、查看其他变更文件。\nREADME 给了 AACR-Bench：50 个开源仓库、200 个真实 PR、10 种语言、80+ 高级工程师交叉标注的 1,505 条真值。结论是同模型下 F1 与 Precision 显著高于通用 Agent、**token 消耗约 1/9**，代价是 Recall 偏低——官方明确说这是\"宁可少报不可噪报\"的刻意取舍。"
+    },
+    {
+      "rank": 2,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "开源、全本地的 ElevenLabs 替代——语音克隆、声音设计、视频配音、听写、转写、有声书创作，支持 646 种语言。",
+      "language": "Python",
+      "stars": 30479,
+      "delta": "2,081 stars today",
+      "tags": [
+        "语音克隆",
+        "本地部署",
+        "TTS·ASR",
+        "ElevenLabs 替代",
+        "646 语言"
+      ],
+      "comment": "16 个 TTS 引擎 + 11 个 ASR 引擎，桌面端 + 本地 REST/SSE/WebSocket API + OpenAI 兼容音频接口 + MCP Server，CUDA / Apple Silicon MPS·MLX / ROCm / CPU 全支持，AGPL-3.0。\n今日 +2,081 让出第一（昨日 +2,774）。它是本轮周期里**最稳定的语音类项目**：09-13 +2,546 → 09-14 +2,774（夺冠）→ 09-15 +2,081，连续三日高位横盘。\n⚠️ README 顶部两条提示要看：① Electron 重写进行中，暂不受理桌面端 issue/PR；② 标注 Active beta，`main` 分支可能不稳定，生产用请下 latest release。"
+    },
+    {
+      "rank": 3,
+      "name": "JustVugg/colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model.",
+      "language": "C",
+      "stars": 33301,
+      "delta": "2,035 stars today",
+      "tags": [
+        "MoE 推理",
+        "纯 C 零依赖",
+        "显存分层",
+        "消费级硬件",
+        "语义硬保证"
+      ],
+      "comment": "核心思路是把 VRAM / RAM / 磁盘当成**单层推理存储层级（multitiering）**，专家按需从磁盘流式加载，纯 C、零引擎依赖。已跑通九个模型家族：GLM-5.2/5.3（744B）、Kimi K3（2.8T）、Inkling（975B）、DeepSeek V4.1 Flash（552B，带视觉）、Qwen3.8-Flash-Next 等，每个模型一个 C 文件。\nREADME 里最值得抄的一条是它给自己立的规矩：**没有速度 SLA，但有语义硬保证——绝不静默改变模型精度或路由语义**。内存不够只会变慢，不会悄悄把模型换成另一个。在量化、推测解码满天飞的当下，这种克制很罕见。\n今日 +2,035 是三日来**首次回落**（09-13 +652 → 09-14 +2,233 → 09-15 +2,035，-8.9%），但仍在高位。"
+    },
+    {
+      "rank": 4,
+      "name": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework.",
+      "language": "Java",
+      "stars": 76452,
+      "delta": "755 stars today",
+      "tags": [
+        "逆向工程框架",
+        "NSA 开源",
+        "反汇编·反编译",
+        "老牌基建",
+        "稳态流量"
+      ],
+      "comment": "76.4k Star 的老牌逆向框架（反汇编 + 反编译 + 脚本扩展），Java 写就。今天以 +755 排第 4，但**当日涨幅只有 +1.0%**——这是存量大盘的自然增长，不是新事件驱动。\n它的价值在于充当**对照基准**：本系列在 09-12 曾记录到 5 个万星老项目日涨幅全部 <1%（0.16%~0.84%）的\"底噪\"现象。今天 ghidra 的 +1.0% 正好落在同一区间，说明**今天榜单里没有普涨，头部三个项目的放量是真实脉冲**。"
+    },
+    {
+      "rank": 5,
+      "name": "ever-co/ever-gauzy",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM)。",
+      "language": "TypeScript",
+      "stars": 6398,
+      "delta": "632 stars today",
+      "tags": [
+        "ERP·CRM·HRM",
+        "开源商业平台",
+        "TypeScript",
+        "⚠️ AGPL-3.0",
+        "跨仓导流"
+      ],
+      "comment": "功能铺得很全——HRM（含工时/活动/生产力追踪）、CRM、ERP、项目管理、ATS、会计开票、库存供应链、多组织管理，另提供 Headless API。\n**今日 +632 是连续第二日回落**（09-13 +58 → 09-14 +1,095 → 09-15 +632，-42.3%），恰好印证了昨日报告里的标注：09-14 那个 +1,787.9% 的跳升**主要来自同组织跨仓导流**（README 顶部\"What's New\"正在推 Ever Works / Ever Teams，不是 Gauzy 自身的更新）。导流脉冲在退潮，不应读作产品采纳度。\n⚠️ AGPL-3.0：网络服务化同样触发源码开放义务，商用或 SaaS 化前请找法务确认授权。"
+    },
+    {
+      "rank": 6,
+      "name": "alphaXiv/OpenResearch",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "description": "Turn your coding agents into research agents.",
+      "language": "Rust",
+      "stars": 3060,
+      "delta": "593 stars today",
+      "tags": [
+        "研究型 Agent",
+        "本地优先",
+        "多 Agent 兼容",
+        "桌面应用",
+        "Rust·Tauri"
+      ],
+      "comment": "本地优先（local-first）的研究工作区，把 Claude Code / Codex / OpenCode / Cursor 变成能做文献综述、提出假设、跑实验、产出研究产物的研究 Agent。Rust + Tauri 桌面应用，macOS 11+ / Windows(beta) / Linux 三端，README 顶部挂着 TrendShift \"#1 Repository of the Day\" 徽章。\n**这是本系列第一次看到\"研究工作流\"被做成 Agent 宿主产品**——不是给 Agent 加技能，而是给整个研究流程加一个可审计、本地可查的工作台。今日 +593 创该项目在榜历史新高（09-11 +156 → 09-13 +304 → 09-15 +593），在 3,060 Star 的基数上当日涨幅 +24.0%，是全榜除 BrewUI 外涨幅最高的。\n基线还小（3.1k Star、211 Fork），建议观察能否连续三日在榜再下结论。"
+    },
+    {
+      "rank": 7,
+      "name": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI。",
+      "language": "TypeScript",
+      "stars": 105532,
+      "delta": "437 stars today",
+      "tags": [
+        "Agent Harness",
+        "统一 LLM API",
+        "编码 Agent CLI",
+        "供应链加固",
+        "10.5 万 Star"
+      ],
+      "comment": "一体化 Agent 工具链：`pi-ai`（OpenAI/Anthropic/Google 统一 API）、`pi-agent-core`（带工具调用与状态管理的运行时）、`pi-coding-agent`（交互式编码 CLI）、`pi-tui`（差分渲染终端 UI）。\n两点值得单独记：\n① **README 明确声明不含内置权限系统**——默认以启动用户/进程的权限运行，需要隔离就得自己容器化，官方给了 Gondolin 微 VM / 纯 Docker / OpenShell 三种模式。这种\"把安全边界说清楚\"的坦白，比含糊承诺更可信。\n② **供应链加固清单写得很实**：直接依赖锁死精确版本、`.npmrc` 设 `save-exact=true` 与 `min-release-age=2`（避开当天发布的新版本）、`package-lock.json` 为唯一真相、pre-commit 阻止误提交 lockfile、CI 跑 `npm audit signatures`。这份清单本身比项目更值得抄。\n今日 +437 新上榜，当日涨幅 +0.42%，属大盘稳态。"
+    },
+    {
+      "rank": 8,
+      "name": "Homebrew/BrewUI",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "description": "📺 Homebrew's official macOS GUI —— 让偏好图形界面的用户也能安全地发现、安装、更新、管理 Homebrew 包，同时**完整透明地展示底层 Homebrew 在做什么**。",
+      "language": "Swift",
+      "stars": 1157,
+      "delta": "388 stars today",
+      "tags": [
+        "Homebrew 官方 GUI",
+        "macOS",
+        "SwiftUI",
+        "Swift 6",
+        "当日涨幅第一"
+      ],
+      "comment": "Swift 6 + strict concurrency + SwiftUI，macOS Tahoe 26+，数据来自 `brew` CLI 与 Homebrew JSON API，安装方式 `brew install --cask homebrew-app`。\n设计取向很清晰：**不把 brew 包成黑盒**。它强制通过 `/bin/zsh` 且带 `--no-rcs --no-global-rcs` 启动 Homebrew 以保证干净环境，配置统一走 `brew.env` 文件（`~/.homebrew/brew.env` 等三级作用域），并提供 Configuration 页 + Doctor 报告。\n**今日 +388，当日涨幅 +50.5% 全榜第一**，但 Fork/Star 仅 **2.0%（23/1,157）**——新品发布初期的典型形态，还在\"看\"的阶段、没进入\"改\"的阶段。注意它要求 macOS 26+，门槛不低。"
+    },
+    {
+      "rank": 9,
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 94590,
+      "delta": "354 stars today",
+      "tags": [
+        "工程技能集",
+        "AI 编码 Agent",
+        "生产级",
+        "Chrome 团队",
+        "长尾常客"
+      ],
+      "comment": "Addy Osmani（Google Chrome 团队）出品，9.5 万 Star。定位与同期其他技能包不重叠——不是流程编排、不是官方规范，而是**\"个人工程习惯的代码化\"**。\n本系列从 09-03 起多次记录到它（09-03 +260 时还曾连续三日加速、09-04 以 +2,757 登顶），如今已沉淀为长尾常客。今日 +354 是**距上次在榜 12 天后的回归并创自身新高**（09-03 +260 → 09-15 +354）。\n⚠️ 易混淆点：09-13(+215)/09-14(+506) 在榜的是**另一个仓库 `tech-leads-club/agent-skills`**（技能注册表 + Snyk 安全扫描），与本项目同名不同源，今日前者掉榜。对比历史数据时别串。"
+    },
+    {
+      "rank": 10,
+      "name": "tonhowtf/omniget",
+      "url": "https://github.com/tonhowtf/omniget",
+      "description": "基于 yt-dlp 的免费开源桌面应用，下载 Udemy / Hotmart 课程、YouTube 视频、音乐与电子书，覆盖 1,800+ 站点，内置课程播放器、PDF/EPUB 阅读器与音乐库，无需终端。",
+      "language": "Rust",
+      "stars": 12600,
+      "delta": "318 stars today",
+      "tags": [
+        "下载器",
+        "yt-dlp",
+        "1,800+ 站点",
+        "桌面应用",
+        "⚠️ 版权合规"
+      ],
+      "comment": "Rust + Tauri，Win/macOS/Linux 三端，GPL-3.0，宣称无账号、无广告、无下载内容遥测。除下载外还内置 108 个工具分 16 类（转写、字幕、格式转换、Anki 闪卡、间隔重复等），有 Courses/Study/Telegram/Convert 四个插件。\n今日 +318，是**掉榜一天后的回归**（09-13 +547 → 09-14 掉榜 → 09-15 +318）。\n⚠️ 合规风险要明确：Udemy / Hotmart 是付费课程平台，抓取行为受 DRM、平台服务条款与版权法约束；README 顶部的\"搜索关键词\"注释里直白写着 udemy downloader / hotmart downloader。仅用于自己已获授权的内容，传播与商用风险自担。"
+    },
+    {
+      "rank": 11,
+      "name": "danny-avila/LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "description": "Enhanced ChatGPT Clone：Agents、MCP、Skills、DeepSeek/Anthropic/AWS/OpenAI/Azure/Groq/Mistral/OpenRouter/Vertex/Gemini 全模型切换、Artifacts、Code Interpreter、消息搜索、安全多用户认证，面向自托管。",
+      "language": "TypeScript",
+      "stars": 43686,
+      "delta": "261 stars today",
+      "tags": [
+        "ChatGPT 开源替代",
+        "Agents·MCP",
+        "多模型",
+        "自托管",
+        "Skills"
+      ],
+      "comment": "今日新上榜，当日涨幅 +0.60%，大盘稳态。有意思的是它让\"Agent 宿主\"这条线在今天出现了**三种互不重叠的切入角**：\n- `pi` —— 自建 harness，从统一 LLM API 到 TUI 全栈自己写；\n- `OpenResearch` —— 垂直研究工作流，把已有 Agent 装进可审计的工作台；\n- `LibreChat` —— 把已有能力聚合成一个开箱可用的对话前台。\nFork/Star 20.6% 在今天的榜单里排第二高（仅次于 DeskcommCRM），说明自托管用户改得多——这通常是好事，但也意味着部署前需要自己审一遍分支差异。"
+    },
+    {
+      "rank": 12,
+      "name": "melgarafael/DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "description": "自托管 CRM + 原生 AI Agent + WhatsApp（WAHA）集成，对标 Kommo / Octadesk / Intercom，MCP-ready、多租户、LGPD 合规。",
+      "language": "TypeScript",
+      "stars": 2669,
+      "delta": "205 stars today",
+      "tags": [
+        "AI 销售 CRM",
+        "WhatsApp",
+        "自托管",
+        "MCP",
+        "⚠️ Fork-Star 24.8%"
+      ],
+      "comment": "Next.js 16 + TypeScript strict + Supabase（Postgres/Auth/Storage），宣称无月费、无功能锁、数据自持。主打\"用 AI Agent 在 WhatsApp 上接待、筛选、成交\"。\n历史轨迹：09-11 +126 → 09-12 +505 → 09-13 +444 → 09-14 掉榜 → 09-15 +205。\n⚠️ 两项需提示：① **Fork/Star 24.8%（662/2,669）为全榜最高**，部署型项目的典型特征（本系列 09-11/09-12 曾记录到它 40.1% / 32.1%，今日已明显回落）；② README 内含 HostGator **合作返利链接**与 `curl -fsSL ... | bash` 一键安装脚本。执行前建议先 clone 下来审阅 `hostgator-setup-kit/comecar.sh`——README 自己也说脚本\"不确认不会装任何东西\"，但默认路径是管道直执行。"
+    },
+    {
+      "rank": 13,
+      "name": "MG1937/ASC",
+      "url": "https://github.com/MG1937/ASC",
+      "description": "ASC is a super FAST Android decompiler front-end designed for Agents/Mobile Researchers.",
+      "language": "Python",
+      "stars": 1061,
+      "delta": "122 stars today",
+      "tags": [
+        "Android 反编译",
+        "APK 直查",
+        "R8 优化利用",
+        "毫秒级",
+        "⚠️ 授权要求"
+      ],
+      "comment": "思路与常规反编译器相反——**不先全量展开建索引，而是把编译产物当只读数据库直接查**。具体做法：跳过完整 inflate，直接在 Deflate 比特流里探测；用 Huffman 查找表抽取核心元数据而不碰无关数据块；利用 R8 编译器的确定性常量重定位与指令去重留下的高聚集物理布局做跨 DEX 快速交叉引用；O(1) 指令定位原语实现常量时间方法解析。\n作者给出的数据（Black Hat Europe Arsenal 议题）：352MB 商业 APK 上全局交叉引用 **1.79 秒**、目标类反编译 **177 毫秒**、内存占用 **141MB**。\n⚠️ 属逆向分析工具，仅可用于自己拥有或已获明确授权的应用。与同日上榜的 ghidra 一起构成本期的\"逆向与安全\"小簇（合计 877 / 7.95%）。"
+    },
+    {
+      "rank": 14,
+      "name": "pacifio/atlas",
+      "url": "https://github.com/pacifio/atlas",
+      "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place.",
+      "language": "Rust",
+      "stars": 4511,
+      "delta": "102 stars today",
+      "tags": [
+        "Agent 源码控制",
+        "Checkpoint",
+        "跨 Agent 记忆",
+        "ACP",
+        "本地优先"
+      ],
+      "comment": "解决一个很具体的痛点——**Agent 写的代码越来越多，但推理过程一点都没留下**。Atlas 让每次 Agent 运行产生 checkpoint，把 commit 与产生它的会话（prompts、工具调用、推理）绑在一起，几个月后仍能查\"哪个 Agent 为什么改了这个\"，且链接能扛过 rebase / amend。\n支持 Claude Code、Codex、Atlas 原生 Agent 及 ACP 注册表里的其他 Agent（Cursor、OpenCode、Kilo Code 等）**并排跑同一份代码库，共享一份记忆**——Claude Code 做过的决策会出现在 Codex 的下一个 prompt 里。\n设计承诺\"Nothing is locked in\"：笔记是 markdown、画布是 JSON、会话是 JSONL、编辑器就是磁盘上的文件，只有 checkpoint 记录用 SQLite（因为它是被查询而非被阅读的）。\n⚠️ README 注明 macOS 为受支持平台，Linux / Windows 可从同一 Tauri 代码库编译但**未经测试**。今日 +102 垫底。"
+    }
+  ]
+}

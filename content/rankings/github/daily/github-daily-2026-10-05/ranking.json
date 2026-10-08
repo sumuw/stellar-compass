@@ -1,0 +1,230 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-10-05",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "tester-army/e2e",
+      "url": "https://github.com/tester-army/e2e",
+      "description": "Next generation e2e testing framework for web and mobile apps.（面向 Web 与移动应用的下一代端到端测试框架。）",
+      "language": "TypeScript",
+      "stars": 4120,
+      "delta": "1,430 stars today",
+      "tags": [
+        "自然语言写测试",
+        "Agent 驱动 App",
+        "Apache-2.0",
+        "第 2 次在榜",
+        "增量第二"
+      ],
+      "comment": "昨日首次在榜时只排在增量第八（+344），**今日直接 ×4.16 冲到增量第二**，是全榜涨幅最大的项目。\n写法是用自然语言描述目标，让 Agent 去操作应用，再用同一段测试里的 locator 与断言验收：\n```ts\nawait agent.act('upgrade the workspace to the Pro plan');\nawait agent.assert('the invoice preview shows a prorated amount');\n```\n关键是\"录制回放\"设计：Agent 走过的步骤会被记录，下次重跑时**在应用未变更的前提下零模型调用**直接回放；\n完全不含 Agent 步骤的测试则根本不需要模型。日增速 **53.16%（1,430 / 2,690）是全榜第二高**。\nopen issues 从昨日 40 降到 21，维护状况在改善。\n可用 `npx e2e telemetry disable` 或 `E2E_TELEMETRY_DISABLED=1` 关闭。Agent 步骤需自备订阅 / API key / 本地模型，成本自担。\n75 天 4,120 星、Fork/Star 仅 **4.1%（全榜最低）**——关注度暴涨但分叉极少，尚未经过大规模生产验证。"
+    },
+    {
+      "rank": 2,
+      "name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent — 捕获 Agent 在会话中的一切操作，用 AI 压缩，再把相关上下文注入后续会话。支持 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等。",
+      "language": "TypeScript",
+      "stars": 96451,
+      "delta": "534 stars today",
+      "tags": [
+        "跨会话记忆",
+        "上下文压缩",
+        "默认云端托管",
+        "Apache-2.0",
+        "增量第七"
+      ],
+      "comment": "第 4 次在榜（08-27 / 10-03 / 10-04 / 今日）。昨日刚创下 ×5.45 的放大（+115 → +627），\n今日 **+534（−14.8%）回落**，属典型的\"脉冲次日消化\"。它解决的是 Agent 最实际的痛点：会话结束即失忆。\n做法是完整捕获会话动作 → AI 压缩 → 按需回注，另有自然语言查询项目历史与 Cloud Sync 备份。\nLocal observer is opt-in: `--provider host`\"*），安装时需浏览器登录（email magic link）换取 memory key；\nCloud Sync 会把记忆备份到 cmem.ai。可用 `<private>` 标签排除敏感内容，但**默认路径是把会话记忆交给第三方服务**。"
+    },
+    {
+      "rank": 3,
+      "name": "michael-denyer/pstack-claude",
+      "url": "https://github.com/michael-denyer/pstack-claude",
+      "description": "Claude Code, Codex, Pi, OpenCode, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses.（pstack 的 Claude Code / Codex / Pi / OpenCode / Gemini / Prime Agent 版本——把 Cursor 的原语翻译过来，形成严格的 Agent 工作流。）",
+      "language": "JavaScript",
+      "stars": 1328,
+      "delta": "222 stars today",
+      "tags": [
+        "pstack 移植",
+        "多 harness 技能栈",
+        "MIT",
+        "首次在榜",
+        "增量第十一"
+      ],
+      "comment": "**首次在榜**。它不是一个独立方法论，而是 Lauren Tan（poteto）那套 **pstack 的跨 harness 移植**：\n跟踪上游，同时维护若干\"具名策略分叉\"（*named policy forks*，每个都在 `tools/forks.json` 里声明）。\n用法是告诉 `poteto-mode` 你的目标，它自己挑工作流：报 bug 就先复现失败、用 `how`/`why` 定位、委派修复、再跑一遍失败用例；\n改动跨函数边界时先叫 `architect` 进场。还有 `arena` / `swarm` / `interrogate` 等角色。\n**5 个 open issues 是全榜最少**，1,328 星的体量配这个维护负担相当干净。\n（Codex 需要在 `/hooks` 里手动信任），安装路径对各 harness 不一致；`setup-pstack` 可按角色改模型与推理强度，\n配错会直接放大 token 成本。并发类缺陷它不覆盖，作者另开了 `agent-formal-verify`（TLA+ / Lean）单独处理。"
+    },
+    {
+      "rank": 4,
+      "name": "earthtojake/text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "Give your agent CAD superpowers.（给你的 Agent 装上 CAD 超能力。）",
+      "language": "Python",
+      "stars": 17210,
+      "delta": "456 stars today",
+      "tags": [
+        "CAD 技能库",
+        "本地文件取材",
+        "MIT",
+        "第 3 次在榜",
+        "连续第二日"
+      ],
+      "comment": "第 3 次在榜（09-09 / 10-04 / 今日），**连续第二日且大幅放大**：+75 → **+456（×6.08）**。\n昨日的判断是\"回归动能很弱\"，今天就被推翻——它从倒数第二直接升到增量第十。\n它不是\"文生 CAD 模型\"的推理项目，而是一组 **Agent 技能库**：生成、检查、取材、切片、交付 CAD 与机器人描述文件\n（STEP / STL / URDF 等），全部基于**本地项目文件**处理。35 个 open issues，维护负担很轻。\n依赖本地 build123d 0.11 / Open CASCADE 7.9，环境搭建成本不低。**CAD 类错误在物理制造环节的代价远高于代码错误**，\n这一点 README 未作提示。"
+    },
+    {
+      "rank": 5,
+      "name": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "T3 Code is an \"agent harness control surface\" — 用移动端 App（iOS / Android）、Web 与 Electron 桌面端，控制跑在你自己机器上的 Agent；配合你在 Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity 上的既有订阅工作。（页面 About 与 GitHub API description 均为空，取自仓库 README 首段。）",
+      "language": "TypeScript",
+      "stars": 25466,
+      "delta": "487 stars today",
+      "tags": [
+        "Agent 控制面",
+        "移动端遥控",
+        "MIT",
+        "第 4 次在榜",
+        "Fork-Star 25.8%"
+      ],
+      "comment": "第 4 次在榜（08-11 / 10-03 / 10-04 / 今日），今日 +487 与昨日 +492 基本持平（−1.0%），\n是留存项里最稳的一个。定位很明确——**它不卖模型也不卖 Agent，只卖\"控制面\"**：把你机器上已装好的编码 Agent\n接到手机 / 网页 / 桌面上。README 里专门有一句\"*Wait, what are you selling me?*\"回答\"Nothing\"。\n且移动端 / 远程遥控本机 Agent 意味着**安全边界完全由使用者自负**（README 设有专门的 remote-access 文档）。\nREADME 无 License 段（API 为 MIT）。"
+    },
+    {
+      "rank": 6,
+      "name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows.（把 PS5 可执行程序自动移植到 Linux 与 Windows 的工具。）",
+      "language": "C++",
+      "stars": 4617,
+      "delta": "994 stars today",
+      "tags": [
+        "PS5 可执行程序移植",
+        "relinker+PRX",
+        "GPL-2.0",
+        "首次在榜",
+        "增量第四"
+      ],
+      "comment": "**今日最\"出圈\"的项目，也是唯一与 AI 完全无关的新面孔**。做法不是模拟：内含一个 **relinker**\n把可执行程序转成目标系统原生格式，加上一套可动态链接的 **系统 prx 库**实现——README 明确\"**No emulation or\nseparate runtime process**\"。着色器重编译器能产出 SPIR-V（可用 Spirv-Tools 校验）。\nREADME 给出一个实测锚点：2D 平台游戏 Dreaming Sarah 在 GTX 1050 Ti / i5-7500 上稳定 60 fps。\n日增速 **27.44%**，63 天 4,617 星。\n*\"intended for interoperability, research, preservation, and compatibility purposes\"*，\n声明不含、不分发、不要求受版权保护的软件、固件、**加密密钥**或专有库，\n并明确**由使用者自行保证所用 binary 的取得与使用符合适用法律与许可条款**——\n也就是说合法性完全落在使用者一侧，项目本身不提供任何素材。131 open issues；进度徽章只统计\"已声明的系统库函数占比\"，\n不是\"PS5 全部系统函数\"，读进度条时要注意这个口径。"
+    },
+    {
+      "rank": 7,
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.（给你的 AI Agent 一双能看遍整个互联网的眼睛：一个 CLI 读取和搜索 Twitter、Reddit、YouTube、GitHub、B站、小红书，零 API 费用。）",
+      "language": "Python",
+      "stars": 91612,
+      "delta": "1,156 stars today",
+      "tags": [
+        "联网采集",
+        "多平台路由",
+        "Cookie 登录态",
+        "MIT",
+        "19 天未推送"
+      ],
+      "comment": "第 5 次在榜（09-14 / 10-02 / 10-03 / 10-04 / 今日）。昨日从连续两日的第一跌到第三（+979），\n今日**不降反升 +18.1% 回到 +1,156**，保住增量第三，是本系列第一次出现\"停更这么久还在回弹\"。\n它解决的是 Agent 联网的老问题——不用官方 API、不付 API 费用，靠一个 CLI 统一路由到各大平台，\n且每个平台都有\"首选 + 备选\"多后端，某个入口失效就自动切换。\nREADME 设有专门的「🍪 Cookie 安全建议」章节，原文警告：*\"使用 Cookie 登录的平台（Twitter、小红书等），\n通过脚本/API 调用**存在被平台检测并封号的风险**。请务必使用**专用小号**，不要用你的主账号\"*，\n并列了两条理由（封号风险 / 安全风险——Cookie 等同完整登录权限）。\n同时也写明了边界：*\"Cookie 只存在你本地，不上传不外传\"*、*\"不替用户执行小红书登录，也不读取小红书浏览器 Cookie；\nOpenCLI 只使用用户已经存在且明确控制的 Chrome 会话\"*。213 个 open issues 在停更期间不会自行消化。"
+    },
+    {
+      "rank": 8,
+      "name": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.（全球首个开源的 agentic 视频生产系统：12 条生产流水线、100+ 工具、700+ Agent 技能与制作知识文件，把你的 AI 编码助手变成一整套视频制作工作室。）",
+      "language": "Python",
+      "stars": 63707,
+      "delta": "758 stars today",
+      "tags": [
+        "Agentic 视频生产",
+        "12 条流水线",
+        "AGPL-3.0",
+        "第 6 次在榜",
+        "增量第五"
+      ],
+      "comment": "第 6 次在榜（08-12 / 08-27 / 08-29 / 09-13 / 10-04 / 今日），是本榜在榜次数最多的项目。\n昨日 +292，今日 **+758（×2.60）**，增量排名从第八升到第五。它把自己定位成\"视频制作工作室\"而非单点工具：\n12 条流水线、100+ 工具、700+ 技能与制作知识文件。README 专门有一节「What You Get With Zero API Keys」，\n说明不配付费 key 也能出片。\n**355 个 open issues 是全榜最高之一**；README 含 sponsors 推广位；多数高级能力仍依赖自备第三方 API key。"
+    },
+    {
+      "rank": 9,
+      "name": "caddyserver/caddy",
+      "url": "https://github.com/caddyserver/caddy",
+      "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS（快速且可扩展的多平台 HTTP/1-2-3 Web 服务器，自带自动 HTTPS。）",
+      "language": "Go",
+      "stars": 76911,
+      "delta": "526 stars today",
+      "tags": [
+        "自动 HTTPS",
+        "Go Web 服务器",
+        "11.7 年老项目",
+        "Apache-2.0",
+        "放大 16.97 倍"
+      ],
+      "comment": "**今日反差最大的一项**。昨日还是全榜末位 **+31**，今日 **+526（×16.97）**，升到增量第八。\n它是今日唯一留存的老牌基础设施项目，也是全榜唯一\"与 Agent 生态毫无关系却连续两日在榜\"的项目。\n11.7 年、7.7 万星，日增速 0.69% 属正常水位。\nnot 'Caddy Server' or 'CaddyServer'\"*，只能称 \"Caddy\" 或 \"the Caddy web server\"。\n⚠️ **更正昨日报告**：10-04 写的\"另有 EULA 与商业条款\"在 README 中**检索不到 EULA 字样**，属无原文依据的表述，已撤回；\n今日可核实的只有商标声明这一条。README 无 License 段（API 为 Apache-2.0）。"
+    },
+    {
+      "rank": 10,
+      "name": "DuarteSantos8/openGym",
+      "url": "https://github.com/DuarteSantos8/openGym",
+      "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.（自托管的健身与自重训练追踪器：规划每周计划、按引导完成训练、记录每一组与体重，看清哪些肌群被练到、疲劳或退化；可从 FitNotes / Strong / Hevy 导入；passkey 登录。数据在你自己手上。）",
+      "language": "JavaScript",
+      "stars": 3721,
+      "delta": "1,444 stars today",
+      "tags": [
+        "自托管健身追踪",
+        "passkey 登录",
+        "AGPL-3.0",
+        "首次在榜",
+        "今日增量第一"
+      ],
+      "comment": "**今日头号项目，也是本榜有史以来第一个\"健身类\"头名**。+1,444 只比 e2e 多 14 个，\n两者几乎并列，日增速 **63.42%（1,444 / 2,277）是全榜最高**。它的卖点是\"数据主权\"：自托管、\npasskey 登录、可从 FitNotes / Strong / Hevy 与 Apple Health 导入、随时导出单个 JSON。\n79 天 3,721 星，Fork/Star 16.3% 说明不少人已经在改。\n但 README 中免责声明 / 数据合规类关键词**零命中**（无\"不构成医疗建议\"之类的表述）。\n正向的一点：README 明确 *\"Passkey private keys never reach the server\"*（私钥留在手机安全硬件或密码管理器里），\n但 `secret` 环境变量是会话 cookie 签名密钥，README 提示要连同 `./data` 一起备份。131 open issues。"
+    },
+    {
+      "rank": 11,
+      "name": "cloudflare/cloudflare-os",
+      "url": "https://github.com/cloudflare/cloudflare-os",
+      "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company's context and systems.（构建在 Cloudflare Workers 上的 Agent 工作区，用你公司自己的上下文与系统来创建文档、搭应用、跑 Agent。）",
+      "language": "TypeScript",
+      "stars": 10880,
+      "delta": "102 stars today",
+      "tags": [
+        "Agent 工作区",
+        "Cloudflare Workers",
+        "Apache-2.0",
+        "隔 1 期回归",
+        "全榜末位"
+      ],
+      "comment": "第 2 次在榜（10-03 +282 / 今日 +102），隔 1 期回归但降了 63.8%，落到**全榜末位**。\n它自称\"AI 生产力操作系统\"，提供三样东西：预置公司知识的 Agent 聊天界面、可让非技术用户安全\"造小工具\"的沙箱\n（gadgets）、以及一套叫 **Gatekeepers** 的安全框架，用来同时给 Agent 和应用上护栏。\nREADME 说 Cloudflare 内部从工程到销售都在用，开源的目的是让别人复制成\"*Your Company* OS\"。\n深度绑定 Cloudflare Workers 生态，自托管实质等于把公司上下文搬到 Cloudflare 上。128 open issues；\nREADME 无 License 段（API 为 Apache-2.0）。"
+    },
+    {
+      "rank": 12,
+      "name": "Stremio/stremio-web",
+      "url": "https://github.com/Stremio/stremio-web",
+      "description": "Stremio - Freedom to Stream（Stremio 的官方 Web UI —— Stremio 是一个现代媒体中心，一站式满足视频娱乐需求。）",
+      "language": "JavaScript",
+      "stars": 14180,
+      "delta": "111 stars today",
+      "tags": [
+        "媒体中心 Web UI",
+        "addon 生态",
+        "GPL-2.0",
+        "隔 29 天回归",
+        "8.3 年老项目"
+      ],
+      "comment": "第 2 次在榜，距上次（09-06）隔了 **29 天**。它是今日两个\"与 AI 完全无关\"的老项目之一\n（另一个是 caddy）。技术架构值得一看：这一层是 React UI，真正的\"大脑\"是另一个仓库 **stremio-core**\n（Rust 编译成 WebAssembly，跑在 Web Worker 里）——UI 只负责渲染，状态由 core 计算。\n7 个特性里最实用的是 addon 机制（目录与字幕都由插件提供）、跨设备同步、Chromecast 投屏与 PWA 安装。\n内容合规与版权风险实际由使用者自行承担的插件选择决定，README 未作任何提示或筛选建议。"
+    },
+    {
+      "rank": 13,
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.（一整个 AI 代理公司尽在指尖——从前端巫师到 Reddit 社区忍者，从\"奇思妙想注入者\"到\"现实校验官\"。每个 Agent 都是有性格、有流程、有明确交付物的专才。）",
+      "language": "**Shell**",
+      "stars": 157059,
+      "delta": "595 stars today",
+      "tags": [
+        "AI 人格代理库",
+        "交付物导向",
+        "MIT",
+        "隔 53 天回归",
+        "增量第六"
+      ],
+      "comment": "第 4 次在榜（08-11 / 08-12 / 08-13 / 今日），**隔了 53 天**——今日回归间隔最长的一项，\n也是它近两个月来第一次回到日榜。总 Star **157,059 是全榜最高**，Fork 25,345（Fork/Star 16.1%）。\n它卖的不是代码而是\"人格 + 流程 + 交付物\"：每个 Agent 都有专属语气、工作方式和可验收的产出。\n现在还出了桌面 App（macOS / Linux / Windows），一键把整个名册装进 Claude Code、Cursor、Codex、Gemini 等。\n**Shell 作为主要语言**在今日榜单里是独一份（其余是 TS/JS/Python/C++/Go）。\n名册里包含不少\"社交平台运营\"类角色（如 Reddit 社区运营），批量投入真实社区前需自行评估平台规则。\n关键词扫描命中 \"token\" 与 \"presale\" 两处，经人工核销分别为 **\"token & session security\"（OAuth 令牌）**\n与 **\"Government Digital Presales Consultant\"（政府数字化售前顾问）**，均为误报。"
+    }
+  ]
+}

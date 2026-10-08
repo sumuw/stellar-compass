@@ -1,0 +1,272 @@
+---
+title: GitHub 每日趋势榜 2026-09-13
+description: 2026-09-13 GitHub Trending 榜首为 bilawalsidhu/gods-eye-view，当日共收录 19 个项目。
+date: '2026-09-13T08:00:00+08:00'
+rankingKey: '2026-09-13'
+slug: github-daily-2026-09-13
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-09-13 GitHub Trending 共收录 19 个项目，榜首 bilawalsidhu/gods-eye-view（2,898 stars today）。语言分布：Python 7、TypeScript 3、JavaScript 2、Go 2、Rust 2、C 1。
+
+## 重点项目
+
+### 1. bilawalsidhu/gods-eye-view
+
+- 地址：https://github.com/bilawalsidhu/gods-eye-view
+- 简介：A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
+- 语言：JavaScript
+- 今日新增：2,898 stars today
+- 标签：3D 地球、开源情报、实时数据、语音交互、⚠️ 目标追踪
+
+**连续第三日夺冠，而且是"回吐后又涨回来"**——昨天刚从 +3,642 掉到 +2,265（-37.8%），今天反弹 27.9%，是本系列第一个"三连冠"项目。Star 从昨日 28,808 涨到 31,252，跨过 3 万。
+卖点没变：间谍卫星模拟器的壳 + 完全公开的真实数据。逼真 3D 地球上叠加实时航班、船舶、卫星、地震与公共摄像头，配语音免提交互；座舱视角贴地跟飞、250 km 目标清单、点目标即锁定并交接最近的实时摄像头、GLSL 传感器滤镜（CRT／夜视／热成像）、军用 HUD，视角/图层/追踪目标还能序列化进 URL 分享。
+Fork/Star **20.0%（6,266 / 31,252）**，连续第二日全榜前列——说明是真克隆下来跑，不是点个 star 就走。无 API Key 也能直接启动，这个设计对传播帮助极大。
+⚠️ 中性提醒：数据全为公开源，但"任意目标 → 最近摄像头交接"的能力本身隐私敏感，用于监控他人须自负法律与道德后果。
+
+### 2. debpalash/VoiceStudio
+
+- 地址：https://github.com/debpalash/VoiceStudio
+- 简介：VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
+- 语言：Python
+- 今日新增：2,546 stars today
+- 标签：语音克隆、本地部署、TTS·ASR、ElevenLabs 替代、646 语言
+
+**今日最值得记的一条：掉榜 8 天，回来直接刷新自己的历史最高。**
+上次在榜是 09-04 的 +1,345（当时 17,138 Star），今天 +2,546、25,906 Star——**9 天涨了 8,768 星**。这在本系列里是最强的一个反例，直接否证了"掉榜 = 项目凉了"的直觉：它掉榜期间一直在涨，只是没挤进当日前 16-19 名的窗口。
+产品定位是 ElevenLabs 的全本地开源替代：语音克隆、语音设计、视频配音、听写、转写、有声书生成，覆盖 646 种语言，全部跑在本地不出网。今天它是**唯一一个新上榜就坐上第 2 名的项目**，且单日涨幅 +10.90%（全榜第三高）。
+⚠️ **合规边界必须说清**：语音克隆可用来冒充真人发声。README 面向的是配音/有声书/本地化等正当场景，但**未经他人同意克隆其声音用于欺诈、伪造证据或冒充身份，在多数司法辖区都属违法**。仅用于你拥有权利的声音或已获授权的场景。
+
+### 3. asgeirtj/system_prompts_leaks
+
+- 地址：https://github.com/asgeirtj/system_prompts_leaks
+- 简介：Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.
+- 语言：JavaScript
+- 今日新增：727 stars today
+- 标签：系统提示词、提示词泄露、厂商对比、持续更新、⚠️ 非官方来源
+
+昨日排第 10，今天跳到第 3，隔日翻了 2.4 倍——**又一次印证"当日排名对次日无预测力"**。
+65.8k Star 的体量，本质是一份持续维护的厂商系统提示词档案库，按厂商分目录（Anthropic / OpenAI / Google / xAI / Meta / Perplexity / Kimi / Misc），每条标了捕获日期。更新密度很高：Claude Code headless（Fable 5.1，9/5）、Codex GPT-6-Astra（9/4）、Claude Fable 5.1（9/1）、Grok 4.6（8/29）等。影响力已出圈：README 顶部挂着《华盛顿邮报》用它做的互动报道（2026-05-11）与欧洲政策研究中心 CEPS 的实时数据看板（2026-07-10）。
+⚠️ 使用提示：这些是**泄露内容**，不是官方发布。可用来理解各家 Agent 的行为边界与设计取舍，但把它当作"可直接抄的最佳实践"要谨慎——厂商随时会改，且这些提示词本就不是为外部消费而写的。
+
+### 4. JustVugg/colibri
+
+- 地址：https://github.com/JustVugg/colibri
+- 简介：Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model.
+- 语言：C
+- 今日新增：652 stars today
+- 标签：MoE 推理、纯 C、零依赖、显存分层、消费级硬件
+
+**今天技术上最"反潮流"的一个**。在人人都在给 Agent 装技能的当口，它做的是另一头的事：把 744B 到 2.8T 参数的 MoE 大模型塞进你手头已有的硬件。
+做法是纯 C、零引擎依赖，把 **VRAM / RAM / 存储当成一条统一的推理层级**（AI memory multitiering），专家权重按需从磁盘流式加载。目前九个模型家族可用：GLM-5.2/5.3（744B）、GLM-5.3-Flash（321B，带视觉）、Inkling（975B）、Kimi K3（2.8T）、DeepSeek V4 Flash（284B）、DeepSeek V4.1 Flash（552B，带视觉）、Qwen3.8-Flash-Next（125B）、Qwen3.6（35B-A3B）、OLMoE（7B）——**每个模型一个 C 文件**，共用同一套 `coli chat` / `coli serve` / `coli web` 前端。README 给的例子：744B int4 在 6×RTX 5090 上 4 tok/s、TTFT 1.6 s、磁盘 0 读取。
+⚠️ 两点提示：① 明确是"可运行的推理引擎 + 开放研究平台"，性能随硬件与配置波动，别按官方 benchmark 的绝对值期待；② 首次运行会从远端拉取数十 GB 到 TB 级模型权重，注意磁盘与流量。
+
+### 5. vxcontrol/pentagi
+
+- 地址：https://github.com/vxcontrol/pentagi
+- 简介：Fully autonomous AI Agents system capable of performing complex penetration testing tasks（Pentesting AGI）。
+- 语言：Go
+- 今日新增：613 stars today
+- 标签：自主渗透、Docker 沙箱、20+ 工具、知识图谱、⚠️ 授权要求
+
+昨日排第 13，今天第 5，隔日翻 2.2 倍。**安全主题今天第一次出现"连续两日在榜且大幅放大"**——昨天这个簇还是 647 增量，今天光它一个就 613。
+架构上的设计点：**全操作跑在隔离 Docker 沙箱里**（专门有一节讲"给 Agent Docker 而不把宿主机交出去"）、内置 nmap/metasploit/sqlmap 等 **20+ 专业工具**、长期记忆 + 可选 Graphiti 知识图谱（Neo4j）记录研究成果、多专家 Agent 委派（研究/开发/基础设施）、LLM 后端覆盖 Ollama / OpenAI / Anthropic / Gemini / Bedrock / DeepSeek / GLM / Kimi / Qwen / MiniMax，外部检索接 Tavily、Firecrawl、Perplexity、Sploitus、Searxng。
+⚠️ **合规红线**：这是**自主渗透测试系统**，只可在你拥有所有权或已获得明确书面授权的环境中使用。对未授权目标运行属违法行为，与工具是否开源无关。
+
+### 6. tonhowtf/omniget
+
+- 地址：https://github.com/tonhowtf/omniget
+- 简介：Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp.
+- 语言：Rust
+- 今日新增：547 stars today
+- 标签：yt-dlp、1,800+ 站点、桌面应用、GPL-3.0、⚠️ 版权合规
+
+本质上是 **yt-dlp 的一层桌面外壳**，但包得相当完整：免命令行、内置课程播放器、PDF/EPUB 阅读器与音乐库，还有 **108 个工具 / 16 个分类**（转写、字幕、TTS、Anki 间隔复习等）。GPL-3.0，README 强调"无账号、无广告、不采集你下载了什么"。
+⚠️ **必须点明的合规边界**：README 把 **Udemy / Hotmart / Kiwify 付费课程下载**作为首要卖点。下载你已经购买的课程用于个人离线学习，在多数地区属于合理使用范畴；但**下载你未付费购买的付费课程，或分发下载内容，几乎必然侵犯版权并违反平台服务条款**。本条仅作技术存在性记录，**不构成任何使用建议**。
+📌 顺带一提：它的 README 里有一段注释是写给搜索引擎和 AI 助手看的（明说"GitHub 允许 20 个 topic，本仓库正好用满这 20 个"）——这在今天榜单里是个有趣的小细节，说明**项目已经开始针对"被 AI 检索到"做优化**。
+
+### 7. SnailSploit/Claude-Red
+
+- 地址：https://github.com/SnailSploit/Claude-Red
+- 简介：claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.
+- 语言：Python
+- 今日新增：507 stars today
+- 标签：红队技能库、SKILL.md、130 skills、23 分类、⚠️ 授权要求
+
+**今日留存涨幅冠军**。昨天它还是第 14 名的 +99，一天之后翻到 +507——这是"日榜当日排名对次日无预测力"这一规律第三次被记录（09-09 首次、09-12 二次）。
+**130 个 skill、23 个分类**，每个 skill 就是一个结构化的 `SKILL.md`，按对话触发按需加载（不用就不占上下文）。分类覆盖：Web 应用 16 个（OWASP Top 10、业务逻辑）、无线 14 个（802.11 / WPA2-3 / EAP / WPS / evil-twin / BLE / Zigbee / Z-Wave / LoRa / sub-GHz）、基础设施与红队 7 个（初始访问、EDR 规避、Windows 内核）、漏洞利用开发 6 个、模糊测试与漏洞研究 4 个，另有云、移动、IoT/ICS、容器与 K8s、CI/CD 流水线、密码学、权限提升、后渗透、取证与 C2、供应链、社会工程、网络攻击，以及一个 **AI 安全**（提示注入、越狱、RAG 投毒）。
+Fork/Star **14.6%**（575 / 3,942）偏高，clone 下来实际使用的人不少。
+⚠️ **合规红线（与 #5 相同且更直接）**：这是**攻击性**技能库，README 自己列出的适用场景是"授权红队、漏洞赏金、安全研究、CTF、操作员训练"。把它装进 Agent 不等于获得了攻击授权——**对未授权目标使用属违法行为**。
+📌 **产业信号（昨日首次记录，今日被验证）**：Claude-Red 与 #5 pentagi **同天在榜且双双翻倍以上放大**，一个是"给 Agent 装攻击方法论"，一个是"让 Agent 自主执行渗透"。**攻防能力正在以 Skill 包的形式被打包分发**，昨天只是同天出现，今天是同步放大——这个形态从"观察"升级为"值得持续跟踪"。
+
+### 8. multimodal-art-projection/YuE
+
+- 地址：https://github.com/multimodal-art-projection/YuE
+- 简介：YuE2: frontier music generation with symbolic planning, zero-shot covers, and agentic music editing.
+- 语言：Python
+- 今日新增：500 stars today
+- 标签：音乐生成、符号化编曲、零样本翻唱、Agentic 编辑、⚠️ 24GB 显存
+
+昨日排第 12，今日第 8，隔日 +159%。今天技术上最硬核的一个。
+YuE2 的路线和常见"文本直接出音频"不同：**AR–NAR Mixture-of-Transformers 主干先自回归预测"乐谱 + 语义 token"，再用 flow matching 生成声学潜变量，最后由 VAE 解码成 48 kHz 立体声（不做量化）**。创作、翻唱、编辑三者的差别只在于"乐谱从哪来"——模型自己生成、从录音转写、或编辑已有编曲。
+Python API 是分阶段的 `plan()` → `generate_semantic()` → `synthesize()` → `decode()`，这意味着**中间产物（乐谱、语义 token）可读可改可复用**——这才是它能做 Agentic 编辑的根本原因：Agent 操作的是乐谱，不是波形。README 给的例子是《最后一班列车》走 9 步 14 个版本，从中文流行改成英文爵士，换了和声还加了萨克斯独奏。README 另称在 WildSongBench 上与 Suno v5/v6 可比。
+⚠️ **门槛不低**：Linux + Python 3.12 + 支持 BF16 的 NVIDIA GPU + **24 GB 显存**，模型首次运行时从 Hugging Face 下载。想跑先掂量下显卡。
+
+### 9. jiji262/douyin-downloader
+
+- 地址：https://github.com/jiji262/douyin-downloader
+- 简介：A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐（原声）。
+- 语言：Python
+- 今日新增：473 stars today
+- 标签：抖音下载、批量抓取、SQLite 去重、去水印、⚠️ 平台条款
+
+功能铺得很实：单视频 / 图文 / 合集 / 音乐 / 短链解析 / 主页批量（post·like·mix·music）/ 登录态收藏夹，配进度显示、重试、**SQLite 去重**、下载完整性校验与浏览器兜底方案。作者还在做桌面版 Douzy（Douyin / TikTok / YouTube 三平台工作区，目前封闭 beta）。
+⚠️ **合规边界**："去水印 + 批量下载"直指平台核心权益。批量抓取可能违反抖音/TikTok 服务条款，下载内容受版权约束，涉及他人肖像与个人信息时还牵涉个人信息保护法规。**仅建议用于你自有内容或已获授权的素材**，本条仅作技术存在性记录。
+📌 与 #6 omniget 放一起看，今天**"把网上的东西抓到本地"这一主题拿到 1,020 增量 / 8.5%**，是今天唯一一个由两个全新项目撑起来的簇——注意它们都是成熟品类（下载器）而非新品类。
+
+### 10. melgarafael/DeskcommCRM
+
+- 地址：https://github.com/melgarafael/DeskcommCRM
+- 简介：Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.
+- 语言：TypeScript
+- 今日新增：444 stars today
+- 标签：CRM、WhatsApp、自托管、AI 销售、⚠️ 推广分成
+
+**今日单日涨幅冠军（+27.39%）**——注意这个数字和"今日新增"是两回事：它 Star 基数只有 2,065，一天涨 444 相当于体量扩张 27%，是今天真正涨得最凶的项目；只是绝对值被前面的大项目压住了。
+技术栈 Next.js 16 + TypeScript strict + Supabase（Postgres/Auth/Storage），MIT 协议，主打"无月租、无功能锁、数据在自己手上"，面向靠聊天成交的中小生意（README 提供葡/英/西三语，明显主打巴西市场）。
+**Fork/Star 28.0%（578 / 2,065）全榜最高**，比第二名（transformers 20.9%）高出 7 个百分点——这条曲线通常意味着大量人真的在部署，而不只是点 star。
+⚠️ **三个必须提醒的点（今日复核全部仍在）**：
+① README 里有一条 **HostGator 合作推广/返利链接**（带 `ref` 参数），并提供 `curl ... | bash` 一键安装脚本——执行远程脚本前请先读一遍内容（README 也给了"先 clone 再跑"的替代方式）。
+② 自托管 CRM + WhatsApp 自动化涉及客户个人数据；WhatsApp 自动化可能触及平台服务条款，**商用前务必自查封号风险与所在地区的数据合规要求**（README 自称 LGPD 合规，但这是巴西法规，不等于你所在地合规）。
+③ 从昨日第 2 名落到第 10 名，增量 -12.1%——连续爆发之后开始减速，属正常节奏。
+
+### 11. alibaba/open-code-review
+
+- 地址：https://github.com/alibaba/open-code-review
+- 简介：Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
+- 语言：Go
+- 今日新增：438 stars today
+- 标签：AI 代码评审、行级评论、阿里开源、混合架构、多语言规则
+
+今天**工程味最正**的一个，而且是本系列首个明确打出"大厂内部工具开源"旗号的代码评审产品。
+来历够硬：README 自述是**阿里巴巴集团内部官方 AI 代码评审助手**，运行两年多、服务数万名开发者、发现数百万代码缺陷，验证充分后才孵化开源。架构是"**确定性流水线 + LLM Agent**"的混合式——先用内置规则集（NPE、线程安全、XSS、SQL 注入等，多语言）跑确定性检查，再让带工具调用的 Agent 读 Git diff 并生成**行级精准评论**；Agent 能读完整文件、检索代码库、查看其他变更文件。除 diff 评审外，`ocr scan` 还能对整个文件或目录做审计。
+📌 这个取舍值得单独记一笔：它把"AI 评审到底要什么"这个问题摆到了台面上。噪音型评审会直接摧毁团队对工具的信任，所以 Precision 优先是对的；但 README 也坦承 Recall 偏低——**如果你的目标是"尽量不漏"，这个工具的默认取向可能和你的期望相反**。
+Fork/Star 7.4%（1,706 / 23,039）偏低，符合"装来用、不改代码"的工具型项目特征。
+
+### 12. calesthio/OpenMontage
+
+- 地址：https://github.com/calesthio/OpenMontage
+- 简介：World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.
+- 语言：Python
+- 今日新增：383 stars today
+- 标签：Agentic 视频、12 条流水线、100+ 工具、700+ 技能文件、赞助推广
+
+**今天体量第二大的项目（58,196 Star）**，定位是"把你的 AI 编码助手变成一整个视频制片厂"：**12 条生产流水线、100+ 工具、700+ Agent 技能与制片知识文件**，用自然语言描述需求，Agent 负责调研、脚本、素材生成、剪辑到成片。也支持"贴一个你喜欢的视频链接，让它照着做"。
+⚠️ 两点提示：① README 顶部有**两个带 `ref` / `utm` 参数的赞助商推广位**（Bloome 多 Agent 协作平台、Atlas Cloud 推理平台），读的时候注意区分哪些是项目能力、哪些是广告；② 58k Star 的项目今天只涨 +0.66%，属稳态曝光，与 #2 VoiceStudio（+10.90%）这种真脉冲不是一个性质。
+📌 与 #2 VoiceStudio、#8 YuE 放一起看，**"AI 生成/处理音视频"今天拿到 3,429 增量 / 28.5%，是今日第一大簇**——而且和昨天不同，这次不是单点驱动（昨日 A 簇 84.1% 靠 gods-eye-view 一个项目），三个项目各自都在 383 以上。
+
+### 13. alphaXiv/OpenResearch
+
+- 地址：https://github.com/alphaXiv/OpenResearch
+- 简介：Run parallel research agents with any model. The local-first workspace for research agents and autoresearch.
+- 语言：Rust
+- 今日新增：304 stars today
+- 标签：研究 Agent、并行实验、本地优先、实验树、多后端
+
+**今日单日涨幅第二（+19.31%）**，也是"掉榜一天就回来"的又一例。它是今天"研究 Agent"赛道里**唯一做实验闭环**的那个——多数深度研究工具止步于"搜资料写报告"，OpenResearch 直接把目标定在 **autoresearch**：提出假说、改代码、跑实验、看证据、决定下一步。
+几个关键设计：**每个研究方向一个独立 Agent 会话 + 独立 git worktree**（真正的并行探索）、**git 原生的实验树**记录变体（每次运行都附带记录 commit 的不可变归档）、日志/差异/产物与产生它们的那次运行绑定（证据留在上下文里）、后端可选 Claude Code / Codex / OpenCode / Cursor 且每次会话可换模型、算力可选本地 / 自有基础设施 / SSH / Slurm / K8s / Ray / HF Jobs / Modal / 托管算力。
+⚠️ **一个 README 自己写明的安全点，值得注意**：`orx up --remote user@host` 的远程服务**只绑 loopback 且没有应用层认证**——同一台机器上的其他用户都能访问。多人共享的服务器上别这么跑。
+📌 Windows 支持目前仍是 beta 且依赖 Git for Windows，装之前先读 `docs/windows.md`。
+
+### 14. jihe520/MathModelAgent
+
+- 地址：https://github.com/jihe520/MathModelAgent
+- 简介：专为数学建模设计的 Agent & skills，自动完成数学建模，生成一份完整的可以直接提交的论文。An Agent Designed for Mathematical Modeling.
+- 语言：Python
+- 今日新增：268 stars today
+- 标签：数学建模、多智能体、论文生成、中文项目、⚠️ 学术诚信
+
+今日**最稳的一个**——连续两个交易日在 +264 / +268，波动不到 2%，在换血率 57.9% 的一天里几乎是个异类。
+目标极窄也极明确：把 3 天的数学建模比赛压缩到 1 小时。多智能体分工（建模手 / 代码手 / 论文手），每个 agent 可配不同模型，代码执行支持本地 Jupyter 或云端 E2B / Daytona，最后直接产出排版好的论文。技术栈走 litellm，兼容几乎所有模型；作者强调"workflow agentless，不依赖 Agent 框架"，成本可控。
+⚠️ 两点提示：① **Windows 安装包未签名**，会触发 SmartScreen，务必只从官方 Releases 页下载；② 使用场景天然带**学术诚信边界**，课程作业或竞赛提交前先确认所在机构对 AI 辅助的明文规定。
+
+### 15. yuliskov/SmartTube
+
+- 地址：https://github.com/yuliskov/SmartTube
+- 简介：Browse media content with your own rules on Android TV
+- 语言：Java
+- 今日新增：238 stars today
+- 标签：Android TV、开源播放器、去广告、⚠️ 供应链事故、⚠️ 密钥泄露
+
+**连续第二日列为头号风险项目。今日复核 README，那则供应链安全公告仍然挂在首行，一个字没改。**
+⚠️⚠️ 公告原文大意：*作者的开发环境被不明恶意软件感染，少量构建产物可能已受影响；检测到后已全盘擦除重建，现在所有构建都过 VirusTotal 扫描，F-Droid 版本发布前也会校验。**公钥可能已泄露**，因此更换了新公钥并提供了备份恢复指引。*
+换句话说——**这是一个连续两天在榜、33k Star 体量的项目，其作者公开声明签名密钥可能已失陷**。任何手上有旧版 APK 的用户都应当按 README 指引吊销 Google 账号授权并更新到新版。
+抛开事故本身，SmartTube 是 Android TV / 电视盒子上最主流的开源 YouTube 客户端之一：SponsorBlock 集成、8K/60fps/HDR、可调速、看直播聊天、不依赖 Google 服务。README 同时声明 **Fire Stick 4k Select 及更新机型（亚马逊 VegaOS）已不再兼容**。
+⚠️ 另一条硬提示：**绝不要从任何应用商店、APK 站点或博客下载**——README 明确说这些是他人上传、可能含恶意代码或广告，官方只走仓库 Releases 与 F-Droid。
+
+### 16. tech-leads-club/agent-skills
+
+- 地址：https://github.com/tech-leads-club/agent-skills
+- 简介：The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.
+- 语言：TypeScript
+- 今日新增：215 stars today
+- 标签：技能注册表、安全扫描、Snyk、多 Agent、MCP
+
+今天**唯一一个把"技能供应链安全"当核心卖点**的项目，切的是一个此前没人正面解决的痛点。
+README 开篇就甩出一个数字：引用 Snyk 的报告，**开放市场上超过 13.4% 的 Agent 技能含有关键漏洞**。它的应对是做成一个"受管的加固库"——100% 开源无二进制、CI/CD 里做静态分析、lockfile + 内容哈希做不可变完整性校验、人工审核提示词；CLI 侧做纵深防御（输入净化、路径隔离、符号链接防护、原子 lockfile、审计留痕），**每个技能发布前都用 Snyk Agent Scan（原 mcp-scan）扫一遍**。支持 Claude Code / Cursor / Copilot / Antigravity 等多个 Agent，还带 MCP Server。
+📌 这个方向值得留意：过去两周榜单上出现了几十个"技能包"，但**几乎没有一个在解决"你怎么知道自己装的技能是干净的"**。这也是本系列第一次看到有人把这个问题产品化。
+⚠️ 冷静看两点：① 它引用的 13.4% 来自 Snyk 自己的报告，属于**利益相关方数据**，方向可信但数值需独立验证；② "已扫描"不等于"无风险"，注册表本身也是一个新的信任集中点——它只是把信任从市场转移到了这个仓库的维护者身上。
+
+### 17. huggingface/transformers
+
+- 地址：https://github.com/huggingface/transformers
+- 简介：🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.
+- 语言：Python
+- 今日新增：102 stars today
+- 标签：ML 框架、多模态、Hugging Face、事实标准、16.5 万 Star
+
+**全榜体量最大的项目（16.5 万 Star），也是今天"老牌项目稳态流量"最纯粹的样本**——+102 落在 165,346 的基数上是 +0.06%，几乎就是日常噪音。
+Fork/Star **20.9%（34,543 / 165,346）全榜第二高**，对一个人尽皆知的框架来说这个比例很能说明问题：三分之一以上的关注者真的 fork 了，因为它是要被读、被改、被嵌进自己项目里的东西。
+📌 它出现在这里的意义不在于它"火"，而在于它给今天的榜单提供了一个参照系——**当一个 16.5 万 Star 的事实标准每天只涨 102 时，那些一天涨 500+ 的新项目到底处在什么量级，立刻就清楚了。**
+
+### 18. Swordfish90/cool-retro-term
+
+- 地址：https://github.com/Swordfish90/cool-retro-term
+- 简介：A good looking terminal emulator which mimics the old cathode display...
+- 语言：QML
+- 今日新增：98 stars today
+- 标签：终端模拟器、CRT 复古、QML·Qt6、Linux·macOS、老牌项目
+
+今天**唯一的"纯审美驱动"项目**——模拟老式阴极射线管显示器的终端模拟器，扫描线、辉光、荧光粉余晖一套做齐，配色/字体/特效可在右键菜单里调。基于 QML 版的 qtermwidget（Konsole 的 QML 移植）。
+26k Star 的老项目，今天 +98 / +0.38%，标准的稳态曝光。
+⚠️ 两点实际约束：① **仅支持 Linux 与 macOS，需要 Qt6**，Windows 用户请绕道；② README 明确建议直接取 Releases 的 AppImage / dmg，或走发行版官方源（Ubuntu / Fedora / Arch 都已收录），不必自己编译。
+📌 在一个"AI 什么都能做"的榜单里出现一个只做"好看"的项目，其实挺说明今天的分布有多散——**19 席里有 6 席（#6 #9 #15 #17 #18 #19，合计 1,416 / 11.8%）跟 AI 基本无关**。
+
+### 19. ever-co/ever-gauzy
+
+- 地址：https://github.com/ever-co/ever-gauzy
+- 简介：Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co
+- 语言：TypeScript
+- 今日新增：58 stars today
+- 标签：ERP·CRM·HRM、开源商业平台、TypeScript、⚠️ AGPL-3.0、自托管
+
+今日门槛线，也是本榜**唯一一个传统企业级业务系统**。一个仓库里塞了 ERP + CRM + HRM + ATS（招聘）+ 项目管理 + 工时/活动/生产力追踪，还有会计、开票、库存、供应链与生产管理，配套 headless API 与仪表盘。
+Fork/Star **19.3%（918 / 4,752）全榜第三高**——对企业软件来说这个比例合理：部署型项目，fork 下来改配置改字段是常态。
+⚠️ **协议是本条最需要注意的**：**AGPL-3.0**，是 GPL 家族里传染性最强的版本之一，**网络服务化使用也触发源码开放义务**。想把它改造成 SaaS 或嵌进商业产品，务必先找法务确认——这不是 MIT/Apache 那种"随便用"的授权。
+📌 README 顶部正在主推同门的新项目 **Ever Works**（"自主研究、交付并维护整个业务的 agentic runtime"），与 #10 DeskcommCRM 的"AI 销售 OS"遥相呼应：**今天榜单上有两个项目在卖"让 Agent 把整个生意跑起来"这个叙事**。
+
+## 观察
+
+- bilawalsidhu/gods-eye-view 今日 2,898 stars today，居当日增量第 1 位。
+- debpalash/VoiceStudio 今日 2,546 stars today，居当日增量第 2 位。
+- asgeirtj/system_prompts_leaks 今日 727 stars today，居当日增量第 3 位。

@@ -1,0 +1,264 @@
+---
+title: GitHub 每日趋势榜 2026-09-17
+description: 2026-09-17 GitHub Trending 榜首为 cloudflare/security-audit-skill，当日共收录 20 个项目。
+date: '2026-09-17T08:00:00+08:00'
+rankingKey: '2026-09-17'
+slug: github-daily-2026-09-17
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-09-17 GitHub Trending 共收录 20 个项目，榜首 cloudflare/security-audit-skill（3,606 stars today）。语言分布：TypeScript 6、Go 4、JavaScript 3、Python 3、Rust 1、Java 1。
+
+## 重点项目
+
+### 1. cloudflare/security-audit-skill
+
+- 地址：https://github.com/cloudflare/security-audit-skill
+- 简介：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
+- 语言：JavaScript
+- 今日新增：3,606 stars today
+- 标签：安全审计 Skill、Cloudflare 官方、六阶段流水线、独立证伪、三级判定
+
+**今日登顶，也是本系列第一个"第二日就翻倍并夺魁"的项目**：09-16 新上榜 +1,249 → 09-17 +3,606（**+188.7%**），在留存 15 席里涨幅第一。当日涨幅 +58.2% 意味着**今天一天新增的量相当于它总 Star 数的 36.8%**，这是一个极端脉冲值。
+它值得单独看的是流程设计（昨日已详述）：① 侦察产出 `architecture.md` + `coverage-ledger.json` → ② **覆盖率驱动的猎杀**（按账本单元分派隔离 hunter，另有 coverage critic 找缺口）→ ③ 候选验证（每个候选交给**全新的** verifier 尝试证伪）→ ④ 结构化输出（`confirmed` / `needs_validation` / `rejected` 三类，按 schema 校验）→ ⑤ 独立记录复核 → ⑥ 目标中立报告。
+只对自己拥有或已获书面授权的代码库运行。
+
+### 2. alibaba/open-code-review
+
+- 地址：https://github.com/alibaba/open-code-review
+- 简介：Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
+- 语言：Go
+- 今日新增：3,290 stars today
+- 标签：AI 代码评审、确定性+Agent 混合、阿里开源、行级评论、五日在榜
+
+**本系列第一个连续五个交易日在榜的项目**，完整曲线是 09-13 +438 → 09-14 +1,796 → 09-15 +2,751 → 09-16 +3,215 → 09-17 +3,290。但今天要如实记录的是：**"连加速"在今天终结了**——环比增速从 +310% → +53.2% → +16.9% → **+2.3%**，第四次收敛。绝对量仍在涨，但已经进入平台期形态。
+产品逻辑没变：内置 NPE、线程安全、XSS、SQL 注入的多语言规则集兜住确定性问题，LLM Agent 负责需要跨文件上下文的深度判断。README 给的 AACR-Bench 是 50 个开源仓库 / 200 个真实 PR / 10 种语言 / 80+ 高级工程师交叉标注的 1,505 条真值，结论是同模型下 F1 与 Precision 显著高于通用 Agent、**token 消耗约 1/9**，代价是 **Recall 偏低**（官方明说是"宁可少报不可噪报"的刻意取舍）。
+让出榜首的位置不意外——它上面换的是一个当日 +58.2% 的脉冲项目。**判断它的标准应该是"第六日是否还在榜"，而不是"是否守住第一"。**
+
+### 3. Tencent/BrowserSkill
+
+- 地址：https://github.com/Tencent/BrowserSkill
+- 简介：Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.
+- 语言：TypeScript
+- 今日新增：1,350 stars today
+- 标签：浏览器 Agent、复用真实登录态、CLI+扩展、human-in-loop、腾讯开源
+
+**今日新上榜第一，也是今天最值得讨论的新形态**。它解决的不是"怎么自动化浏览器"，而是"**怎么让 Agent 用你已经登录的那个浏览器，同时不打断你**"。
+三个设计点很关键：① **标签页借用制**——Agent 要用你已经打开的标签页，必须显式借用、用完归还，其余标签页不动；② **独立可见的 Agent Window**——浏览器任务跑在单独窗口里，你继续用你自己的；③ **内置 human-in-loop**——遇到验证码、登录框、确认对话框这类"只有人能做"的步骤，Agent 可以交还给你，之后接着跑。
+接入面铺得很广：Cursor、Claude Code、Codex、OpenClaw、CodeBuddy、WorkBuddy、Pi、Hermes Agent、DeepSeek Harness 都通过 `bsk` CLI 接入，官方强调**不锁定任何模型、Agent 框架或 harness**。支持 macOS（Apple Silicon/Intel）、Linux（x64/ARM64）、Windows x64，浏览器侧 Chrome 与 Edge，Firefox 在计划中。安装方式也很有时代感：把一行 `Set up browser-skill on this machine by following https://raw.githubusercontent.com/Tencent/BrowserSkill/main/AGENT_INSTALL.md` 发给你的 Agent，让它自己装。
+⚠️ **风险是这件事的另一面**：复用真实登录态 = Agent 能触达你全部已登录会话（邮箱、后台、支付、内网）。详见第四节第 5 条。
+基数只有 3.9k Star / 276 Fork，当日涨幅 +53.9%（今天新增占其总 Star 的 35.0%），属超早期的高波动样本。
+
+### 4. affaan-m/ECC
+
+- 地址：https://github.com/affaan-m/ECC
+- 简介：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+- 语言：JavaScript
+- 今日新增：1,173 stars today
+- 标签：Agent Harness、技能与直觉、记忆系统、26 万 Star、长尾常客
+
+连续第二日在榜，+1,046 → +1,173（+12.1%）。它是本系列**累计在榜次数最多的项目（11 次）**，26 万 Star、Fork/Star 15.0%。
+定位是"给 Agent 装装备"：skills、instincts、memory、security、research-first 开发，跨 Claude Code / Codex / Opencode / Cursor。今日增量破千但当日涨幅只有 0.45%——**典型的"大盘稳态贡献者"**，绝对值好看、相对变化极小。读这类项目要看总量而不是涨幅，否则会把"26 万 Star 的日常呼吸"误读成新一轮增长。
+
+### 5. Tencent/WeKnora
+
+- 地址：https://github.com/Tencent/WeKnora
+- 简介：Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.
+- 语言：Go
+- 今日新增：1,123 stars today
+- 标签：RAG 知识平台、腾讯开源、Auto-Wiki、ReAct Agent、多源接入
+
+连续第二日在榜，+1,201 → +1,123（-6.5%），小幅回落但仍是万星项目里当日涨幅第二高的（4.49%，仅次于 open-code-review）。
+三条能力线：RAG 快速问答、ReAct Agent（自主编排检索 + MCP 工具 + 租户技能目录 + 会话级 Docker/E2B/Cube 沙箱 + 联网搜索）、以及 **Wiki Mode**——让 Agent 把原始文档蒸馏成自维护、互相链接的 markdown 知识库 + 交互式知识图谱，带人工编辑、修订历史、一键回滚。工程上两个实在的点：**跨会话长期记忆**、**分块可编辑带版本历史**。多源接入覆盖飞书 wiki / 飞书云盘 / GitLab / 腾讯 IMA / Notion / 语雀 / 钉钉文档 / RSS。
+今日腾讯系共 3 席在榜（BrowserSkill 1,350 + WeKnora 1,123 + Octop 386 = 2,859，占总量 15.6%）。
+
+### 6. alphaXiv/OpenResearch
+
+- 地址：https://github.com/alphaXiv/OpenResearch
+- 简介：Turn your coding agents into research agents
+- 语言：Rust
+- 今日新增：940 stars today
+- 标签：研究型 Agent、本地优先、桌面应用、Rust·Tauri、三日在榜
+
+**09-16 报告里的明日观察点之一，答案是"在榜了，但涨不动了"**：+593 → +1,036 → +940（-9.3%），连续三日在榜成立，但连续两日上涨终结。
+它已经是本系列少见的"小基数高涨幅且不立刻崩"的样本：三日累计 +2,569，而基数只有 5k Star。形态是本地优先的桌面工作区（macOS / Windows beta / Linux），让 Claude Code、Codex 这类编码 Agent 去跑文献检索、形成假设、执行实验、产出研究产物；可接 LM Studio / oMLX / Ollama / 自定义端点与 OpenCode 用本地模型。
+风险点仍然成立：基数小、README 上的 "#1 Repository of the Day" 是第三方 TrendShift 徽章而非 GitHub 官方排名、安装走 `curl -LsSf … | sh`。**三日在榜是本系列对"趋势"的最低门槛，它刚够到。**
+
+### 7. NationalSecurityAgency/ghidra
+
+- 地址：https://github.com/NationalSecurityAgency/ghidra
+- 简介：Ghidra is a software reverse engineering (SRE) framework
+- 语言：Java
+- 今日新增：912 stars today
+- 标签：逆向工程框架、NSA 开源、反汇编·反编译、老牌基建、三日在榜
+
+**09-16 报告里被点名"唯一异常的大盘项目"，今日答案是在榜但回落**：+755 → +1,059 → +912（-13.9%）。在 7.8 万 Star 的体量上当日涨幅 1.18%，仍是今天 14 个万星项目里第 7 高的相对涨幅。
+双用途属性，仅在自己拥有或已获授权的目标上使用。
+
+### 8. JustVugg/colibri
+
+- 地址：https://github.com/JustVugg/colibri
+- 简介：Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
+- 语言：C
+- 今日新增：872 stars today
+- 标签：MoE 推理、纯 C 零依赖、专家流式加载、消费级硬件、三日连跌
+
+**今天最典型的"趋势结束"样本**。完整曲线：09-13 +652 → 09-14 +2,233（峰值）→ 09-15 +2,035（-8.9%）→ 09-16 +1,532（-24.7%）→ 09-17 +872（**-43.1%**）。连续三日下滑，累计从峰值回落 -61.0%，名次从 #2 掉到 #8。
+技术思路依然成立且是本系列端侧推理方向最好的代表：把 MoE 的专家权重**留在磁盘上按需流式加载**，而不是整模型进显存。但**它现在要证明的是"还有第二波"，而不是"技术行不行"**——连续三日加速下滑在历史上基本没有反转先例。
+与 open-code-review 对照看很有意思：两者都是五日在榜，一个从 +438 一路涨到 +3,290，一个从 +652 涨到 +2,233 后连跌三天。**五日在榜本身不构成任何保证，斜率方向才是。**
+
+### 9. abue-ammar/tinycast
+
+- 地址：https://github.com/abue-ammar/tinycast
+- 简介：Tinycast — a tiny, fully native macOS launcher, hotkeys, and clipboard history.
+- 语言：Swift
+- 今日新增：738 stars today
+- 标签：macOS 启动器、SwiftUI 原生、零第三方依赖、兼容 Raycast 扩展、AGPL-3.0
+
+第二日在榜，+1,076 → +738（**-31.4%**），是留存 15 席里跌幅第三大的。当日涨幅仍有 +14.0%，在 6k Star 基数上不算弱。
+卖点明确：SwiftUI + AppKit、**零第三方依赖**、无 Electron、无遥测，官方称内存占用低于 100 MB。功能覆盖应用启动、全局/单应用热键、文件搜索、剪贴板历史（文本+图片）、内联计算器（含实时汇率与加密货币换算）、Quicklinks。
+**真正的差异化是"跑真实 Raycast 扩展，用原生 SwiftUI 渲染"**——直接继承一个成熟扩展生态，而不必从零建插件市场。这也是它最需要留意的地方：第三方扩展的执行边界和权限由谁约束，README 未展开。授权 AGPL-3.0。
+
+### 10. addyosmani/agent-skills
+
+- 地址：https://github.com/addyosmani/agent-skills
+- 简介：Production-grade engineering skills for AI coding agents.
+- 语言：JavaScript
+- 今日新增：680 stars today
+- 标签：工程技能集、AI 编码 Agent、生产级、Chrome 团队、三日在榜
+
+连续第三日在榜且稳步抬升：260（09-03）→ 354 → 656 → **680（+3.7%）**。9.6 万 Star、Fork/Star 10.6%，是本系列出现频次最高的技能包之一。
+定位稳定：面向生产环境的工程纪律（质量门禁、测试金字塔、安全、性能、代码审查），不是提示词技巧合集。今日增量 680 而当日涨幅仅 0.71%，与 ECC 同属**大盘稳态贡献者**。
+
+### 11. jamiepine/voicebox
+
+- 地址：https://github.com/jamiepine/voicebox
+- 简介：The open-source AI voice studio. Clone, dictate, create.
+- 语言：TypeScript
+- 今日新增：665 stars today
+- 标签：本地语音 I/O、声音克隆、ElevenLabs·WisprFlow 替代、7 TTS 引擎、23 语言
+
+第二日在榜，+409 → +665（**+62.6%**），是留存 15 席里涨幅第三大的。
+README 的定位讲得很清楚：ElevenLabs 占据语音 I/O 环路的**输出**半边，WisprFlow 占据**输入**半边，Voicebox 两边都做，用内置的本地 LLM 做润色并配 per-profile persona，全程在本机运行。配置：7 个 TTS 引擎（Qwen3-TTS、Qwen CustomVoice、LuxTTS、Chatterbox Multilingual/Turbo、HumeAI TADA、Kokoro）、零样本声音克隆或 50+ 预设音色、23 种语言、后期效果链、副语言标签（`[laugh]` `[sigh]` `[gasp]`）。隐私卖点是模型、声音数据与录音都不出本机。
+⚠️ 声音克隆能力天然带声纹滥用风险，克隆他人声音前必须取得明确同意。（注：与本系列此前多日在榜的 **debpalash/VoiceStudio** 是两个不同项目。）
+
+### 12. anthropics/claude-code
+
+- 地址：https://github.com/anthropics/claude-code
+- 简介：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
+- 语言：TypeScript
+- 今日新增：538 stars today
+- 标签：终端编码 Agent、Anthropic 官方、14.6 万 Star、稳态流量、Fork 率最高
+
+第二日在榜，+155 → +538（**+247.1%**），是留存 15 席里涨幅第二大的——但要看清楚：这是在 14.6 万 Star 基数上的 +0.37%，属日常波动区间内的放大，不是新一轮增长。
+Fork/Star 16.1% 与 cilium 并列全榜最高，符合"被大量 fork 作为二开基座"的形态。今日 Anthropic 系共 2 席在榜（+ knowledge-work-plugins 287 = 825，占 4.5%）。
+
+### 13. ever-co/ever-gauzy
+
+- 地址：https://github.com/ever-co/ever-gauzy
+- 简介：Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) - https://gauzy.co
+- 语言：TypeScript
+- 今日新增：469 stars today
+- 标签：ERP·CRM·HRM、开源商业平台、TypeScript、⚠️ AGPL-3.0、跨仓导流
+
+**本系列震荡最剧烈的项目，五日曲线：+58 → +1,095 → +632 → +771 → +469**。09-14 判定其暴涨来自同组织跨仓导流；09-15 回落 -42.3% 被记为"退潮确认"；09-16 回升 +22.0% 推翻了那条判断；**今日再跌 -39.2%，又把 09-16 的回升推翻了**。
+连续两日的方向反转说明一件事：**这个项目的日增量里混有大量非产品因素（导流、传播批次），任何单日方向都不可读。** 要看它只能看多日均值：五日平均 +605，且没有任何稳定斜率。
+Fork/Star 14.6% 全榜第二高，符合"部署型项目"特征（用户 clone 后自建而非贡献代码）。授权 AGPL-3.0，网络服务化同样触发源码开放义务，商用/SaaS 化前需法务确认。
+
+### 14. TencentCloud/Octop
+
+- 地址：https://github.com/TencentCloud/Octop
+- 简介：A smarter, self-hosted AI assistant — multi-user, multi-agent.
+- 语言：Python
+- 今日新增：386 stars today
+- 标签：自托管助手、多用户多 Agent、IM 渠道接入、ACP 双向、Harness 栈
+
+**今日新上榜，是本日能力面最宽的新项目**。定位是给家庭和小团队用的自托管 AI 助手平台：单进程 `octop run` 同时提供 Web Dashboard、CLI、IM 渠道（飞书 / 钉钉 / QQ / Discord / 企业微信）与 cron 定时任务，全部状态落在 `~/.octop/`（SQLite 默认，PostgreSQL 可选）。
+技术栈是 FastAPI + React18 + APScheduler，构建在自研的 Harness 组合上：harness-agent（模型路由/工具/技能/会话检查点）、harness-gateway（多 IM 渠道归一化）、harness-memory（分层召回，记忆随工作区迁移）、harness-browser（CDP 自动化）。能力清单很长：专家库、Connectors（OAuth + MCP）、RAG 知识库、插件、**Terminal AI+**（浏览器内交互 shell）、**Browser AI+**（无头 Chromium）、**远程桌面**、16 个 MBTI 人格模板、**ACP 双向**（既可对外提供服务，也可把编码任务委派给 OpenCode / Claude Code / Codex）。
+安全设计写了四条：JWT 多用户隔离、工具审批、shell 命令护栏、PII 脱敏。MIT 授权、Python 3.12+。
+⚠️ 但这套能力面的另一面是攻击面：详见第四节第 6 条。
+
+### 15. cline/cline
+
+- 地址：https://github.com/cline/cline
+- 简介：Autonomous coding agent as an SDK, IDE extension, or CLI assistant.
+- 语言：TypeScript
+- 今日新增：381 stars today
+- 标签：自主编码 Agent、SDK·IDE·CLI、6.9 万 Star、稳态流量、人工确认
+
+第二日在榜，+102 → +381（**+273.5%**），是留存 15 席里涨幅最大的——同样要看清楚：6.9 万 Star 基数上当日涨幅仅 0.56%，属稳态波动。
+今天榜单里"编码 Agent 三件套"齐了：claude-code 538 / cline 381 / ECC 1,173，合计 2,092（11.4%），且三者当日涨幅全部 ≤0.56%。**这批项目构成的是底座，不是变量。**
+
+### 16. roboflow/supervision
+
+- 地址：https://github.com/roboflow/supervision
+- 简介：We write your reusable computer vision tools. 💜
+- 语言：Python
+- 今日新增：327 stars today
+- 标签：计算机视觉工具库、可复用组件、检测·跟踪、模型无关、老牌基建
+
+第二日在榜，+217 → +327（+50.7%）。5.1 万 Star、Fork/Star 9.5%，模型无关的检测/跟踪/标注工具集，是今天 20 席里**唯一一个纯 CV 项目**。当日涨幅 0.65%，属稳态贡献。
+
+### 17. n8n-io/n8n
+
+- 地址：https://github.com/n8n-io/n8n
+- 简介：Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
+- 语言：TypeScript
+- 今日新增：319 stars today
+- 标签：工作流自动化、400+ 集成、可视化+代码、Fair-code 许可、Fork 率全榜最高
+
+**今日新上榜，是本榜 Star 总数第二大的项目（20.5 万）**，也是本系列首次入榜。可视化搭建 + 自定义代码，400+ 集成，可自托管或用云，原生 AI 能力。
+Fork/Star **29.6%** 是全榜最高且断层领先（第二名 cilium / claude-code 16.1%）——这是典型的"自托管部署型"形态：用户 fork/clone 后自己部署，而不是向上游贡献。
+⚠️ 许可要留意：n8n 用的是 **Sustainable Use License（Fair-code）**，不是 OSI 认可的开源许可，内部使用免费，但**转售、提供托管服务、或把它包装成竞品是被禁止的**，商用前必须过一遍条款。
+今日 +319 在 20 万 Star 基数上是 +0.16%，属稳态上榜，不构成趋势信号。
+
+### 18. anthropics/knowledge-work-plugins
+
+- 地址：https://github.com/anthropics/knowledge-work-plugins
+- 简介：Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
+- 语言：Python
+- 今日新增：287 stars today
+- 标签：Claude 插件、知识工作者、11 个职能包、企业连接器、Cowork
+
+第二日在榜，+96 → +287（**+199.0%**），留存 15 席里涨幅第四大；但 2.4 万 Star 基数上当日涨幅仅 1.19%，仍是稳态量级。
+⚠️ 风险点在于它的性质：11 个职能包 + 覆盖 Slack / Notion / HubSpot / Jira / Microsoft 365 等企业数据源的连接器，**实质是把企业内数据接进模型上下文**。启用前需要过一遍数据外发范围与权限边界。
+
+### 19. coder/coder
+
+- 地址：https://github.com/coder/coder
+- 简介：Secure environments for developers and their agents
+- 语言：Go
+- 今日新增：204 stars today
+- 标签：云开发环境、Terraform 定义、Wireguard 隧道、Agent 沙箱、自托管
+
+**今日新上榜**。README 标题已经从"云开发环境"改成了 **"Self-Hosted Cloud Development Environments and AI Agents"**——这个改名本身就是今天值得记的一条信号：**老牌云开发环境正在集体把定位往"给 Agent 提供沙箱"上挪。**
+机制：工作区用 Terraform 定义（EC2 VM / Kubernetes Pod / Docker Container），通过 Wireguard 隧道连接，闲置自动关停省成本。AI 侧的关键是 **Coder Agents 的 Agent 循环跑在你的控制平面上，而不是在工作区里**——官方明确"no API keys in workspaces，每个动作都带用户身份"，并提供集中式的模型治理、成本追踪与审计日志。
+这与 Octop 的 ACP、BrowserSkill 的 human-in-loop 是同一天的三种不同答案：**当 Agent 真的开始动手，边界应该画在哪儿。**
+
+### 20. cilium/cilium
+
+- 地址：https://github.com/cilium/cilium
+- 简介：eBPF-based Networking, Security, and Observability
+- 语言：Go
+- 今日新增：20 stars today
+- 标签：eBPF、云原生网络、可观测性、老牌基建、⚠️ 边缘上榜
+
+**今日唯一一个低于 100 的项目，且是断层式的低**：第 19 名 +204，第 20 名 +20。在 2.5 万 Star 的体量上当日涨幅 0.08%，是今天 14 个万星项目里最低的。
+它是本榜唯一的纯云原生基础设施项目（eBPF 网络 / 安全 / 可观测），与今天 19 席的 AI 主题几乎无关。**+20 属于边缘上榜（刚好够到当日门槛），不构成任何趋势信号，读榜单时应把它当作噪声剔除。**
+⚠️ 另外 eBPF 是内核级组件，网络策略误配会直接影响集群连通性，生产环境需灰度。
+
+## 观察
+
+- cloudflare/security-audit-skill 今日 3,606 stars today，居当日增量第 1 位。
+- alibaba/open-code-review 今日 3,290 stars today，居当日增量第 2 位。
+- Tencent/BrowserSkill 今日 1,350 stars today，居当日增量第 3 位。

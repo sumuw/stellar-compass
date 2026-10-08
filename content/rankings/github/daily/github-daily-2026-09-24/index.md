@@ -1,0 +1,197 @@
+---
+title: GitHub 每日趋势榜 2026-09-24
+description: 2026-09-24 GitHub Trending 榜首为 vectorize-io/hindsight，当日共收录 14 个项目。
+date: '2026-09-24T08:00:00+08:00'
+rankingKey: '2026-09-24'
+slug: github-daily-2026-09-24
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-09-24 GitHub Trending 共收录 14 个项目，榜首 vectorize-io/hindsight（1,607 stars today）。语言分布：Python 8、TypeScript 2、Go 1、Shell 1、Vue 1、C++ 1。
+
+## 重点项目
+
+### 1. vectorize-io/hindsight
+
+- 地址：https://github.com/vectorize-io/hindsight
+- 简介：Hindsight: Agent Memory That Learns
+- 语言：Python
+- 今日新增：1,607 stars today
+- 标签：Agent 记忆、会学习、反 RAG 与知识图谱、可自托管、新上榜第一
+
+今日榜首，也是唯一一个"新上榜即登顶"的项目。它的自我定位很锋利——README 第一句就划清界限："Most agent memory systems focus on recalling conversation history. Hindsight is focused on making agents that **learn**, not just remember."，并明说要消除 RAG 与知识图谱方案的短板，在长时记忆任务上做 SOTA。
+供应商是 Vectorize（做 RAG 管道的老玩家），这一点决定了它和一堆学术 Demo 的区别：**有论文**（arXiv 2512.12818）、**有公开 benchmark 站**、**MIT 许可**、**有官方托管云但也有完整的自托管路径**（Docker / 外部 PostgreSQL / 裸机 pip 三种）。接入成本压到最低：LLM Wrapper 只要两行代码，另外支持 25+ LLM provider（`HINDSIGHT_API_LLM_PROVIDER` 切换 hosted 与本地）。
+热度形态比数字本身更值得看：**27,235 星的体量下当日涨幅 6.27%**，而全榜另外 6 个万星项目当天涨幅全部 ≤1.91%。也就是说这不是小基数脉冲，是在大盘不动的情况下单点真实放量。Fork/Star 9.4% 属健康区间（不是部署型刷量那种 40%+）。
+⚠️ 两个实际约束：默认 Docker 启动要 `export OPENAI_API_KEY`，即**记忆的整理与抽取要走外部 LLM**，数据出网；README 首屏也在推 Hindsight Cloud（托管版）。自托管要自己接 provider key 与 PostgreSQL。
+
+### 2. google/ax
+
+- 地址：https://github.com/google/ax
+- 简介：Google's open agentic orchestration runtime
+- 语言：Go
+- 今日新增：1,376 stars today
+- 标签：Google 官方、Agent 编排运行时、声明式 K8s、沙箱与网络围栏、⚠️ 稳定版前会 breaking
+
+连续在榜第三日，让出榜首但只回落 10.8%（1,542 → 1,376），**这是它三天里最稳的一次**。对比一下前两日的形态：09-22 是 +2,324（48% 当日涨幅的脉冲）、09-23 是 +1,542，今天 +1,376 —— 三天都在 1,300 以上横盘，从"脉冲"慢慢坐实成了"持续需求"。
+能力面不变：AX 的前提是"Agent 既不是无状态微服务，也不是跑完就结束的批处理"，据此给了四个声明式原语——`Task`（带 CPU/内存上限的隔离沙箱）、`Workspace`（预挂 Git 仓库 / MCP 服务器 / skill 包）、`Gateway`（出站流量锁成显式 host 白名单）、`Model`（平台自身用哪个 LLM）。`ax suspend/resume` 能把空闲 Agent 暂停再从原处拉起，`ax ssh` 能钻进运行中的沙箱。全部写成 `ax.io/v1alpha1` manifest，用过的都说像 Kubernetes。
+⚠️ 今日**逐字复核** README 顶部的 WARNING 仍在，原文是"We will likely to introduce major breaking changes prior to a stable release"。另外它跑在 `agent-substrate/substrate` 之上提供沙箱执行——**而 substrate 今天掉榜了**（09-22、09-23 连续两天同台的"上下游同天在榜"形态到此断开，见 3.3）。
+
+### 3. dream-num/univer
+
+- 地址：https://github.com/dream-num/univer
+- 简介：The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.
+- 语言：TypeScript
+- 今日新增：1,060 stars today
+- 标签：Office Harness、表格文档幻灯片、Canvas 渲染、Agent 装配层、三日在榜
+
+连续在榜第三日，三条曲线是 +114（09-22）→ +1,140（09-23）→ +1,060（今日）。昨天 +464% 的暴涨今天只回吐 7.0%，**是昨日三个 4~11 倍暴涨项里唯一守住量级的**（另两个 claude-code-templates、video-use 今天都掉榜了）。
+这两天它做的最关键一件事是**改定位**：标题从"Univer SDK / 高性能可定制 Office SDK"换成了"The Office Harness for AI Agents"，一句话把目标客户从"要嵌入表格的前端团队"换成了"要给 Agent 找执行面的平台"。README 也明确"不把你锁进托管 app 或固定 UI"。许可上 README 写的是核心仓库 Apache-2.0，Univer Pro 是可选付费项、不强制。
+和 hindsight 一起看，今天头部三强其实是两条完全不同的路：一个给 Agent 装**记忆**，一个给 Agent 装**执行环境**，一个（ax）给 Agent 装**编排与围栏**。
+
+### 4. obra/superpowers
+
+- 地址：https://github.com/obra/superpowers
+- 简介：An agentic skills framework & software development methodology that works.
+- 语言：Shell
+- 今日新增：606 stars today
+- 标签：技能框架、开发方法论、29 万星、多 Agent CLI、二日在榜
+
+连续在榜第二日，+528 → +606（**+14.8%**，留存项里唯一一个"体量最大却还加速"的）。在 29.1 万星的体量下当日涨幅只有 0.21%，是典型的巨物稳态流量——**但它今天进了前四**，说明腰部整体变薄了。
+方法论本身没变：Agent 一上来不写代码，先逼问需求、把 spec 拆成能读完的块、签字后才出实施计划。README 的目录里列了 16 个宿主 Agent（Claude Code / Codex / Cursor / Gemini CLI / Copilot CLI / Qwen Code / Kimi / OpenCode …），这是它维持长尾热度的结构性原因。
+
+### 5. anthropics/financial-services
+
+- 地址：https://github.com/anthropics/financial-services
+- 简介：Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.（⚠️ 页面 About 两源均为空，取自仓库 README 首段，按 6z）
+- 语言：Python
+- 今日新增：510 stars today
+- 标签：金融 Agent 合集、投行与私募流程、Cowork 插件、五日在榜、非投资建议
+
+**连续在榜第五日，今天最值得记的一条。** 本系列此前总结的"连续在榜天数上限 5~6 天"（security-audit-skill、coder 均止于五日，open-code-review 六日为历史最高）今天在它身上得到第二次验证——第五日不仅还在榜，还守住了 510（昨 665，-23.3%，退潮但没崩）。
+内容是一整套按岗位切好的 Agent：Pitch Agent（可比公司 / 先例交易 / LBO → 品牌化 pptx）、Meeting Prep Agent、Market Researcher、Earnings Reviewer、Model Builder（DCF / LBO / 三张表，直接落在 Excel 里）。**一个仓库两种交付形态**——装成 Claude Cowork 插件，或通过 Managed Agents API 部署在自己的工作流引擎后面，同一套 system prompt 与 skills。
+⚠️ 今日**逐字复核** README 的 IMPORTANT 声明仍在，原文明确"Nothing in this repository constitutes investment, legal, tax, or accounting advice… every output is staged for human sign-off"。它不执行交易、不入账、不做投资推荐——**所有产出都要合格专业人员签核**。
+
+### 6. superdesigndev/treg
+
+- 地址：https://github.com/superdesigndev/treg
+- 简介：OpenRouter for agent tools. Join community here: <https://discord.gg/6mQYYfFMAn>
+- 语言：Python
+- 今日新增：470 stars today
+- 标签：工具版 OpenRouter、3,000+ 端点、按次计费、⚠️ 集中代持凭证、三日在榜
+
+连续在榜第三日（+502 → +470，-6.4%），是今日全榜当日涨幅最高的项目（18.37%）——**它 3,028 星的体量里，有 15.5% 是今天一天涨出来的**。
+它解决的是一个很实在的问题：Agent 真干活需要的工具（Semrush $139/月、Moz $99/月、Crunchbase $99/月、Apollo $59/座）都卡在"为一次运行买一个月订阅"这个门槛上。treg 自己持有这些账号，按次收几分钱，Agent 只认一个 base URL + 一个 token。README 里那句"Ask for the task, not the tool"就是这个意思。
+另一半是团队侧：把你自己注册的付费 API、OAuth 连接、厂商 CLI、`SKILL.md` 都登记进去，**凭证永远不出服务器**，且"你自己的 key 优先级永远高于 treg 的，这类调用不计量"。
+⚠️ 风险很直接：这是一个**把全团队的第三方凭证集中代持在一台服务器上的组件**，README 自己的原话是"without the credential ever leaving the server"——好处和坏处是同一件事。它有托管版（treg.to，Render）也有自托管，自托管意味着这台服务器就是高价值目标。
+
+### 7. strands-agents/harness-sdk
+
+- 地址：https://github.com/strands-agents/harness-sdk
+- 简介：Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.
+- 语言：Python
+- 今日新增：463 stars today
+- 标签：生产级 Agent harness、端到端控制、双语言 SDK、AWS 系、二日在榜
+
+**留存涨幅第二（+382.3%）**。昨天它在 17 席里排 **#16（倒数第二，+96）**，今天 +463 冲到 #7 —— 这是本系列"当日排名对次日无预测力"的第 11 次实证（详见 3.3）。
+Strands 是 AWS 系的开源 Agent SDK，这个 `harness-sdk` 是它的"把 harness 建起来并端到端控住"那一层：Python 与 TypeScript 双语言同源发布（`strands-harness` / `@strands-agents/harness`），配套 CLI 与 MCP Server，号称任意模型、任意云。定位是 model-driven——"几行代码起一个 Agent"，但卖点在**生产化那一半**（harness 的生命周期、可观测、可控）。
+Fork/Star 15.0% 是全榜第二高，说明动手改的人多，是"被真实集成"而非"被围观"的信号。
+
+### 8. HKUDS/CLI-Anything
+
+- 地址：https://github.com/HKUDS/CLI-Anything
+- 简介："CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: <https://clianything.cc/>
+- 语言：Python
+- 今日新增：415 stars today
+- 标签：让软件 Agent 原生、CLI 自动生成、CLI-Hub、港大出品、二日在榜
+
+**今日涨幅第一（+912.2%）**。昨天它在 17 席里排 **#17（最后一名，+41）**，今天 +415 进前八——又是一次"榜末次日爆发"。
+核心主张写在 README 第一行："Today's Software Serves Humans👨‍💻. Tomorrow's Users will be Agents🤖。" 做法是给任意软件自动生成一层 CLI，让它变得可被 Agent 调用；分发侧做了 CLI-Hub（`pip install cli-anything-hub` 后 `cli-hub install <name>`）做浏览/安装/管理。Apache-2.0，有配套技术报告。
+50,205 星的体量下当日涨幅只有 0.83%，属于巨物回流；但增量从 41 跳到 415 说明有一波新的传播。和 univer 放一起看，今天"**把现有软件变成 Agent 可编程表面**"这条线上有两个成员同时在榜（univer 改 Office、CLI-Anything 改一切）。
+
+### 9. rohitg00/ai-engineering-from-scratch
+
+- 地址：https://github.com/rohitg00/ai-engineering-from-scratch
+- 简介：Learn it. Build it. Ship it for others.
+- 语言：Python
+- 今日新增：310 stars today
+- 标签：AI 工程教程、523 课 20 阶段、十二语翻译、MIT、巨物稳态
+
+今日唯一的**非工具类**上榜项目，也是全榜 Star 第二高的项目（56,152）。README 徽章自陈 523 课 / 20 阶段，配 12 种语言的落地页（英文为准，课件在 `translations` 分支机翻），MIT 许可。
+Fork/Star **17.6% 是全榜最高**——对教程型仓库来说这是正常形态（人人 fork 一份跟做），但对"热度质量"的判断要注意：高 fork 率在这里**不代表部署刷量，也不代表使用深度**。
+0.56% 的当日涨幅说明它今天是稳态流量而不是新爆发。它的上榜本身是个信号：今天榜单里"教人怎么干"和"给人工具干"挤在同一张表上。
+
+### 10. mvt-project/mvt
+
+- 地址：https://github.com/mvt-project/mvt
+- 简介：MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.
+- 语言：Python
+- 今日新增：275 stars today
+- 标签：移动设备取证、iOS+Android、Amnesty 出品、⚠️ 双用途、三日在榜
+
+连续在榜第三日，今天是**留存项里跌幅最大的一个**（-49.6%，546 → 275）。三日曲线 +149（09-22）→ +546（09-23）→ +275，昨天的暴涨回吐了一半。
+出身很硬：Amnesty International Security Lab 2021 年 Pegasus Project 期间发布，配套公开的取证方法论报告，至今由 Amnesty 与社区维护。用于 Android / iOS 取证、找入侵痕迹（尤其针对商业间谍软件）。
+⚠️ 今日**逐字复核**两处仍在：① README 顶部 IMPORTANT——"We recently merged the 'v3' branch. This introduced breaking changes."，依赖它输出的脚本可能已失效；② 它明说自己"面向技术人员与调查者，需要数字取证基础与命令行能力，**不是给终端用户自查用的**"。双用途属性不变：**仅可用于你拥有或已获明确授权的设备**。
+
+### 11. FxEmbed/FxEmbed
+
+- 地址：https://github.com/FxEmbed/FxEmbed
+- 简介：Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others
+- 语言：TypeScript
+- 今日新增：165 stars today
+- 标签：社交嵌入修复、FxTwitter·FixupX、Discord·Telegram、可自托管、MIT
+
+今日唯一的**纯非 AI** 新上榜项目里热度最高的一个。FxTwitter / FixupX / FxBluesky 的母仓库，用法就是给链接加前缀（`twitter.com` 前加 `fx`、`x.com` 前加 `fixup`、`bsky.app` 前加 `fx`），让 Discord / Telegram 能正常展开多图、视频、投票、引用与翻译。
+技术形态：Cloudflare Worker + Wrangler，Docker 镜像跑的是本地 Workers runtime（不是普通 Node 服务）。MIT 许可，有文档站与 API Reference。
+Fork/Star **4.7% 是全榜最低**——对这类"改链接前缀就能用"的服务型项目是合理的（用户不需要 fork），但同时也意味着**热度几乎全靠传播**，形态与 ax（4.9%）接近。
+
+### 12. julyx10/lap
+
+- 地址：https://github.com/julyx10/lap
+- 简介：An offline-first photo manager for large local libraries
+- 语言：Vue
+- 今日新增：71 stars today
+- 标签：本地相册管理、离线优先、本地 AI 检索、跨平台、⚠️ Windows 未签名
+
+今日第二个纯非 AI 新上榜项目。定位是云相册服务的隐私替代品：不强制上传、本地 AI 检索（搜索 / 相似图 / 智能标签 / 人脸都在本机跑）、直接操作现有文件夹而不把照片导进封闭数据库、面向大容量个人库。macOS / Windows / Linux 三平台，README 有 8 种语言版本（含简体中文）。
+⚠️ 一个实际的安装风险 README 自己写了：Windows 的 `.msi` **未签名**，SmartScreen 会拦，需要点 "Keep anyway"（macOS 版是 Apple 公证过的，Linux 有 deb / AppImage）。这类"未签名 + 引导用户绕过系统警告"的组合在自建场景下可接受，但在受管设备上会触发合规流程。
+
+### 13. leejet/stable-diffusion.cpp
+
+- 地址：https://github.com/leejet/stable-diffusion.cpp
+- 简介：Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++
+- 语言：C++
+- 今日新增：33 stars today
+- 标签：纯 C/C++ 扩散推理、无依赖、Day-0 追新模型、⚠️ API 频繁变动
+
+老牌基建的稳态席位（+33，当日涨幅 0.46%）。价值主张一直没变——不依赖 Python 与 PyTorch，纯 C/C++ 跑扩散模型，端侧 / 嵌入式友好。
+"Important News" 时间线能看出它的生存策略是**追 Day-0/Day-1 支持**：2026/09/20 Qwen-Image-2.1（Day-0）、08/20 LTX-2.5、08/04 MiniMax-H3（Day-1）、06/25 Krea2、06/04 Ideogram4… 新模型一发布就跟上。
+⚠️ README 顶部自己写着"under active development. API and command-line option may change frequently"——追新必然带来接口不稳定，写脚本长期依赖要锁版本。
+
+### 14. NVIDIA/Model-Optimizer
+
+- 地址：https://github.com/NVIDIA/Model-Optimizer
+- 简介：A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.
+- 语言：Python
+- 今日新增：22 stars today
+- 标签：模型压缩、量化·蒸馏·剪枝、TensorRT-LLM 配套、Apache-2.0、巨物稳态
+
+今日末位，+22 是本系列**第二低的上榜门槛之一**（历史最低 3 @09-02，第三低 5 @09-19）。
+按 6p 流程做了间隔抓取核验：两次抓取增量一字未变（22 / 22），Star 总数有 +1 的自然增长 → **判定为真实低增量值，不是"刚进榜计数器未填满"的伪值**（与 09-17 的 cilium 那种单项目跳变不同）。
+这是 NVIDIA 官方的 ModelOpt，量化 / 剪枝 / NAS / 蒸馏 / 投机解码 / 稀疏化的统一库，输入 HF / PyTorch / ONNX 模型，输出量化 checkpoint，下游接 TensorRT-LLM、TensorRT、vLLM，并与 Megatron-Bridge、Megatron-LM、HF Accelerate 集成。Apache-2.0。
+它和 stable-diffusion.cpp 一起构成今天最边缘的一簇（合计 55 / 0.7%）——**模型与推理基建今天基本缺席**。
+
+## 观察
+
+- vectorize-io/hindsight 今日 1,607 stars today，居当日增量第 1 位。
+- google/ax 今日 1,376 stars today，居当日增量第 2 位。
+- dream-num/univer 今日 1,060 stars today，居当日增量第 3 位。

@@ -1,0 +1,249 @@
+---
+title: GitHub 每日趋势榜 2026-10-01
+description: 2026-10-01 GitHub Trending 榜首为 DietrichGebert/ponytail，当日共收录 15 个项目。
+date: '2026-10-01T08:00:00+08:00'
+rankingKey: '2026-10-01'
+slug: github-daily-2026-10-01
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-10-01 GitHub Trending 共收录 15 个项目，榜首 DietrichGebert/ponytail（1,179 stars today）。语言分布：TypeScript 6、Python 3、JavaScript 2、Shell 2、Rust 1、C++ 1。
+
+## 重点项目
+
+### 1. DietrichGebert/ponytail
+
+- 地址：https://github.com/DietrichGebert/ponytail
+- 简介：让你的 AI Agent 像房间里最懒的那个资深开发一样思考。最好的代码是你根本没写的代码。
+- 语言：JavaScript
+- 今日新增：1,179 stars today
+- 标签：做减法、Agent 技能、20 平台、MIT、老面孔
+
+675 → 1,179，**+74.7%**，今天的增速冠军。它的卖点不是"加能力"而是"减代码"——README 头图配文是
+"He says nothing. He writes one line. It works."，徽章上写着 **works with 20 agents**，npm 包名 `@dietrichgebert/ponytail`。
+值得注意的是 **Fork/Star 只有 5.4%**，是全榜最低：一个 15 万星、只有 8 千 fork 的项目，说明绝大多数人只是"收藏赞同"，
+真正拿去改的人极少——这类项目的星数增长更依赖观点认同而非使用。
+
+### 2. mattpocock/skills
+
+- 地址：https://github.com/mattpocock/skills
+- 简介：给真正的工程师用的技能包，直接从作者的 `.agents` 目录里搬出来的。
+- 语言：Shell
+- 今日新增：888 stars today
+- 标签：反 vibe coding、可组合、工程方法论、MIT、在榜最多
+
+736 → 888（+20.7%），连续第二日在榜且继续放大，是本系列唯一保持 14 次出场的项目。
+README 的定位写得很直白：**"not vibe coding"**，并点名批评 GSD、BMAD、Spec-Kit 这类"接管流程"的方法——
+认为它们夺走了你对流程的控制权，一旦流程本身出错很难定位。它的替代方案是"小而可组合、可随意改、任何模型都能用"。
+
+### 3. NVIDIA/OpenShell
+
+- 地址：https://github.com/NVIDIA/OpenShell
+- 简介：面向自主 AI Agent 的安全、私有运行时。
+- 语言：Rust
+- 今日新增：2,503 stars today
+- 标签：Agent 沙箱、内核级策略、凭据代持、厂商官方、今日榜首
+
+虽然页面排在第 3 位，但按今日增量它是**实打实的榜首**，也是全榜唯一占比超过四分之一的项目。
+1,280 → 2,503（**+95.5%**），Star 从 11,772 推到 13,807（**+2,035**），三日累计已把 Star 从 10,199 拉到 13,807（**+3,608**）。
+三条主张依旧是它最硬的卖点：① **内核级强制执行**——文件访问与系统调用都被内核限制，每一次网络连接出沙箱前要过策略检查；
+② **Agent 永远看不到真实凭据**，只在请求发往"已批准端点"时才由 OpenShell 代注入；
+③ **策略变更走形式化验证**，凡要给 Agent 开新主机、新 API 方法的变更，会被自动标为高风险并等待人工复核。
+一旦 OpenShell 本身被攻破，影响面覆盖所有经手的 Agent。
+
+### 4. firebase/firebase-ios-sdk
+
+- 地址：https://github.com/firebase/firebase-ios-sdk
+- 简介：面向 Apple 应用开发的 Firebase SDK。
+- 语言：C++
+- 今日新增：112 stars today
+- 标签：Apple SDK、十年老项目、大盘对照、Apache-2.0、二日在榜
+
+4 → 112，**结束了昨日的"门槛骤降"**。昨天 09-30 的末位只有 +4（历史倒数第二低），今天回到 +112，
+说明日榜准入门槛已恢复正常（判据 #4 ✅）。它的价值在于做**刻度尺**：一个近十年的官方 SDK，
+Fork/Star 高达 26.4%（真实 fork 使用的信号），今天的 +112 几乎可以视作"大盘没动"的基线噪声。
+
+### 5. mvschwarz/openrig
+
+- 地址：https://github.com/mvschwarz/openrig
+- 简介：用 Claude Code、Codex 和 Pi 搭起你自己的 Agent 网络：带角色的常驻团队、共享上下文与各自负责的工作。
+- 语言：TypeScript
+- 今日新增：640 stars today
+- 标签：多 Agent 编排、YAML 团队、tmux、第四日在榜、早期项目
+
+622 → 640（+2.9%），**第四日在榜且计数器回升**，昨日 §3.8 第 2 条判据 ✅ 成立——
+"多 Agent harness"这条产品线从候选升级为**已确认形态**。它的核心比喻很清晰：
+"harness 包一层模型，rig 包一层 harness"——用 YAML 定义团队，一条命令启动，Claude Code 与 Codex 在同一个 rig 里被当作一个系统管理。
+Star 从 2,799 到 3,463（**+664**），四日累计从 2,177 起步，涨幅 **59%**。
+且 `rig setup` 会写入 provider hooks 与 workspace trust 设置，作者专门要求先备份相关文件再用 `rig setup --dry-run` 预览。
+
+### 6. cursor/plugins
+
+- 地址：https://github.com/cursor/plugins
+- 简介：Cursor 的插件规范与官方插件。
+- 语言：TypeScript
+- 今日新增：157 stars today
+- 标签：官方插件市场、60+ 集成、规范定义、隔 28 期回归、许可冲突
+
+上次在榜是 2026-08-29，隔 **28 期**回归，是今天间隔最久的回归项。
+每个插件是仓库根目录下的独立目录，各自带 `.cursor-plugin/plugin.json` manifest。README 的插件表长得惊人——
+**开发者工具类**（teaching、thermos 深度安全审计、ralph-loop 自指循环、agent-compatibility 兼容性扫描、
+cli-for-agent 面向 Agent 的 CLI 设计规范、orchestrate 云端并行 fan-out、pstack、dyl-stack、advisor 决策前请教更强模型）与
+**企业集成类**（gmail、google-drive/docs/sheets/slides、gong、salesforce、playwright、github、ashby、hubspot、
+intercom、zoom、x、clay、circleback、docusign、navan、klaviyo、semrush、ahrefs…）合计 **60 多个**。
+这条Item今天的价值在于：它把"Agent 不只是写代码，而是接管企业 SaaS 全链路"这件事**官方化**了。
+README 同时列出每个插件目录下应自带 LICENSE，实际商用前需逐个插件确认。
+另需注意 `gmail`/`google-calendar` 等插件会读写**真实企业账号数据**。
+
+### 7. obra/superpowers
+
+- 地址：https://github.com/obra/superpowers
+- 简介：一套真正能跑通的 Agent 技能框架与软件开发方法论。
+- 语言：Shell
+- 今日新增：476 stars today
+- 标签：TDD 方法论、子代理驱动、16 平台、全榜最大体量、MIT
+
+**293,787 星是今日全榜最大，也是本系列历史第二高**（仅次于 09-30 openclaw 的 390,875）。隔 3 期回归，第 12 次在榜。
+它的流程设计很具体：Agent 一看到你在搭东西，**不会立刻写代码**，而是先退一步问你到底要什么 →
+把 spec 拆成能读的短块给你确认 → 出一份"热情但没品味、没判断力、没项目上下文且讨厌测试的初级工程师也能照做"的实施计划 →
+你喊 go 之后才启动 **subagent-driven-development**，强调真红/绿 TDD、YAGNI、DRY。
+安装列表覆盖 **16 个平台**：Claude Code、Antigravity、Codex App/CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、
+GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent、Muse——
+这份列表本身就是"Agent harness 碎片化现状"的最好证据。
+`Visual companion telemetry` 节，启用前请自行确认是否接受遥测。
+
+### 8. mksglu/context-mode
+
+- 地址：https://github.com/mksglu/context-mode
+- 简介：面向 AI 编码 Agent 的上下文窗口优化。沙箱化工具输出（削减 98%）、持久化会话记忆，并通过 MCP + hooks 在 17 个平台上强制路由。
+- 语言：TypeScript
+- 今日新增：357 stars today
+- 标签：上下文压缩 98%、工具输出沙箱、17 平台、ELv2、老面孔
+
+88 → 357，**+305.7%**，是今天留存项里涨幅最大的。README 自称先后拿到了 Hacker News #1（570+ points），
+并在"used across teams at"下面摆了 Microsoft、Google、Meta、Amazon、IBM、NVIDIA、ByteDance、Stripe、Datadog、Salesforce、GitHub 的 badge——
+**这些是自述 badge 而非官方背书**，本系列不做独立核验，仅照录。它的自我定位是"上下文问题的另一半"：
+不是给模型更多上下文，而是把工具输出压掉 98%。
+
+### 9. heygen-com/hyperframes
+
+- 地址：https://github.com/heygen-com/hyperframes
+- 简介：写 HTML。渲染视频。为 Agent 而建。
+- 语言：TypeScript
+- 今日新增：624 stars today
+- 标签：HTML 转视频、确定性渲染、Agent 可用、FFmpeg、二日连涨
+
+352 → 624（**+77.3%**），第三日在榜（09-07、09-08、09-30、10-01 计 3 次）且连续两日放大。
+它的主张是把视频生成从"抽卡"变成**确定性渲染**：HTML/CSS 写什么就出什么，Agent 可以稳定地改一版再渲染一版。
+HeyGen 作为商业视频公司出品这个开源项目，路径与其他 3D/视频渲染方案（Manim、Remotion）不同的一侧在于明确写了 **Built for agents**。
+
+### 10. earendil-works/pi
+
+- 地址：https://github.com/earendil-works/pi
+- 简介：AI Agent 工具包：统一 LLM API、Agent 循环、TUI、编码 Agent CLI。
+- 语言：TypeScript
+- 今日新增：294 stars today
+- 标签：统一 LLM API、Agent 运行时、无内置权限、隔 13 期回归、MIT
+
+上次在榜是 2026-09-15，隔 **13 期**回归。仓库是 monorepo，包包括
+`@earendil-works/pi-coding-agent`（交互式编码 Agent CLI）、`pi-agent-core`（带工具调用与状态管理的运行时）、
+`pi-ai`（统一多厂商 LLM API）、`pi-tui`、`pi-durable`、`chord`、`pi-telemetry` 共 7 个。
+11.1 万星 + 418 天，属本系列少见的"高龄高体量"Agent 基础设施项目。
+**"Pi does not include a built-in permission system for restricting filesystem, process, network, or credential access. By default, it runs with the permissions of the user and process that launched it."**
+也就是说：默认以启动它的用户权限全量运行，需要边界必须自己容器化（README 给了 containerization.md 的三种模式）。
+另外 README 顶部红字写明：**新贡献者的 issue 与 PR 默认被自动关闭**，维护者每天复核——外部参与门槛高。
+
+### 11. tile-ai/tilelang
+
+- 地址：https://github.com/tile-ai/tilelang
+- 简介：用于简化高性能 GPU/CPU/加速器内核开发的领域专用语言。
+- 语言：Python
+- 今日新增：157 stars today
+- 标签：GPU 内核 DSL、基于 TVM、昇腾 950、国内团队、许可未声明
+
+今天唯一一个与 Agent 完全无关、且是硬核编译器的新面孔。基于 TVM 构建 Pythonic 语法，
+面向 GEMM、Dequant GEMM、FlashAttention、LinearAttention 等内核。
+它今天上榜的时间点非常明确——README 的 Latest News 第一条就是
+**2026-09-30 TileLang 正式支持华为昇腾 950 NPU**（原生代码生成、自动调度与同步、SIMD/SIMT 向量编程），昨天发布，今天上榜。
+作者 LeiWang1999、chengyupku 等来自**北京大学**（导师 Zhi Yang），部分工作于微软亚洲研究院实习期间完成。
+对本系列而言，它是继 PLFM_RADAR 之后的第二个"国产硬件/自主算力"信号，但性质完全不同——这是编译器，不是概念验证。
+此外 v0.1.13 移除了若干 legacy API，README 明确要求升级前先读兼容性说明。
+
+### 12. pablostanley/yoinks
+
+- 地址：https://github.com/pablostanley/yoinks
+- 简介：在终端里 yoink 任何视频。没有流氓广告。
+- 语言：TypeScript
+- 今日新增：356 stars today
+- 标签：终端视频下载、yt-dlp 封装、1,800+ 站点、76 天未更新、MIT
+
+`npm install -g yoinks` 或 `npx yoinks`，一条命令拉视频，支持 YouTube、X/Twitter、Instagram、Threads、TikTok 及
+**1,800+ 站点**（因为底层是 yt-dlp）。首次运行会把独立版 yt-dlp 二进制下载到 `~/.yoinks/bin`，无需 Python；ffmpeg 也是自动处理的。
+UI 做得很讲究：全屏居中、多种主题（auto/light/dark）、格式选择器带预估文件大小、支持鼠标点击。
+作者是 pablostanley（设计出身），这条 Item 与 §14 impeccable 一起构成今天"设计师给 Agent 做工具"的组合。
+使用时应遵守目标平台条款与当地著作权法。另外**仓库已 76 天未推送**，对一个上线两个半月的项目来说是维护风险信号。
+
+### 13. HunxByts/GhostTrack
+
+- 地址：https://github.com/HunxByts/GhostTrack
+- 简介：一个追踪位置或手机号码的实用工具（作者自述为 OSINT / 信息收集工具）。
+- 语言：Python
+- 今日新增：635 stars today
+- 标签：OSINT、号码与 IP 追踪、无许可证、994 天未更新、头号风险
+
+本系列 45 期里风险画像最极端的一条。三点事实必须先摆出来：
+① 功能——README 自述提供 **IP Tracker / Phone Tracker / Username Tracker** 三类追踪，并在 IP Track 菜单里推荐搭配
+thewhiteh4t/seeker 使用（seeker 是社交工程式定位工具）；
+② 状态——**已 994 天没有 push**，即 2023 年之后基本停更；
+③ 许可——**README 里没有任何 License 段，也没有任何免责声明**（`license` / `disclaimer` / `consent` 关键词 0 命中）。
+一个停更近三年、追踪他人位置与手机号、且完全无许可无免责的项目，今天拿到 +635、排进第 13 位——
+这既是今日榜单的最大异常，也解释了为什么 §3.6 要把它单独提出来讨论星数质量。
+本仓库未提供任何合法用途声明、同意机制或年龄/授权门槛，且依赖链涉及社交工程工具。
+
+### 14. pbakaus/impeccable
+
+- 地址：https://github.com/pbakaus/impeccable
+- 简介：让 AI harness 更擅长设计的语言。1 个 skill、24 个命令、实时浏览器迭代，以及 61 条确定性检测规则。
+- 语言：JavaScript
+- 今日新增：463 stars today
+- 标签：AI 前端设计、61 条检测规则、24 命令、Apache-2.0、隔 3 期回归
+
+上次在榜 2026-09-25，隔 3 期回归，第 3 次出场。它的诊断非常具体——
+"所有模型都在同一批 SaaS 模板上训练，跳过引导你就会在**每个**项目上得到同几个破绽：
+到处用 Inter、紫到蓝的渐变、卡片套卡片、彩色背景上的灰字、每个标题上方那个圆角方块图标。"
+处方是 **1 个 skill + 24 个命令 + 61 条确定性检测规则**：`init` 会产出 `PRODUCT.md` 记录持久化的产品事实（受众、用途、
+运行环境、约束、语气、证据），把"产品真相"与"视觉方向"分开；检测规则与浏览器扩展**不需要 LLM 也不需要 API key**即可运行。
+作者明确写了它源自 Anthropic 的 frontend-design skill，"Impeccable started from there"。
+
+### 15. Friedrich-M/UniMate
+
+- 地址：https://github.com/Friedrich-M/UniMate
+- 简介：[SIGGRAPH Asia 2026] UniMate：用一个统一模型驱动各种不同骨架做动画。
+- 语言：Python
+- 今日新增：225 stars today
+- 标签：骨骼动画统一模型、SIGGRAPH Asia 2026、普林斯顿、数据集许可复杂、首次在榜
+
+今天唯一一篇**学术论文代码**，也是全榜最年轻、市值最小（994 星）的项目，却拿到全榜最高的当日涨幅 29.26%。
+作者来自 **Princeton · UC Berkeley · MIT · NTU**，已被 SIGGRAPH Asia 2026 接收（2026-07-18）。
+核心贡献是 **UniML3D 数据集**——13,006 条带文本配对的运动序列，覆盖双足、四足、鸟类、海洋生物、昆虫、
+蛇形与铰接刚体等多种骨骼拓扑，统一到同一 canonical 空间。Released 节奏清晰：08-01 交互 Demo 上线、
+08-30 数据集与数据处理管线、09-06 训练与推理代码、09-27 预览 checkpoint 上线 HuggingFace。
+README 也很诚实：明确写着"UniMate 是朝任意骨骼文本生成动画迈出的**早期一步**，许多动作与骨骼**仍会失败**"。
+Objaverse-XL 逐对象各自许可、**Truebones ZOO 是商业素材包且不允许再分发**（需自行向 Truebones 购买）。
+管线只是按原目录结构读取，不替你解决素材授权。
+
+## 观察
+
+- NVIDIA/OpenShell 今日 2,503 stars today，居当日增量第 1 位。
+- DietrichGebert/ponytail 今日 1,179 stars today，居当日增量第 2 位。
+- mattpocock/skills 今日 888 stars today，居当日增量第 3 位。

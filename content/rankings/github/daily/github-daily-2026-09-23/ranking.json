@@ -1,0 +1,298 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-09-23",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "google/ax",
+      "url": "https://github.com/google/ax",
+      "description": "Google's open agentic orchestration runtime",
+      "language": "Go",
+      "stars": 8612,
+      "delta": "1,542 stars today",
+      "tags": [
+        "Google 官方",
+        "Agent 编排运行时",
+        "声明式 K8s",
+        "沙箱与网络围栏",
+        "⚠️ 稳定版前会 breaking"
+      ],
+      "comment": "昨天留下的判据写得很硬——\"若守住 1,500 以上且在榜，则是真实需求\"。**今天 1,542，还在榜，判据成立。** 增量从 2,324 回落到 1,542（-33.6%）属于自然退潮，不是腰斩。这是本系列第一次出现\"榜首级尖峰（+2,324、48% 当日涨幅）在次日既没掉榜也没腰斩\"，此前所有同级别尖峰第二天要么归零、要么跌掉六成以上。\n能力面再补一句：AX 的前提是\"Agent 既不是无状态微服务，也不是跑完就结束的批处理\"，据此给了四个声明式原语——`Task`（带 CPU/内存上限的隔离沙箱）、`Workspace`（预挂 Git 仓库 / MCP 服务器 / skill 包）、`Gateway`（出站流量锁成显式 host 白名单）、`Model`（平台自身用哪个 LLM）。`ax suspend/resume` 能把空闲 Agent 暂停再从原处拉起，`ax ssh` 能钻进运行中的沙箱。全部写成 `ax.io/v1alpha1` manifest。\n⚠️ 今天**逐字复核** README 顶部的 WARNING 仍在，原文是\"We will likely to introduce major breaking changes prior to a stable release\"。顺带修正一处：此前几期报告把这条写成\"⚠️ pre-stable\"，但 README 里**并没有 \"pre-stable\" 这个字面词**，是提炼后的说法，今天起改为按原文表述。部署依然需要先有一个 K8s 集群 + `ko` + 镜像仓库 + 可访问的 Agent Substrate 控制面——**不是今天就能上生产的东西。**\n另外它明确声明\"runs on top of Agent Substrate\"，与排第 7 的 substrate 是同一技术栈的上下两层。"
+    },
+    {
+      "rank": 2,
+      "name": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+      "language": "TypeScript",
+      "stars": 16145,
+      "delta": "1,140 stars today",
+      "tags": [
+        "Office Harness",
+        "表格文档幻灯片",
+        "Canvas 渲染",
+        "Agent 装配层",
+        "二日在榜"
+      ],
+      "comment": "昨天 +202 排第 5，今天 +1,140（**+464.4%，留存涨幅第二**），是全榜第二大增量。注意它的自我定位在过去一天里换了词：昨天是 \"Office SDK\"，今天变成 **\"The Office Harness for AI Agents\"**——从\"给开发者用的 SDK\"改成\"给 Agent 用的装配架\"，一句话就把赛道挪了。\n它做的是把表格、文档、幻灯片、画布、多维表、PDF 塞进同一个运行时（Canvas 自渲染 + 公式引擎），让 Agent 可以直接读写这些原本属于人的专业软件表面。这条路与 09-14 以来反复出现的\"给 Agent 定边界\"是两回事，属于\"给 Agent 打开专业软件\"。\nFork/Star 8.8% 在榜上属中位，说明有一定比例的动手用户，不是纯看热闹。今天 7.60% 的当日涨幅在万星项目里是最高的——见 3.5 刻度尺。"
+    },
+    {
+      "rank": 3,
+      "name": "Open-Dev-Society/OpenStock",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+      "language": "TypeScript",
+      "stars": 18644,
+      "delta": "832 stars today",
+      "tags": [
+        "开源行情终端",
+        "实时价格与预警",
+        "全栈自建",
+        "AGPL-3.0",
+        "⚠️ 非券商"
+      ],
+      "comment": "轨迹是 09-20 #1（+843）→ 09-21 #1（+843 级别的头部）→ **09-22 掉榜** → **今日 #3 回归（+832）**。这是本系列第二次观察到一个项目\"掉榜一天后立刻以相近量级回来\"（第一次是 ECC，09-21 记录的\"隔日在榜\"模式）。**与 cua、agent-native 那种\"掉榜即归零\"完全不同——它的底盘是实的。**\n项目本身是自建的行情看板：实时价格、个性化预警、公司基本面洞察，全栈 TypeScript。\n⚠️ 三点逐字复核仍在：① 许可为 **AGPL-3.0**，README 原文写明\"if you modify, redistribute, or deploy it (including as a web service), you must release your source code\"——**部署成 Web 服务也要开源，这是 AGPL 与 MIT/Apache 最实质的差别**；② README 顶部有自家仓库 **kitbash** 的导流位；③ 自陈 \"OpenStock is community-built and **not a brokerage**\"、\"Market data may be delayed\"、\"**Nothing here is financial advice**\"。"
+    },
+    {
+      "rank": 4,
+      "name": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "description": "Edit videos with coding agents",
+      "language": "Python",
+      "stars": 26332,
+      "delta": "745 stars today",
+      "tags": [
+        "Agent 剪视频",
+        "ffmpeg 编排",
+        "字幕与调色",
+        "渲染自评估",
+        "⚠️ 需 ElevenLabs key"
+      ],
+      "comment": "昨天 +155（第 7），今天 +745（**+380.6%，留存涨幅第三**）。和 univer 是同一条叙事线：**不是让 Agent 更会写代码，而是把视频时间线这个专业软件表面暴露给 Agent**。今天两者同时在榜且双双大涨，使\"Agent 应用层\"这条线第一次有了连续两天的证据（见 3.4）。\n具体能力：ffmpeg 编排、自动调色、30ms 音频淡入淡出、按风格烧字幕，以及一个\"渲染后自评估\"环节。\n⚠️ 安装需要 **ElevenLabs API key** + 本地 ffmpeg（README 逐字复核仍在），README 多处引导到 Browser Use Cloud / Box 等付费云。"
+    },
+    {
+      "rank": 5,
+      "name": "anthropics/financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": "Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.",
+      "language": "Python",
+      "stars": 36785,
+      "delta": "665 stars today",
+      "tags": [
+        "金融 Agent 合集",
+        "投行与私募流程",
+        "Cowork 插件",
+        "四日在榜",
+        "非投资建议"
+      ],
+      "comment": "**今天唯一连续在榜四天的项目**，增量曲线 236 → 425 → 436 → 665，斜率在昨天趋平后又重新向上（+52.5%）。按 6ee 记下的轮廓（连续在榜天数上限 5~6 天），明天是第五日，是这条轮廓的第一个正面检验点。\n内容分成两层：具名 Agent（Pitch Agent、Meeting Prep Agent、Market Researcher、Earnings Reviewer、Model Builder 等，覆盖可比公司分析、LBO、DCF、三张报表）与按垂类打包的 skills / slash 命令 / 数据连接器（`/comps`、`/dcf`、`/earnings`）。同一套东西可以装成 Claude Cowork 插件，也可以通过 Managed Agents API 部署在自己的工作流引擎后面。\n⚠️ README 顶部 IMPORTANT **逐字复核仍在**：\"Nothing in this repository constitutes investment, legal, tax, or accounting advice\"，且明确\"不执行交易、不入账、不做准入、不做投资推荐，全部产出停在人工签核前\"。"
+    },
+    {
+      "rank": 6,
+      "name": "BuilderIO/agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "description": "A framework for building agentic apps",
+      "language": "TypeScript",
+      "stars": 6429,
+      "delta": "609 stars today",
+      "tags": [
+        "Agent 应用框架",
+        "Builder.io 出品",
+        "TypeScript",
+        "隔日回归",
+        "定位宽泛"
+      ],
+      "comment": "轨迹 09-21 #3（+607，当日留存涨幅第一）→ 09-22 掉榜 → **今日 +609 回归**。这个数字和它在 09-21 的 607 只差 2——**同一项目隔一天给出几乎完全相同的增量**，从统计上看更像\"同一批人在隔日窗口里重复点击\"，而不是两波独立热度。与 OpenStock 一起构成今天两个\"隔日回归\"样本。\n项目本身是 Builder.io 出的 Agent 应用框架，README 自我描述只有一句 \"A framework for building agentic apps\"，**定位相当宽泛**，目前看不出它与 LangGraph / ADK 这类已有框架的明确差异点，需要更多信息才能判断。"
+    },
+    {
+      "rank": 7,
+      "name": "agent-substrate/substrate",
+      "url": "https://github.com/agent-substrate/substrate",
+      "description": "Agent Substrate: the core system",
+      "language": "Go",
+      "stars": 3336,
+      "delta": "560 stars today",
+      "tags": [
+        "高密度沙箱",
+        "gVisor 与 microVM",
+        "挂起恢复 <500ms",
+        "ax 的下游依赖",
+        "非官方支持"
+      ],
+      "comment": "与榜首 **第二日同台**——按 6gg 的规则（同天同台不构成形态，需第二日同台），**\"上下游项目同天在榜\"这个形态今天第一次成立**。这不是\"两个同类项目恰好同天热\"，而是同一个技术栈的两层被同时推上台面：ax 的 README 原文写着 \"It runs on top of Agent Substrate for sandboxed execution\"。\n核心思路是把大量 actor（Agent 这类应用）映射到少量常驻 worker 上——理由是 Agent 大部分时间是空闲的，可以重度超卖。官方 demo 是 8 个物理 Pod 复用约 250 个有状态 actor，README 声称 30x+ 超卖、sub-500ms 恢复、500+ 次/秒挂起激活。沙箱支持 microVM 与 gVisor 两种，管标准 OCI 容器，所以框架无关。\n⚠️ README 首屏**逐字复核仍在**：\"This is **not an officially supported Google product**\"，且不参与 Google OSS 漏洞赏金计划。贡献者里有 Google Kubernetes 的老面孔，但\"官方出品\"与\"官方支持\"是两回事。"
+    },
+    {
+      "rank": 8,
+      "name": "mvt-project/mvt",
+      "url": "https://github.com/mvt-project/mvt",
+      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
+      "language": "Python",
+      "stars": 14375,
+      "delta": "546 stars today",
+      "tags": [
+        "移动设备取证",
+        "iOS 与 Android",
+        "IOC 比对",
+        "Amnesty 安全实验室",
+        "三日在榜"
+      ],
+      "comment": "**连续第三日**（177 → 441 → 546）。昨天留下的判据是\"若守住 300 以上，说明 v3 换代带来真实持续关注\"——**546，判据成立**。按\"单日尖峰多为一次性脉冲\"的规律，它本应回落，实际是连续三天阶梯上行，属于本系列少见的三日递增形态。\n⚠️ 三件事逐字复核仍在：① 由 **Amnesty International Security Lab** 发布，双用途取证工具，**仅限自己拥有或获得明确授权的设备**；② README 明确\"We do not want MVT to enable privacy violations of non-consenting individuals\"，并为此使用了自有许可；③ 公开 IOC 只能用于排查已知攻击指标，**不足以判定一台设备是干净的**，也不是终端用户自评工具。v3 分支刚合并，有 breaking changes。"
+    },
+    {
+      "rank": 9,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 290514,
+      "delta": "528 stars today",
+      "tags": [
+        "Agent 技能框架",
+        "开发方法论",
+        "Shell 实现",
+        "29 万星巨物",
+        "当日仅 +0.18%"
+      ],
+      "comment": "**全榜 Star 总数最多的项目（290,514），也是今天新上榜里体量最大的一个**。它给编码 Agent 套一层可组合的 skills 加初始指令，本质上是一套\"让 Agent 按流程干活\"的方法论包，用 Shell 实现。\n但要读清楚数字：+528 听着不小，除以 29 万存量只有 **+0.18%**——在万星刻度尺里排倒数第三。这说明它的热度是**存量巨物的日常呼吸**，不是新事件。今天真正有增量事件的项目，星数全部在 2 万以下（见 3.5 的观察）。"
+    },
+    {
+      "rank": 10,
+      "name": "superdesigndev/treg",
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools. （README 首句：OpenRouter, but for agent tools instead of models.）",
+      "language": "Python",
+      "stars": 2557,
+      "delta": "502 stars today",
+      "tags": [
+        "工具版 OpenRouter",
+        "3000+ 端点",
+        "按次计费",
+        "凭证服务端注入",
+        "⚠️ curl 管道安装"
+      ],
+      "comment": "昨天 +197（第 6）→ 今天 +502（**+154.8%**），且**当日涨幅 24.43% 是全榜最高**。它解决的是一个很具体的问题：Agent 真正干活要用的那些工具（Semrush $139/月、Moz $99/月、Crunchbase $99/月、Apollo $59/座席）没人会为一次运行去订阅。treg 代持这些账号，按次计费，最低一美分一次，对外只暴露一个 base URL + 一个 token。已编目 3,000+ 端点 / 60+ 供应商。\n设计上有一条硬规则值得记：**\"the proxy relays, never models the upstream\"**，且凭证在服务端注入——所以上游 API 改了它还能活，调用方手里永远没有密钥。团队自己的 key 优先于 treg 的 key，且**自己的 key 调用不计费**。\n⚠️ 两个风险：**`curl -fsSL https://treg.to/install.sh | sh`** 管道安装（逐字复核仍在）；服务端集中代持大量第三方凭证 = 单点信任 + 单点故障。目录里含抓取 / 外链 / 社媒数据等灰色地带端点，合规边界自担。"
+    },
+    {
+      "rank": 11,
+      "name": "davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "stars": 31380,
+      "delta": "393 stars today",
+      "tags": [
+        "Claude Code CLI",
+        "配置与监控",
+        "模板市场",
+        "留存涨幅第一",
+        "推广位较多"
+      ],
+      "comment": "**今天的留存涨幅第一：昨天 +33（全榜末位），今天 +393（+1,090.9%）。** 一天之内从榜末跳到增量第 11，是本系列\"当日排名对次日无预测力\"的第 10 次实证。\n功能上是 Claude Code 的配置/监控命令行加模板市场。\n⚠️ README 商业内容密度在榜上偏高：GitHub Sponsors、Buy Me A Coffee 等多个赞助徽章 + 正文赞助位，且含带追踪参数的推广链接。**项目本身可用，但需要分清楚哪些是广告。**"
+    },
+    {
+      "rank": 12,
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design. （README 首句：Design guidance for AI coding agents. 1 skill, 24 commands, live browser iteration, and 61 deterministic detector rules for AI-generated frontend design.）",
+      "language": "JavaScript",
+      "stars": 70159,
+      "delta": "287 stars today",
+      "tags": [
+        "AI 前端设计规范",
+        "1 skill + 24 命令",
+        "61 条确定性规则",
+        "浏览器实时迭代",
+        "反 AI 味审美"
+      ],
+      "comment": "今天新上榜里第二大体量（70,159 star），也是今天最有意思的一个\"反方向\"项目——它不帮 Agent 写更多代码，而是**防止 Agent 把前端写成一个味**。README 开篇直接点名：所有模型都训练在同一批 SaaS 模板上，跳过引导就会得到同一套痕迹——万物 Inter 字体、紫到蓝的渐变、卡片套卡片、彩色背景上的灰字、每个标题上方那个圆角方形图标块。\n做法上给了三样东西：`/impeccable init` 一次性把\"产品事实\"沉淀进 `PRODUCT.md`（受众、目的、约束、语气），24 个共享词汇命令（`polish`/`audit`/`critique`/`distill`/`animate`/`bolder`…），以及 **61 条确定性检测规则**——CLI 和浏览器插件可以**在不接 LLM、不需要 API key 的前提下**跑这 61 条。它明确以 Anthropic 的 frontend-design skill 为起点做了扩展。\nFork/Star 只有 6.1%，是\"装了用\"而非\"fork 了改\"的类型，与它的定位一致。"
+    },
+    {
+      "rank": 13,
+      "name": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "language": "C",
+      "stars": 44395,
+      "delta": "201 stars today",
+      "tags": [
+        "代码智能 MCP",
+        "持久知识图谱",
+        "tree-sitter 解析",
+        "纯 C 单二进制",
+        "SLSA 3 级"
+      ],
+      "comment": "把代码库索引成持久知识图谱给 Agent 用，卖点在实现路线：**纯 C、无语言运行时、无需托管服务或 API key**，下载即跑。README 声称平均仓库毫秒级全量索引，Linux kernel（2,800 万行 / 7.5 万文件）3 分钟，结构查询 sub-ms，17 个 MCP 工具，支持 45 种 Agent 客户端。解析用 tree-sitter，另有 Hybrid LSP 给 10 种语言做语义类型解析。附带 arXiv 论文（2603.27277）、OpenSSF Scorecard 徽章、SLSA 3 级与每次发布的 VirusTotal 扫描。\n⚠️ **一处数字不一致（已逐字核对）**：页面 About 写 \"**158** languages\"，而 README 徽章与正文写 \"**162** languages\"。两者差 4，不确定哪个是最新值，用之前建议以仓库 README 为准。"
+    },
+    {
+      "rank": 14,
+      "name": "TNT-Likely/PanWatch",
+      "url": "https://github.com/TNT-Likely/PanWatch",
+      "description": "盯盘侠 PanWatch · 自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策 — A 股 / 港股 / 美股实时监控、持仓管理、智能分析、全渠道推送",
+      "language": "Python",
+      "stars": 1432,
+      "delta": "175 stars today",
+      "tags": [
+        "自托管盯盘",
+        "A 股·港股·美股",
+        "TradingAgents 多 Agent",
+        "Docker 一键部署",
+        "⚠️ 无免责声明"
+      ],
+      "comment": "今天榜上唯一的中文项目，也是 **Fork/Star 最高的一个（20.3%）**——小体量项目里五分之一的人会 fork 自己改，通常意味着\"用户想按自己的策略改\"，是动手型热度。\n它把 TradingAgents（76k+ star）的多 Agent 决策链接了进来：持仓页点一下 → 4 类分析师（技术/情绪/新闻/基本面）→ 多空辩论 → 风控审查 → PM 决策书，3~5 分钟一条推理链，结论直推 Telegram / 微信 / 钉钉。默认 deepseek-chat，单次约 $0.05。自托管、Docker 一键部署、数据不出本机，另有 PWA 可当原生 App 用。\n⚠️ **今天最需要提示的一条**：我用脚本对 README 全文逐字检索了 `免责` / `声明` / `风险` / `disclaimer` / `仅供参考` / `不构成` —— **全部 0 命中**。也就是说，一个直接产出\"买卖决策书\"并推送到 IM 的项目，**README 里没有任何投资建议免责声明**。对比同在榜上的 anthropics/financial-services（顶部 IMPORTANT 写得极硬）和 OpenStock（\"Nothing here is financial advice\"），这个缺口很清楚。**涉及真金白银，任何输出都必须人工复核后再动手。**"
+    },
+    {
+      "rank": 15,
+      "name": "harry7557558/spirula-studio",
+      "url": "https://github.com/harry7557558/spirula-studio",
+      "description": "Cross-vendor 3D Gaussian Splatting trainer - video to splat to mesh, Vulkan or CUDA.",
+      "language": "C++",
+      "stars": 674,
+      "delta": "99 stars today",
+      "tags": [
+        "3D 高斯泼溅",
+        "Vulkan 跨厂商",
+        "视频转 splat 转网格",
+        "单二进制免 PyTorch",
+        "GPLv3"
+      ],
+      "comment": "**全榜体量最小（674 star），但当日涨幅 17.22% 排全榜第四。** 这条反差本身就是今天的看点之一（见 3.5）。\n做的事：从原始照片/视频到 splat 再到带纹理网格，一个自包含二进制搞定，**不需要 Python/PyTorch，也不需要单独装 COLMAP**。靠 Vulkan 计算跑在 NVIDIA / AMD / Intel / Apple 四家 GPU 上，8GB 显存可训 1,000 万 SH3 高斯，原生支持鱼眼与 360° 相机。近期更新：9/10 加了用视频元数据恢复**真实尺度**（解决重建结果过大/过小/倾斜的老问题）、9/3 支持 LoMa 特征匹配、8/14 上 macOS。\n⚠️ 许可为 **GPLv3**（逐字核对徽章确认），属强传染性许可，商用或闭源集成前必须先确认。"
+    },
+    {
+      "rank": 16,
+      "name": "strands-agents/harness-sdk",
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+      "language": "Python",
+      "stars": 7694,
+      "delta": "96 stars today",
+      "tags": [
+        "Strands Agents SDK",
+        "Python 与 TypeScript",
+        "任意模型任意云",
+        "Bedrock 一等支持",
+        "生产级 harness"
+      ],
+      "comment": "今天增量倒数第二（+96），但 Fork/Star 15.5% 排全榜第二高——**看的人不多，动手的人比例不小**，典型的\"工程向、非传播型\"项目。\nStrands 是模型驱动的 Agent SDK，Python 与 TypeScript 双语言，主打\"几行代码起一个 Agent\"+\"端到端控住 harness\"。README 逐字写明 **first-class support for Amazon Bedrock, Anthropic, OpenAI, and Gemini**，另有大量其他 provider；同一份代码可以从小模型换到大模型不用改。\n整个 strands-agents 组织今天只有它一个在榜，属于\"低热度但结构完整\"的那一类，明天能不能留下是第一个观察点。"
+    },
+    {
+      "rank": 17,
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" — CLI-Hub: <https://clianything.cc/>",
+      "language": "Python",
+      "stars": 49792,
+      "delta": "41 stars today",
+      "tags": [
+        "软件 Agent 化",
+        "CLI-Hub 分发",
+        "港大 HKUDS",
+        "社区共建",
+        "末位 +0.08%"
+      ],
+      "comment": "**今天的末位（+41），当日涨幅 0.08% 是全榜最低。** 49,792 star 的存量巨物，今天只是擦着边留在榜上——两次间隔抓取都是 41，不是\"刚进榜计数器未填满\"的伪值（按 6p 流程已排除）。\n项目的主张写在标题里：**今天已有的软件是给人用的，明天的使用者是 Agent**，CLI-Anything 就是中间那层桥。做法是为各种软件/服务生成 CLI 外壳，再通过 `pip install cli-anything-hub` + `cli-hub install <name>` 的 CLI-Hub 统一分发，社区提交 PR 即可上架。README 里甚至有 ArcGIS Pro 这类商业桌面软件的封装（走官方 ArcPy / SDK，不是从源码生成）。\n港大 HKUDS 出品，与同组织的 LightRAG 等是同一套打法。"
+    }
+  ]
+}

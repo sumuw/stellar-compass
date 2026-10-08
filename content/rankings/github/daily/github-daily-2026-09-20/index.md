@@ -1,0 +1,195 @@
+---
+title: GitHub 每日趋势榜 2026-09-20
+description: 2026-09-20 GitHub Trending 榜首为 cloudflare/security-audit-skill，当日共收录 13 个项目。
+date: '2026-09-20T08:00:00+08:00'
+rankingKey: '2026-09-20'
+slug: github-daily-2026-09-20
+categories:
+  - github
+periods:
+  - daily
+tags:
+  - GitHub
+  - 开源
+  - 趋势
+draft: false
+---
+
+## 今日概览
+
+2026-09-20 GitHub Trending 共收录 13 个项目，榜首 cloudflare/security-audit-skill（2,375 stars today）。语言分布：TypeScript 4、JavaScript 3、Python 3、HTML 1、Jupyter Notebook 1、Go 1。
+
+## 重点项目
+
+### 1. cloudflare/security-audit-skill
+
+- 地址：https://github.com/cloudflare/security-audit-skill
+- 简介：A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings
+- 语言：JavaScript
+- 今日新增：2,375 stars today
+- 标签：安全审计 Skill、Cloudflare 官方、六阶段流水线、独立证伪、五日在榜
+
+**昨天留的判据是"明日若跌破 3,000，单日脉冲定性完成；若站上 3,500+，则确认为高位震荡"。今天给了明确答案：3,162 → 2,375，-24.9%，跌破 3,000。** 这是本系列"单日尖峰多为一次性脉冲"的**第 12 次印证**（09-19 为第 11 次）。
+五日完整曲线：**+1,249（新上榜）→ +3,606（登顶）→ +3,019 → +3,162 → +2,375**。把首尾连起来看，它没有崩塌，而是**回到并稳在 2,000~3,000 这个比首日高 90% 的新平台**——所以正确读法不是"这个项目凉了"，而是"它不再是一次性事件，已经沉淀成榜单上的常驻项"。
+另外它今天达成两件事：① **连续五日在榜（09-16 ~ 09-20）**，是本系列第二长的连续在榜纪录，仅次于 open-code-review 的六日（09-13 ~ 09-18）；② **连续三日守住 #1**，"榜首有延续性"这条规律第 4 次检验仍然成立（4/4）。
+水位本身还在涨：Star 15,540 → **17,653（跨过 1.75 万）**，Fork 849 → **980（+15.4%）**。**Fork 增速连续第三日超过 Star 增量方向**（今日 Star 增量 -24.9%，Fork +15.4%），是"有人真的在接入流程"的信号，比增量数字本身更健康。
+流程骨架（前三日已详述）：侦察产出 `architecture.md` + `coverage-ledger.json` → 覆盖率驱动的猎杀（隔离 hunter + coverage critic 找缺口）→ 候选交给**独立 verifier** 尝试证伪 → 结构化输出（`confirmed` / `needs_validation` / `rejected`）→ 独立复核 → 目标中立报告。攻击面拆成 10 个文件，其中 `AI-AND-LLM.md` 覆盖提示注入与 Agent 工具链。
+⚠️ **只对自有或已获书面授权的代码库运行。**
+
+### 2. affaan-m/ECC
+
+- 地址：https://github.com/affaan-m/ECC
+- 简介：The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+- 语言：JavaScript
+- 今日新增：1,012 stars today
+- 标签：Agent Harness、技能与直觉、26 万 Star、⚠️ 仅官方渠道、一日回归
+
+**+1,046（09-16）→ +1,173（09-17）→ +965（09-18）→ 掉榜（09-19）→ +1,012（今日）。** 掉榜一天就回来，且增量几乎回到 09-18 的水平——**这是"掉榜 ≠ 衰退"这条反向条款最干净的一个例证**：一个 26 万 Star 的长尾常客，日增量本身就锁在 965~1,173 这个 20% 宽度的窄带里，掉不掉榜更多取决于当天榜单的准入门槛，而不是它自己的状态。
+今日 +1,012 与 cua 完全并列，按页面原始顺序排在第 2。当日涨幅仅 **+0.39%**，是标准的稳态大票流量。
+⚠️ **README 顶部的官方安全警告今日复核仍在**：只能从五个已验证渠道安装——GitHub 仓库 `github.com/affaan-m/ECC`、npm 包 `ecc-universal` 与 `ecc-agentshield`、GitHub App、插件 slug `ecc@ecc`、官网 `ecc.tools`；官方明确说第三方重传与非官方镜像不受维护、可能含恶意代码。**26 万 Star + 15.0% 的 Fork 率，是仿冒的重灾区**，这条警告不是形式主义。
+
+### 3. trycua/cua
+
+- 地址：https://github.com/trycua/cua
+- 简介：Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.
+- 语言：HTML
+- 今日新增：1,012 stars today
+- 标签：Computer-Use 2.0、云桌面 Fleet、本地 macOS VM、评测基准、二日在榜
+
+383 → **1,012（+164.2%，全榜涨幅第一）**。昨日它只是第 7 名的新上榜项目，今天直接跳到并列第二。
+**这是"当日排名对次日无预测力"的又一次印证**——而且要加上一条：它同时也是**昨日唯一被点名"需连续三日才能升级为可跟踪形态"的单成员簇（D 簇 Agent 计算机使用）**，今天第二天就给出 +164.2%，是这批"新方向观察项"里目前最强势的一个。明天是第三个观察日。
+产品本身（昨日已详述）：不提供 Agent 也不提供模型，**只提供"电脑"这一层**——Cua Fleets（隔离云桌面）、Cua Driver（跨 OS 检查与操作应用）、Lume（Apple Silicon 本地 macOS/Linux 虚拟机）、Cua Bench（造任务、评 Agent、导出轨迹）四件套。Computer-Use 2.0 指 Agent 在同一次任务里在代码、API 和图形界面之间来回切换。
+⚠️ 让 Agent 获得完整桌面控制权限等于交出图形界面的所有可达能力，**必须在隔离环境运行，不要指向装有真实凭据的日常机器**；Fleets 走 run.cua.ai 云服务，需自行评估数据出域。
+
+### 4. Open-Dev-Society/OpenStock
+
+- 地址：https://github.com/Open-Dev-Society/OpenStock
+- 简介：OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.
+- 语言：TypeScript
+- 今日新增：752 stars today
+- 标签：开源股票平台、实时行情与告警、Next.js 全栈、⚠️ AGPL-3.0、⚠️ 跨仓导流
+
+477 → 752（**+57.7%，留存项涨幅第二**）。
+⚠️ **但昨天标出的两个折扣信号，今天逐字复核后都还在 README 最顶部，一个字没改**：
+① **同组织跨仓导流**——"New from Open Dev Society: **kitbash**. Before you build, find out which parts already exist on GitHub."；
+② **AGPL-3.0**——"if you modify, redistribute, or deploy it (including as a web service), you must release your source code under the same license and credit the original authors."
+这与 09-14 的 ever-gauzy 是同一个形态（那个项目当天 +1,787.9% 创下本系列最大单日跳升，次日 -42.3%）。**今天的 +57.7% 说明导流还在持续生效，但同样不可读作产品采纳度上升。** 顺带补一条 README 里写明的：它不是券商，行情数据可能延迟，且明确声明不构成投资建议。
+技术栈（Next.js 15 App Router + React 19 + TypeScript + Tailwind + shadcn/ui + Better Auth + MongoDB + Finnhub + TradingView 组件）昨日已详述，不重复。
+
+### 5. addyosmani/agent-skills
+
+- 地址：https://github.com/addyosmani/agent-skills
+- 简介：Production-grade engineering skills for AI coding agents.
+- 语言：JavaScript
+- 今日新增：729 stars today
+- 标签：工程技能集、AI 编码 Agent、生产级、Chrome 团队、六日在榜
+
+547 → 729（**+33.3%，留存项涨幅第三**）。
+→ **教训和 09-16 那条一样：单日跌出区间 ≠ 基线失效，单日回到区间 ≠ 基线恢复。刻度尺本身会抖，判断它是否可用要看连续三日的斜率，而不是看某一天在不在带内。** 这条昨天写反了，今天更正。
+项目本体：Chrome 团队 Addy Osmani 出品，9.7 万 Star，给 AI 编码 Agent 用的生产级工程技能集（测试金字塔、代码审查、性能、安全加固一整套工程纪律）。当日涨幅 +0.75%，稳态水位。
+
+### 6. vercel-labs/json-render
+
+- 地址：https://github.com/vercel-labs/json-render
+- 简介：The Generative UI framework
+- 语言：TypeScript
+- 今日新增：585 stars today
+- 标签：Generative UI、组件目录护栏、Vercel Labs、跨平台渲染、新上榜
+
+新上榜，1.7 万 Star，Vercel Labs 出品。它的核心主张一句话讲完：**AI 从自然语言提示生成界面，但只能使用你在目录（catalog）里预先定义的组件。**
+机制分两步：先用 `defineCatalog` 声明组件与 action 的 zod schema（`Card` / `Metric` / `Button` …，每个组件带 `description` 供模型理解），再用 `defineRegistry` 把这些名字绑到真实实现上。模型输出的是**符合 schema 的 JSON**，渲染器边流式接收边渲染。README 自己列了四条卖点：Guardrailed（只能用目录里的组件）、Predictable（输出永远匹配 schema）、Fast（流式渐进渲染）、Cross-Platform（同一份目录可渲染到 React / Vue / Svelte / Solid / React Native / 终端 Ink / 3D three-fiber / Remotion 视频 / react-pdf / react-email）。
+**放在今天榜单里读，它是唯一一个回答"Agent 输出的不该只是文字和代码，还可以是界面，但必须可控"的项目**——和榜单上其他 Agent 项目（审计、评审、计算机使用、金融建模）完全不重叠，是一条独立的新线。
+⚠️ **Fork/Star 5.3% 是全榜最低**，配合 +585 的新上榜热度，说明今天主要是"看到"而不是"动手接入"，属典型围观型首日。
+
+### 7. higgsfield-ai/higgsfield
+
+- 地址：https://github.com/higgsfield-ai/higgsfield
+- 简介：Fault-tolerant, highly scalable GPU orchestration, and a machine learning framework designed for training models with billions to trillions of parameters
+- 语言：Jupyter Notebook
+- 今日新增：461 stars today
+- 标签：GPU 编排、大模型训练框架、ZeRO-3、GitHub Actions 驱动、⚠️ 需 sudo 免密
+
+325 → 461（**+41.8%**），连续第二日在榜且连续第二日走高。当日涨幅 **+9.69% 是全榜第二高**（仅次于榜首的 15.55%），在一个 5,217 Star 的小体量项目上，这个涨幅说明热度是真实的而非大盘带动。
+它做的事（昨日已详述）：既是 GPU 工作负载管理器也是训练框架，支持 ZeRO-3 DeepSpeed 与 PyTorch FSDP（可分片到万亿参数），最有辨识度的是**代码一进 GitHub 就通过自动生成的 Actions 工作流部署到你自己的节点上**，实验 UI 挂在 GitHub 里，checkpoint 自动保存；用 `@experiment("alpaca")` 一个装饰器起分布式训练。
+⚠️ 两个前提不变：节点需 Ubuntu + SSH + **免密码 sudo 的非 root 用户**；官方只在 Azure / LambdaLabs / FluidStack 上测过。**Fork/Star 18.0% 全榜第二高**（第一是 22.5% 的教学仓库），配合 pip 包 `higgsfield==0.0.3` 这个很早的版本号，判断它经历过 fork 型扩散，热度形态需打个折。
+
+### 8. anthropics/claude-code
+
+- 地址：https://github.com/anthropics/claude-code
+- 简介：Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows — all through natural language commands.
+- 语言：TypeScript
+- 今日新增：415 stars today
+- 标签：终端编码 Agent、Anthropic 官方、14.7 万 Star、稳态流量、Fork 率全榜第二
+
+482 → 415（**-13.9%**）。当日涨幅仅 **+0.28%**，14.7 万 Star 体量下的日常波动，没有产品含义。
+它今天的价值是当刻度尺：**全场 13 个项目里，当日涨幅 ≤1% 的一共有 6 个**（paperless 0.07% / claude-code 0.28% / ECC 0.39% / financial-services 0.67% / agent-skills 0.75% / 另见 3.7），**说明今天不存在全市场普涨；security-audit-skill 的 15.55% 与 cua 的 4.22% 都是各自的事，不是水位抬升。**
+Fork 率 16.3%，对一个官方 CLI 工具来说偏高，通常对应大量二次集成与内部改造。
+
+### 9. coder/coder
+
+- 地址：https://github.com/coder/coder
+- 简介：Secure environments for developers and their agents
+- 语言：Go
+- 今日新增：382 stars today
+- 标签：自托管开发环境、Terraform 定义、Agent 沙箱、密钥不下发、四日在榜
+
+406 → 382（**-5.9%**）。**昨日报告写"hister 与 coder 按脉冲规律明日继续回落是大概率"——hister 今天掉榜（✅ 判据成立），coder 继续回落但只有 -5.9%（✅ 方向对、幅度浅）。**
+四日曲线 09-17 +204 → 09-18 +478 → 09-19 +406 → 09-20 +382，读作"跳升一次后稳在 380~480 的新平台"，比 09-18 那个 +134.3% 的脉冲日可信得多。
+Agent 部分是它持续在榜的原因：**Coder Agents 的循环跑在你自己的控制平面里，工作区不放任何 API key**——"Bring any model + No LLM credentials in workspaces, user identity on every action + 集中式模型治理、成本追踪、审计日志"。工作区用 Terraform 定义（EC2 / K8s Pod / Docker 容器），WireGuard® 隧道接入，空闲自动关停。
+⚠️ 顺带：09-18 与它同台构成"Agent 边界三种层级答案"的 BrowserSkill（触达层）与 Octop（行为层）**已连续两日不在榜，只剩它一根独苗**。
+
+### 10. anthropics/financial-services
+
+- 地址：https://github.com/anthropics/financial-services
+- 简介：Reference agents, skills, and data connectors for the financial-services workflows we see most — investment banking, equity research, private equity, and wealth management.（页面 About 为空，取自仓库 README 首段）
+- 语言：Python
+- 今日新增：236 stars today
+- 标签：金融行业 Agent、Anthropic 官方、10 个岗位 Agent、⚠️ 非投资建议、新上榜
+
+新上榜，3.5 万 Star，Anthropic 官方。它是"**Agent 能力按行业岗位分发**"这条线目前最重的一份官方实现，比 09-19 在榜的 `knowledge-work-plugins`（按职能切 11 个插件）更垂直。
+形态是"一份源、两种跑法"：**同一个系统提示词、同一批技能，既可以装成 Claude Cowork 插件，也可以通过 Claude Managed Agents API 部署在你自己的工作流引擎后面。**
+10 个**按工作流命名**的端到端 Agent：Pitch Agent（可比公司/先例交易/LBO → 品牌化 pitch deck）、Meeting Prep Agent、Market Researcher、Earnings Reviewer、Model Builder（DCF / LBO / 三表 / 可比，直接输出到 Excel）、Valuation Reviewer、GL Reconciler（找断点、追根因、路由签核）、Month-End Closer、Statement Auditor、KYC Screener。每个 Agent 插件自包含（技能打包在内）。另有按垂类分的技能包（`/comps`、`/dcf`、`/earnings`、`/ic-memo` 等斜杠命令 + MCP 连接器），以及 LSEG、S&P Global 的 partner-built 插件。
+⚠️ **README 顶部的免责声明必须原样传达**：*Nothing in this repository constitutes investment, legal, tax, or accounting advice.* 这些 Agent 产出的是**待人工签核的分析师工作草稿**（模型、备忘录、研究笔记、对账），**不做投资建议、不执行交易、不绑定风险、不入账、不批准开户**。企业采用前需自行确认合规。
+
+### 11. mihail911/modern-software-dev-assignments
+
+- 地址：https://github.com/mihail911/modern-software-dev-assignments
+- 简介：Assignments for CS146S: The Modern Software Dev (Stanford University Fall 2026/2025)
+- 语言：Python
+- 今日新增：174 stars today
+- 标签：斯坦福 CS146S、课程作业集、AI 辅助开发、教学仓库、Fork 率全榜最高
+
+新上榜，4,465 Star。这是今天榜单上唯一一个**教学仓库**——斯坦福 CS146S《The Modern Software Developer》课程的作业集合（课程主页 themodernsoftware.dev），README 里注明"taught at Stanford University fall 2025"，环境用 Anaconda + Python 3.12 + Poetry。
+**Fork/Star 22.5% 是全榜最高**，而且这个数字在这里是健康的：课程作业的属性决定了每个学生都要 fork 一份自己做，与那种刷量型的 Fork 形态完全不同（对比本系列记录过的 LunaTV 93.2%、DeskcommCRM 24.8%）。
+上榜原因大概率是**新学期/新一期课程开课带来的集中流量**，属周期性而非持续性事件。今天它的另一个角色是分母：它是 13 席里少数几个既不 AI 也不 Agent 的项目之一。
+
+### 12. BuilderIO/agent-native
+
+- 地址：https://github.com/BuilderIO/agent-native
+- 简介：A framework for building agentic apps
+- 语言：TypeScript
+- 今日新增：89 stars today
+- 标签：Agent 应用框架、共享 Action 层、带 UI 的 Agent、BuilderIO、新上榜
+
+新上榜，5,059 Star，BuilderIO 出品的 TypeScript 框架。它回答的是一个很具体的架构问题：**当 Agent 和 UI 要操作同一份能力时，怎么避免写两遍、以及两边行为不一致。**
+答案是"**共享 Action**"：把每个能力用 `defineAction` 定义一次（zod schema 声明参数、`run` 写实现），然后——Agent 把它当工具调用，React 用 `useActionQuery("hello", {name:"Alex"})` 调用，同时自动暴露到 HTTP、MCP、A2A 和 CLI。**"The agent does not click through the UI. It works through the same action layer as the UI."** 共享的不止是 action，还有数据（Agent 做的事出现在 UI 里，UI 里做的对 Agent 可见）和应用状态（Agent 能拿到当前页面、选中记录、活跃视图）。
+README 里的论证也挺有意思：编码 Agent 之所以好用，不只是因为有个文本框，而是它的环境提供了上下文、工具、文件、测试和预览，**让能力和结果看得见**；知识工作也需要同等的环境，而 UI 就是那个环境——它展示 Agent 能做什么，并给人熟悉的检查、编辑、批准、分享的方式。
+自带：Agent chat、认证与权限、技能与记忆、定时/事件自动化、Agent 团队、PostgreSQL 后端（本地可用 PGlite）。开源示例 Agent 有 Clips（会议/屏幕/语音记录与理解）、Design 等。
+⚠️ **与榜首的关系要分清**：security-audit-skill 是"给 Agent 一套技能"，agent-native 是"给 Agent 一个应用外壳"。今天 +89 是 13 席里倒数第二，属刚露头，按规则需连续三日才能升级为可跟踪形态。
+
+### 13. paperless-ngx/paperless-ngx
+
+- 地址：https://github.com/paperless-ngx/paperless-ngx
+- 简介：A community-supported supercharged document management system: scan, index and archive all your documents
+- 语言：Python
+- 今日新增：32 stars today
+- 标签：文档管理系统、扫描归档 OCR、自托管、⚠️ 明文存储、末位门槛
+
+**今日末位，+32，当日涨幅 +0.07% 是全榜最低。** 4.5 万 Star 的老牌文档管理系统（原 Paperless / Paperless-ng 的官方继任者），把纸质文档变成可检索的在线档案，Docker Compose 一键部署。今天与 AI 无关，是纯分母。
+⚠️ **README 里那条"Important Note"值得原样摘出来**：扫描仪扫的通常是有敏感信息的文档（社保号、税单、发票），**Paperless-ngx 的内容是明文存储、不加密的，官方明确说"should never be run on an untrusted host"，最安全的跑法是放在你自己家里的本地服务器并做好备份。** 考虑自托管前请先接受这个前提。
+
+## 观察
+
+- cloudflare/security-audit-skill 今日 2,375 stars today，居当日增量第 1 位。
+- affaan-m/ECC 今日 1,012 stars today，居当日增量第 2 位。
+- trycua/cua 今日 1,012 stars today，居当日增量第 3 位。
