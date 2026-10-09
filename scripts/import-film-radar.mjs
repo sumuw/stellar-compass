@@ -173,30 +173,73 @@ function extractSection(lines, headingPattern) {
 }
 
 function splitEntries(sectionLines) {
-  const entries = [];
+  // 先按 h3 切块
+  const blocks = [];
   let current = null;
 
   for (const line of sectionLines) {
     if (/^###\s+/.test(line)) {
-      if (current) entries.push(current);
+      if (current) blocks.push(current);
       current = { lines: [], heading: line.trim().replace(/^###\s+/, '') };
       continue;
     }
     if (current) current.lines.push(line);
   }
-  if (current) entries.push(current);
+  if (current) blocks.push(current);
+
+  // 只有「标题带 F0XX 编号」或「正文带 - **作品编号**」的块才是作品。
+  // 其余块（📊 真实口碑 / 📈 口碑判断 / 为什么值得看 / 适合谁 / 零新增说明）
+  // 是上一个作品的细分段落，并入其中——否则会被误当成独立作品。
+  const entries = [];
+  for (const block of blocks) {
+    if (isWorkBlock(block)) {
+      entries.push({ heading: block.heading, lines: block.lines.slice(), isWork: true });
+      continue;
+    }
+    const previous = entries[entries.length - 1];
+    if (previous) previous.lines.push(`### ${block.heading}`, ...block.lines);
+  }
 
   return entries
+    .filter((entry) => entry.isWork)
     .map((entry, index) => buildItem(entry, index + 1))
     .filter((item) => item !== null)
     .map((item, index) => ({ ...item, rank: index + 1 }));
 }
 
+// 注意：报告里的冒号可能是半角 : 或全角 U+FF1A，这里显式写出码点避免字符歧义。
+// 作品编号可能写成列表项、顶格纯文本或表格首列，三种都要认。
+const ID_FIELD_PATTERN = /^(?:[-*]\s+|\|\s*)?(?:\*\*)?\s*作品编号\s*(?:\*\*)?\s*(?::|\uFF1A)/;
+
+// 顶格纯文本字段（`作品编号：**F073**`）用白名单识别，避免把正文句子里的冒号当字段。
+const PLAIN_FIELD_PATTERN = new RegExp(
+  `^(?:\\*\\*)?(${[
+    '作品编号',
+    '综合推荐指数',
+    '推荐等级',
+    '类型',
+    '国家/地区',
+    '年份',
+    '当前状态',
+    '首播/上线日期',
+    '首播日期',
+    '当前播出进度',
+    '可观看平台',
+    '流媒体地区限制',
+  ].join('|')})(?:\\*\\*)?\\s*(?::|\\uFF1A)\\s*(.+)$`,
+);
+
+function isWorkBlock(block) {
+  if (/^(F\d{2,4})\b/.test(block.heading)) return true;
+  return block.lines.some((line) => ID_FIELD_PATTERN.test(line.trim()));
+}
+
 function buildItem(entry, fallbackRank) {
-  const { name, id } = parseHeading(entry.heading);
+  const { name, id: headingId } = parseHeading(entry.heading);
   if (!name) return null;
 
   const fields = collectFields(entry.lines);
+  const id = headingId ?? normalizeId(fields.get('作品编号'));
   const ratings = parseRatings(entry.lines);
   const why = parseProse(entry.lines, /为什么值得看/);
   const audience = parseProse(entry.lines, /适合谁/);
@@ -232,30 +275,54 @@ function parseHeading(heading) {
     text = text.slice(idMatch[0].length);
   }
 
-  const name = text.replace(/^[《【]?\s*/, '').trim();
+  // 只在标题被书名号整体包裹时才剥离，避免把「《绅士们》第二季」截成「绅士们》第二季」
+  const wrapped = /^[《【](.+?)[》】]\s*$/.exec(text);
+  const name = (wrapped ? wrapped[1] : text).trim();
   return { name, id };
 }
 
 /**
- * 把条目正文里的 `- **字段**：值` 行解析成字段表。
- * 报告常用全角空格把多个字段串在一行，也可能把冒号写进加粗里。
+ * 报告里出现过四种字段写法，都要支持：
+ *   - **作品编号：F059**（列表项）
+ *   **作品编号**：F078           （顶格加粗）
+ *   作品编号：**F073**           （顶格纯文本）
+ *   | **作品编号** | **F076** |  （两列表格）
  */
 function collectFields(lines) {
   const fields = new Map();
+  const setField = (key, value) => {
+    const cleanKey = key.replace(/\*\*/g, '').trim();
+    const cleanValue = value.replace(/\*\*/g, '').trim();
+    if (cleanKey && cleanValue && !fields.has(cleanKey)) fields.set(cleanKey, cleanValue);
+  };
 
   for (const line of lines) {
-    if (!/^[-*]\s+/.test(line.trim())) continue;
-    const stripped = line.trim().replace(/^[-*]\s+/, '').replace(/\*\*/g, '');
+    const trimmed = line.trim();
+    if (!trimmed) continue;
 
+    // 表格行
+    const table = /^\|(.+)\|$/.exec(trimmed);
+    if (table) {
+      const cells = table[1].split('|');
+      if (cells.length >= 2) {
+        const key = cells[0].trim();
+        const value = cells[1].trim();
+        const isDivider = /^[-:\s]+$/.test(value);
+        if (key && value && !isDivider && key !== '项目') setField(key, value);
+      }
+      continue;
+    }
+
+    const stripped = trimmed.replace(/^[-*]\s+/, '');
+
+    // 纯文本 / 加粗的「字段：值」，按全角空格拆分（报告常把多字段串在一行）
     for (const segment of stripped.split(FULLWIDTH_SPACE)) {
-      const match = /^(.+?)\s*[：:]\s*(.+)$/.exec(segment.trim());
+      const match = PLAIN_FIELD_PATTERN.exec(segment.trim()) ?? /^(.+?)\s*(?::|\uFF1A)\s*(.+)$/.exec(segment.trim());
       if (!match) continue;
-      const key = match[1].trim();
-      if (!fields.has(key)) fields.set(key, match[2].trim());
+      setField(match[1], match[2]);
     }
   }
 
-  // 「作品编号」也可能只出现在正文而非标题里
   return fields;
 }
 
@@ -296,12 +363,26 @@ function parseRatings(lines) {
 }
 
 function parseProse(lines, labelPattern) {
-  for (const line of lines) {
-    if (!labelPattern.test(line)) continue;
-    const match = /[：:]\s*(.+)$/.exec(line.replace(/\*\*/g, ''));
-    if (match) return match[1].trim();
+  for (let i = 0; i < lines.length; i += 1) {
+    if (!labelPattern.test(lines[i])) continue;
+
+    const inline = /[：:]\s*(.+)$/.exec(lines[i].replace(/\*\*/g, ''));
+    if (inline) return inline[1].trim();
+
+    // 标题行写法（`### 为什么值得看`）：取其后第一个正文段落
+    for (let j = i + 1; j < lines.length; j += 1) {
+      const text = lines[j].trim();
+      if (!text) continue;
+      if (/^(#{1,6}\s|[-*]\s|\|)/.test(text)) break;
+      return text;
+    }
   }
   return '';
+}
+
+function normalizeId(value) {
+  const match = /(F\d{2,4})/.exec(cleanValue(value));
+  return match ? match[1] : null;
 }
 
 function buildScore(fields) {

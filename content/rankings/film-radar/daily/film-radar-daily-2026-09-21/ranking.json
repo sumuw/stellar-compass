@@ -1,0 +1,27 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-09-21",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F077",
+      "name": "《诺曼底72小时》/ Pressure",
+      "url": "https://www.peacocktv.com",
+      "description": "豆瓣8.2 / 67,750 人 · Rotten Tomatoes 专业端89% / 142 篇（本库近两周新发现中篇数最厚的一档） · Rotten Tomatoes 观众端未能解析（官方页无可用 JSON-LD 字段；二手来源给出 96% 与 85% 两个互相矛盾的值，均不采信） · Metacritic69–70（两个聚合源口径略有差异，标注区间）",
+      "type": "剧情 / 历史 / 战争 / 惊悚",
+      "platform": "Peacock（美国订阅制）；Apple TV / Amazon Prime Video / Google Play / YouTube / Fandango at Home（租购，多国）；英国 ODEON / Cineworld / Vue / Picturehouse 仅院线",
+      "score": "85 / 100 ⭐",
+      "tags": [
+        "剧情",
+        "历史",
+        "战争",
+        "惊悚",
+        "英国 · 法国 · 美国"
+      ],
+      "comment": "它把诺曼底登陆拍成了一场**决策室里的气象推演**——不靠滩头场面，靠一张天气图和一次 24 小时的推迟决定撑起全部张力，这是本片与同类二战片最大的区别。真正的共识点是**跨体系的**：中文端 6.7 万人给了 8.2，专业端 142 篇影评给了 89%，两个彼此独立的评价体系都指向「扎实、稳、值得看」，而不是靠话题或奖项推起来的热度。主要争议集中在**布兰登·弗雷泽饰演艾森豪威尔的选角**（不少评论认为不贴），以及全片基本靠对话推进、中段被部分观众认为温吞——但它最大的优点（安德鲁·斯科特饰演的气象官 James Stagg）在中外评价里都被一致点名。评分已稳定四个月，无跳水风险。 适合谁：喜欢二战题材，但不想再看一遍抢滩场面、更想在密室决策与人性博弈里耗两小时的观众。"
+    }
+  ]
+}

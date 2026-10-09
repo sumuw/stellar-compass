@@ -1,0 +1,27 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-09-14",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F073",
+      "name": "冰之城墙 / 氷の城壁（The Ramparts of Ice）",
+      "url": "https://www.crunchyroll.com",
+      "description": "豆瓣8.6 / 4,447 人(官方接口 `rexxar/api/v2/tv/37220900` 今日实测) · MyAnimeList8.25(官方页 `myanimelist.net/anime/60852`，状态 Finished Airing，Aired Apr 2, 2026 to Jul 2, 2026) · AniList83 / 100（mean 83），popularity 77,329(GraphQL 官方接口今日实测，status = FINISHED) · Rotten Tomatoes / Metacritic暂无可靠数据(本作未进入欧美主流影评聚合)",
+      "type": "动画 / 青春群像 / 恋爱（TV 动画，14 集）",
+      "platform": "Crunchyroll（2026-04-02 全球首播）；中国香港 Now TV（译名《冰之城牆》）；第二季由 Netflix 承接国际发行（10-01 起）",
+      "score": "88/100 ⭐",
+      "tags": [
+        "动画",
+        "青春群像",
+        "恋爱（TV 动画",
+        "14 集）",
+        "日本"
+      ],
+      "comment": "原作是阿贺泽红茶在集英社连载的漫画（2024 年《这本漫画真厉害！》男性榜第 15 位、第 69 届小学馆漫画奖候选、AnimeJapan\"最希望动画化\"投票第 2），作者今年凭本作与《相反的你和我》两部动画化作品打满全年。动画由 **Studio KAI** 制作，导演万球，系列构成是《辉夜大小姐想让我告白》的中西泰博——这个组合保证了它在\"青春恋爱\"框架下做的是**人物心理的细活**，而不是靠戏剧性反转堆情绪。 适合谁：想看一部\"把少年人的心墙怎么一点点被敲开讲透\"的青春群像、且能接受慢节奏与无中文正版平台的观众。"
+    }
+  ]
+}
