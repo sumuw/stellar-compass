@@ -65,7 +65,7 @@ async function main() {
 
   let written = 0;
   let skipped = 0;
-  let empty = 0;
+  let briefings = 0;
   let failed = 0;
 
   for (const file of files) {
@@ -82,12 +82,8 @@ async function main() {
     try {
       const markdown = await readFile(path.join(sourceDir, file), 'utf8');
       const items = parseRecommendations(markdown);
-
-      if (items.length === 0) {
-        console.log(`skip (zero new titles): ${slug} — 报告当日无正式推荐，不生成 bundle`);
-        empty += 1;
-        continue;
-      }
+      const isBriefing = items.length === 0;
+      const finalItems = isBriefing ? [buildBriefingItem(markdown, date)] : items;
 
       const ranking = {
         category: CATEGORY,
@@ -95,11 +91,11 @@ async function main() {
         date,
         source: SOURCE,
         sourceUrl: SOURCE_URL,
-        items,
+        items: finalItems,
       };
       const frontMatter = {
         title: `今日全球高分影视雷达 ${date}`,
-        description: buildDescription(items, date),
+        description: buildDescription(finalItems, date),
         date: `${date}T08:00:00+08:00`,
         rankingKey: date,
         slug,
@@ -110,15 +106,17 @@ async function main() {
       };
 
       if (dryRun) {
-        console.log(`dry-run: ${slug}（${items.length} items）`);
-        for (const item of items) {
+        const label = isBriefing ? 'briefing' : `${finalItems.length} items`;
+        console.log(`dry-run: ${slug}（${label}）`);
+        for (const item of finalItems) {
           console.log(`  ${item.rank}. [${item.id ?? '—'}] ${item.name} — ${item.score ?? '—'}`);
           console.log(`     type=${item.type ?? '—'} platform=${item.platform ?? '—'} url=${item.url}`);
           console.log(`     desc=${item.description}`);
           console.log(`     tags=${(item.tags ?? []).join('、') || '—'}`);
           console.log(`     comment=${(item.comment ?? '').slice(0, 60)}…`);
         }
-        written += 1;
+        if (isBriefing) briefings += 1;
+        else written += 1;
         continue;
       }
 
@@ -134,8 +132,9 @@ async function main() {
         JSON.stringify(ranking, null, 2) + '\n',
         'utf8',
       );
-      console.log(`imported: ${slug} (${items.length} items)`);
-      written += 1;
+      console.log(`imported: ${slug} (${isBriefing ? 'briefing' : finalItems.length + ' items'})`);
+      if (isBriefing) briefings += 1;
+      else written += 1;
     } catch (error) {
       console.error(`failed: ${slug} — ${error.message}`);
       failed += 1;
@@ -143,7 +142,7 @@ async function main() {
   }
 
   console.log(
-    `\nimport-film-radar: ${written} written, ${skipped} skipped, ${empty} zero-new, ${failed} failed`,
+    `\nimport-film-radar: ${written} written, ${briefings} briefings, ${skipped} skipped, ${failed} failed`,
   );
   if (failed > 0) process.exitCode = 1;
 }
@@ -154,6 +153,32 @@ function parseRecommendations(markdown) {
   const lines = markdown.split(/\r?\n/);
   const section = extractSection(lines, /^##\s+.*今日新推荐/);
   return section ? splitEntries(section) : [];
+}
+
+/**
+ * 当日无正式推荐时，用报告的「一句话总结」生成一条简报占位，
+ * 保证历史日期仍有榜单页面，而不是直接缺失。
+ */
+function buildBriefingItem(markdown, date) {
+  const summary =
+    extractOneLiner(markdown) || `2026-${date.slice(5, 7)}-${date.slice(8)} 无新增正式推荐。`;
+  return {
+    rank: 1,
+    name: '本期无新增正式推荐',
+    url: SOURCE_URL,
+    description: summary,
+    type: '简报',
+    platform: '—',
+    score: '—',
+    tags: [],
+    comment: '',
+  };
+}
+
+function extractOneLiner(markdown) {
+  const match = /一句话总结[：:]\s*(.+?)(?=\n\n|\n## |$)/s.exec(markdown);
+  if (!match) return null;
+  return cleanValue(match[1]).replace(/\n/g, ' ');
 }
 
 /**

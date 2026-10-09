@@ -1,0 +1,20 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-10-02",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "本期无新增正式推荐",
+      "url": "https://www.workbuddy.cn",
+      "description": "2026-10-02 无新增正式推荐。",
+      "type": "简报",
+      "platform": "—",
+      "score": "—",
+      "tags": [],
+      "comment": ""
+    }
+  ]
+}
