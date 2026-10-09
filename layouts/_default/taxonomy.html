@@ -1,38 +1,70 @@
 {{ define "main" }}
-  <section class="page-heading" aria-labelledby="taxonomy-title">
-    <p class="eyebrow">内容索引</p>
-    <h1 id="taxonomy-title">{{ .Title }}</h1>
-    <p>浏览全部分类及其已发布榜单数量。</p>
-  </section>
+  {{- $termKey := .Data.Term -}}
 
-  <section class="taxonomy-index" aria-labelledby="taxonomy-list-title">
-    <h2 id="taxonomy-list-title">全部条目</h2>
-    {{- $taxonomy := .Data.Plural -}}
-    {{- $terms := .Data.Terms.Alphabetical -}}
-    {{- if $terms }}
-      <ul class="taxonomy-list">
-        {{- range $terms }}
-          {{- $termKey := .Term -}}
-          {{- $termLabel := .Page.LinkTitle -}}
-          {{- if eq $taxonomy "categories" -}}
-            {{- with index site.Params.categorylabels $termKey -}}
-              {{- $termLabel = . -}}
+  {{- if $termKey -}}
+    {{- /* ---- term 页：/categories/film-radar/ 或 /periods/daily/ ---- */ -}}
+    {{- $termLabel := .Title -}}
+    {{- if eq .Data.Plural "categories" -}}
+      {{- with index site.Params.categorylabels $termKey -}}
+        {{- $termLabel = . -}}
+      {{- end -}}
+    {{- else if eq .Data.Plural "periods" -}}
+      {{- with index site.Params.periodlabels $termKey -}}
+        {{- $termLabel = . -}}
+      {{- end -}}
+    {{- end -}}
+
+    <section class="page-heading" aria-labelledby="term-title">
+      <p class="eyebrow">分类归档</p>
+      <h1 id="term-title">{{ $termLabel }}</h1>
+      <p>共 {{ len .Pages }} 篇榜单，按发布日期从新到旧排列。</p>
+    </section>
+
+    <section class="ranking-archive" aria-labelledby="term-rankings-title">
+      <h2 id="term-rankings-title">榜单列表</h2>
+      {{ partial "ranking-list.html" (dict
+        "Pages" .Pages
+        "ShowCategory" (ne .Data.Plural "categories")
+      ) }}
+    </section>
+
+  {{- else -}}
+    {{- /* ---- taxonomy 根页：/categories/ 或 /periods/ ---- */ -}}
+    <section class="page-heading" aria-labelledby="taxonomy-title">
+      <p class="eyebrow">内容索引</p>
+      <h1 id="taxonomy-title">{{ .Title }}</h1>
+      <p>浏览全部分类及其已发布榜单数量。</p>
+    </section>
+
+    <section class="taxonomy-index" aria-labelledby="taxonomy-list-title">
+      <h2 id="taxonomy-list-title">全部条目</h2>
+      {{- $taxonomy := .Data.Plural -}}
+      {{- $terms := .Data.Terms.Alphabetical -}}
+      {{- if $terms }}
+        <ul class="taxonomy-list">
+          {{- range $terms }}
+            {{- $termKey := .Term -}}
+            {{- $termLabel := .Page.LinkTitle -}}
+            {{- if eq $taxonomy "categories" -}}
+              {{- with index site.Params.categorylabels $termKey -}}
+                {{- $termLabel = . -}}
+              {{- end -}}
+            {{- else if eq $taxonomy "periods" -}}
+              {{- with index site.Params.periodlabels $termKey -}}
+                {{- $termLabel = . -}}
+              {{- end -}}
             {{- end -}}
-          {{- else if eq $taxonomy "periods" -}}
-            {{- with index site.Params.periodlabels $termKey -}}
-              {{- $termLabel = . -}}
-            {{- end -}}
-          {{- end -}}
-          <li class="taxonomy-list-item">
-            <a href="{{ .Page.RelPermalink }}">{{ $termLabel }}</a>
-            <span>{{ .Count }} 篇</span>
-          </li>
-        {{- end }}
-      </ul>
-    {{- else }}
-      <div class="empty-state" role="status">
-        <p>暂时没有可浏览的分类。</p>
-      </div>
-    {{- end }}
-  </section>
+            <li class="taxonomy-list-item">
+              <a href="{{ .Page.RelPermalink }}">{{ $termLabel }}</a>
+              <span>{{ .Count }} 篇</span>
+            </li>
+          {{- end }}
+        </ul>
+      {{- else }}
+        <div class="empty-state" role="status">
+          <p>暂时没有可浏览的分类。</p>
+        </div>
+      {{- end }}
+    </section>
+  {{- end -}}
 {{ end }}
