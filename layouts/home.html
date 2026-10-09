@@ -27,7 +27,14 @@
   {{- with site.GetPage "/rankings" -}}
     {{- $rankingPages = .RegularPagesRecursive -}}
   {{- end -}}
-  {{- $latestRankings := first 8 $rankingPages.ByDate.Reverse -}}
+  {{- $allRankings := $rankingPages.ByDate.Reverse -}}
+  {{- $githubRankings := first 4 (where $allRankings "Params.categories" "intersect" (slice "github")) -}}
+  {{- $filmRankings := first 4 (where $allRankings "Params.categories" "intersect" (slice "film-radar")) -}}
+  {{- $latestRankings := slice -}}
+  {{- range $i := slice 0 1 2 3 -}}
+    {{- with index $githubRankings $i }}{{ $latestRankings = $latestRankings | append . }}{{ end -}}
+    {{- with index $filmRankings $i }}{{ $latestRankings = $latestRankings | append . }}{{ end -}}
+  {{- end -}}
   <section class="latest-rankings" aria-labelledby="latest-rankings-title">
     <div class="section-heading">
       <div>
