@@ -11,3 +11,5 @@ resources/_gen/
 *.log
 screenshots/
 outputs/
+
+.idea/

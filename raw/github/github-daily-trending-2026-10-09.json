@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-09",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 14997,
+      "delta": "4,640 stars today",
+      "rank": 1,
+      "tags": ["C++", "游戏兼容层", "逆向工程", "跨平台", "主机移植"],
+      "comment": "自动把 PS5 可执行文件移植到 Linux / Windows 的工具，目标是让主机游戏二进制脱离专用硬件运行。今日新增 4,640 星、位列增量第二，讨论度集中在\"工程可行性验证\"而非开箱即用的成品体验——这类项目的价值通常先体现在技术验证，成熟度和合法性边界都还需要时间观察。"
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 46155,
+      "delta": "1,163 stars today",
+      "rank": 2,
+      "tags": ["HTML", "SVG", "图表设计", "AI 编程助手", "设计体系"],
+      "comment": "面向 Claude Code、Codex、Copilot 等编码助手的\"编辑级\"图表设计规范，提供 42 种自包含 HTML+SVG 图型，并明确拒绝阴影与默认 Mermaid 观感。上榜原因是它解决了一个很实际的痛点：AI 生成的架构图能看但不好看。适合希望 AI 产出物直接达到出版级观感的团队作为样式基线引入。"
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 24081,
+      "delta": "7,744 stars today",
+      "rank": 3,
+      "tags": ["TypeScript", "Agent", "逆向工程", "二进制分析", "AI"],
+      "comment": "用 Agent 实现从应用行为到原生二进制的全链路逆向，是今天的增量榜首（+7,744）。它把大模型编排能力下沉到二进制分析这一高门槛专业场景，是\"Agent 进入专业工具链\"的代表性尝试。需要注意的是总 Star 仅 2.4 万却单日涨 7,744，属于典型的爆发早期，实际可用性还待验证。"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 280926,
+      "delta": "1,770 stars today",
+      "rank": 4,
+      "tags": ["Agent", "开发者工具", "工程实践", "Shell", "提示工程"],
+      "comment": "作者把个人 .agents 目录里的工程化 Agent 技能集直接公开，是榜上体量最大的仓库（28 万星）。今日 +1,770 属于长期高热项目的常规波动，反映\"Agent 技能/配置即代码\"正在成为开发者的标准化工作流，而不只是个人效率技巧。"
+    },
+    {
+      "name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 98352,
+      "delta": "662 stars today",
+      "rank": 5,
+      "tags": ["TypeScript", "Agent", "上下文管理", "记忆", "开发者工具"],
+      "comment": "为各类编码 Agent 提供跨会话的持久记忆：捕获会话行为、AI 压缩后在后续会话中回注上下文，兼容 Claude Code、OpenClaw、Codex、Gemini、Copilot 等多种客户端。直击长周期项目里\"每次重开都丢上下文\"的痛点，是今日 Agent 工具链主题里工程完整度较高的一条。"
+    },
+    {
+      "name": "EpicGames/raddebugger",
+      "url": "https://github.com/EpicGames/raddebugger",
+      "description": "A native, user-mode, multi-process, graphical debugger.",
+      "language": "C",
+      "stars": 8081,
+      "delta": "283 stars today",
+      "rank": 6,
+      "tags": ["C", "调试器", "开发者工具", "基础设施", "游戏引擎"],
+      "comment": "Epic Games 开源的原生用户态多进程图形化调试器，主打大型工程下的调试响应速度（启动、符号加载、断点命中延迟）。适合对调试器开销敏感的游戏与引擎开发场景，也能作为通用 C/C++ 工程的轻量替代方案。今日增量在榜内偏后，属于稳定积累型项目。"
+    },
+    {
+      "name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 27455,
+      "delta": "309 stars today",
+      "rank": 7,
+      "tags": ["Python", "LLM", "插件", "生产力", "知识工作"],
+      "comment": "Anthropic 面向知识工作者的 Claude 插件开源集合，覆盖文档、表格、演示等常见办公场景。官方下场做\"非程序员的 LLM 插件\"，说明 Agent 应用的重心正从代码生成扩展到通用办公——这也是今日 Agent 主题中用户面最宽的一条。"
+    },
+    {
+      "name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 7469,
+      "delta": "2,510 stars today",
+      "rank": 8,
+      "tags": ["Rust", "创意工具", "设计", "引擎", "开源"],
+      "comment": "面向艺术家、设计师与 filmmaker 的\"意图化创作引擎\"，强调可控的创作流程而不是一键生成结果。单日 +2,510 星、增量第三，是今天除逆向类之外热度最高的创意工具项目。Rust 实现保证了大体量素材下的性能，适合对生成过程可复现性有要求的专业用户。"
+    },
+    {
+      "name": "liquidslr/system-design-notes",
+      "url": "https://github.com/liquidslr/system-design-notes",
+      "description": "Notes of the book System Desgin Interview - An Insider's Guide",
+      "language": "Unknown",
+      "stars": 24519,
+      "delta": "398 stars today",
+      "rank": 9,
+      "tags": ["系统设计", "面试", "学习笔记", "架构", "开源"],
+      "comment": "《System Design Interview – An Insider's Guide》的结构化读书笔记，长期稳居系统设计学习资料清单。今日 +398 星属于面试季的常规回升，内容是笔记整理而非可执行代码，实用价值取决于读者是否正在准备系统设计面试。"
+    }
+  ]
+}

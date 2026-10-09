@@ -1,15 +1,17 @@
 {
   "$schema": "影视雷达状态追踪模板",
   "$description": "记录所有推荐过的作品及其状态。每次执行时读取此文件进行去重。",
-  "$updatedAt": "2026-08-20T20:00:00+08:00",
+  "$updatedAt": "2026-10-09T05:05:00+08:00",
   "$historyNote": "如当前执行无法完整访问历史推荐状态，必须写明：⚠️ 当前无法完整访问历史推荐状态，本次去重可能不完整。",
+  "$lagNote": "⚠️ 本文件已严重滞后：works 数组仅记录到 F023 / 2026-08-21，而实际归档报告已推进到 F079、历史正式推荐 85 部。2026-10-09 起的去重不再以本文件为准，改用归档报告全量复核：项目内 content/rankings/film-radar/daily（至 2026-09-10）+ raw/film-radar（仅 2026-10-08）+ 本机归档 D:\\cache\\WorkBuddy\\automation-2026-08-11-09-21-56\\outputs\\daily-film-radar-*.md（2026-09-12 ~ 10-08，25 期）。已用编号确认为 F001–F079，下一可用 F080。",
   "$currentExecution": {
-    "date": "2026-08-20",
-    "executionTime": "20:00 CST (cron 官方版)",
-    "executionNumber": 4,
-    "provenance": "正式的 cron 触发，覆盖 17:33 手动临时稿",
-    "renumberingNote": "17:33 临时稿用了错误的 F006-F009 编号，本次 cron 版正确插入为 F014–F017；新增 F018、F019。",
-    "addedIds": ["F014", "F015", "F016", "F017", "F018", "F019"]
+    "date": "2026-10-09",
+    "executionTime": "05:05 CST (每日双榜自动化)",
+    "provenance": "正式 cron 触发（每日双榜，cwd = stellar-compass-workbuddy）",
+    "addedIds": [],
+    "reviewed": 6,
+    "result": "0 部正式推荐（第 19 次零新增）；观察池净 +1（JOJO 飙马野郎 2nd–3rd STAGE 入池，触发粉丝集中评分警惕）",
+    "observationPool": ["伊甸园之东 / East of Eden", "万物生灵 第七季 / All Creatures Great and Small S7", "找春天 / Youth", "库比蒂诺 / Cupertino", "JOJO 的奇妙冒险 飙马野郎 2nd–3rd STAGE"]
   },
 
   "works": [
@@ -459,6 +461,104 @@
       },
       "trend": "stable",
       "notes": "⚠️ 历史遗漏修正：前 3 次执行未覆盖本剧，本次补录入库。SBS 2026金土剧收视峰值纪录（27.1%瞬间最高）+ Netflix 79国Top10/28国#1。苏志燮主演（50岁仍亲身上阵硬桥硬马）。2026 韩国现象级黑马。"
+    },
+    {
+      "id": "F020",
+      "title": "情感价值（Sentimental Value）",
+      "originalTitle": "Sentimental Value",
+      "aliases": ["Sentimental Value", "情感价值", "情感的價值", "情感价值"],
+      "imdbId": null,
+      "tmdbId": null,
+      "doubanId": null,
+      "type": "家庭剧情片",
+      "country": "挪威（合拍：德国/丹麦/法国/瑞典/英国/土耳其）",
+      "year": 2025,
+      "platform": "Hulu / MUBI / Kanopy / Apple TV / Amazon / Fandango",
+      "score": 92,
+      "tier": "🔥",
+      "status": "NEW",
+      "firstRecommended": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "scores": {
+        "imdb": { "rating": 7.7, "votes": 86000 },
+        "justwatch": { "rating": 87, "votes": 3400 },
+        "douban": { "rating": null, "note": "暂无可靠数据，有高质量长评讨论" }
+      },
+      "awards": "2026奥斯卡最佳国际影片奖；9项奥斯卡提名（含最佳影片）；2025戛纳评审团大奖（Grand Prix）",
+      "trend": "stable",
+      "notes": "约阿希姆·提尔×雷娜特·赖因斯夫再度合作（《世界上最糟糕的人》）。斯特兰·斯卡斯加德+艾丽·范宁。2025年戛纳片，因2026奥斯卡+流媒体上线重新成为全球热点。IMDb 8.6万大样本。今日👑首推。"
+    },
+    {
+      "id": "F021",
+      "title": "生命树（Life Tree）",
+      "originalTitle": null,
+      "aliases": ["生命树", "Life Tree"],
+      "imdbId": null,
+      "tmdbId": null,
+      "doubanId": null,
+      "type": "生态现实主义年代剧",
+      "country": "中国大陆",
+      "year": 2026,
+      "platform": "央视八套 / 爱奇艺",
+      "score": 89,
+      "tier": "⭐",
+      "status": "NEW",
+      "firstRecommended": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "scores": {
+        "douban": { "rating": 8.4, "votes": null, "note": "8.3-8.4 区间，大样本" }
+      },
+      "awards": "2026白玉兰8项提名，获最佳导演、最佳女演员；连续19天酷云全频道收视TOP1",
+      "trend": "stable",
+      "notes": "正午阳光出品，海拔4800米高原实景拍摄188天。胡歌+杨紫+梅婷+李光洁。九十年代青海三江源巡山护林/反盗猎。已完结40集。累计触达10.7亿人次。国际数据暂缺。"
+    },
+    {
+      "id": "F022",
+      "title": "无职转生 第三季（Mushoku Tensei: Jobless Reincarnation Season 3）",
+      "originalTitle": "無職転生 〜異世界行ったら本気だす〜 第3期",
+      "aliases": ["Mushoku Tensei Season 3", "无职转生 第三季", "Jobless Reincarnation S3"],
+      "imdbId": null,
+      "tmdbId": null,
+      "malId": null,
+      "type": "异世界奇幻动画",
+      "country": "日本",
+      "year": 2026,
+      "platform": "Crunchyroll",
+      "score": 86,
+      "tier": "⭐",
+      "status": "NEW",
+      "firstRecommended": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "scores": {
+        "myAnimeList": { "rating": 8.6, "votes": null, "note": "早期9.0+后回落稳定" },
+        "imdb": { "rating": 7.9, "votes": null, "note": "第三季单独" }
+      },
+      "trend": "stable-downward-convergence",
+      "notes": "Studio Bind制作升级。Cour1共14集，第8集起进入Chaos Breaker篇，预计9/27结束Cour1。Turning Point 4为系列最强弧段之一。存在系列一贯争议。"
+    },
+    {
+      "id": "F023",
+      "title": "主角（The Lead）",
+      "originalTitle": null,
+      "aliases": ["主角", "The Lead"],
+      "imdbId": null,
+      "tmdbId": null,
+      "doubanId": null,
+      "type": "秦腔年代大剧",
+      "country": "中国大陆",
+      "year": 2026,
+      "platform": "央视一套 / 腾讯视频",
+      "score": 85,
+      "tier": "⭐",
+      "status": "NEW",
+      "firstRecommended": "2026-08-21",
+      "lastUpdated": "2026-08-21",
+      "scores": {
+        "douban": { "rating": 8.1, "votes": null, "note": "开分8.2微降至8.1" }
+      },
+      "awards": "张艺谋监制；改编陈彦茅盾文学奖同名小说；央视一套历史收视冠军（峰值4.487%）；腾讯热度破30236；全网播放破13亿",
+      "trend": "slight-decline",
+      "notes": "刘浩存+张嘉益+秦海璐+窦骁。秦腔名伶忆秦娥半生沉浮。前20集惊艳，后半段人物集中下线、结局仓促，高开低走但跌幅温和。已完结48集。国际数据暂缺。"
     }
   ],
 
@@ -480,13 +580,14 @@
   },
 
   "stats": {
-    "totalRecommended": 19,
+    "totalRecommended": 23,
     "watchlist": 0,
     "watched": 0,
     "excluded": 0,
     "holding": 0,
-    "todayNew": 6,
-    "historyNote": "基于 2026-08-11 至 2026-08-20 共 4 次执行记录：8/11 8 部（F001-F008）+ 8/12 2 部（F009-F010）+ 8/13 3 部（F011-F013）+ 8/20 6 部（F014-F019），总计 19 部。本次发现 1 部历史遗漏（F019 金特务），已以 F019 编号补录。"
+    "todayNew": 0,
+    "observationPool": 60,
+    "historyNote": "⚠️ 本 stats 块已滞后（停在 2026-08-21 的 23 部）。2026-10-09 复核后的真实口径：历史正式推荐 85 部，已用编号 F001–F079，下一可用 F080，观察池 60 项。详见 $lagNote。今日新增 0 部（第 19 次零新增）。"
   },
 
   "$instructions": {
