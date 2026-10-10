@@ -1,0 +1,25 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-10-11",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F080",
+      "name": "绿洲：别回头看愤怒 / Oasis: Don't Look Back in Anger",
+      "url": "https://www.disneyplus.com",
+      "description": "Rotten Tomatoes97%(72 篇影评) · Rotten Tomatoes98%(250+ 已验证评分) · IMDb8.3(第三方聚合数值，未能直连 IMDb 核实，样本量未知) · Metacritic暂无可靠数据(未检索到本片条目级数值)",
+      "type": "纪录片 / 音乐",
+      "platform": "Disney+（英国 / 欧洲 / 中东非洲 / 拉美 / 亚太等多个市场）；Hulu 与 Disney+（美国）；意大利另有 Sky Glass / Sky Q / NOW",
+      "score": "91/100 🔥",
+      "tags": [
+        "纪录片",
+        "音乐",
+        "英国 / 美国"
+      ],
+      "comment": "这不是一部靠\"把旧素材剪一遍\"敷衍过去的巡演花絮。它拿到的是排练室、后台和台上的完整通路，以及 Gallagher 兄弟**二十多年来第一次坐在一起的联合采访**——而这个\"时刻\"被剪辑刻意压到全片最后才出现，导演的判断是：兄弟俩的和解本来就不发生在谈判桌上，而是**每晚在台上真实发生的**。音效由《利益区域》奥斯卡得主 Tarn Willers 操刀，现场录音与人群声的处理让\"25 万人一起唱《Don't Look Back in Anger》\"这件事在流媒体的扬声器上依然站得住。 适合谁：看过 Oasis 现场、或者哪怕只是在学生時代 mp3 里循环过《Wonderwall》的人；以及对\"两个不太好意思表达感情的中年英国男人是怎么重新走到一起的\"这件事有好奇心的人。"
+    }
+  ]
+}
