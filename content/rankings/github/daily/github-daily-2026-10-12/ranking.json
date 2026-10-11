@@ -1,0 +1,145 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-10-12",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 99724,
+      "delta": "25,585 stars today",
+      "tags": [
+        "Agent",
+        "MCP",
+        "逆向工程",
+        "二进制分析",
+        "TypeScript"
+      ],
+      "comment": "把逆向工程能力封装成 CLI + MCP 服务，让 Agent 直接驱动 Hopper / Ghidra 等反汇编器，从应用行为一路查到原生二进制，并产出可复现的 Evidence 记录。今日以远超其余项目的增量登顶，是「Agent 工具链」主线的一次集中爆发。"
+    },
+    {
+      "rank": 2,
+      "name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 29666,
+      "delta": "3,977 stars today",
+      "tags": [
+        "C++",
+        "游戏",
+        "兼容层",
+        "二进制重链接",
+        "逆向工程"
+      ],
+      "comment": "不做硬件模拟，而是用重链接器把 PS5 的 ELF 可执行文件转成 Windows PE / Linux ELF，再用自实现的 PRX 系统库顶替索尼的运行时调用；着色器重编译器已能产出通过 SPIRV-Tools 校验的 SPIR-V。实测游戏已能跑到 logo、主菜单并带音频进入 gameplay，但主项目尚未发布正式版本。"
+    },
+    {
+      "rank": 3,
+      "name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 17437,
+      "delta": "2,956 stars today",
+      "tags": [
+        "Rust",
+        "AI 生成",
+        "图像/视频",
+        "创作工具",
+        "3D"
+      ],
+      "comment": "把「写提示词碰运气」改造成「先搭场景再生成」：在 2D/3D 画布上完成摆位、合成、角色姿势与机位设定后才调用模型，重点解决跨镜头的角色与场景一致性。近日刚将许可证换成 MIT OR Apache-2.0，并新增纯 Rust 桌面端 artcraft-native，是本次上榜的直接触发点。"
+    },
+    {
+      "rank": 4,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 50155,
+      "delta": "1,083 stars today",
+      "tags": [
+        "Agent Skills",
+        "数据可视化",
+        "SVG",
+        "设计系统",
+        "HTML"
+      ],
+      "comment": "面向 Claude Code / Codex / Copilot / Cursor 等 Agent 宿主的图表技能，输出带品牌配色的单文件 HTML + SVG，覆盖 44 种图表类型，并硬性规定「无阴影、无 Mermaid 味」。可自动抓取站点配色与字体完成品牌对齐，把「让 Agent 画张图」推进到「能直接挂上官网」的水准。"
+    },
+    {
+      "rank": 5,
+      "name": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 51435,
+      "delta": "872 stars today",
+      "tags": [
+        "JavaScript",
+        "3D 可视化",
+        "地理空间",
+        "WebGL",
+        "开源情报"
+      ],
+      "comment": "以真实开源空间情报数据驱动的浏览器端「间谍卫星模拟器」，在写实 3D 地球之上呈现卫星轨道与影像覆盖。把原本属于情报分析环节的可视化搬进网页，真实数据与强交互的结合是它上榜的主要原因。"
+    },
+    {
+      "rank": 6,
+      "name": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "stars": 104425,
+      "delta": "314 stars today",
+      "tags": [
+        "深度学习",
+        "框架",
+        "Python",
+        "GPU",
+        "基础设施"
+      ],
+      "comment": "老牌深度学习框架，提供张量与动态神经网络计算并强调 GPU 加速。累计 star 为今日榜首但日增仅 314，属于大体量仓库的常态稳定增长，上榜更多依靠基数而非当日事件。"
+    },
+    {
+      "rank": 7,
+      "name": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 36375,
+      "delta": "541 stars today",
+      "tags": [
+        "LLM",
+        "推理优化",
+        "显存优化",
+        "Python",
+        "开源"
+      ],
+      "comment": "主打极低显存的大模型推理，目标是让 70B 级别模型在单张 4GB GPU 上跑起来，靠分层加载与内存调度换取可行性。适合没有大显存却必须本地跑大模型的场景。"
+    },
+    {
+      "rank": 8,
+      "name": "chrislgarry/Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11",
+      "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+      "language": "Assembly",
+      "stars": 74166,
+      "delta": "496 stars today",
+      "tags": [
+        "汇编",
+        "航天",
+        "历史档案",
+        "计算机史",
+        "教育"
+      ],
+      "comment": "阿波罗 11 号制导计算机（AGC）的原始源码，含指令舱与登月舱两部分。作为计算史上的一手材料被长期引用与研读，今日上榜属于经典仓库的周期性回流。"
+    }
+  ]
+}
