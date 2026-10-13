@@ -103,7 +103,10 @@ async function run(cmd, cmdArgs, opts = {}) {
     cwd: projectRoot,
     timeout: opts.timeout ?? 120_000,
     maxBuffer: 10 * 1024 * 1024,
-    env: { ...process.env, GCM_INTERACTIVE: 'never' },
+    // 不要设 GCM_INTERACTIVE=never：该模式下 GCM 连已缓存的凭据都拒绝返回，
+    // 非交互环境必然拿不到用户名密码，git push 一定失败。
+    // GIT_TERMINAL_PROMPT=0 保证拿不到凭据时立刻失败而不是挂住等输入。
+    env: { ...process.env, GIT_TERMINAL_PROMPT: '0' },
   });
   return { stdout, stderr };
 }
