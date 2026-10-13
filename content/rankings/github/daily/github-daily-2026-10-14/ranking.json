@@ -1,0 +1,161 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-10-14",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 203401,
+      "delta": "54,706 stars today",
+      "tags": [
+        "Agent",
+        "逆向工程",
+        "二进制分析",
+        "安全研究",
+        "TypeScript"
+      ],
+      "comment": "用 Agent 把逆向工程流程自动化，从应用层行为一路剥到原生二进制。单日新增 5.4 万 star 是本期断层第一，占全榜增量的八成，也是今天最值得注意的信号——它把过去高度依赖人工经验的二进制分析，变成了可编排的 Agent 任务。"
+    },
+    {
+      "rank": 2,
+      "name": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "stars": 55173,
+      "delta": "1,961 stars today",
+      "tags": [
+        "可视化",
+        "3D",
+        "空间数据",
+        "地理信息",
+        "JavaScript"
+      ],
+      "comment": "浏览器里的间谍卫星模拟器，关键在于数据是真的——实时开源空间情报叠加在照片级 3D 地球上。把原本只有情报机构能玩的视角做成了人人可交互的 demo，是本期最直观的一个项目。"
+    },
+    {
+      "rank": 3,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 62851,
+      "delta": "2,277 stars today",
+      "tags": [
+        "TTS",
+        "语音克隆",
+        "本地部署",
+        "AI 音频",
+        "Python"
+      ],
+      "comment": "完全本地运行的 ElevenLabs 开源替代，覆盖语音克隆、声音设计、视频配音、听写、转写到有声书生成，宣称支持 646 种语言。核心卖点不是功能堆料，而是全流程不出本机的数据隐私。"
+    },
+    {
+      "rank": 4,
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 28112,
+      "delta": "978 stars today",
+      "tags": [
+        "AI 编程",
+        "上下文优化",
+        "MCP",
+        "Agent",
+        "TypeScript"
+      ],
+      "comment": "面向 AI 编码 Agent 的上下文窗口优化层：把工具输出沙箱化压缩掉 98%，持久化会话记忆，并用 MCP + hooks 在 17 个平台间做路由。切的是当下 Agent 落地最痛的上下文膨胀问题。"
+    },
+    {
+      "rank": 5,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 53944,
+      "delta": "1,813 stars today",
+      "tags": [
+        "图表设计",
+        "AI 编程",
+        "SVG",
+        "设计系统",
+        "HTML"
+      ],
+      "comment": "给 Claude Code、Codex、Copilot、Cursor 等多个 AI 编码工具用的编辑级图表规范，44 种类型、纯 HTML + SVG 自包含，明确拒绝阴影和 Mermaid 默认样式。反映的是 AI 生成内容的排版审美开始被当成正经问题对待。"
+    },
+    {
+      "rank": 6,
+      "name": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "stars": 34396,
+      "delta": "187 stars today",
+      "tags": [
+        "Agent",
+        "工具链",
+        "开发者工具",
+        "开源",
+        "TypeScript"
+      ],
+      "comment": "Vercel 实验室推出的开放 Agent Skills 工具，以 npx skills 作为分发入口。增量在本榜最低（+187），但意义在标准化——技能生态正从各家私有格式走向可共享的命令行入口。"
+    },
+    {
+      "rank": 7,
+      "name": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 38235,
+      "delta": "1,004 stars today",
+      "tags": [
+        "LLM 推理",
+        "显存优化",
+        "模型压缩",
+        "边缘部署",
+        "Python"
+      ],
+      "comment": "主打用单张 4GB GPU 跑 2.8T 参数模型推理，靠逐层加载绕过显存墙。是个老项目，近期因大模型本地化与低成本部署需求上升而重新回潮。"
+    },
+    {
+      "rank": 8,
+      "name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 25306,
+      "delta": "4,078 stars today",
+      "tags": [
+        "创意工具",
+        "Rust",
+        "内容生产",
+        "设计工具"
+      ],
+      "comment": "面向艺术家、设计师与 filmmaker 的「刻意创作」引擎，强调创作过程的意图管理而非一次性生成。单日 +4,078 star 是本榜第二高增量，说明创意工作流工具正在接棒 AI 编程成为新的注意力中心。"
+    },
+    {
+      "rank": 9,
+      "name": "xtool-org/xtool",
+      "url": "https://github.com/xtool-org/xtool",
+      "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "language": "Swift",
+      "stars": 9171,
+      "delta": "1,182 stars today",
+      "tags": [
+        "iOS 开发",
+        "跨平台",
+        "Swift",
+        "开发者工具",
+        "构建工具"
+      ],
+      "comment": "用 SwiftPM 在 Linux、Windows、macOS 上构建并部署 iOS 应用，做跨平台版 Xcode 替代。打的是苹果工具链长期锁死在 macOS 这个痛点，总 star 仅 9,171 但单日 +1,182，增速相当陡。"
+    }
+  ]
+}
