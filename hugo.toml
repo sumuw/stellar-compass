@@ -4,6 +4,10 @@ title = 'Stellar Compass'
 defaultContentLanguage = 'zh-cn'
 enableRobotsTXT = true
 enableGitInfo = false
+# 榜单 front matter 的 date 是"榜单日 08:00(+08:00)"，而每日自动化在北京时间 05:05
+# （UTC 前一天 21:05）构建，此时 date 仍在未来 ~3 小时，Hugo 默认跳过未来内容，
+# 会导致线上始终晚一天。榜单日期是标签而非真实发布时间，直接放行未来内容。
+buildFuture = true
 
 [pagination]
   pagerSize = 20
