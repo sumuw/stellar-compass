@@ -1,6 +1,6 @@
 ---
 title: GitHub 每日趋势榜 2026-10-14
-description: 2026-10-14 GitHub Trending 榜首为 morluto/rea，当日共收录 9 个项目。
+description: 2026-10-14 GitHub Trending 榜首为 morluto/rea，当日共收录 12 个项目。
 date: '2026-10-14T08:00:00+08:00'
 rankingKey: '2026-10-14'
 slug: github-daily-2026-10-14
@@ -17,7 +17,7 @@ draft: false
 
 ## 今日概览
 
-2026-10-14 GitHub Trending 共收录 9 个项目，榜首 morluto/rea（54,706 stars today）。语言分布：TypeScript 3、JavaScript 1、Python 1、HTML 1、Jupyter Notebook 1、Rust 1。 核心主题：Agent 工具链与上下文治理。
+2026-10-14 GitHub Trending 共收录 12 个项目，榜首 morluto/rea（41,034 stars today）。语言分布：Python 4、TypeScript 2、Shell 1、Go 1、Rust 1、Swift 1。
 
 ## 重点项目
 
@@ -26,94 +26,125 @@ draft: false
 - 地址：https://github.com/morluto/rea
 - 简介：Reverse engineer anything with agents, from app behavior down to native binaries.
 - 语言：TypeScript
-- 今日新增：54,706 stars today
-- 标签：Agent、逆向工程、二进制分析、安全研究、TypeScript
+- 今日新增：41,034 stars today
+- 标签：AI Agent、MCP、逆向工程、二进制分析、TypeScript
 
-用 Agent 把逆向工程流程自动化，从应用层行为一路剥到原生二进制。单日新增 5.4 万 star 是本期断层第一，占全榜增量的八成，也是今天最值得注意的信号——它把过去高度依赖人工经验的二进制分析，变成了可编排的 Agent 任务。
+把 Ghidra / Hopper / IDA 等专业逆向工具封装成 MCP 工具集，让 Claude Code、Codex 这类编码 Agent 能在没有源码的前提下拆解原生二进制、Electron 应用与 .NET 程序集，并给出带文件偏移和置信度的证据链。上线数日 star 已破 24 万，今日仍以 4.1 万的日增断层领跑，是本期唯一的现象级项目；README 也没有回避它带来的知识产权与合规争议。
 
-### 2. bilawalsidhu/gods-eye-view
-
-- 地址：https://github.com/bilawalsidhu/gods-eye-view
-- 简介：A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.
-- 语言：JavaScript
-- 今日新增：1,961 stars today
-- 标签：可视化、3D、空间数据、地理信息、JavaScript
-
-浏览器里的间谍卫星模拟器，关键在于数据是真的——实时开源空间情报叠加在照片级 3D 地球上。把原本只有情报机构能玩的视角做成了人人可交互的 demo，是本期最直观的一个项目。
-
-### 3. debpalash/VoiceStudio
+### 2. debpalash/VoiceStudio
 
 - 地址：https://github.com/debpalash/VoiceStudio
 - 简介：VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.
 - 语言：Python
-- 今日新增：2,277 stars today
-- 标签：TTS、语音克隆、本地部署、AI 音频、Python
+- 今日新增：3,538 stars today
+- 标签：TTS、语音克隆、本地优先、音视频、Python
 
-完全本地运行的 ElevenLabs 开源替代，覆盖语音克隆、声音设计、视频配音、听写、转写到有声书生成，宣称支持 646 种语言。核心卖点不是功能堆料，而是全流程不出本机的数据隐私。
+完全本地运行的 ElevenLabs 开源替代：声音克隆、声音设计、视频配音、听写转写与有声书一站式完成，支持 CUDA / Apple Silicon / ROCm / CPU 与 MCP 接入。需注意 646 种语言是 14+ 个 TTS 引擎的合计覆盖，不是单引擎能力；许可证为 AGPL-3.0，改成托管服务对外售卖需遵守传染性条款。
 
-### 4. mksglu/context-mode
+### 3. mksglu/context-mode
 
 - 地址：https://github.com/mksglu/context-mode
 - 简介：Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.
 - 语言：TypeScript
-- 今日新增：978 stars today
-- 标签：AI 编程、上下文优化、MCP、Agent、TypeScript
+- 今日新增：947 stars today
+- 标签：AI Agent、MCP、上下文工程、开发者工具、TypeScript
 
-面向 AI 编码 Agent 的上下文窗口优化层：把工具输出沙箱化压缩掉 98%，持久化会话记忆，并用 MCP + hooks 在 17 个平台间做路由。切的是当下 Agent 落地最痛的上下文膨胀问题。
+面向 AI 编码 Agent 的上下文窗口优化层：把工具输出沙箱化（官方称最高削减 98%）、用本地库持久化会话记忆，并通过 MCP + hooks 在 17 个平台间强制路由。连续两日在榜且增量从 394 涨到 947，说明"上下文成本"是当下最实际的一处痛点。
 
-### 5. cathrynlavery/diagram-design
+### 4. nvm-sh/nvm
 
-- 地址：https://github.com/cathrynlavery/diagram-design
-- 简介：Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.
-- 语言：HTML
-- 今日新增：1,813 stars today
-- 标签：图表设计、AI 编程、SVG、设计系统、HTML
+- 地址：https://github.com/nvm-sh/nvm
+- 简介：Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.
+- 语言：Shell
+- 今日新增：52 stars today
+- 标签：Node.js、版本管理、开发工具、Shell、基础设施
 
-给 Claude Code、Codex、Copilot、Cursor 等多个 AI 编码工具用的编辑级图表规范，44 种类型、纯 HTML + SVG 自包含，明确拒绝阴影和 Mermaid 默认样式。反映的是 AI 生成内容的排版审美开始被当成正经问题对待。
+老牌 Node 版本管理器，靠一段 POSIX bash 脚本解决多版本 node 共存。日增仅 52 星仍能上榜，属长尾稳定需求带来的持续曝光，而非某个新事件驱动。
 
-### 6. vercel-labs/skills
+### 5. K-Dense-AI/scientific-agent-skills
 
-- 地址：https://github.com/vercel-labs/skills
-- 简介：The open agent skills tool - npx skills
-- 语言：TypeScript
-- 今日新增：187 stars today
-- 标签：Agent、工具链、开发者工具、开源、TypeScript
+- 地址：https://github.com/K-Dense-AI/scientific-agent-skills
+- 简介：Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.
+- 语言：Python
+- 今日新增：163 stars today
+- 标签：AI Agent、Agent Skills、科研、生物医药、Python
 
-Vercel 实验室推出的开放 Agent Skills 工具，以 npx skills 作为分发入口。增量在本榜最低（+187），但意义在标准化——技能生态正从各家私有格式走向可共享的命令行入口。
+面向科研场景的 Agent Skills 库：内置 177 个经过验证的技能与 100+ 科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor、Claude Code、Codex 等主流客户端与开放 Agent Skills 标准，MIT 协议并附有 arXiv 论文。
 
-### 7. lyogavin/airllm
+### 6. HKUDS/CLI-Anything
 
-- 地址：https://github.com/lyogavin/airllm
-- 简介：AirLLM 2.8T LLM inference with single 4GB GPU
-- 语言：Jupyter Notebook
-- 今日新增：1,004 stars today
-- 标签：LLM 推理、显存优化、模型压缩、边缘部署、Python
+- 地址：https://github.com/HKUDS/CLI-Anything
+- 简介："CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub: https://clianything.cc/
+- 语言：Python
+- 今日新增：103 stars today
+- 标签：CLI、AI Agent、自动化、开发者工具、Python
 
-主打用单张 4GB GPU 跑 2.8T 参数模型推理，靠逐层加载绕过显存墙。是个老项目，近期因大模型本地化与低成本部署需求上升而重新回潮。
+香港大学数据科学实验室出品，主张"让所有软件 Agent 原生化"：把任意软件包装成 Agent 可直接调用的 CLI，并配套 CLI-Hub 索引站。与当日多个 Agent 基建项目形成呼应，共同把"能力装配"做成一层基础设施。
 
-### 8. storytold/artcraft
+### 7. ifixai-ai/iFixAi
 
-- 地址：https://github.com/storytold/artcraft
-- 简介：ArtCraft is an intentional crafting engine for artists, designers, and filmmakers
+- 地址：https://github.com/ifixai-ai/iFixAi
+- 简介：Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.
+- 语言：Python
+- 今日新增：2,109 stars today
+- 标签：AI 审计、Agent 可观测性、评测、安全、Python
+
+主打 AI Agent 的独立审计：由人或 Agent 自己发起，宣称 120 秒内回答"这个 Agent 到底有没有在做它该做的事"。Agent 大规模上线之后，审计与问责正在从加分项变成准入门槛，这是它今日能冲到 2,109 星的直接原因。
+
+### 8. vxcontrol/pentagi
+
+- 地址：https://github.com/vxcontrol/pentagi
+- 简介：Fully autonomous AI Agents system capable of performing complex penetration testing tasks
+- 语言：Go
+- 今日新增：1,025 stars today
+- 标签：渗透测试、AI Agent、安全、自动化、Go
+
+用 Go 实现的全自主渗透测试 Agent 系统，可编排完成复杂的安全测试任务，并配套 Discord / Telegram 社区。与 REA、iFixAi 一起构成本期"安全 + Agent"主线，但自主渗透的授权边界需要使用者自行把关。
+
+### 9. rust-lang/rust
+
+- 地址：https://github.com/rust-lang/rust
+- 简介：Empowering everyone to build reliable and efficient software.
 - 语言：Rust
-- 今日新增：4,078 stars today
-- 标签：创意工具、Rust、内容生产、设计工具
+- 今日新增：207 stars today
+- 标签：编程语言、系统编程、编译器、基础设施、Rust
 
-面向艺术家、设计师与 filmmaker 的「刻意创作」引擎，强调创作过程的意图管理而非一次性生成。单日 +4,078 star 是本榜第二高增量，说明创意工作流工具正在接棒 AI 编程成为新的注意力中心。
+Rust 官方仓库，日常保持稳定增长。这类体量的项目只有在版本发布、重大 RFC 合并或安全公告出现时才会明显抬头，今日 207 星属于常规水位。
 
-### 9. xtool-org/xtool
+### 10. xtool-org/xtool
 
 - 地址：https://github.com/xtool-org/xtool
 - 简介：Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.
 - 语言：Swift
-- 今日新增：1,182 stars today
-- 标签：iOS 开发、跨平台、Swift、开发者工具、构建工具
+- 今日新增：1,502 stars today
+- 标签：iOS 开发、Swift、跨平台、SwiftPM、开发者工具
 
-用 SwiftPM 在 Linux、Windows、macOS 上构建并部署 iOS 应用，做跨平台版 Xcode 替代。打的是苹果工具链长期锁死在 macOS 这个痛点，总 star 仅 9,171 但单日 +1,182，增速相当陡。
+用 SwiftPM 在 Linux / Windows(WSL) / macOS 上完成 iOS 应用的构建、签名与安装，等于把 Xcode 的核心流水线搬到非 Mac 平台上，还能通过 XKit 作为库复用。今日 1,502 星是本期除 REA 外增量最高的实用工具，对没有 Mac 的 CI 与团队很实际。
+
+### 11. ntdevlabs/tiny11builder
+
+- 地址：https://github.com/ntdevlabs/tiny11builder
+- 简介：WinUI app for building smaller, customized Windows 11 images.
+- 语言：C#
+- 今日新增：139 stars today
+- 标签：Windows、系统精简、WinUI、C#、实用工具
+
+用原生 WinUI 应用把官方 Win11 镜像裁剪成更小的定制 ISO，提供 Tiny11 / Core / Custom 三种模式，支持 Turbo 加速与中断续做。老牌实用工具的稳定长尾，面向老机器救活与干净装机场景。
+
+### 12. NationalSecurityAgency/ghidra
+
+- 地址：https://github.com/NationalSecurityAgency/ghidra
+- 简介：Ghidra is a software reverse engineering (SRE) framework
+- 语言：Java
+- 今日新增：1,008 stars today
+- 标签：逆向工程、安全研究、反汇编、基础设施、Java
+
+NSA 开源的逆向工程框架，本身已稳定运行多年。今日重回趋势榜的直接原因是 REA 把它当作底层反编译引擎封装进了 MCP 工具链，带动大量开发者顺手回来 star，是本期最典型的一条"生态外溢"信号。
 
 ## 观察
 
-- Agent 工具链占 4/9 席，仍是榜单主赛道：`rea`、`context-mode`、`vercel-labs/skills` 直接服务 Agent，`diagram-design` 服务 AI 编码工具的输出质量。与上月相比，关注点已从"能不能跑起来"转向"跑起来之后怎么治理"——上下文压缩、技能分发、输出规范都是第二阶段的基础设施。
-- 增量呈极端长尾分布：`rea` 一日 +54,706，占全榜 68,186 的 80.2%；第二名 `artcraft` +4,078，其余七项全部在 2,300 以下。这种形态通常对应单一事件驱动，而非整个赛道的普涨，判断热度持续性时要谨慎。
-- 消费级 GPU 推理回潮：`airllm` 以"单张 4GB GPU 跑 2.8T 模型"重新上榜。老项目因外部环境变化而回潮，说明本地化部署的门槛仍是硬需求，云端 API 并未完全吃掉这块。
-- 开发者工具在打"平台锁死"这张牌：`xtool` 做跨平台 Xcode 替代，`VoiceStudio` 做本地化的 ElevenLabs 替代。两者共同点是把某个被平台或厂商锁住的能力搬回开发者自己手里，这个主题在本期出现两次，值得留意。
+- REA 单日 41,034 星断层第一，并把底层引擎 ghidra 一并带上榜，说明「把专业工具 Agent 化」正在成为新的分发范式：一个爆款能直接改写一个老项目的增长曲线。
+- 安全与审计四条同时上榜（rea、pentagi、iFixAi、ghidra），覆盖「拆解—攻击—审计—底座」完整链条，本期主题集中度罕见。
+- AI 编码基建继续分化出更细的分工层：context-mode 管上下文成本，scientific-agent-skills 与 CLI-Anything 管能力装配，VoiceStudio 则把整条语音生产链本地化。
+- 老牌项目与新兴项目各占一半，前者靠长尾需求（nvm 52 星也在榜），后者靠事件驱动（xtool 1,502 星、iFixAi 2,109 星）。
+- 许可证值得留意：VoiceStudio 是 AGPL-3.0，context-mode 是 Elastic License v2，两者都不是无限制商用。
