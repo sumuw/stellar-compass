@@ -1,0 +1,27 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-10-23",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F083",
+      "name": "歪心狼对阵 ACME / Coyote vs. Acme",
+      "url": "https://www.primevideo.com",
+      "description": "豆瓣7.3(2,061) · Rotten Tomatoes 专业端96%（Certified Fresh，averageRating 7.90）(299 篇（286 赞 / 11 踩）) · Rotten Tomatoes 观众端94%（Verified Certified Fresh，averageRating 4.5/5）(4,043 Verified 票（3,813 赞 + 230 踩）) · Metacritic77（Generally Favorable）(46 篇)",
+      "type": "动画 / 真人混合 · 喜剧 / 家庭 / 奇幻冒险",
+      "platform": "Amazon Prime Video（租赁 / 购买）、Apple TV、Fandango at Home、Plex",
+      "score": "86/100 ⭐",
+      "tags": [
+        "动画",
+        "真人混合",
+        "喜剧",
+        "家庭",
+        "奇幻冒险"
+      ],
+      "comment": "一部被华纳在 2023 年当作税务减记\"埋掉\"、经影迷与业界声援后被 Ketchup Entertainment 以 5,000 万美元买下、最终在 2026 年 8 月才上映的真人＋动画混合片。它把乐一通近百年的\"歪心狼追哔哔鸟\"母题翻了个面：一辈子被 ACME 的劣质道具坑得遍体鳞伤的歪心狼，请了个落魄律师把 ACME 告上法庭。真正让它站住的不是情怀——是 **299 篇专业评价给 96%、4,043 位验证观众给 94%，两端只差 2 个点**，这与本库近期连续拦截的《Finding Emily》《The Weight》《小羊肖恩 3》那种\"烂番茄高、其余口径低\"的形态完全不同。戏外那层互文（个体起诉无良企业，而它自己差点被无良企业销毁）不需要多说。**最大的短板在中文端**：豆瓣 7.3 / 2,061 人明显低于英文社区，且中国大陆至今没有正版渠道。 适合谁：想在今年找一部不用动脑、能笑出声、而且四个平台口径都说是\"好\"的合家欢的观众——尤其是从小看乐一通长大的人。"
+    }
+  ]
+}
