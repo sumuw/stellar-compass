@@ -1,0 +1,179 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-10-24",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 44228,
+      "delta": "2,271 stars today",
+      "tags": [
+        "安全审计",
+        "Agent 技能",
+        "Cloudflare",
+        "机器可读报告",
+        "漏洞验证"
+      ],
+      "comment": "连续第五日上榜并继续占据增量冠军（+2,271），但已连续第二日回落：+2,979 → +2,706 → +2,271，跌幅由 9% 扩大到 16%。Cloudflare 把内部漏洞发现 harness 的起点开源成 coding-agent 技能，一次审计跑六阶段（侦察、覆盖度驱动狩猎、候选验证、结构化输出、独立核验、目标中立报告），结论硬性分为 confirmed / needs_validation / rejected 三级，针对的正是「Agent 安全审计报告塞满似是而非高危」这个通病。仓库最后推送仍停在 2026-09-14（40 天前），衰减曲线明显比版本驱动型项目慢，属方法论博客维持热度的样本。"
+    },
+    {
+      "rank": 2,
+      "name": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 19396,
+      "delta": "893 stars today",
+      "tags": [
+        "Agent 运行时",
+        "沙箱",
+        "进程外策略强制",
+        "Rust",
+        "NVIDIA"
+      ],
+      "comment": "第二日上榜，日增由 +1,240 回落到 +893（−28%），排名守在第 2。NVIDIA 开源的自主 Agent 安全运行时（Apache-2.0，属 NVIDIA Agent Toolkit），核心决策是进程外策略强制：不靠提示词约束 Agent，而是在运行环境上用 Landlock（文件系统）、出站白名单（网络）、seccomp（进程）、profile 授权端点（凭据）四层强制 —— 即使 Agent 被攻陷也绕不过去。v0.1.5 于 10-20 发布，仓库当日仍有推送（10-24），是今日十席里少数保持活跃提交的项。"
+    },
+    {
+      "rank": 3,
+      "name": "aws/agent-toolkit-for-aws",
+      "url": "https://github.com/aws/agent-toolkit-for-aws",
+      "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+      "language": "Python",
+      "stars": 3090,
+      "delta": "11 stars today",
+      "tags": [
+        "MCP",
+        "AWS",
+        "Agent 技能",
+        "官方插件",
+        "云基础设施"
+      ],
+      "comment": "今日新上榜，但页面显示今日新增仅 11 星 —— 是本榜罕见的「增量与位次严重不匹配」样本（第 3 位而日增只有前两名的百分之一量级），本报告如实记录，不臆测排序成因。项目本身分量不轻：AWS 官方支持的 MCP Server + Skills + Plugins 合集，已 GA，可直接 `aws configure agent-toolkit` 接入，也以 aws-core / aws-agents / aws-data-analytics / aws-agents-for-devsecops / aws-startup-advisor 五个插件挂在 Anthropic 官方 marketplace（claude-plugins-official）上。值得注意的是它的治理设计：IAM 提供 `aws:ViaAWSMCPService`、`aws:CalledViaAWSMCP` 两个 context key，可以在策略里把「Agent 发起的调用」和「人直接调用」区分开来 —— 这正是昨日 OpenShell 在运行时层想解决的问题，在云侧用 IAM 做了一遍。"
+    },
+    {
+      "rank": 4,
+      "name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 32003,
+      "delta": "570 stars today",
+      "tags": [
+        "前端设计",
+        "Agent 技能",
+        "反 AI 味",
+        "CSS",
+        "设计系统"
+      ],
+      "comment": "今日新上榜（+570），由 Together AI 的 Hassan El Mghari 开发：一个拒绝「看起来是 AI 生成」的设计技能，装进 Claude Code / Codex / Cursor / OpenCode 即用。v2 提供 48 套「材质」主题，按任务类型（预订页就该能预订、商店就该能下单）组织页面结构，然后在真实浏览器里 lint 那批机器味特征：每个标题上方的小标签、字距拉开的字母大写字样、标题里单独染一个词、通篇色块或通篇照片、撑不满屏的 hero、每页结尾都挂一个邮箱订阅框、点了却什么都没发的表单。检查分三档：Floor 永不允许发布（对比度、焦点态、减少动效、编造事实、手机端布局崩坏），Reflex 可被记录在案地推翻，Finish 只是工艺细节不卡发布。"
+    },
+    {
+      "rank": 5,
+      "name": "luongnv89/claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "stars": 44449,
+      "delta": "442 stars today",
+      "tags": [
+        "Claude Code",
+        "教程",
+        "示例驱动",
+        "提示词模板",
+        "开发者文档"
+      ],
+      "comment": "时隔一日重返榜单（上一期在 10-23 掉榜，本期 +442）。面向 Claude Code 的可视化、示例驱动指南，从基础概念讲到高级 Agent，配可直接复制的模板。它是本期唯一一个「回归项」，也是本周掉榜后回来的第一个 —— 与今天新上榜的三个「怎么把 AI 产物做得像样」的工具（hallmark、impeccable、OpenShell）不同，它回答的是「怎么上手」，属于同一股潮的配套层。"
+    },
+    {
+      "rank": 6,
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 86284,
+      "delta": "733 stars today",
+      "tags": [
+        "前端设计",
+        "Agent 技能",
+        "设计审查",
+        "确定性规则",
+        "Rust"
+      ],
+      "comment": "今日新上榜（+733），是十席中总 Star 第二高（86,284，仅次于 gemini-cli），作者 Paul Bakaus。README 明说它从 Anthropic 的 frontend-design 技能起步：所有模型都在同一批 SaaS 模板上训练，不给约束就会长出同一张脸（Inter 通吃、紫蓝渐变、卡片套卡片、彩底灰字、每个标题上方一个圆角方块图标）。它给的是 `npx impeccable install` 一条命令 + `/impeccable init`（把产品事实写进 PRODUCT.md）+ 24 个子命令（polish / audit / critique / distill / bolder / quieter 等）+ **62 条确定性检测规则**，CLI 与浏览器扩展跑这批规则时不调用任何 LLM、不需要 API key。10-24 当天连着发了 skill 4.7.1 与 engine 0.1.17。"
+    },
+    {
+      "rank": 7,
+      "name": "pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 10902,
+      "delta": "381 stars today",
+      "tags": [
+        "机器人",
+        "强化学习",
+        "sim2real",
+        "Rust",
+        "具身智能"
+      ],
+      "comment": "今日新上榜（+381），是本期唯一非软件条目，也是本榜近几个月少见的上榜硬件。Pollen Robotics（已被 Hugging Face 收购）的 25 厘米、800 克机器鸭：Rockchip RK3566 + 15 个舵机 + 广角摄像头 + 8×8 ToF LiDAR + 双 IMU，喙是夹爪，2026-08-27 开订，399 美元，官方渠道称开售 24 小时订单额超 260 万美元、峰值约每 4 秒一台，目标出货 2 万台、交付排到圣诞节后（新订单延至 4–6 个月）。本仓库是「鸭子的大脑」——50Hz 控制循环加载 ONNX 策略；策略训练在隔壁的 microduck_rl（MuJoCo + PPO + 域随机化）。它上榜靠的不是硬件，是整条 RL 训练栈开源（Apache-2.0）。"
+    },
+    {
+      "rank": 8,
+      "name": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "language": "TypeScript",
+      "stars": 107943,
+      "delta": "38 stars today",
+      "tags": [
+        "CLI",
+        "Gemini",
+        "终端 Agent",
+        "TypeScript",
+        "开源"
+      ],
+      "comment": "今日新上榜，+38 是十席里最低的一档，107,943 星的体量配上这个增量，属于典型的存量热度型而非事件驱动型。需要一并说明的是它的当下位置：README 顶部横幅写明「Gemini CLI 已于 2026-06-18 被 Antigravity CLI 取代」，且未针对 Gemini 4 Argon 优化（要用 Argon 得上 Antigravity）；近期版本是 v0.65.0（10-20），其中一项改动是把不受信任目录里的 workspace 设置强制为只读。Google 于 10-23 又放出了实验预览的 Gemini API CLI（零依赖二进制，走终端生成图像 / 视频 / 音乐），与本仓库是两回事但共享关注度。"
+    },
+    {
+      "rank": 9,
+      "name": "jbiaojerry/ebook-treasure-chest",
+      "url": "https://github.com/jbiaojerry/ebook-treasure-chest",
+      "description": "欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。",
+      "language": "Python",
+      "stars": 22539,
+      "delta": "220 stars today",
+      "tags": [
+        "电子书",
+        "资源索引",
+        "中文社区",
+        "Python",
+        "GitHub Pages"
+      ],
+      "comment": "今日新上榜（+220），是十席里最「不 AI」的一个，且是最特殊的形态：仓库最后一次推送停在 2026-01-13，API 查不到任何 license，却在一个普通工作日拿到 +220。内容本身是帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等读书 App 的电子书下载链接索引，每本提供 epub / mobi / azw3，配 GitHub Pages 实时多关键词搜索页。它今天出现在日榜上的具体成因未查到对应的公开事件，按规则只记录事实；需要提醒的是这类链接索引涉及版权，且仓库未标注开源许可，取用前应自行判断。"
+    },
+    {
+      "rank": 10,
+      "name": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 4022,
+      "delta": "471 stars today",
+      "tags": [
+        "AI Agent",
+        "桌面客户端",
+        "Claude Code",
+        "Codex",
+        "Apache-2.0"
+      ],
+      "comment": "今日新上榜（+471），是本期最年轻的项目（2026-07-22 建仓，仅三个月）。开源 AI Agent 客户端，pnpm monorepo 装桌面端（Electron）与手机端（Expo / React Native），Apache-2.0；首批接的是 Claude Code 与 Codex 两套 harness，模型与 harness 可在同一任务里中途切换而保持工作现场、记忆、技能与工具连续，还能让不同 harness × 模型组合的多个 agent 分别规划、并行执行、独立 review。收费口径是客户端免费、按用量付费，也支持授权已有的 Claude Code / Codex Coding Plan 避免重复付费，或接自有 API key 与本地模型。中文语境值得留意：它同时运营 cindy.cn（中国大陆版）与 cindy.app（国际版）两个站点，README 中英双版本。"
+    }
+  ]
+}
