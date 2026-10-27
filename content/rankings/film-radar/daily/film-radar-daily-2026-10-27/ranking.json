@@ -1,0 +1,27 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-10-27",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F084",
+      "name": "忘却之岛 / Forgotten Island",
+      "url": "https://www.primevideo.com",
+      "description": "豆瓣7.7(682 人) · Rotten Tomatoes 专业端95%（avg 7.80/10，Certified Fresh）(130 篇) · Rotten Tomatoes 观众端94%（Verified Certified Fresh）(1,758 张 Verified 票（1,661 赞 + 97 踩）) · Metacritic74(30 篇)",
+      "type": "动画电影（奇幻 / 冒险 / 喜剧 / 家庭）",
+      "platform": "Amazon Prime Video、Apple TV、Fandango at Home（4K UHD，租约 $24.99 / 购买 $29.99）",
+      "score": "85/100 ⭐",
+      "tags": [
+        "动画电影（奇幻",
+        "冒险",
+        "喜剧",
+        "家庭）",
+        "美国"
+      ],
+      "comment": "这是好莱坞主流动画长片里**第一部完全以菲律宾神话与文化为主体**的作品。导演乔尔·克劳福德与贾努埃尔·梅尔卡多（《穿靴子的猫 2：最后的愿望》班底）把自己多年的友情写成了剧本：1990 年代的菲律宾，一对青梅竹马在毕业离别前夜误入传送门，掉进神话生物栖居的纳卡利岛——**留在这座岛上的时间越长，记忆被吞掉得越多，回家的代价是彻底忘记彼此**。 适合谁：想看一部原创、非续集、文化底色真实且不靠玩梗撑场面的合家欢动画的人；以及愿意为「两个女孩能不能带着回忆走出岛」这个命题认真一次的人。"
+    }
+  ]
+}
