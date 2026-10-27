@@ -22,6 +22,8 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { loadSections, normalizeHeading } from './lib/report-sections.mjs';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
 
@@ -52,6 +54,7 @@ const PLATFORM_URLS = [
 
 async function main() {
   const { sourceDir, targetRoot, overwrite, dryRun } = parseArguments();
+  const roles = await loadSections(CATEGORY);
   const entries = await readdir(sourceDir, { withFileTypes: true });
   const files = entries
     .filter((entry) => entry.isFile() && FILE_PATTERN.test(entry.name))
@@ -81,7 +84,7 @@ async function main() {
 
     try {
       const markdown = await readFile(path.join(sourceDir, file), 'utf8');
-      const items = parseRecommendations(markdown);
+      const items = parseRecommendations(markdown, roles.newRecommendations);
       const isBriefing = items.length === 0;
       const finalItems = isBriefing ? [buildBriefingItem(markdown, date)] : items;
 
@@ -95,7 +98,7 @@ async function main() {
       };
       const frontMatter = {
         title: `今日全球高分影视雷达 ${date}`,
-        description: buildDescription(finalItems, date),
+        description: buildDescription(finalItems, date, isBriefing),
         date: `${date}T08:00:00+08:00`,
         rankingKey: date,
         slug,
@@ -121,7 +124,7 @@ async function main() {
       }
 
       const indexContent = matterStringify(
-        stripLeadingHeading(markdown),
+        renderBody(markdown, isBriefing, roles),
         frontMatter,
       );
 
@@ -149,10 +152,23 @@ async function main() {
 
 // ---- 报告解析 ----
 
-function parseRecommendations(markdown) {
+function parseRecommendations(markdown, headings) {
   const lines = markdown.split(/\r?\n/);
-  const section = extractSection(lines, /^##\s+.*今日新推荐/);
-  return section ? splitEntries(section) : [];
+  const pattern =
+    (headings ?? []).length > 0
+      ? (normalized) => headings.includes(normalized)
+      : (normalized) => /今日新推荐/.test(normalized);
+  const start = lines.findIndex(
+    (line) => /^##\s+/.test(line.trim()) && pattern(normalizeHeading(line)),
+  );
+  if (start === -1) return [];
+
+  const body = [];
+  for (let i = start + 1; i < lines.length; i += 1) {
+    if (/^##\s+/.test(lines[i])) break;
+    body.push(lines[i]);
+  }
+  return splitEntries(body);
 }
 
 /**
@@ -179,22 +195,6 @@ function extractOneLiner(markdown) {
   const match = /一句话总结[：:]\s*(.+?)(?=\n\n|\n## |$)/s.exec(markdown);
   if (!match) return null;
   return cleanValue(match[1]).replace(/\n/g, ' ');
-}
-
-/**
- * 提取某个 ## 章节的正文（不含标题行），直到下一个同级或更高级标题为止。
- */
-function extractSection(lines, headingPattern) {
-  const start = lines.findIndex((line) => headingPattern.test(line.trim()));
-  if (start === -1) return null;
-
-  const body = [];
-  for (let i = start + 1; i < lines.length; i += 1) {
-    const line = lines[i];
-    if (/^##\s+/.test(line)) break;
-    body.push(line);
-  }
-  return body;
 }
 
 function splitEntries(sectionLines) {
@@ -479,10 +479,77 @@ function cleanLabel(value) {
 
 // ---- 渲染 ----
 
-function buildDescription(items, date) {
+/**
+ * description 会进入 HTML meta 与列表页，必须与实际内容一致。
+ *
+ * 零新增日历史上会把 briefing 的占位条目「本期无新增正式推荐」当成一部正式推荐计数，
+ * 页面上写成了「共 1 部正式推荐，榜首《本期无新增正式推荐》（—）」——10-26 的错误文案
+ * 已经进过线上页面的 meta/SEO。因此零新增日直接走固定文案，不经过条目计数。
+ */
+function buildDescription(items, date, isBriefing) {
+  if (isBriefing) {
+    return `${date} 影视雷达：今日无新增正式推荐，含观察池进展与风险提示。`;
+  }
   const top = items[0];
   const score = top.score && top.score !== '暂无可靠数据' ? `（${top.score}）` : '';
   return `${date} 影视雷达共 ${items.length} 部正式推荐，榜首《${top.name}》${score}。`;
+}
+
+// 零新增日的正文重排顺序：先说明本期确实无新增，然后是风险（负向反转/造假跟踪）、
+// 当日重点判断、观察池变动，最后是候选拦截明细。按 raw 的原始叙事顺序排版时，
+// 读者要翻两三屏才能看到当天真正有价值的信息。
+const BRIEFING_SECTION_ORDER = [
+  'newRecommendations',
+  'risk',
+  'spotlight',
+  'watchPool',
+  'interception',
+];
+
+function renderBody(markdown, isBriefing, roles) {
+  const body = stripLeadingHeading(markdown);
+  return isBriefing ? reorderBriefingSections(body, roles) : body;
+}
+
+function reorderBriefingSections(body, roles) {
+  const lines = body.split(/\r?\n/);
+  const preamble = [];
+  let i = 0;
+  while (i < lines.length && !/^##\s+/.test(lines[i])) {
+    preamble.push(lines[i]);
+    i += 1;
+  }
+
+  const sections = [];
+  while (i < lines.length) {
+    const heading = lines[i];
+    i += 1;
+    const sectionBody = [];
+    while (i < lines.length && !/^##\s+/.test(lines[i])) {
+      sectionBody.push(lines[i]);
+      i += 1;
+    }
+    sections.push({
+      heading,
+      body: sectionBody,
+      order: sectionPriority(heading, roles),
+      index: sections.length,
+    });
+  }
+
+  // 稳定排序：同优先级内保持 raw 的原始先后顺序
+  const ordered = [...sections].sort((a, b) => a.order - b.order || a.index - b.index);
+  const output = [...preamble];
+  for (const section of ordered) output.push(section.heading, ...section.body);
+  return output.join('\n').trim();
+}
+
+function sectionPriority(headingLine, roles) {
+  const heading = normalizeHeading(headingLine);
+  for (let priority = 0; priority < BRIEFING_SECTION_ORDER.length; priority += 1) {
+    if ((roles[BRIEFING_SECTION_ORDER[priority]] ?? []).includes(heading)) return priority;
+  }
+  return BRIEFING_SECTION_ORDER.length; // 未命中的章节原样保留，排在最后
 }
 
 function stripLeadingHeading(markdown) {

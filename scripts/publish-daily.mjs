@@ -12,12 +12,14 @@
  *
  * 完整流程:
  *   [1] 定位当日 bundle（content/rankings/<category>/<period>/<slug>/）
- *   [2] 内容验证        node scripts/validate-content.mjs
- *   [3] 单元测试        node --test tests/content-validation.test.mjs tests/import-reference-rankings.test.mjs
- *   [4] Hugo 构建       hugo --gc --minify
- *   [5] 站点测试        node --test tests/site-output.test.mjs
- *   [6] 提交与推送      git add/commit → 修复 PortableGit ref bug → git push origin main
- *                       push 失败（无凭据）时降级为手动命令提示
+ *   [2] 内容验证        node scripts/validate-content.mjs            （结构，全站 bundle）
+ *   [3] 内容质量校验    node scripts/validate-item-quality.mjs       （标签/简评，仅当日 bundle）
+ *   [4] 单元测试        node --test tests/content-validation.test.mjs tests/import-reference-rankings.test.mjs
+ *                       tests/import-github-trending.test.mjs tests/import-film-radar.test.mjs
+ *   [5] Hugo 构建       hugo --gc --minify
+ *   [6] 站点测试        node --test tests/site-output.test.mjs
+ *   [7] 提交与推送      git add/commit → 修复 PortableGit ref bug → git push origin main
+ *                       push 失败（无凭据）时降级为手动命令提示，并登记为待推送
  *
  * 退出码: 0 = 全部成功（或降级手动推送）; 1 = 质量门禁失败或 bundle 缺失
  */
@@ -28,6 +30,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+
+import { clearPending, recordPending } from './lib/pending-publish.mjs';
 
 const exec = promisify(execFile);
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -155,9 +159,30 @@ async function gateValidateContent() {
   return true;
 }
 
+/**
+ * 内容质量校验：只针对本次要发布的 bundle。
+ *
+ * 生产要求「每个项目必须包含标签和简评」，但 validate-content 只查结构，不查内容，
+ * 要求可以无声地不被执行。这里补上内容关卡；范围限定为当日 bundle 是刻意的 ——
+ * 全站开启会因历史页面口径不同一次性炸掉整条管道。
+ */
+async function gateItemQuality(args, slug) {
+  const { stdout } = await run(process.execPath, [
+    'scripts/validate-item-quality.mjs',
+    '--bundle', join('content', 'rankings', args.category, args.period, slug),
+  ]);
+  const items = stdout.match(/（(\d+)\s*个条目）/)?.[1];
+  ok(`内容质量校验通过${items ? `（${items} 个条目）` : ''}`);
+  return true;
+}
+
 async function gateUnitTests() {
   const { stdout } = await run(process.execPath, [
-    '--test', 'tests/content-validation.test.mjs', 'tests/import-reference-rankings.test.mjs',
+    '--test',
+    'tests/content-validation.test.mjs',
+    'tests/import-reference-rankings.test.mjs',
+    'tests/import-github-trending.test.mjs',
+    'tests/import-film-radar.test.mjs',
   ]);
   const pass = (stdout.match(/# pass:\s*(\d+)/) || [])[1];
   const fail = (stdout.match(/# fail:\s*(\d+)/) || [])[1];
@@ -226,6 +251,13 @@ async function gitCommitAndPush(args, bundleSlug) {
   if (args.skipPush) {
     console.log('\n⏭  按参数跳过推送。稍后可手动执行：');
     printManualPush();
+    await recordPending({
+      category: args.category,
+      period: args.period,
+      date: args.date,
+      note: '按 --skip-push 跳过推送',
+    });
+    console.log('   （已登记为待推送，下次 run-daily 会再次提醒）');
     return { pushed: false, manual: true };
   }
 
@@ -235,6 +267,7 @@ async function gitCommitAndPush(args, bundleSlug) {
     await run('git', ['push', 'origin', 'main'], { timeout: 90_000 });
     const head = (await run('git', ['rev-parse', 'HEAD'])).stdout.trim();
     await repairRemoteRef(head);
+    await clearPending({ category: args.category, period: args.period, date: args.date });
     ok(`已推送 origin/main → ${head.slice(0, 7)}`);
     return { pushed: true, manual: false };
   } catch (pushErr) {
@@ -243,6 +276,17 @@ async function gitCommitAndPush(args, bundleSlug) {
     console.log(`    ${reason}`);
     console.log('\n  请在终端手动执行（一次性推送所有本地提交）:');
     printManualPush();
+
+    await recordPending({
+      category: args.category,
+      period: args.period,
+      date: args.date,
+      note: `推送失败：${reason}`,
+    });
+    console.log('\n⚠ ACTION REQUIRED ── 本次提交尚未推送 ──');
+    console.log(`   • ${args.category}/${args.period}/${args.date} 已本地提交，但未到达远端`);
+    console.log('   • 未推送会记录到 .workbuddy/state/pending-publish.json，下次 run-daily 启动时会再次提醒');
+    console.log('   • 站点读者在此期间看不到这一期');
     return { pushed: false, manual: true };
   }
 }
@@ -257,7 +301,7 @@ function printManualPush() {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
-  const TOTAL = 6;
+  const TOTAL = 7;
 
   console.log('📦 Stellar Compass 榜单发布管道');
   console.log(`   类别: ${args.category} | 周期: ${args.period} | 日期: ${args.date}${args.dryRun ? ' | 模式: dry-run' : ''}`);
@@ -290,26 +334,30 @@ async function main() {
   step(2, TOTAL, '内容验证');
   await gateValidateContent();
 
-  // [3] 单元测试
-  step(3, TOTAL, '单元测试');
+  // [3] 内容质量校验（仅当日 bundle）
+  step(3, TOTAL, '内容质量校验');
+  await gateItemQuality(args, slug);
+
+  // [4] 单元测试
+  step(4, TOTAL, '单元测试');
   await gateUnitTests();
 
-  // [4] Hugo 构建
-  step(4, TOTAL, 'Hugo 构建');
+  // [5] Hugo 构建
+  step(5, TOTAL, 'Hugo 构建');
   await gateHugoBuild();
 
-  // [5] 站点测试
-  step(5, TOTAL, '站点测试');
+  // [6] 站点测试
+  step(6, TOTAL, '站点测试');
   await gateSiteTests();
 
-  // [6] 提交与推送
+  // [7] 提交与推送
   if (args.dryRun) {
-    step(6, TOTAL, '提交与推送（dry-run，已跳过）');
+    step(7, TOTAL, '提交与推送（dry-run，已跳过）');
     console.log('\n✅ 质量门禁全部通过（dry-run 模式，未提交未推送）。');
     return;
   }
 
-  step(6, TOTAL, '提交与推送');
+  step(7, TOTAL, '提交与推送');
   const result = await gitCommitAndPush(args, slug);
 
   // 总结

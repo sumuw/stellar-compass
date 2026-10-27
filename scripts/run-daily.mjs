@@ -5,11 +5,16 @@
  * 一次调用完成：原始报告 → leaf bundle → 质量门禁 → git 提交（按榜单分别提交）。
  *
  * 用法:
- *   node scripts/run-daily.mjs                       # 处理今天（Asia/Shanghai）
+ *   node scripts/run-daily.mjs                       # 处理昨天（Asia/Shanghai）
  *   node scripts/run-daily.mjs --date 2026-10-08     # 处理指定日期
+ *   node scripts/run-daily.mjs --date today          # 处理今天
  *   node scripts/run-daily.mjs --only github         # 只跑 GitHub 榜
  *   node scripts/run-daily.mjs --dry-run             # 只导入+门禁，不提交不推送
  *   node scripts/run-daily.mjs --skip-push           # 提交但不推送
+ *
+ * 日期口径：无参默认取「昨天（Asia/Shanghai）」—— 定时任务凌晨跑，抓取到的正是昨日榜单。
+ * 以前默认「今天」，与定时任务语义相反：无参手动跑一次就指向当日尚不存在的原始报告，
+ * 输出误导性的「跳过（无原始报告）」。需要当天数据时显式传 --date today。
  *
  * 输入目录:
  *   raw/github/github-daily-trending-<date>.md
@@ -26,6 +31,8 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
+
+import { listPending, renderPendingAlert } from './lib/pending-publish.mjs';
 
 const exec = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -48,6 +55,8 @@ const CATEGORIES = [
     rawFile: (date) => `daily-film-radar-${date}.md`,
     importer: 'scripts/import-film-radar.mjs',
     slug: (date) => `film-radar-daily-${date}`,
+    // 跨日状态：F 编号、观察池、去重的唯一事实源，必须跟着每天的记录入库
+    statePaths: ['skills/film-radar/status-tracker.json'],
   },
 ];
 
@@ -68,14 +77,28 @@ function parseArgs(argv) {
     }
   }
   if (!args.date) {
-    args.date = new Intl.DateTimeFormat('en-CA', {
-      timeZone: 'Asia/Shanghai',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).format(new Date());
+    args.date = shanghaiDate(-1);
+    console.log(`（未传 --date，按「数据归属日 = 昨天」取 ${args.date}）`);
+  } else if (args.date === 'today') {
+    args.date = shanghaiDate(0);
+  } else if (args.date === 'yesterday') {
+    args.date = shanghaiDate(-1);
+  } else if (!/^\d{4}-\d{2}-\d{2}$/.test(args.date)) {
+    console.error(`--date 需要形如 YYYY-MM-DD（或 today/yesterday），收到：${args.date}`);
+    process.exit(1);
   }
   return args;
+}
+
+/** Asia/Shanghai 日期；shiftDays = -1 取昨天。 */
+function shanghaiDate(shiftDays) {
+  const shifted = new Date(Date.now() + shiftDays * 86_400_000);
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(shifted);
 }
 
 async function run(cmd, cmdArgs) {
@@ -99,6 +122,11 @@ async function main() {
     console.error(`--only 只支持: ${CATEGORIES.map((entry) => entry.key).join(' | ')}`);
     process.exit(1);
   }
+
+  // 自检：上一次有没有降级成「本地提交但未推送」的榜单。
+  // 这类降级过去不会报错也不通知人，只能事后翻记忆才发现。
+  const alert = renderPendingAlert(await listPending());
+  if (alert) console.log(alert);
 
   console.log(`📦 Stellar Compass 每日双榜发布 — ${args.date}${args.dryRun ? '（dry-run）' : ''}`);
 
@@ -130,6 +158,11 @@ async function main() {
       continue;
     }
 
+    // --add-path 必须显式列出需要入库的路径，工作区里无关的改动不会被卷进来。
+    // 以前只带 bundle + raw md，导致两处数据资产长期不在版本库里：
+    //   · raw json（-结构化数据源）几乎全部 untracked
+    //   · skills/film-radar/status-tracker.json（跨日编号/去重/观察池的唯一事实源）
+    //     曾连续 18 天未提交 —— 那是「一天回滚三周状态」的单点风险。
     const publishArgs = [
       'scripts/publish-daily.mjs',
       '--category', target.key,
@@ -138,6 +171,14 @@ async function main() {
       '--add-path', bundleDir,
       '--add-path', rawPath,
     ];
+    if (existsSync(path.join(projectRoot, rawPath.replace(/\.md$/, '.json')))) {
+      publishArgs.push('--add-path', rawPath.replace(/\.md$/, '.json'));
+    }
+    for (const statePath of target.statePaths ?? []) {
+      if (existsSync(path.join(projectRoot, statePath))) {
+        publishArgs.push('--add-path', statePath);
+      }
+    }
     if (args.dryRun) publishArgs.push('--dry-run');
     if (args.skipPush) publishArgs.push('--skip-push');
 

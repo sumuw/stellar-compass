@@ -13,6 +13,8 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
+import { extractRoleBody, loadSections } from './lib/report-sections.mjs';
+
 const PERIOD = 'daily';
 const CATEGORY = 'github';
 const SOURCE_URL = 'https://github.com/trending?since=daily';
@@ -71,7 +73,9 @@ async function run(sourceDir, targetRoot, overwrite) {
         if (error.code !== 'ENOENT') throw error;
       }
 
-      const { items, overview, observation } = buildFromReport(date, markdown, json);
+      assertCompleteItems(json, date);
+
+      const { items, overview, observation } = await buildFromReport(date, markdown, json);
       const ranking = {
         category: CATEGORY,
         period: PERIOD,
@@ -115,6 +119,30 @@ async function run(sourceDir, targetRoot, overwrite) {
   if (failed > 0) process.exitCode = 1;
 }
 
+/**
+ * 抓取层会把页面上的 Box-row 条目数写进 JSON（pageCount）。如果落地的条目数少于
+ * 「页面条目数与抓取上限的较小值」，说明解析漏了一部分，属于数据缺失而非当日冷清。
+ * 这种情况必须显式失败，否则缺条目的榜单会被当成正常结果发布出去。
+ * 历史 JSON 没有 pageCount 字段，自动跳过；确需放行时用 --allow-partial。
+ */
+function assertCompleteItems(json, date) {
+  if (!json || typeof json.pageCount !== 'number') return;
+  const limit = typeof json.limit === 'number' ? json.limit : Number.POSITIVE_INFINITY;
+  const expected = Math.min(json.pageCount, limit);
+  if (json.items.length >= expected) return;
+
+  const allowed = process.argv.slice(2).includes('--allow-partial');
+  const message =
+    `${date} 抓取不完整：页面 ${json.pageCount} 条、抓取上限 ${json.limit ?? '—'}，` +
+    `实际仅解析出 ${json.items.length} 条（应得 ${expected} 条）。` +
+    `请检查 raw/github/github-daily-trending-${date}-debug.html 确认 GitHub 页面结构是否变动。`;
+  if (allowed) {
+    console.warn(`  ⚠ ${message}（--allow-partial 已放行）`);
+    return;
+  }
+  throw new Error(message);
+}
+
 function buildFromReport(date, markdown, json) {
   let items;
   if (json && Array.isArray(json.items) && json.items.length > 0) {
@@ -122,10 +150,16 @@ function buildFromReport(date, markdown, json) {
   } else {
     items = parseMarkdownItems(markdown);
   }
+  return buildNarrative(date, markdown, items);
+}
 
-  const overview = buildOverview(markdown, items, date);
-  const observation = buildObservation(markdown, items);
-  return { items, overview, observation };
+async function buildNarrative(date, markdown, items) {
+  const sections = await loadSections(CATEGORY);
+  return {
+    items,
+    overview: buildOverview(markdown, items, date, sections.overview ?? []),
+    observation: buildObservation(markdown, items, sections.observation ?? []),
+  };
 }
 
 function normalizeJsonItem(item, index) {
@@ -542,7 +576,17 @@ function normalizeDelta(value) {
 
 // ---- 概览 / 观察 ----
 
-function buildOverview(markdown, items, date) {
+/**
+ * 优先搬运 raw 报告的概览原文。
+ *
+ * 历史上这里是由脚本机械重写的「共 N 个项目，榜首 X，语言分布：…」一句话，
+ * 把 Agent 写的 4 段结构判断压没了 —— 发布页比原始报告整整低一档。
+ * 机械概览降级为 raw 概览缺失时的兜底。
+ */
+function buildOverview(markdown, items, date, overviewHeadings) {
+  const raw = pickSectionBody(markdown, overviewHeadings);
+  if (raw) return raw;
+
   const count = items.length;
   const top = items[0];
   const topText = top ? `${top.name}（${top.delta ?? '—'}）` : '';
@@ -563,27 +607,53 @@ function tallyLanguages(items) {
     const lang = item.language || '未标注';
     counts.set(lang, (counts.get(lang) ?? 0) + 1);
   }
+  // 不截断：过去 slice(0,6) 会让概览里的语言合计少于标题宣称的项目数
+  // （10-26 就是 7 种语言被截成 6 种，页面出现 13 ≠ 14 的自相矛盾）。
   return [...counts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 6)
     .map(([lang, n]) => `${lang} ${n}`)
     .join('、');
 }
 
-function buildObservation(markdown, items) {
-  const bullets = extractTrendBullets(markdown);
-  if (bullets.length > 0) return bullets;
+/**
+ * 优先搬运 raw 报告的观察原文。
+ *
+ * 这是本次修复的核心：importer 旧的章节白名单里没有模板自己的标题「## 观察」，
+ * 19 天里 16 天全部失配，被 fallback 成「X 今日 N stars today，居当日增量第 N 位」
+ * 这种没有信息量的句子，而真正的停更标注、赛道判断、平台侧换手全部丢失。
+ */
+function buildObservation(markdown, items, observationHeadings) {
+  const raw = pickSectionBody(markdown, observationHeadings);
+  if (raw) return raw;
+  return buildMechanicalObservation(items);
+}
 
-  // 无文本趋势段落时，从数据中生成 Top 3 增量观察。
-  // 注意：必须按 delta 数值降序取，不能按 rank 取——rank 越大代表排名越靠后，
-  // 早期版本按 rank 降序取到的是榜单末位项目，却仍标注「增量最高」，与实际相反。
+/** 从 markdown 中取某个契约章节的正文全文（已去首尾空行），未命中返回 null。 */
+function pickSectionBody(markdown, headings) {
+  if (!headings || headings.length === 0) return null;
+  const body = extractRoleBody(markdown.split(/\r?\n/), headings);
+  if (!body) return null;
+
+  const lines = [...body];
+  while (lines.length > 0 && lines[0].trim() === '') lines.shift();
+  while (lines.length > 0 && lines[lines.length - 1].trim() === '') lines.pop();
+  const text = lines.join('\n').trim();
+  return text || null;
+}
+
+/**
+ * 无文本趋势段落时的兜底：从数据生成 Top 3 增量观察。
+ * 必须按 delta 数值降序取，不能按 rank 取 —— rank 越大代表排名越靠后，
+ * 早期版本按 rank 降序取到的是榜单末位项目，却仍标注「增量最高」，与实际相反。
+ */
+function buildMechanicalObservation(items) {
   const movers = [...items]
     .filter((item) => item.delta)
     .sort((a, b) => deltaValue(b) - deltaValue(a))
     .slice(0, 3);
-  return movers.map(
-    (item, index) => `${item.name} 今日 ${item.delta ?? '—'}，居当日增量第 ${index + 1} 位。`,
-  );
+  return movers
+    .map((item, index) => `- ${item.name} 今日 ${item.delta ?? '—'}，居当日增量第 ${index + 1} 位。`)
+    .join('\n');
 }
 
 function deltaValue(item) {
@@ -593,66 +663,33 @@ function deltaValue(item) {
   return Number.isFinite(num) ? num : 0;
 }
 
-function extractTrendBullets(markdown) {
-  const lines = markdown.split(/\r?\n/);
-  let sectionStart = -1;
-  let sectionEnd = lines.length;
-
-  for (let i = 0; i < lines.length; i += 1) {
-    const h2 = /^##\s+(.+)$/.exec(lines[i]);
-    if (h2 && /今日趋势观察|趋势观察|主题观察|关键趋势|整体观察|今日趋势/.test(h2[1])) {
-      sectionStart = i;
-      break;
-    }
-  }
-  if (sectionStart === -1) return [];
-
-  // 从命中段落继续向下，定位最具体的子段落（如 ### 关键趋势）
-  let subStart = sectionStart;
-  for (let i = sectionStart + 1; i < lines.length; i += 1) {
-    const h3 = /^###\s+(.+)$/.exec(lines[i]);
-    if (h3 && /关键趋势/.test(h3[1])) {
-      subStart = i;
-      break;
-    }
-    if (/^##\s+/.test(lines[i])) {
-      sectionEnd = i;
-      break;
-    }
-  }
-
-  const body = lines.slice(subStart + 1, sectionEnd);
-  const bullets = [];
-  for (const line of body) {
-    if (line.includes('|')) continue; // 跳过分布表格
-    const bullet = /^[-*]\s+(.+)$/.exec(line);
-    const numbered = /^\d+[.、]\s+(.+)$/.exec(line);
-    const match = bullet ?? numbered;
-    if (!match) continue;
-    const cleaned = match[1].replace(/\*\*/g, '').trim();
-    if (cleaned) bullets.push(cleaned);
-  }
-  return bullets;
-}
-
 // ---- 渲染 ----
 
 function renderIndexBody(items, overview, observation) {
   const projects = items
     .map((item) => {
-      const lines = [`### ${item.rank}. ${item.name}`, ''];
-      lines.push(`- 地址：${item.url}`);
-      lines.push(`- 简介：${item.description}`);
-      lines.push(`- 语言：${item.language}`);
-      lines.push(`- 今日新增：${item.delta ?? '—'}`);
-      lines.push(`- 标签：${(item.tags ?? []).join('、') || '—'}`);
-      lines.push('');
-      if (item.comment) lines.push(item.comment);
+      // 与 skill 模板一致用表格承载字段；引入页 widening 之前先做单元格转义，
+      // 否则简介里出现的单个 | 会把整行撑坏（这也是早期退回 bullet 列表的原因）。
+      const rows = [
+        ['地址', item.url],
+        ['简介', item.description],
+        ['语言', item.language],
+        ['总 Star', item.stars != null ? item.stars.toLocaleString('en-US') : '—'],
+        ['今日新增', item.delta ?? '—'],
+        ['标签', (item.tags ?? []).join('、') || '—'],
+      ];
+      const lines = [
+        `### ${item.rank}. ${item.name}`,
+        '',
+        '| 字段 | 内容 |',
+        '|------|------|',
+        ...rows.map(([key, value]) => `| ${key} | ${escapeTableCell(value)} |`),
+        '',
+      ];
+      if (item.comment) lines.push(escapeTableCell(item.comment));
       return lines.join('\n');
     })
     .join('\n\n');
-
-  const observationBody = observation.map((line) => `- ${line}`).join('\n');
 
   return [
     '## 今日概览',
@@ -665,9 +702,16 @@ function renderIndexBody(items, overview, observation) {
     '',
     '## 观察',
     '',
-    observationBody,
+    observation,
     '',
   ].join('\n');
+}
+
+/** 表格单元格里的竖线与换行会破坏 markdown 表格结构，必须转义。 */
+function escapeTableCell(value) {
+  return String(value ?? '')
+    .replace(/\r?\n/g, '<br>')
+    .replace(/\|/g, '\\|');
 }
 
 function buildDescription(items, date) {

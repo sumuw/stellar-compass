@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "category": "github",
+  "note": "章节名契约：一处定义，三处消费 —— 模板渲染、importer 解析、质量门禁校验。修改前请确认 raw/github 历史报告不会因此失配。",
+  "roles": {
+    "overview": {
+      "required": true,
+      "description": "当日整体判断与结构说明，发布页「今日概览」章节搬运此处全文。",
+      "headings": ["今日概览", "速览", "今日速览"]
+    },
+    "items": {
+      "required": true,
+      "description": "逐项详情所在的章节，条目标题为 ### N. owner/repo。",
+      "headings": ["重点项目", "榜单详情", "项目详情", "逐项详情"]
+    },
+    "observation": {
+      "required": true,
+      "description": "趋势判断与风险提示，发布页「观察」章节搬运此处全文。缺失时才会退化为机械 Top3 增量。",
+      "headings": [
+        "观察",
+        "今日趋势观察",
+        "趋势观察",
+        "主题观察",
+        "整体观察",
+        "关键趋势",
+        "今日趋势"
+      ]
+    }
+  }
+}

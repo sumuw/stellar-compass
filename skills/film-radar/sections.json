@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "category": "film-radar",
+  "note": "章节名契约：一处定义，三处消费 —— 模板渲染、importer 解析、质量门禁校验。修改前请确认 raw/film-radar 历史报告不会因此失配。",
+  "roles": {
+    "newRecommendations": {
+      "required": true,
+      "description": "唯一的正式推荐数据源（🏆 今日新推荐）。零新增时不生成正式条目，改为 briefing。",
+      "headings": ["今日新推荐"]
+    },
+    "watchPool": {
+      "required": false,
+      "description": "高分观察池，briefing 日的核心信息之一。",
+      "headings": ["高分观察池", "观察池"]
+    },
+    "spotlight": {
+      "required": false,
+      "description": "「如果今天只看一部」「今日隐藏宝藏」。有正式推荐时是推荐位；零新增日这两栏承载的是当天最重要的一次判断，重排时要前置。",
+      "headings": ["如果今天只看一部", "今日隐藏宝藏", "隐藏宝藏"]
+    },
+    "risk": {
+      "required": false,
+      "description": "负向变化、数据造假跟踪等风险提示。briefing 日会被提到正文最前（优先级最高）。",
+      "headings": ["历史作品动态", "造假跟踪", "影院高分观察"]
+    },
+    "interception": {
+      "required": false,
+      "description": "候选拦截明细，说明「今天为什么没有推荐」。",
+      "headings": ["今日检索通道与结果", "候补与拦截", "拦截明细"]
+    }
+  }
+}
