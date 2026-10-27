@@ -1,0 +1,196 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-10-27",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "elayadesign/ai-design-skills",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "description": "A growing collection of design skills for AI coding tools — Claude Code, Cursor, Codex, Windsurf, and anything else that reads a markdown rules file.（抓取时页面未提供简介，此处按仓库 README 补齐）",
+      "language": "Unknown",
+      "stars": 9092,
+      "delta": "1,395 stars today",
+      "tags": [
+        "设计技能",
+        "AI Agent",
+        "前端",
+        "提示工程",
+        "技能包"
+      ],
+      "comment": "一套面向 AI 编码工具的设计技能集合，覆盖 Claude Code / Cursor / Codex / Windsurf / Cline，每个技能是一个自包含文件夹，装哪个用哪个。当前两个技能：landing-page-design（从需求采集问起，做页面结构、转化文案，再套一整套字体 / 间距 / 圆角 / 动效的视觉系统）和 design-to-motion（把静态设计稿做成逐像素对齐的动画展示，导出 MP4 与 GIF）。设计价值观集中在每个 SKILL.md 末尾一节，改一处即全局生效。MIT 许可。今日以 +1,395 空降榜首，是「设计品味」赛道里唯一走「整站交付」路线的一家。"
+    },
+    {
+      "rank": 2,
+      "name": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+      "language": "CSS",
+      "stars": 38791,
+      "delta": "2,859 stars today",
+      "tags": [
+        "设计技能",
+        "AI Agent",
+        "前端",
+        "CSS",
+        "Claude Code"
+      ],
+      "comment": "Together AI 出品的反「AI 味」设计技能包：先给 brief 挑一个宏观骨架，再套 20 套主题之一，出码前跑 57 道 slop-test 闸门和一轮自我批判。study 这个动词最有意思——喂一张你喜欢的页面截图，它抽的是结构、字体搭配与色彩锚点，并明确拒绝像素级抄袭。连续第四日在榜，今日 +2,859 登顶全榜增量第一（昨日 +2,235，+28%），也是存量里唯一连续四天加速的项目。"
+    },
+    {
+      "rank": 3,
+      "name": "nightly-labs/openbot",
+      "url": "https://github.com/nightly-labs/openbot",
+      "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+      "language": "TypeScript",
+      "stars": 2322,
+      "delta": "794 stars today",
+      "tags": [
+        "AI Agent",
+        "多智能体",
+        "桌面应用",
+        "本地优先",
+        "TypeScript"
+      ],
+      "comment": "本地优先的桌面 Agent 工作台：每个 agent 是 Codex / Claude Code / Grok（及经 ACP 接入的 OpenCode、Gemini、Cursor、Cline）的一个独立持久会话，配自己的本地工作区、FIFO 任务队列（可暂停 / 恢复 / 取消，崩溃安全）、agent 间消息与受管文件传输、共享频道与显式委派，还有一个 agent 可打开并操控的内嵌浏览器。上下文监控会在线程撑爆模型窗口前自动压缩。macOS / Windows / Linux / Docker 均可跑。两点需注意：agent 默认以 danger-full-access + approvalPolicy: never 运行（首次授权后不再逐操作确认），且仓库是 PolyForm Noncommercial 1.0.0，商用需另谈授权。昨日 +312 → 今日 +794（+155%）。"
+    },
+    {
+      "rank": 4,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 306331,
+      "delta": "608 stars today",
+      "tags": [
+        "AI Agent",
+        "技能框架",
+        "工程方法论",
+        "Shell",
+        "自动化测试"
+      ],
+      "comment": "把软件工程方法论做成按需加载的技能库：TDD（RED-GREEN-REFACTOR）、系统化调试与根因追踪、苏格拉底式设计澄清、写计划、子 agent 并行开发、git worktree 隔离、代码评审与收尾。会话启动时注入引导技能，命中任务即强制走流程而非建议。支持 Claude Code / Codex / Cursor / Gemini / Pi / Hermes / Muse 等多宿主，还带一个 diagnosing-superpowers 技能——让 agent 读自己的会话 transcript 找出哪一步跑偏了。主语言是 Shell，因为它的活是把技能接进各种 CLI。MIT。由 Jesse Vincent 与 Prime Radiant 团队维护。"
+    },
+    {
+      "rank": 5,
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 90370,
+      "delta": "1,458 stars today",
+      "tags": [
+        "设计语言",
+        "AI Agent",
+        "Rust",
+        "前端",
+        "确定性检测"
+      ],
+      "comment": "与 hallmark 同属「让 AI 做出来的界面像样」赛道，但路线相反：hallmark 给的是风格与品味约束，impeccable 给的是一套能被确定性规则检测的设计语言——主语言是 Rust，正因为要跑检测引擎。连续第四日在榜，今日 +1,458，是全部 7 席存量中唯一微降的一席（昨日 +1,551，−6%），幅度极小，属高位横盘而非掉队。"
+    },
+    {
+      "rank": 6,
+      "name": "makecindy/cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "language": "TypeScript",
+      "stars": 7392,
+      "delta": "1,446 stars today",
+      "tags": [
+        "AI Agent",
+        "开源",
+        "TypeScript",
+        "生产力",
+        "中文"
+      ],
+      "comment": "定位「想到，就能做到」的开箱即用开源 AI Agent，中英双语介绍。昨日 +1,268 → 今日 +1,446（+14%），连续第三日在榜，位次从第 4 退到第 6 但增量继续走高。"
+    },
+    {
+      "rank": 7,
+      "name": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "language": "TypeScript",
+      "stars": 39235,
+      "delta": "953 stars today",
+      "tags": [
+        "社交媒体",
+        "自动化",
+        "AI Agent",
+        "MCP",
+        "TypeScript"
+      ],
+      "comment": "面向 Agent 的社媒排期平台：一个日历管 30+ 渠道（X、LinkedIn、Instagram、TikTok、YouTube、Reddit、Threads、Bluesky、Discord、Slack 等），Claude / ChatGPT / Cursor / Codex / OpenClaw 通过 MCP server、CLI 或可安装技能接入，Agent 起草并排期、内容先落进日历由人审批后才发出——官方的说法是「Agent 提议，人批准」。开源版 AGPL-3.0 自托管，渠道 / 帖子 / 成员无限；云版按档位计费。2023 年建仓的老项目，今日最大跳变：昨日 +146 → 今日 +953（+553%），位次从倒数第三升到第 7。"
+    },
+    {
+      "rank": 8,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 290762,
+      "delta": "1,183 stars today",
+      "tags": [
+        "Agent Harness",
+        "性能优化",
+        "AI Agent",
+        "开发者工具",
+        "技能包"
+      ],
+      "comment": "面向 Claude Code / Codex / Opencode / Cursor 的 agent harness 优化系统，把技能、直觉（instincts）、记忆、安全和「先研究后动手」的开发流程打包成一层可安装的东西。昨日 +987 → 今日 +1,183（+20%）。另有配套的 ECC Tools GitHub App，可扫仓库历史自动生成项目专属的技能、规则、钩子与安全检查并发 PR。"
+    },
+    {
+      "rank": 9,
+      "name": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 45676,
+      "delta": "1,587 stars today",
+      "tags": [
+        "教育",
+        "RAG",
+        "AI Agent",
+        "Python",
+        "知识库"
+      ],
+      "comment": "香港大学 HKUDS 的 agent-native 终身个性化学习工作台。Chat / 提问 / 测验 / 深度研究 / 可视化 / 解题 / 课程学习 / 掌握路径 / 沉浸阅读共用同一个 capability runtime 与会话上下文，切模式不丢学习进度。多引擎 RAG 可选（LlamaIndex、GraphRAG、LightRAG、PageIndex，也支持接 Obsidian vault、Kiwix ZIM 档案），三层可审计记忆（L1 traces / L2 summaries / L3 synthesis），还能在对话中直接咨询本机的 Claude Code / Codex / Hermes 等 agent。Apache-2.0，pip install -U deeptutor 即可起全栈。有 arXiv 论文（2604.26962）。今日以 +1,587 空降第 9，增量排全榜第三，是本榜近期少见的教育场景项目。"
+    },
+    {
+      "rank": 10,
+      "name": "JetBrains/thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "language": "TypeScript",
+      "stars": 3864,
+      "delta": "1,211 stars today",
+      "tags": [
+        "Agentic IDE",
+        "开发工具",
+        "TypeScript",
+        "Git Worktree",
+        "规范驱动"
+      ],
+      "comment": "JetBrains InnovationHub 的开源 agentic IDE（Apache-2.0）。它自己不写 agent，而是给 pi coding agent 套一层真正的 IDE：每个任务是一个 git worktree，多 agent 并行互不污染主分支；项目知识存在一张互相引用的 SPEC.md 图谱里，由 agent 自行维护，让「设计意图」活过一次会话。10-24 登 HN 首页后爆发（+52 → +1,156），今日 +1,211（+5%）进入稳定平台期，连续第三日在榜。"
+    },
+    {
+      "rank": 11,
+      "name": "togg53192-cmd/jailbreaks",
+      "url": "https://github.com/togg53192-cmd/jailbreaks",
+      "description": "LIST OF ALL MY JAILBREAKS",
+      "language": "Unknown",
+      "stars": 5371,
+      "delta": "890 stars today",
+      "tags": [
+        "提示工程",
+        "AI 安全",
+        "越狱",
+        "大语言模型",
+        "研究"
+      ],
+      "comment": "收录 25+ 模型（Claude、Gemini、Grok、GLM、DeepSeek、Kimi、Qwen、Gemma、GPT-OSS）的 31 条系统提示、人格锁与 AGENTS.md，官方定位是「研究指令层级与策略覆盖如何影响模型行为」——可复制进客户端自定义指令，也可直接当仓库根的 AGENTS.md 用。热度曲线异常陡：10-24 +70 → 10-25 +192 → 10-26 +857 → 10-27 +890，两天内翻了约 12 倍，日均 fork 约 99 次。属对抗性输入集合，用于他人服务可能违反其使用条款；本条仅作趋势记录，不构成使用建议。"
+    }
+  ]
+}
