@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-16",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 40394,
+      "delta": "1,552 stars today",
+      "rank": 1,
+      "tags": ["Claude Code", "AI 编程", "插件市场", "开发者工具", "官方生态"],
+      "comment": "Anthropic 官方维护的 Claude Code 插件目录，分 /plugins（官方自研）与 /external_plugins（三方合作）两级，收录需过质量与安全审核。上榜的直接原因是插件体系正在成为 Claude Code 的一等扩展方式——一个插件可以同时携带 commands、agents、skills、hooks 和 MCP 配置，官方把它做成可信入口来收敛野生插件的信任问题。"
+    },
+    {
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "stars": 51393,
+      "delta": "1,158 stars today",
+      "rank": 2,
+      "tags": ["Agent Skills", "科研 AI", "Python", "LLM", "生物医药"],
+      "comment": "把科研流程打包成 177 个可复用 skill，覆盖生物、化学、医学与药物发现，并接了 100+ 科学数据库。价值不在模型能力而在领域流程的固化：把实验设计、文献检索、数据分析这类高专业度动作写成标准指令，让通用 Agent 直接获得领域工作流。"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 281353,
+      "delta": "1,057 stars today",
+      "rank": 3,
+      "tags": ["Agent", "Claude Code", "上下文工程", "JavaScript", "开发者工具"],
+      "comment": "面向 Agent harness 的性能优化套件，把 skills、instincts、memory、security 四件事做成一个可迁移层，跨 Claude Code / Codex / OpenCode / Cursor 通用。28 万星体量还能日增千星，说明「Agent 工程本身需要工程化」已经形成共识。"
+    },
+    {
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 53412,
+      "delta": "323 stars today",
+      "rank": 4,
+      "tags": ["CLI", "Agent", "Python", "自动化", "大模型工具链"],
+      "comment": "港大 Data Intelligence Lab 的系列工作之一，主张给任意软件生成一层 CLI 外壳，让没有 API 的桌面/图形软件也能被 Agent 直接驱动。思路很直接：与其等每个软件提供 MCP 接口，不如统一用命令行做适配层。"
+    },
+    {
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30170,
+      "delta": "449 stars today",
+      "rank": 5,
+      "tags": ["上下文优化", "MCP", "AI 编程", "TypeScript", "Token 成本"],
+      "comment": "专治上下文窗口被工具输出撑爆：沙箱化工具返回（号称削减 98%）、持久化会话记忆、通过 MCP + hooks 在 17 个平台间强制路由。它把「省 token」从提示词技巧变成了可插拔的基础设施层。"
+    },
+    {
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 75568,
+      "delta": "672 stars today",
+      "rank": 6,
+      "tags": ["多智能体", "Agent", "TypeScript", "编排框架", "RAG"],
+      "comment": "老牌多智能体编排 harness，主打 swarm 并行、自适应记忆与联邦式协作，并原生接入 Claude Code / Codex 等运行时。今天榜单上多个 harness 类项目同时上榜，ruflo 属于其中偏重「多 Agent 协同编排」的一支。"
+    },
+    {
+      "name": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": "Unknown",
+      "language": "Kotlin",
+      "stars": 8020,
+      "delta": "163 stars today",
+      "rank": 7,
+      "tags": ["Android", "Kotlin", "Agent Skills", "官方文档", "开发者工具"],
+      "comment": "简介原文为空，以下内容基于检索核实：Google Android 官方团队维护的 SKILL.md 指令库，遵循 agentskills.io 开放标准，只做「评估证明 LLM 确实做不好」的任务（如 Navigation 3 迁移、edge-to-edge、AGP 9、R8 配置分析），配合 Android CLI 安装，也支持作为 Claude Code / Codex 插件使用。官方只维护不做外部代码贡献受理。"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 300602,
+      "delta": "973 stars today",
+      "rank": 8,
+      "tags": ["Agent Skills", "开发流程", "Shell", "方法论", "AI 编程"],
+      "comment": "30 万星的 Agent 技能框架 + 软件开发方法论，是「用 skill 约束 Agent 行为」这一派最早也最大的实践。今天和 claude-plugins-official、android/skills、cursor/plugins 一起上榜，构成一条很清楚的行业信号：skill 正在从个人技巧沉淀为可分发、可安装的公共资产。"
+    },
+    {
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 11893,
+      "delta": "282 stars today",
+      "rank": 9,
+      "tags": ["Cursor", "插件规范", "TypeScript", "AI 编程", "编辑器"],
+      "comment": "Cursor 官方的插件规范与官方插件集合。与 Anthropic 的 claude-plugins-official 同期上榜并非巧合——两家主流 AI 编辑器在同一时间窗口各自推出官方插件目录，意味着插件生态已经进入标准化竞争阶段。"
+    },
+    {
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 70848,
+      "delta": "2,301 stars today",
+      "rank": 10,
+      "tags": ["TTS", "语音克隆", "本地部署", "Python", "开源"],
+      "comment": "今日增量最高（+2,301）。本地运行的 ElevenLabs 替代方案，聚合 16 个 TTS + 11 个 ASR 引擎，覆盖声音克隆、声音设计、视频配音、听写与有声书，且提供 OpenAI/ElevenLabs 兼容 API 与 MCP server。两点需要说清：646 语种是全部引擎的并集覆盖而非单引擎能力，且授权为 AGPL-3.0，做托管服务前务必先读许可条款。"
+    },
+    {
+      "name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 48320,
+      "delta": "879 stars today",
+      "rank": 11,
+      "tags": ["求职", "Claude Code", "自动化", "Python", "LaTeX"],
+      "comment": "把求职流程做成 Claude Code 斜杠命令流水线：/setup 建档案 → /scrape 抓职位 → /apply 生成 LaTeX 简历与求职信并做 ATS 文本层校验 → /interview 模拟面试。作者是被裁的地球物理学家，用同一套流程投出 69 份申请拿到 offer。注意内置门户抓取默认面向丹麦市场，其他地区需用 /add-portal 自行适配。"
+    },
+    {
+      "name": "hmjz100/LinkSwift",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 23603,
+      "delta": "702 stars today",
+      "rank": 12,
+      "tags": ["用户脚本", "网盘直链", "JavaScript", "下载工具", "浏览器扩展"],
+      "comment": "榜单上唯一的中文区项目。Tampermonkey 用户脚本，为国内主流网盘页面注入「获取直链」按钮，可推送到 IDM / Aria2 / 比特彗星等外部下载器。项目明确声明基于各家公开 API、不破解限速机制，授权 AGPL-3.0。热度来自长期刚需而非新概念。"
+    },
+    {
+      "name": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "language": "Rust",
+      "stars": 6817,
+      "delta": "1,647 stars today",
+      "rank": 13,
+      "tags": ["搜索引擎", "RAG", "Rust", "Elasticsearch", "Agent 检索"],
+      "comment": "今日增量第二（+1,647），且是唯一的 Rust 项目。为 Agent 设计的本地搜索引擎：autoindex 一条命令建索引，用 tree-sitter 做 AST 感知的代码索引，实现 Elasticsearch REST API（官方称一致性测试 1360/1363 通过），单静态二进制无 JVM 依赖。需提醒两点：仓库描述里的「比 grep 省 40 倍 token」是其 README 实测 2.7 倍（对比 grep）/ 26 倍（对比纯记忆）的上界口径；`--insecure` 模式无 TLS 也无鉴权，仅在本地可信环境使用。"
+    }
+  ]
+}
