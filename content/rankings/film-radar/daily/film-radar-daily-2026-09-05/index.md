@@ -1,17 +1,17 @@
 ---
 title: "今日全球高分影视雷达 2026-09-05"
-description: "第16次执行，3 部正式推荐：《小先知》、《相反的你和我 第二季》、港剧《日落下的彩虹》。"
-date: '2026-09-05T08:00:00+08:00'
-rankingKey: '2026-09-05'
-slug: film-radar-daily-2026-09-05
+description: "2026-09-05 影视雷达共 3 部正式推荐，榜首《小先知 / Small Prophets》（88 / 100 ⭐）。"
+date: "2026-09-05T08:00:00+08:00"
+rankingKey: "2026-09-05"
+slug: "film-radar-daily-2026-09-05"
 categories:
-  - film-radar
+  - "film-radar"
 periods:
-  - daily
+  - "daily"
 tags:
-  - 影视
-  - 推荐
-  - 评分
+  - "影视"
+  - "推荐"
+  - "评分"
 draft: false
 ---
 
@@ -420,4 +420,3 @@ draft: false
 也接受片名形式：`小先知 想看`、`相反的你和我 已看`、`日落下的彩虹 暂缓`。
 
 也可以直接更正历史状态：`F001 不感兴趣`、`F019 已看`。
-

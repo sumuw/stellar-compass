@@ -1,17 +1,17 @@
 ---
 title: "今日全球高分影视雷达 2026-09-06"
-description: "第17次执行，3 部正式推荐：泰剧《偿还》（本库首部泰国 BL）、《星城》、《加油吧！中村君！！》。"
-date: '2026-09-06T08:00:00+08:00'
-rankingKey: '2026-09-06'
-slug: film-radar-daily-2026-09-06
+description: "2026-09-06 影视雷达共 3 部正式推荐，榜首《偿还 / PAYBACK The Series》（92/100 🔥）。"
+date: "2026-09-06T08:00:00+08:00"
+rankingKey: "2026-09-06"
+slug: "film-radar-daily-2026-09-06"
 categories:
-  - film-radar
+  - "film-radar"
 periods:
-  - daily
+  - "daily"
 tags:
-  - 影视
-  - 推荐
-  - 评分
+  - "影视"
+  - "推荐"
+  - "评分"
 draft: false
 ---
 
@@ -355,4 +355,3 @@ draft: false
 ---
 
 *本期检索与核实工具调用约 40 次。所有评分均来自官方接口或官方页面实时取得，未使用模型记忆。*
-

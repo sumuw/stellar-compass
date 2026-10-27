@@ -1,17 +1,17 @@
 ---
 title: "今日全球高分影视雷达 2026-09-07"
-description: "第18次执行，6 部正式推荐：《瑞克和莫蒂 第九季》、《挽救计划》、《无敌少侠 第四季》、《世界的主人》、《证言 第一季》、《纳达尔》（纪录片）。"
-date: '2026-09-07T08:00:00+08:00'
-rankingKey: '2026-09-07'
-slug: film-radar-daily-2026-09-07
+description: "2026-09-07 影视雷达共 6 部正式推荐，榜首《瑞克和莫蒂 第九季 / Rick and Morty Season 9》（94/100 🔥）。"
+date: "2026-09-07T08:00:00+08:00"
+rankingKey: "2026-09-07"
+slug: "film-radar-daily-2026-09-07"
 categories:
-  - film-radar
+  - "film-radar"
 periods:
-  - daily
+  - "daily"
 tags:
-  - 影视
-  - 推荐
-  - 评分
+  - "影视"
+  - "推荐"
+  - "评分"
 draft: false
 ---
 
@@ -461,4 +461,3 @@ draft: false
 ---
 
 *本期检索与核实工具调用约 55 次。所有评分均来自官方接口或官方页面实时取得，未使用模型记忆。*
-

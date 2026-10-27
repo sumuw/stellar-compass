@@ -1,21 +1,34 @@
 ---
 title: "今日全球高分影视雷达 2026-08-23"
-description: "第6次执行，5 部正式推荐：《Widow's Bay》、《Bleach 千年血战篇 The Calamity》、《A Bona Fide Killer》、《Blood Sacrifice》、《花开锦绣》（观察池升级）。"
-date: '2026-08-23T08:00:00+08:00'
-rankingKey: '2026-08-23'
-slug: film-radar-daily-2026-08-23
+description: "2026-08-23 影视雷达：今日无新增正式推荐，含观察池进展与风险提示。"
+date: "2026-08-23T08:00:00+08:00"
+rankingKey: "2026-08-23"
+slug: "film-radar-daily-2026-08-23"
 categories:
-  - film-radar
+  - "film-radar"
 periods:
-  - daily
+  - "daily"
 tags:
-  - 影视
-  - 推荐
-  - 评分
+  - "影视"
+  - "推荐"
+  - "评分"
 draft: false
 ---
 
 > **覆盖范围**：全球 30+ 国家/地区｜**检索条数**：16 次跨平台验证｜**今日新增推荐**：5 部
+
+---
+
+## 👑 如果今天只看一部
+
+**F015《Widow's Bay》** ⭐88
+
+理由：今天推荐的全部 5 部中，**它是唯一一部已完结、质量最稳、话题度最炸、覆盖观众面最广的"零风险选择"**——Apple TV+ 当家剧 + 19 项 Emmy 提名 + Guillermo del Toro 站台 + 10 集短小精悍。如果你今晚只想"打开一部剧开始追"，这是不会后悔的选项。
+
+**备选考虑**
+- 想要爽感 + 双位数收视率：F017《A Bona Fide Killer》（6 集已播，正在上升期）
+- 想看史诗级动画终章：F016《Bleach TYBW The Calamity》（最终季，刚开播）
+- 想看本格 Nordic Noir：F018《Blood Sacrifice》（5 集一晚追完）
 
 ---
 
@@ -173,19 +186,6 @@ draft: false
 
 ---
 
-## 👑 如果今天只看一部
-
-**F015《Widow's Bay》** ⭐88
-
-理由：今天推荐的全部 5 部中，**它是唯一一部已完结、质量最稳、话题度最炸、覆盖观众面最广的"零风险选择"**——Apple TV+ 当家剧 + 19 项 Emmy 提名 + Guillermo del Toro 站台 + 10 集短小精悍。如果你今晚只想"打开一部剧开始追"，这是不会后悔的选项。
-
-**备选考虑**
-- 想要爽感 + 双位数收视率：F017《A Bona Fide Killer》（6 集已播，正在上升期）
-- 想看史诗级动画终章：F016《Bleach TYBW The Calamity》（最终季，刚开播）
-- 想看本格 Nordic Noir：F018《Blood Sacrifice》（5 集一晚追完）
-
----
-
 ## 💎 隐藏宝藏（非主流但质量过硬）
 
 ### 《Monsters of God》🧪83（HBO Max，8/6 起播）
@@ -294,4 +294,3 @@ draft: false
 ---
 
 _本报告基于实时跨平台数据采集、综合 16 次 WebSearch 结果交叉验证，未参考或搬运 IMDb/豆瓣/烂番茄官方榜单。所有推荐均经过身份归一化、状态去重、综合推荐指数排序后输出。_
-
