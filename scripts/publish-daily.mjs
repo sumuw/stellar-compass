@@ -50,6 +50,7 @@ function parseArgs(argv) {
     date: null,
     dryRun: false,
     skipPush: false,
+    stateOnly: false,
     message: null,
     addPaths: [],
   };
@@ -60,6 +61,7 @@ function parseArgs(argv) {
     else if (a === '--date') args.date = argv[++i];
     else if (a === '--add-path') args.addPaths.push(argv[++i]);
     else if (a === '--dry-run') args.dryRun = true;
+    else if (a === '--state-only') args.stateOnly = true;
     else if (a === '--skip-push') args.skipPush = true;
     else if (a === '--message' || a === '-m') args.message = argv[++i];
     else if (a === '--help' || a === '-h') {
@@ -184,6 +186,7 @@ async function gateUnitTests() {
     'tests/import-github-trending.test.mjs',
     'tests/import-film-radar.test.mjs',
     'tests/date-semantics.test.mjs',
+    'tests/film-tracker-sync.test.mjs',
   ]);
   const pass = (stdout.match(/# pass:\s*(\d+)/) || [])[1];
   const fail = (stdout.match(/# fail:\s*(\d+)/) || [])[1];
@@ -314,10 +317,21 @@ async function main() {
   const rankingFile = join(bundleDir, 'ranking.json');
   const indexFile = join(bundleDir, 'index.md');
 
-  if (!(await pathExists(indexFile))) {
-    fail(`bundle 不存在: content/rankings/${args.category}/${args.period}/${slug}/`);
-    console.error(`\n请先按 skills/${args.category}/SKILL.md 生成当日 bundle（index.md + ranking.json），再运行发布。`);
-    process.exit(1);
+  if (args.stateOnly) {
+    // 零新增日：没有 bundle 是正常的，但跨日状态库（如 film-radar 的编号/去重
+    // 事实源）当天仍有更新，必须照样入库 —— 否则零新增日的状态推进会全部丢在
+    // 工作区里，直到下一个有新增的日子才被顺带提交。
+    ok('state-only 模式：跳过 bundle 定位（当日零新增）');
+  } else {
+    if (!(await pathExists(indexFile))) {
+      fail(`bundle 不存在: content/rankings/${args.category}/${args.period}/${slug}/`);
+      console.error(`\n请先按 skills/${args.category}/SKILL.md 生成当日 bundle（index.md + ranking.json），再运行发布。`);
+      process.exit(1);
+    }
+    if (!(await pathExists(rankingFile))) {
+      fail('缺少 ranking.json');
+      process.exit(1);
+    }
   }
   let itemCount = null;
   if (await pathExists(rankingFile)) {
@@ -325,19 +339,24 @@ async function main() {
       const ranking = JSON.parse(await readFile(rankingFile, 'utf8'));
       itemCount = Array.isArray(ranking.items) ? ranking.items.length : null;
     } catch { /* ranking.json 解析失败会由验证步骤报错 */ }
-  } else {
-    fail('缺少 ranking.json');
-    process.exit(1);
   }
-  ok(`bundle 就绪: ${slug}${itemCount !== null ? `（${itemCount} 个条目）` : ''}`);
+  ok(
+    args.stateOnly
+      ? `state-only 模式：仅提交状态文件（${slug} 当日无 bundle）`
+      : `bundle 就绪: ${slug}${itemCount !== null ? `（${itemCount} 个条目）` : ''}`,
+  );
 
   // [2] 内容验证
   step(2, TOTAL, '内容验证');
   await gateValidateContent();
 
-  // [3] 内容质量校验（仅当日 bundle）
+  // [3] 内容质量校验（仅当日 bundle；state-only 模式无 bundle，跳过）
   step(3, TOTAL, '内容质量校验');
-  await gateItemQuality(args, slug);
+  if (args.stateOnly) {
+    console.log('  ⏭ state-only 模式：无当日 bundle，跳过');
+  } else {
+    await gateItemQuality(args, slug);
+  }
 
   // [4] 单元测试
   step(4, TOTAL, '单元测试');

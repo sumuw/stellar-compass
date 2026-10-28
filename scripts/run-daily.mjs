@@ -57,6 +57,9 @@ const CATEGORIES = [
     slug: (date) => `film-radar-daily-${date}`,
     // 跨日状态：F 编号、观察池、去重的唯一事实源，必须跟着每天的记录入库
     statePaths: ['skills/film-radar/status-tracker.json'],
+    // 状态库曾依赖 Agent 手工维护，2026-10-12 起中断 16 天（滞后→弃用→更滞后的
+    // 死循环）。改为每天由脚本从归档报告派生，Agent 不再需要手写 JSON。
+    stateSync: 'scripts/sync-film-tracker.mjs',
   },
 ];
 
@@ -114,6 +117,35 @@ async function run(cmd, cmdArgs) {
   return { stdout, stderr };
 }
 
+/**
+ * 零新增日只提交跨日状态库（不带 bundle）。
+ * publish-daily 默认要求 bundle 存在，否则整条管道退出，状态更新就留在工作区。
+ */
+async function publishStateOnly(target, args) {
+  const publishArgs = [
+    'scripts/publish-daily.mjs',
+    '--category', target.key,
+    '--period', 'daily',
+    '--date', args.date,
+    '--state-only',
+    '--message', `chore: 同步 ${target.key} 跨日状态库（${args.date} 无新增）`,
+  ];
+  for (const statePath of target.statePaths ?? []) {
+    if (existsSync(path.join(projectRoot, statePath))) {
+      publishArgs.push('--add-path', statePath);
+    }
+  }
+  if (args.skipPush) publishArgs.push('--skip-push');
+
+  console.log('  → 零新增日：仅提交状态库');
+  try {
+    const { stdout } = await run(NODE, publishArgs);
+    console.log(stdout.trim().split('\n').map((l) => `    ${l}`).join('\n'));
+  } catch (error) {
+    console.error(`  ⚠ 状态库提交失败: ${String(error?.message ?? error).split('\n')[0]}`);
+  }
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const targets = CATEGORIES.filter((entry) => !args.only || entry.key === args.only);
@@ -151,9 +183,26 @@ async function main() {
       continue;
     }
 
+    // 状态库同步：放在导入之后，这样当天的新推荐会被计入编号与去重事实源。
+    // 即便当天零新增，水位与统计也会推进，因此这一步不能因为没 bundle 而跳过。
+    if (target.stateSync) {
+      try {
+        const { stdout } = await run(NODE, [target.stateSync]);
+        console.log(stdout.trim());
+      } catch (error) {
+        console.error(`  ⚠ 状态库同步失败（不阻断发布）: ${String(error?.message ?? error).split('\n')[0]}`);
+      }
+    }
+
     const bundleDir = path.join('content', 'rankings', target.key, 'daily', target.slug(args.date));
     if (!existsSync(path.join(projectRoot, bundleDir))) {
-      console.log(`  ⏭ 未生成 bundle（多数是当日零新增），跳过发布`);
+      console.log(`  ⏭ 未生成 bundle（多数是当日零新增），跳过 bundle 发布`);
+
+      // 但状态库当天已有更新，必须照样入库。以前零新增日直接 return，
+      // 状态推进就一直丢在工作区，直到下一个有新增的日子才被顺带提交。
+      if (target.statePaths?.length && !args.dryRun) {
+        await publishStateOnly(target, args);
+      }
       results.push({ key: target.key, status: 'no-bundle' });
       continue;
     }

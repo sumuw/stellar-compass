@@ -282,9 +282,28 @@ draft: false
 }
 ```
 
-#### 6.2 更新状态追踪文件
+#### 6.2 状态追踪文件（由脚本派生，勿手工编辑）
 
-更新 `skills/film-radar/status-tracker.json`：追加本次新推荐作品、更新统计数字和 `$updatedAt`。
+`skills/film-radar/status-tracker.json` 由 `scripts/sync-film-tracker.mjs` 从 `raw/film-radar/` 归档报告**自动派生**，
+发布脚本会在导入后自动执行，**不需要也不应该手工编辑 JSON**。每次执行仍需**读取**它做去重（见 6.1 去重流程）。
+
+> 为什么改为派生：该文件曾要求 Agent 每次执行后手工追加作品。2026-08-21 后手工维护逐渐滞后
+> （works 停在 F023，实际已推进到 F08x），Agent 遂改用「归档报告全量复核」去重、不再回写文件，
+> 形成「滞后 → 弃用 → 更滞后」的死循环，至 2026-10-28 已断更 16 天，去重失去唯一事实源。
+> 脚本派生把这个环节从「依赖每次执行记得手写」变成「跑报告即自动同步」。
+
+写回时遵循两条约束，Agent 如发现违反请报 bug：
+
+- 已存在的条目**不覆盖**（保留早期人工录入的 scores / awards / notes 等富字段）；
+- 提取不到的字段留 `null`，并在条目 `source` 字段标明可回溯的报告原文，**不编造**。
+
+需要补录历史或修正提取逻辑时，改脚本后重跑即可（派生条目会自动刷新，人工条目受保护）：
+
+```bash
+node scripts/sync-film-tracker.mjs --dry-run   # 只看将发生的改动
+node scripts/sync-film-tracker.mjs             # 写回
+node scripts/sync-film-tracker.mjs --verbose   # 打印每期提取结果
+```
 
 #### 6.3 运行发布脚本（自动完成验证 → 构建 → 提交 → 推送）
 
