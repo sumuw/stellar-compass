@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-09-30
 description: 2026-09-30 GitHub Trending 榜首为 debpalash/VoiceStudio，当日共收录 17 个项目。
-date: '2026-09-30T08:00:00+08:00'
+date: '2026-09-30'
 rankingKey: '2026-09-30'
 slug: github-daily-2026-09-30
 categories:

@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-09-16
 description: 2026-09-16 GitHub Trending 榜首为 alibaba/open-code-review，当日共收录 21 个项目。
-date: '2026-09-16T08:00:00+08:00'
+date: '2026-09-16'
 rankingKey: '2026-09-16'
 slug: github-daily-2026-09-16
 categories:

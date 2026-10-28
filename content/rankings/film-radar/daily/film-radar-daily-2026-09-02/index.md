@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-02"
 description: "2026-09-02 影视雷达共 4 部正式推荐，榜首《《绝望写手 第五季》/ Hacks: Season 5》（93/100 🔥）。"
-date: "2026-09-02T08:00:00+08:00"
+date: "2026-09-02"
 rankingKey: "2026-09-02"
 slug: "film-radar-daily-2026-09-02"
 categories:

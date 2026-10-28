@@ -123,13 +123,13 @@ test('imports reference rankings as Hugo leaf bundles', async (t) => {
   assert.deepEqual(daily.data.categories, ['github']);
   assert.deepEqual(daily.data.periods, ['daily']);
   assert.equal(daily.data.rankingKey, '2026-08-20');
-  assert.equal(daily.data.date, '2026-08-20T08:00:00+08:00');
+  assert.equal(daily.data.date, '2026-08-20');
   assert.equal(daily.content, '\n## Daily analysis\n\nKeep this body unchanged.\n');
 
   assert.deepEqual(weekly.data.categories, ['github']);
   assert.deepEqual(weekly.data.periods, ['weekly']);
   assert.equal(weekly.data.rankingKey, '2026-W34');
-  assert.equal(weekly.data.date, '2026-08-17T08:00:00+08:00');
+  assert.equal(weekly.data.date, '2026-08-17');
   assert.equal(
     weekly.content,
     '\n## Weekly analysis\n\nKeep this weekly body unchanged.\n',

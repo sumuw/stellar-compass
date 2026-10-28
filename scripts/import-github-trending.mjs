@@ -87,7 +87,9 @@ async function run(sourceDir, targetRoot, overwrite) {
       const frontMatter = {
         title: `GitHub 每日趋势榜 ${date}`,
         description: buildDescription(items, date),
-        date: `${date}T08:00:00+08:00`,
+        // 纯日历日期 = 榜单归属日，不是发布时间。Hugo 会把无时区日期按
+        // hugo.toml 的 timeZone(Asia/Shanghai) 解析为该日 00:00。
+        date,
         rankingKey: date,
         slug,
         categories: [CATEGORY],

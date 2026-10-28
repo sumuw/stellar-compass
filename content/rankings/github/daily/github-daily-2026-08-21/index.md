@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-21
 description: 2026-08-21 GitHub Trending 榜首为 mattpocock/skills，当日共收录 17 个项目。
-date: '2026-08-21T08:00:00+08:00'
+date: '2026-08-21'
 rankingKey: '2026-08-21'
 slug: github-daily-2026-08-21
 categories:

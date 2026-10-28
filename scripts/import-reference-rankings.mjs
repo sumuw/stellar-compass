@@ -162,10 +162,13 @@ async function buildImportPlan(sourceRoot, targetRoot, markdownPath) {
   };
 }
 
+// 返回纯日历日期（YYYY-MM-DD），由 hugo.toml 的 timeZone 决定时区。
+// 该值是"榜单归属日"，不是发布时间——不携带时间分量是为了避免被 Hugo
+// 判为未来内容而跳过。周榜取该 ISO 周的周一，月榜取该月 1 号。
 function sortableDate(period, rankingKey) {
   if (period === 'daily') {
     assertCalendarDate(rankingKey);
-    return `${rankingKey}T08:00:00+08:00`;
+    return rankingKey;
   }
 
   if (period === 'monthly') {
@@ -174,7 +177,7 @@ function sortableDate(period, rankingKey) {
     }
     const date = `${rankingKey}-01`;
     assertCalendarDate(date);
-    return `${date}T08:00:00+08:00`;
+    return date;
   }
 
   const match = /^(\d{4})-W(\d{2})$/.exec(rankingKey);
@@ -195,7 +198,7 @@ function sortableDate(period, rankingKey) {
     throw new Error(`invalid ISO week "${rankingKey}"`);
   }
 
-  return `${mondayDate}T08:00:00+08:00`;
+  return mondayDate;
 }
 
 function isoWeekKey(date) {

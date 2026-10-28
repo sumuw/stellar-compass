@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-25"
 description: "2026-09-25 影视雷达共 1 部正式推荐，榜首《流人 第六季 / Slow Horses Season 6》（93/100 🔥）。"
-date: "2026-09-25T08:00:00+08:00"
+date: "2026-09-25"
 rankingKey: "2026-09-25"
 slug: "film-radar-daily-2026-09-25"
 categories:

@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-08
 description: 2026-08-08 GitHub Trending 榜首为 PrimeIntellect-ai/prime-agent，当日共收录 17 个项目。
-date: '2026-08-08T08:00:00+08:00'
+date: '2026-08-08'
 rankingKey: '2026-08-08'
 slug: github-daily-2026-08-08
 categories:

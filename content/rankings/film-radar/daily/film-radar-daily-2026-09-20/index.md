@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-20"
 description: "2026-09-20 影视雷达共 1 部正式推荐，榜首《《绅士们》第二季 / The Gentlemen Season 2》（85 / 100 ⭐）。"
-date: "2026-09-20T08:00:00+08:00"
+date: "2026-09-20"
 rankingKey: "2026-09-20"
 slug: "film-radar-daily-2026-09-20"
 categories:

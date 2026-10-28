@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-14
 description: 2026-10-14 GitHub Trending 榜首为 morluto/rea，当日共收录 12 个项目。
-date: '2026-10-14T08:00:00+08:00'
+date: '2026-10-14'
 rankingKey: '2026-10-14'
 slug: github-daily-2026-10-14
 categories:

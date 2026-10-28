@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-03
 description: 2026-10-03 GitHub Trending 榜首为 DietrichGebert/ponytail，当日共收录 19 个项目。
-date: '2026-10-03T08:00:00+08:00'
+date: '2026-10-03'
 rankingKey: '2026-10-03'
 slug: github-daily-2026-10-03
 categories:

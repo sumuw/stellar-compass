@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-22
 description: 2026-08-22 GitHub Trending 榜首为 openai/codex，当日共收录 17 个项目。
-date: '2026-08-22T08:00:00+08:00'
+date: '2026-08-22'
 rankingKey: '2026-08-22'
 slug: github-daily-2026-08-22
 categories:

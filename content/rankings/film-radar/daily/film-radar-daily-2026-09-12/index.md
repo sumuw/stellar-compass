@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-12"
 description: "2026-09-12 影视雷达共 2 部正式推荐，榜首《匹兹堡医护前线 第二季 / The Pitt Season 2》（90/100 🔥）。"
-date: "2026-09-12T08:00:00+08:00"
+date: "2026-09-12"
 rankingKey: "2026-09-12"
 slug: "film-radar-daily-2026-09-12"
 categories:

@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-29
 description: 2026-08-29 GitHub Trending 榜首为 tt-a1i/archify，当日共收录 20 个项目。
-date: '2026-08-29T08:00:00+08:00'
+date: '2026-08-29'
 rankingKey: '2026-08-29'
 slug: github-daily-2026-08-29
 categories:

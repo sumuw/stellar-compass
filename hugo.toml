@@ -4,10 +4,13 @@ title = 'Stellar Compass'
 defaultContentLanguage = 'zh-cn'
 enableRobotsTXT = true
 enableGitInfo = false
-# 榜单 front matter 的 date 是"榜单日 08:00(+08:00)"，而每日自动化在北京时间 05:05
-# （UTC 前一天 21:05）构建，此时 date 仍在未来 ~3 小时，Hugo 默认跳过未来内容，
-# 会导致线上始终晚一天。榜单日期是标签而非真实发布时间，直接放行未来内容。
-buildFuture = true
+# 榜单 front matter 的 date 是纯日历日期，含义是"榜单归属日"而非发布时间。
+# 无时区的日期一律按下面的 timeZone 解析为该日 00:00(+08:00)，与运行环境的
+# TZ 无关（GitHub Actions 是 UTC，本机是 +08），解析结果不会因环境漂移。
+# 每日自动化在北京时间 05:05 构建"昨天"的榜单，归属日 00:00(+08:00) 恒早于
+# 构建时刻，因此不会被判为未来内容——不需要 buildFuture 豁免，
+# Hugo 对未来内容的默认拦截保持生效（误填未来日期的页面不会上线）。
+timeZone = 'Asia/Shanghai'
 
 [pagination]
   pagerSize = 20

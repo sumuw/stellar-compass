@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-03"
 description: "2026-09-03 影视雷达共 3 部正式推荐，榜首《熊家餐馆 第五季 / The Bear: Season 5》（92 / 100 🔥）。"
-date: "2026-09-03T08:00:00+08:00"
+date: "2026-09-03"
 rankingKey: "2026-09-03"
 slug: "film-radar-daily-2026-09-03"
 categories:

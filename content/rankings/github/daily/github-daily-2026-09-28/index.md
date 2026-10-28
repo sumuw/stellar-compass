@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-09-28
 description: 2026-09-28 GitHub Trending 榜首为 vectorize-io/hindsight，当日共收录 8 个项目。
-date: '2026-09-28T08:00:00+08:00'
+date: '2026-09-28'
 rankingKey: '2026-09-28'
 slug: github-daily-2026-09-28
 categories:

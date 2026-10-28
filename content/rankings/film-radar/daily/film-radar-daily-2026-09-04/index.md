@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-04"
 description: "2026-09-04 影视雷达共 4 部正式推荐，榜首《给阿嬷的情书 / Dear You》（95 / 100 🏆）。"
-date: "2026-09-04T08:00:00+08:00"
+date: "2026-09-04"
 rankingKey: "2026-09-04"
 slug: "film-radar-daily-2026-09-04"
 categories:

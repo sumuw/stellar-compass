@@ -1,7 +1,7 @@
 ---
 title: GitHub 每周趋势榜 2026-W34
 description: 由脚本生成的 GitHub 每周趋势榜样例内容。
-date: '2026-08-17T08:00:00+08:00'
+date: '2026-08-17'
 rankingKey: 2026-W34
 slug: github-weekly-2026-W34
 categories:

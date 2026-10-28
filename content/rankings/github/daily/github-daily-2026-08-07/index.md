@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-07
 description: 2026-08-07 GitHub Trending 榜首为 TencentCloud/TencentDB-Agent-Memory，当日共收录 13 个项目。
-date: '2026-08-07T08:00:00+08:00'
+date: '2026-08-07'
 rankingKey: '2026-08-07'
 slug: github-daily-2026-08-07
 categories:

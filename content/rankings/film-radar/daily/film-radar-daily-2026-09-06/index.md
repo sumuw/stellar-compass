@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-06"
 description: "2026-09-06 影视雷达共 3 部正式推荐，榜首《偿还 / PAYBACK The Series》（92/100 🔥）。"
-date: "2026-09-06T08:00:00+08:00"
+date: "2026-09-06"
 rankingKey: "2026-09-06"
 slug: "film-radar-daily-2026-09-06"
 categories:

@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-08-19
 description: 2026-08-19 GitHub Trending 榜首为 harry0703/MoneyPrinterTurbo，当日共收录 12 个项目。
-date: '2026-08-19T08:00:00+08:00'
+date: '2026-08-19'
 rankingKey: '2026-08-19'
 slug: github-daily-2026-08-19
 categories:

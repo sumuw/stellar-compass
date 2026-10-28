@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-10"
 description: "2026-09-10 影视雷达共 1 部正式推荐，榜首《鬼灭之刃：无限城篇 第一章 猗窝座再袭 / 劇場版「鬼滅の刃」無限城編 第一章 猗窩座再襲 / Demon Slayer: Infinity Castle Part 1 — Akaza Returns》（93/100 🔥）。"
-date: "2026-09-10T08:00:00+08:00"
+date: "2026-09-10"
 rankingKey: "2026-09-10"
 slug: "film-radar-daily-2026-09-10"
 categories:

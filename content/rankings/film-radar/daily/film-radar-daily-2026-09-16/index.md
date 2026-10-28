@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-16"
 description: "2026-09-16 影视雷达共 1 部正式推荐，榜首《特别小组 第一季 / Task Season 1》（86/100 ⭐）。"
-date: "2026-09-16T08:00:00+08:00"
+date: "2026-09-16"
 rankingKey: "2026-09-16"
 slug: "film-radar-daily-2026-09-16"
 categories:

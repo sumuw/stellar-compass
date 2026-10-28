@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-26
 description: 2026-10-26 GitHub Trending 榜首为 Nutlope/hallmark，当日共收录 14 个项目。
-date: '2026-10-26T08:00:00+08:00'
+date: '2026-10-26'
 rankingKey: '2026-10-26'
 slug: github-daily-2026-10-26
 categories:

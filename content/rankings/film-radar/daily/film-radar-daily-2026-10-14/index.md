@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-10-14"
 description: "2026-10-14 影视雷达共 1 部正式推荐，榜首《魔女嘉莉 / Carrie》（86/100 ⭐）。"
-date: "2026-10-14T08:00:00+08:00"
+date: "2026-10-14"
 rankingKey: "2026-10-14"
 slug: "film-radar-daily-2026-10-14"
 categories:

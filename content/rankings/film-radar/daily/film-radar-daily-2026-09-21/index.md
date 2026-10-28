@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-21"
 description: "2026-09-21 影视雷达共 1 部正式推荐，榜首《《诺曼底72小时》/ Pressure》（85 / 100 ⭐）。"
-date: "2026-09-21T08:00:00+08:00"
+date: "2026-09-21"
 rankingKey: "2026-09-21"
 slug: "film-radar-daily-2026-09-21"
 categories:

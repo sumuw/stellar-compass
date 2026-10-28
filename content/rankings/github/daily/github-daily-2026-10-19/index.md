@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-19
 description: 2026-10-19 GitHub Trending 榜首为 MadsLorentzen/ai-job-search，当日共收录 12 个项目。
-date: '2026-10-19T08:00:00+08:00'
+date: '2026-10-19'
 rankingKey: '2026-10-19'
 slug: github-daily-2026-10-19
 categories:

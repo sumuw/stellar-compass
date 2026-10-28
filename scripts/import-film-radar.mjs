@@ -99,7 +99,8 @@ async function main() {
       const frontMatter = {
         title: `今日全球高分影视雷达 ${date}`,
         description: buildDescription(finalItems, date, isBriefing),
-        date: `${date}T08:00:00+08:00`,
+        // 纯日历日期 = 榜单归属日，不是发布时间（同 import-github-trending）。
+        date,
         rankingKey: date,
         slug,
         categories: [CATEGORY],

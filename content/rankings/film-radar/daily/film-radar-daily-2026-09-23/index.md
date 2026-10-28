@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-23"
 description: "2026-09-23 影视雷达共 1 部正式推荐，榜首《巴比伦柏林 第五季 / Babylon Berlin Season 5》（89/100 ⭐）。"
-date: "2026-09-23T08:00:00+08:00"
+date: "2026-09-23"
 rankingKey: "2026-09-23"
 slug: "film-radar-daily-2026-09-23"
 categories:

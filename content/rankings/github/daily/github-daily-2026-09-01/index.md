@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-09-01
 description: 2026-09-01 GitHub Trending 榜首为 Gitlawb/openclaude，当日共收录 15 个项目。
-date: '2026-09-01T08:00:00+08:00'
+date: '2026-09-01'
 rankingKey: '2026-09-01'
 slug: github-daily-2026-09-01
 categories:

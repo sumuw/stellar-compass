@@ -183,6 +183,7 @@ async function gateUnitTests() {
     'tests/import-reference-rankings.test.mjs',
     'tests/import-github-trending.test.mjs',
     'tests/import-film-radar.test.mjs',
+    'tests/date-semantics.test.mjs',
   ]);
   const pass = (stdout.match(/# pass:\s*(\d+)/) || [])[1];
   const fail = (stdout.match(/# fail:\s*(\d+)/) || [])[1];

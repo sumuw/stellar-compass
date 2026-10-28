@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-09
 description: 2026-10-09 GitHub Trending 榜首为 boykopovar/AnyPS5，当日共收录 9 个项目。
-date: '2026-10-09T08:00:00+08:00'
+date: '2026-10-09'
 rankingKey: '2026-10-09'
 slug: github-daily-2026-10-09
 categories:

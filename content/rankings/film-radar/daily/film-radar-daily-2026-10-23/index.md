@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-10-23"
 description: "2026-10-23 影视雷达共 1 部正式推荐，榜首《歪心狼对阵 ACME / Coyote vs. Acme》（86/100 ⭐）。"
-date: "2026-10-23T08:00:00+08:00"
+date: "2026-10-23"
 rankingKey: "2026-10-23"
 slug: "film-radar-daily-2026-10-23"
 categories:

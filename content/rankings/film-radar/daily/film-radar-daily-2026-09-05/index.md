@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-05"
 description: "2026-09-05 影视雷达共 3 部正式推荐，榜首《小先知 / Small Prophets》（88 / 100 ⭐）。"
-date: "2026-09-05T08:00:00+08:00"
+date: "2026-09-05"
 rankingKey: "2026-09-05"
 slug: "film-radar-daily-2026-09-05"
 categories:

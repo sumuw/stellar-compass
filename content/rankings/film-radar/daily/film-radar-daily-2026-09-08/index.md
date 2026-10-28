@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-08"
 description: "2026-09-08 影视雷达共 3 部正式推荐，榜首《星球大战：摩尔-暗影之王 / Star Wars: Maul – Shadow Lord》（88/100 ⭐）。"
-date: "2026-09-08T08:00:00+08:00"
+date: "2026-09-08"
 rankingKey: "2026-09-08"
 slug: "film-radar-daily-2026-09-08"
 categories:

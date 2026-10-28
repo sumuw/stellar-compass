@@ -1,7 +1,7 @@
 ---
 title: "今日全球高分影视雷达 2026-09-07"
 description: "2026-09-07 影视雷达共 6 部正式推荐，榜首《瑞克和莫蒂 第九季 / Rick and Morty Season 9》（94/100 🔥）。"
-date: "2026-09-07T08:00:00+08:00"
+date: "2026-09-07"
 rankingKey: "2026-09-07"
 slug: "film-radar-daily-2026-09-07"
 categories:

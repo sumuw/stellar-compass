@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-10-06
 description: 2026-10-06 GitHub Trending 榜首为 tester-army/e2e，当日共收录 12 个项目。
-date: '2026-10-06T08:00:00+08:00'
+date: '2026-10-06'
 rankingKey: '2026-10-06'
 slug: github-daily-2026-10-06
 categories:

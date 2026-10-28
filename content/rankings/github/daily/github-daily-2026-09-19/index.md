@@ -1,7 +1,7 @@
 ---
 title: GitHub 每日趋势榜 2026-09-19
 description: 2026-09-19 GitHub Trending 榜首为 cloudflare/security-audit-skill，当日共收录 15 个项目。
-date: '2026-09-19T08:00:00+08:00'
+date: '2026-09-19'
 rankingKey: '2026-09-19'
 slug: github-daily-2026-09-19
 categories:
