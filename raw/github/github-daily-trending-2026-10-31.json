@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-31",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 14,
+  "items": [
+    {
+      "name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "language": "TypeScript",
+      "stars": 107682,
+      "delta": "1,723 stars today",
+      "rank": 1,
+      "tags": [
+        "AI",
+        "Agent",
+        "记忆",
+        "上下文",
+        "TypeScript"
+      ],
+      "comment": "给 Claude Code、Codex、Gemini、Copilot 等多个 Agent 做跨会话持久记忆：记录会话中 Agent 做过的一切，用 AI 压缩后把相关上下文注回以后的会话。10.8 万星的存量项目，+1,140 → +1,723（+51%），连续第二天在榜，且是今天唯一同时拿到「日增第一」与「排名第一」的项目。"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 308251,
+      "delta": "882 stars today",
+      "rank": 2,
+      "tags": [
+        "Agent",
+        "技能包",
+        "工程方法论",
+        "Shell",
+        "开发者工具"
+      ],
+      "comment": "Matt Pocock 把自己 .agents 目录里的技能直接开源，定位是「给真工程师用的技能」。30.8 万星，与 obra/superpowers（31.0 万）星数仅差约 1,700，两者连续第二天同榜。今天 +882 的日增量只排全榜第 10，却占着第 2 位——是「排序与日增脱钩」的第六个样本。"
+    },
+    {
+      "name": "Donchitos/Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+      "language": "Shell",
+      "stars": 31071,
+      "delta": "1,347 stars today",
+      "rank": 3,
+      "tags": [
+        "Agent",
+        "游戏开发",
+        "技能包",
+        "多智能体",
+        "Shell"
+      ],
+      "comment": "把 Claude Code 变成一整个游戏开发工作室：49 个 AI Agent、72 个工作流技能，外加一套照搬真实工作室层级（主美 / 主程 / 制作人）的协作系统，覆盖 Unity、Unreal、Godot。2026-02 建仓，本次以 +1,347 首度上榜，是今天新面孔里增量最高的一席。⚠️ 最后推送 2026-10-19，热度集中在二次传播。"
+    },
+    {
+      "name": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "T3 Code — an agent harness control surface: drive the agents on your machine (Claude Code, Codex, Cursor, Grok Build, OpenCode, Antigravity) from a mobile app, web app or desktop app.",
+      "language": "TypeScript",
+      "stars": 35133,
+      "delta": "1,148 stars today",
+      "rank": 4,
+      "tags": [
+        "Agent",
+        "控制面",
+        "远程开发",
+        "TypeScript",
+        "开发者工具"
+      ],
+      "comment": "T3 Code —— 一个「Agent 调度控制面」：用 iOS / Android / Web / Electron 四个客户端远程操控本机上已装好的 Claude Code、Codex、Cursor、Grok Build、OpenCode、Antigravity。theo（t3.gg）出品，主打远程可用与完全开源可 fork。仓库 description 字段为空，本条简介取自仓库 README。3.5 万星，+930 → +1,148（+23%）。"
+    },
+    {
+      "name": "Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 12233,
+      "delta": "1,093 stars today",
+      "rank": 5,
+      "tags": [
+        "紫微斗数",
+        "命理",
+        "TypeScript",
+        "知识库",
+        "中文"
+      ],
+      "comment": "紫微斗数开源排盘引擎，基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库与古籍原文数据。1.2 万星，+1,126 → +1,093（−3%），连续第二天在榜且增量基本持平，是今天唯一进入前十的中文命理向项目。"
+    },
+    {
+      "name": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 9487,
+      "delta": "1,304 stars today",
+      "rank": 6,
+      "tags": [
+        "Agent",
+        "桌面应用",
+        "聊天",
+        "TypeScript",
+        "开源替代"
+      ],
+      "comment": "Grok Bot 的开源替代：侧边栏里每个 bot 都是一个本地跑着的真 Agent（Claude 或 Codex），各有自己的性格、模型、云电脑与已连接应用，能像联系人一样对话并逐项审批它的动作。Electron + React 19 写成，2026-08 建仓，主打本地优先、自带模型。+895 → +1,304（+46%）。"
+    },
+    {
+      "name": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "stars": 98141,
+      "delta": "1,339 stars today",
+      "rank": 7,
+      "tags": [
+        "设计",
+        "AI",
+        "Rust",
+        "技能包",
+        "前端"
+      ],
+      "comment": "给编码 Agent 用的设计词汇表：用 polish / bolder 引导，用 critique / audit 复核，在上线前拦住 AI 味。昨天拿到全榜增量第一（+2,300），今天 −42% 回落到 +1,339。「设计品味」赛道在 hallmark 与 ai-design-skills 掉榜后只剩它一席，但热度已明显退潮。"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 309978,
+      "delta": "663 stars today",
+      "rank": 8,
+      "tags": [
+        "Agent",
+        "技能框架",
+        "工程方法论",
+        "Shell",
+        "开发者工具"
+      ],
+      "comment": "Agent 技能框架 + 一整套软件开发方法论。31.0 万星，是本榜存量最大的项目；+1,259 → +663（−47%），存量里跌幅第二。与 mattpocock/skills 连续第二天同榜，两者星数仅差约 1,700 —— 个人与实验室两条路线几乎并驾齐驱。"
+    },
+    {
+      "name": "lightpanda-io/browser",
+      "url": "https://github.com/lightpanda-io/browser",
+      "description": "Lightpanda: the headless browser designed for AI and automation",
+      "language": "Zig",
+      "stars": 39142,
+      "delta": "929 stars today",
+      "rank": 9,
+      "tags": [
+        "浏览器",
+        "自动化",
+        "Zig",
+        "AI",
+        "基础设施"
+      ],
+      "comment": "专为 AI 与自动化场景设计的无头浏览器，用 Zig 写成，主打比 Chromium 更轻的抓取 / 自动化底座。3.9 万星，+626 → +929（+48%），连续第二天在榜且逆势加速，是今天存量里增幅第三的一席，也是全榜唯一的 Zig 项目。"
+    },
+    {
+      "name": "HKUDS/DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 52692,
+      "delta": "1,035 stars today",
+      "rank": 10,
+      "tags": [
+        "AI",
+        "教育",
+        "个性化学习",
+        "Python",
+        "LLM"
+      ],
+      "comment": "香港大学 HKUDS 的终身个性化辅导系统，主打长期陪伴式的一对一教学。5.3 万星，+2,282 → +1,035（−55%），是今天存量里跌幅最大的一席但仍在榜内。与 OpenMAIC 同日上榜，构成本榜今天唯一一个成型的「教育」簇。"
+    },
+    {
+      "name": "Orkas-AI/Orkas",
+      "url": "https://github.com/Orkas-AI/Orkas",
+      "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+      "language": "JavaScript",
+      "stars": 6073,
+      "delta": "1,118 stars today",
+      "rank": 11,
+      "tags": [
+        "Agent",
+        "多智能体",
+        "桌面应用",
+        "本地优先",
+        "JavaScript"
+      ],
+      "comment": "开源（MIT）、本地优先的桌面 AI 团队：一个 Commander 把目标拆成待办，再调度 16 个内置专家 Agent，并可接入 Claude Code、Codex、OpenCode、OpenClaw、Hermes；带项目、定时自动化与连接器，macOS / Windows 免费应用。2026-04 建仓，本次以 +1,118 首度上榜。"
+    },
+    {
+      "name": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "language": "TypeScript",
+      "stars": 42154,
+      "delta": "115 stars today",
+      "rank": 12,
+      "tags": [
+        "AI",
+        "教育",
+        "多智能体",
+        "TypeScript",
+        "学术"
+      ],
+      "comment": "清华 MAIC 的开放多智能体互动课堂，一键生成沉浸式多智能体学习体验；配套 JCST'26 论文、在线 Demo（open.maic.chat），并已接入 OpenClaw 与本地模型方案 Lemonade。4.2 万星但今日仅 +115，是全榜增量最低的一席 —— 星量级与当日热度明显不匹配。"
+    },
+    {
+      "name": "bregman-arie/devops-exercises",
+      "url": "https://github.com/bregman-arie/devops-exercises",
+      "description": "Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions",
+      "language": "Python",
+      "stars": 85898,
+      "delta": "341 stars today",
+      "rank": 13,
+      "tags": [
+        "DevOps",
+        "面试",
+        "运维",
+        "题库",
+        "Python"
+      ],
+      "comment": "覆盖 Linux / Jenkins / AWS / SRE / Docker / K8s / Terraform 等的 DevOps 面试题与练习集，2019 年建仓、8.6 万星的老牌仓库。⚠️ 最后推送 2025-12-27，近 10 个月未更新，本次 +341 全靠二次传播并首度进入本日榜，属典型的老项目回潮而非新品。"
+    },
+    {
+      "name": "vorssaint/vorssaint-utils",
+      "url": "https://github.com/vorssaint/vorssaint-utils",
+      "description": "Free and open-source macOS menu bar toolkit.",
+      "language": "Swift",
+      "stars": 31826,
+      "delta": "499 stars today",
+      "rank": 14,
+      "tags": [
+        "macOS",
+        "菜单栏",
+        "Swift",
+        "系统工具",
+        "开源"
+      ],
+      "comment": "免费开源的 macOS 菜单栏工具集：窗口切换、应用卸载、音量混音、系统监控、防休眠、Finder 增强等。2026-06 建仓，本次以 +499 首度上榜，是今天唯一与 AI / Agent 完全无关的项目。"
+    }
+  ]
+}
