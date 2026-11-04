@@ -1746,6 +1746,23 @@
       "releaseDate": "2026-09-25 北美 / 台湾 / 香港院线上映；2026-10-27 数字发行生效",
       "regionLimit": "⚠️ 仅北美等已开通数字商店的地区可租购；中国大陆无引进计划、无任何正版流媒体渠道；订阅流媒体（Peacock）预计 2027 年 1 月前后，未官宣",
       "source": "raw/film-radar/daily-film-radar-2026-10-27.md"
+    },
+    {
+      "id": "F085",
+      "title": "生化危机：爆发夜 / Resident Evil",
+      "type": "电影 · 动作 / 恐怖（生存恐怖）",
+      "country": "美国 / 德国 / 法国",
+      "year": 2026,
+      "platform": "Amazon Prime Video、Apple TV、Fandango at Home、Google Play Movies（购买约 $24.99；美国区，无中国大陆正版渠道）",
+      "score": 87,
+      "tier": null,
+      "status": "NEW",
+      "firstRecommended": "2026-11-03",
+      "lastUpdated": "2026-11-03",
+      "currentStatus": "院线在映 + PVOD 已于 11-03 生效（可购买 / 租赁）",
+      "releaseDate": "北美院线 2026-09-18；数字发行（PVOD）2026-11-03",
+      "regionLimit": null,
+      "source": "raw/film-radar/daily-film-radar-2026-11-03.md"
     }
   ],
   "statusEnum": {
@@ -1769,14 +1786,14 @@
     "80-84": "🧪 值得关注"
   },
   "stats": {
-    "totalRecommended": 81,
+    "totalRecommended": 82,
     "watchlist": 0,
     "watched": 0,
     "excluded": 0,
     "holding": 0,
     "todayNew": 0,
     "observationPool": 63,
-    "historyNote": "works 由 scripts/sync-film-tracker.mjs 从 raw/film-radar 归档报告派生，已回溯至 2026-11-03（共 71 期，81 部）。已用编号 F001–F084，下一可用 F085。编号水位以报告末尾水位行为准。"
+    "historyNote": "works 由 scripts/sync-film-tracker.mjs 从 raw/film-radar 归档报告派生，已回溯至 2026-11-03（共 71 期，82 部）。已用编号 F001–F085，下一可用 F086。编号水位以报告末尾水位行为准。"
   },
   "$instructions": {
     "update": "每次执行前读取此文件，进行身份归一化和去重。执行后追加新作品、更新状态。",
