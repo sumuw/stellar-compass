@@ -1,0 +1,26 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-03",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F085",
+      "name": "生化危机：爆发夜 / Resident Evil",
+      "url": "https://www.primevideo.com",
+      "description": "院线在映 + PVOD 已于 11-03 生效（可购买 / 租赁） · 北美院线 2026-09-18；数字发行（PVOD）2026-11-03",
+      "type": "电影 · 动作 / 恐怖（生存恐怖）",
+      "platform": "Amazon Prime Video、Apple TV、Fandango at Home、Google Play Movies（购买约 $24.99；美国区，无中国大陆正版渠道）",
+      "score": "87/100 ⭐ 推荐",
+      "tags": [
+        "电影",
+        "动作",
+        "恐怖",
+        "美国 / 德国 / 法国"
+      ],
+      "comment": "扎克·克雷格（《野蛮人》《武器》）把卡普空这个 IP 从「动作爽片」拉回单夜生存恐怖：一个送医疗样本的快递员，在浣熊市沦陷的那一夜里从头跑到尾。它不是系列里最像游戏的一部，而是把「不专业的人处理专业级灾难」拍得最狠的一部；专业端 302 篇给到 96%，是游戏改编电影里罕见的口径。中文端 7.3 与国际端 96% 的背离必须写明：这不是错判，而是两端对「恐怖片该不该讲逻辑」的偏好差异——中文观众普遍认为角色决策降智，英文评论则把它读作讽刺。 适合谁：想在家庭影院看一部节奏紧、不靠 jump scare 堆量、且不需要补课前七部的恐怖片观众。"
+    }
+  ]
+}
