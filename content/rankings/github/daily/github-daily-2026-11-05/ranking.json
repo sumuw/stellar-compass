@@ -1,0 +1,264 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-11-05",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 7110,
+      "delta": "2,707 stars today",
+      "tags": [
+        "本体",
+        "知识图谱",
+        "语义推理",
+        "LLM",
+        "Python"
+      ],
+      "comment": "NVIDIA 官方的语义层框架：在数据之上构建图结构推理层，为 LLM/Agent 工作流提供确定性查询生成与可解释性。连续第三天霸榜榜首，总星从 4,658 涨到 7,110，今天 +2,707 仍为增量第一，当天有推送。"
+    },
+    {
+      "rank": 2,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 315014,
+      "delta": "2,053 stars today",
+      "tags": [
+        "AI",
+        "技能包",
+        "Shell",
+        "工程实践",
+        "Claude"
+      ],
+      "comment": "Matt Pocock（Total TypeScript 作者）公开的个人 .agents 技能目录，315,014 星为全榜总星第一。连续第三天在榜，技能包赛道头部地位稳固，Google 官方入场后头部竞争升级。"
+    },
+    {
+      "rank": 3,
+      "name": "garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "language": "TypeScript",
+      "stars": 139873,
+      "delta": "608 stars today",
+      "tags": [
+        "Claude Code",
+        "技能包",
+        "Agent",
+        "TypeScript",
+        "名人配置"
+      ],
+      "comment": "Y Combinator 掌门人 Garry Tan 公开自己的 Claude Code 配置：23 个工具分别扮演 CEO、设计师、工程经理、发布经理、文档工程师和 QA。连续第二天在榜，与 mattpocock/skills 的名人技能包对垒延续。"
+    },
+    {
+      "rank": 4,
+      "name": "Usagi-org/ai-goofish-monitor",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+      "language": "Python",
+      "stars": 17480,
+      "delta": "242 stars today",
+      "tags": [
+        "闲鱼",
+        "监控",
+        "Playwright",
+        "AI分析",
+        "中文"
+      ],
+      "comment": "基于 Playwright + AI 的闲鱼多任务实时/定时监控与智能分析系统，配后台管理 UI，帮用户从海量商品中找心仪产品。11-03 曾在榜、昨日掉榜、今日回归。⚠️ 最后推送 2026-10-10，已约 26 天未更新，靠惯性传播在榜。"
+    },
+    {
+      "rank": 5,
+      "name": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "language": "Python",
+      "stars": 97832,
+      "delta": "1,661 stars today",
+      "tags": [
+        "爬虫",
+        "数据采集",
+        "反爬对抗",
+        "Python",
+        "框架"
+      ],
+      "comment": "自适应选择器 + 反爬对抗的爬虫框架，覆盖从单请求到全站爬取。连续第三天在榜，今天 +1,661 是增量第四；96,832 星，当天有推送。"
+    },
+    {
+      "rank": 6,
+      "name": "vercel-labs/agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "description": "Computer use CLI for AI agents",
+      "language": "Rust",
+      "stars": 16690,
+      "delta": "2,173 stars today",
+      "tags": [
+        "Agent",
+        "桌面控制",
+        "computer use",
+        "Rust",
+        "Vercel"
+      ],
+      "comment": "Vercel 官方实验室的 computer use CLI，让 AI agent 直接操作桌面。连续第三天为全榜增量王之一（今天 +2,173 仅次于 auto-ontology），却只排第 6 —— 排序与日增脱钩的极端样本，当天有推送。"
+    },
+    {
+      "rank": 7,
+      "name": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+      "language": "Rust",
+      "stars": 11451,
+      "delta": "546 stars today",
+      "tags": [
+        "Git",
+        "worktree",
+        "CLI",
+        "Rust",
+        "Agent"
+      ],
+      "comment": "面向并行 AI agent 工作流的 Git worktree 管理 CLI，把「一个 agent 一棵 worktree」做成开箱即用。连续第四天在榜，总星 11,451 破万后继续走高，慢热留存型条目。"
+    },
+    {
+      "rank": 8,
+      "name": "lz4/lz4",
+      "url": "https://github.com/lz4/lz4",
+      "description": "Extremely Fast Compression algorithm",
+      "language": "C",
+      "stars": 12338,
+      "delta": "16 stars today",
+      "tags": [
+        "压缩算法",
+        "C",
+        "高性能",
+        "存储",
+        "经典项目"
+      ],
+      "comment": "以极致速度著称的 LZ4 无损压缩算法，2014 年创建的老牌 C 项目。今天仅 +16 星却排在第 8，是「排序与日增脱钩」最极端的一例；当天有推送，疑似新版发布带动榜单回流。"
+    },
+    {
+      "rank": 9,
+      "name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 22302,
+      "delta": "199 stars today",
+      "tags": [
+        "技能包",
+        "Google官方",
+        "Agent Skills",
+        "Python",
+        "大厂官方"
+      ],
+      "comment": "Google 官方入场技能包赛道：面向 Google 产品与技术栈的 Agent Skills 集合。22,302 星、+199，当天有推送 —— 继 NVIDIA、GitHub、Vercel、Spotify 之后又一家大厂官方占位，技能包赛道彻底官方化。"
+    },
+    {
+      "rank": 10,
+      "name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 45804,
+      "delta": "181 stars today",
+      "tags": [
+        "Agent",
+        "浏览器自动化",
+        "CLI",
+        "Rust",
+        "Vercel"
+      ],
+      "comment": "Vercel 官方的浏览器自动化 CLI，与 agent-desktop 组成「桌面 + 浏览器」computer use 双子星，45,804 星。当天有推送，Vercel 两件套同榜是其 Agent 基建矩阵的集中展示。"
+    },
+    {
+      "rank": 11,
+      "name": "scenario-labs/skills",
+      "url": "https://github.com/scenario-labs/skills",
+      "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+      "language": "Python",
+      "stars": 2976,
+      "delta": "674 stars today",
+      "tags": [
+        "MCP",
+        "媒体生成",
+        "AIGC",
+        "Python",
+        "3D"
+      ],
+      "comment": "Scenario 官方技能包：让任意 AI agent 直接产出图片/视频/音频/3D，先选模型再估价，通过 Scenario MCP 保持角色与品牌一致性，另附驱动 Blender/Maya/ZBrush/Unreal/Unity 的专家团队。连续第二天在榜。"
+    },
+    {
+      "rank": 12,
+      "name": "ConardLi/garden-skills",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "language": "JavaScript",
+      "stars": 14078,
+      "delta": "241 stars today",
+      "tags": [
+        "技能包",
+        "中文",
+        "AIGC",
+        "JavaScript",
+        "开源集锦"
+      ],
+      "comment": "ConardLi（前端知名博主）的开源 Skills 集合，涵盖网页设计、知识检索、图像生成等方向。14,078 星、+241，中文技能包新面孔；⚠️ 最后推送 2026-10-25，约 11 天未更新。"
+    },
+    {
+      "rank": 13,
+      "name": "microsoft/VibeVoice",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "description": "Open-Source Frontier Voice AI",
+      "language": "Python",
+      "stars": 55781,
+      "delta": "214 stars today",
+      "tags": [
+        "语音AI",
+        "TTS",
+        "Microsoft",
+        "开源模型",
+        "Python"
+      ],
+      "comment": "微软开源的前沿语音 AI（TTS/语音生成），55,781 星常青项目。今天 +214 回归榜单。⚠️ 最后推送 2026-10-08，已约 28 天未更新，靠惯性传播在榜。"
+    },
+    {
+      "rank": 14,
+      "name": "floci-io/floci",
+      "url": "https://github.com/floci-io/floci",
+      "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+      "language": "Java",
+      "stars": 30324,
+      "delta": "784 stars today",
+      "tags": [
+        "AWS",
+        "本地模拟",
+        "Java",
+        "云开发",
+        "测试"
+      ],
+      "comment": "轻量免费的 AWS 本地模拟器（LocalStack 替代），主打零配置本地起服务。连续第四天在榜，总星 30,324，当天有推送，慢热留存型条目。"
+    },
+    {
+      "rank": 15,
+      "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "description": "Unknown",
+      "language": "C#",
+      "stars": 7202,
+      "delta": "977 stars today",
+      "tags": [
+        "光盘刻录",
+        "图像生成",
+        "C#",
+        ".NET",
+        "创意工具"
+      ],
+      "comment": "全能的光盘盘面可见图像生成与刻录工具：用刻录光驱在 DVD/CD/单层蓝光盘上刻蚀出肉眼可见的图像（中文项目，GPL-3.0）。（仓库未填写简介，此段来自 README 推测）连续第二天在榜，总星 6,453 → 7,202，当天有推送。"
+    }
+  ]
+}
