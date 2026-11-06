@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-06",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 18,
+  "items": [
+    {
+      "name": "zed-industries/zed",
+      "url": "https://github.com/zed-industries/zed",
+      "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "language": "Rust",
+      "stars": 93483,
+      "delta": "292 stars today",
+      "rank": 1,
+      "tags": [
+        "编辑器",
+        "Rust",
+        "协作",
+        "开发工具",
+        "高性能"
+      ],
+      "comment": "Atom 与 Tree-sitter 作者打造的高性能多人协作代码编辑器，Rust 编写。今日以 +292 的增量登顶榜首，是「名次与增量脱钩」的典型样本；当天有推送，93k 星的常青树。"
+    },
+    {
+      "name": "NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "language": "Python",
+      "stars": 8857,
+      "delta": "2,005 stars today",
+      "rank": 2,
+      "tags": [
+        "本体",
+        "知识图谱",
+        "语义推理",
+        "LLM",
+        "Python"
+      ],
+      "comment": "NVIDIA 官方的语义层框架：在数据之上构建图结构推理层，为 LLM/Agent 工作流提供确定性查询生成与可解释性。连续第四天在榜（前三天均榜首，今日退居第 2），总星从 7,110 涨到 8,857，当天有推送。"
+    },
+    {
+      "name": "rails/rails",
+      "url": "https://github.com/rails/rails",
+      "description": "Ruby on Rails",
+      "language": "Ruby",
+      "stars": 58981,
+      "delta": "152 stars today",
+      "rank": 3,
+      "tags": [
+        "Web 框架",
+        "Ruby",
+        "全栈",
+        "MVC",
+        "经典"
+      ],
+      "comment": "Ruby on Rails 官方仓库，全栈 MVC 框架的祖师爷级项目。今日随「经典基建大盘」回榜，当天有推送，+152 属其日常水位。"
+    },
+    {
+      "name": "mpv-player/mpv",
+      "url": "https://github.com/mpv-player/mpv",
+      "description": "🎥 Command line media player",
+      "language": "C",
+      "stars": 37849,
+      "delta": "36 stars today",
+      "rank": 4,
+      "tags": [
+        "媒体播放器",
+        "C",
+        "命令行",
+        "跨平台",
+        "极客"
+      ],
+      "comment": "命令行媒体播放器，以轻量、可脚本化、解码能力全面著称。今日仅 +36 星却排第 4，是全榜「名次与增量脱钩」最极端的条目；最后推送 11-05。"
+    },
+    {
+      "name": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "language": "Rust",
+      "stars": 121361,
+      "delta": "186 stars today",
+      "rank": 5,
+      "tags": [
+        "Rust",
+        "系统编程",
+        "内存安全",
+        "编译器",
+        "经典"
+      ],
+      "comment": "Rust 语言官方仓库。今日随基建大盘回榜，当天有推送，121k 星的系统级常青树。"
+    },
+    {
+      "name": "react/react",
+      "url": "https://github.com/react/react",
+      "description": "The library for web and native user interfaces.",
+      "language": "JavaScript",
+      "stars": 252200,
+      "delta": "244 stars today",
+      "rank": 6,
+      "tags": [
+        "React",
+        "前端",
+        "UI 库",
+        "JavaScript",
+        "经典"
+      ],
+      "comment": "React 官方仓库，Web 与原生 UI 领域的事实标准。252k 星为全榜总星第一，当天有推送，随基建大盘回榜。"
+    },
+    {
+      "name": "angular/angular",
+      "url": "https://github.com/angular/angular",
+      "description": "Deliver web apps with confidence 🚀",
+      "language": "TypeScript",
+      "stars": 101285,
+      "delta": "128 stars today",
+      "rank": 7,
+      "tags": [
+        "Angular",
+        "前端",
+        "框架",
+        "TypeScript",
+        "企业级"
+      ],
+      "comment": "Google 维护的前端框架，企业级 Web 应用的常青选择。当天有推送，+128 属日常水位。"
+    },
+    {
+      "name": "symfony/symfony",
+      "url": "https://github.com/symfony/symfony",
+      "description": "The Symfony PHP framework",
+      "language": "PHP",
+      "stars": 31378,
+      "delta": "89 stars today",
+      "rank": 8,
+      "tags": [
+        "PHP",
+        "Web 框架",
+        "组件化",
+        "经典",
+        "后端"
+      ],
+      "comment": "PHP 生态最重要的组件化框架之一。今日随基建大盘回榜，当天有推送。"
+    },
+    {
+      "name": "prometheus/prometheus",
+      "url": "https://github.com/prometheus/prometheus",
+      "description": "The Prometheus monitoring system and time series database.",
+      "language": "Go",
+      "stars": 67116,
+      "delta": "140 stars today",
+      "rank": 9,
+      "tags": [
+        "监控",
+        "时序数据库",
+        "可观测性",
+        "Go",
+        "云原生"
+      ],
+      "comment": "云原生监控事实标准与时间序列数据库。当天有推送，67k 星的基建常青树。"
+    },
+    {
+      "name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": "Agent Skills for Google products and technologies",
+      "language": "Python",
+      "stars": 22787,
+      "delta": "532 stars today",
+      "rank": 10,
+      "tags": [
+        "技能包",
+        "Agent",
+        "Google",
+        "官方",
+        "Python"
+      ],
+      "comment": "Google 官方的 Agent Skills 仓库，覆盖 Google 产品与技术栈。连续第二天在榜（昨日首入），当天有推送，是技能包赛道目前的官方头部之一。"
+    },
+    {
+      "name": "microsoft/vscode",
+      "url": "https://github.com/microsoft/vscode",
+      "description": "Visual Studio Code",
+      "language": "TypeScript",
+      "stars": 194954,
+      "delta": "295 stars today",
+      "rank": 11,
+      "tags": [
+        "编辑器",
+        "IDE",
+        "TypeScript",
+        "微软",
+        "经典"
+      ],
+      "comment": "Visual Studio Code 官方仓库。当天有推送，195k 星的编辑器霸主随基建大盘回榜。"
+    },
+    {
+      "name": "lz4/lz4",
+      "url": "https://github.com/lz4/lz4",
+      "description": "Extremely Fast Compression algorithm",
+      "language": "C",
+      "stars": 12626,
+      "delta": "313 stars today",
+      "rank": 12,
+      "tags": [
+        "压缩算法",
+        "C",
+        "高性能",
+        "嵌入式",
+        "经典"
+      ],
+      "comment": "极快速无损压缩算法，广泛用于数据库与存储层。连续第三天在榜（+16 → +313 显著放量，当天有推送），疑似新版发布带动持续回流。"
+    },
+    {
+      "name": "nushell/nushell",
+      "url": "https://github.com/nushell/nushell",
+      "description": "A new type of shell",
+      "language": "Rust",
+      "stars": 40918,
+      "delta": "177 stars today",
+      "rank": 13,
+      "tags": [
+        "Shell",
+        "结构化数据",
+        "Rust",
+        "CLI",
+        "创新交互"
+      ],
+      "comment": "「新型 shell」：把管道里的数据当结构化表格处理，命令输出可直接筛选排序。当天有推送，40k 星。"
+    },
+    {
+      "name": "etcd-io/etcd",
+      "url": "https://github.com/etcd-io/etcd",
+      "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+      "language": "Go",
+      "stars": 52570,
+      "delta": "123 stars today",
+      "rank": 14,
+      "tags": [
+        "分布式",
+        "键值存储",
+        "一致性",
+        "Go",
+        "基础设施"
+      ],
+      "comment": "分布式系统关键数据的可靠键值存储，Kubernetes 的元数据底座。当天有推送，随基建大盘回榜。"
+    },
+    {
+      "name": "openssl/openssl",
+      "url": "https://github.com/openssl/openssl",
+      "description": "General purpose TLS and crypto library",
+      "language": "C",
+      "stars": 31265,
+      "delta": "24 stars today",
+      "rank": 15,
+      "tags": [
+        "TLS",
+        "加密",
+        "C",
+        "安全",
+        "经典"
+      ],
+      "comment": "通用 TLS 与密码学库，互联网安全的地基。今日仅 +24 星排第 15，脱钩样本之一；当天有推送。"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 316583,
+      "delta": "2,058 stars today",
+      "rank": 16,
+      "tags": [
+        "AI",
+        "技能包",
+        "Shell",
+        "工程实践",
+        "Claude"
+      ],
+      "comment": "Matt Pocock（Total TypeScript 作者）公开的个人 .agents 技能目录，316,583 星为全榜总星第一。连续第四天在榜，今日 +2,058 为增量第二；最后推送 11-05。"
+    },
+    {
+      "name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 63722,
+      "delta": "2,524 stars today",
+      "rank": 17,
+      "tags": [
+        "安全审计",
+        "技能包",
+        "Agent",
+        "Cloudflare",
+        "官方"
+      ],
+      "comment": "Cloudflare 官方的编码 Agent 安全审计技能：多阶段审计 + 独立验证的机器可读结果。今日 +2,524 为全榜增量第一、总星已达 63,722。⚠️ 最后推送 2026-09-14（约 54 天未更新），靠惯性传播爆发。"
+    },
+    {
+      "name": "astral-sh/ruff",
+      "url": "https://github.com/astral-sh/ruff",
+      "description": "An extremely fast Python linter and code formatter, written in Rust.",
+      "language": "Rust",
+      "stars": 50615,
+      "delta": "213 stars today",
+      "rank": 18,
+      "tags": [
+        "Linter",
+        "代码格式化",
+        "Python",
+        "Rust",
+        "开发工具"
+      ],
+      "comment": "Rust 编写的极速 Python linter 与格式化器，Astral 出品。当天有推送，50k 星的 Python 工具链常青树。"
+    }
+  ]
+}
