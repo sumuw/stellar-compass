@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-08",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 9,
+  "items": [
+    {
+      "name": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 103138,
+      "delta": "2,372 stars today",
+      "rank": 1,
+      "tags": ["OSINT", "安全", "Python", "数据分析", "自动化"],
+      "comment": "按用户名跨社交网络追踪账号的 OSINT 神器，总星破 10.3 万。今日增量王 +2,372（昨日 +1,819 连续加速），从昨日第 8 直接跳上榜首，账号聚合与隐私话题的持续热度叠加周末效应推高了传播。"
+    },
+    {
+      "name": "dsx-ai-factory/nvke",
+      "url": "https://github.com/dsx-ai-factory/nvke",
+      "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+      "language": "Go",
+      "stars": 803,
+      "delta": "345 stars today",
+      "rank": 2,
+      "tags": ["NVIDIA", "Kubernetes", "GPU", "基础设施", "Go"],
+      "comment": "NVIDIA Kubernetes Engine：裸金属 GPU K8s 管理平面。连续第二天在榜且明显加速（昨日 +125 → 今日 +345），总星仅 803 仍处早期，GPU 集群调度作为 AI 基建刚需持续吸引关注。"
+    },
+    {
+      "name": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 18106,
+      "delta": "1,437 stars today",
+      "rank": 3,
+      "tags": ["AI", "Agent", "开源替代", "虚拟机", "TypeScript"],
+      "comment": "开源 Grok Bot 替代品，内置 Bot 可直接使用的虚拟机环境。+1,437 连续第二天高增量（昨日 +1,986），「给 Agent 一台电脑」的执行层思路正从概念验证走向社区标配。"
+    },
+    {
+      "name": "anthropics/claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 19356,
+      "delta": "28 stars today",
+      "rank": 4,
+      "tags": ["Anthropic", "Claude", "API", "示例项目", "Python"],
+      "comment": "Anthropic 官方 Claude API 快速上手项目集。今日仅 +28 却排第 4 位，是「排序与增量脱钩」的极端样本——趋势榜位次更多反映加权热度而非单日星数。"
+    },
+    {
+      "name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 47503,
+      "delta": "812 stars today",
+      "rank": 5,
+      "tags": ["AI", "Agent", "浏览器自动化", "Rust", "开发工具"],
+      "comment": "Vercel 出品的 AI 代理浏览器自动化 CLI，Rust 实现。昨日榜首今日退至第 5（+812），连续第三天在榜，「Agent 操控浏览器」赛道热度稳固但增速趋稳。"
+    },
+    {
+      "name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 16353,
+      "delta": "863 stars today",
+      "rank": 6,
+      "tags": ["Meta", "设计系统", "前端", "TypeScript", "Agent"],
+      "comment": "Meta 开源的「Agent-ready」设计系统，主打完全可定制且原生适配 AI 代理调用。连续第二天在榜且明显加速（昨日 +185 → 今日 +863），「设计系统 × Agent」融合方向正获得前端社区实质关注。"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 189503,
+      "delta": "793 stars today",
+      "rank": 7,
+      "tags": ["Anthropic", "Agent", "技能包", "Claude", "官方开源"],
+      "comment": "Anthropic 官方 Agent Skills 公共仓库（18.9 万星）。技能包赛道从昨日 4 席缩到今日仅此 1 席，官方「祖师爷」条目靠背书效应留存，社区技能包（cloudflare/google/mattpocock）全部掉榜。"
+    },
+    {
+      "name": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 16337,
+      "delta": "26 stars today",
+      "rank": 8,
+      "tags": ["物理仿真", "机器人", "强化学习", "DeepMind", "C++"],
+      "comment": "DeepMind 维护的通用物理仿真器，机器人学与强化学习研究的事实标准工具。+26 增量排第 8，典型常青树惯性在榜；具身智能热潮下其基础工具地位不变。"
+    },
+    {
+      "name": "ranxianglei/billion-context",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 5060,
+      "delta": "460 stars today",
+      "rank": 9,
+      "tags": ["AI", "LLM", "上下文压缩", "长会话", "TypeScript"],
+      "comment": "中文开发者的上下文压缩插件：月级长会话在 10 万级小窗口跑通，token 消耗降 5 倍。连续第三天在榜且持续放量（185 → 460），长会话成本焦虑是 Agent 落地的真实痛点。"
+    }
+  ]
+}
