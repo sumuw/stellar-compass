@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-09",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 11,
+  "items": [
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 190793,
+      "delta": "1,052 stars today",
+      "rank": 1,
+      "tags": [
+        "AI",
+        "Agent",
+        "技能包",
+        "Anthropic",
+        "Python"
+      ],
+      "comment": "Anthropic 官方 Agent Skills 仓库，技能包赛道退潮后官方仓库仍稳居榜首，惯性传播明显；最后推送 11-06，近三日无更新但热度不减。"
+    },
+    {
+      "name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 19647,
+      "delta": "3,324 stars today",
+      "rank": 2,
+      "tags": [
+        "设计系统",
+        "前端",
+        "TypeScript",
+        "UI",
+        "Agent"
+      ],
+      "comment": "Meta 开源的完全可定制、Agent-ready 设计系统，发布数日即近 2 万星，今日增量第二（+3,324）；大厂把「设计系统 + Agent 适配」打包开源的新打法。"
+    },
+    {
+      "name": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 106808,
+      "delta": "4,294 stars today",
+      "rank": 3,
+      "tags": [
+        "OSINT",
+        "安全",
+        "Python",
+        "自动化",
+        "信息收集"
+      ],
+      "comment": "今日增量王 +4,294 却只排第 3。老牌社交账号追踪 OSINT 工具的复活性传播，连续两日在榜，安全圈关注度居高不下。"
+    },
+    {
+      "name": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 16862,
+      "delta": "579 stars today",
+      "rank": 4,
+      "tags": [
+        "机器人",
+        "物理仿真",
+        "强化学习",
+        "C++",
+        "DeepMind"
+      ],
+      "comment": "DeepMind 通用物理仿真引擎，机器人与强化学习研究的事实标配；当日仍有推送，与具身智能研究热度形成共振。"
+    },
+    {
+      "name": "anthropics/claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 19956,
+      "delta": "560 stars today",
+      "rank": 5,
+      "tags": [
+        "Claude",
+        "API",
+        "示例项目",
+        "Python",
+        "开发者工具"
+      ],
+      "comment": "Claude API 官方快速上手示例集，与 anthropics/skills 组成 Anthropic 双子星；增量平平但排序靠前，开发者生态入口地位稳固。"
+    },
+    {
+      "name": "garrytan/gbrain",
+      "url": "https://github.com/garrytan/gbrain",
+      "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+      "language": "TypeScript",
+      "stars": 32086,
+      "delta": "215 stars today",
+      "rank": 6,
+      "tags": [
+        "Agent",
+        "OpenClaw",
+        "TypeScript",
+        "个人工作流",
+        "开源"
+      ],
+      "comment": "YC 总裁 Garry Tan 开源的个人 Agent「大脑」配置，与 gstack 同属名人开源个人工作流赛道；+215 增量不高却排第 6，粉丝效应与话题性驱动明显。"
+    },
+    {
+      "name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 48385,
+      "delta": "914 stars today",
+      "rank": 7,
+      "tags": [
+        "Agent",
+        "浏览器自动化",
+        "CLI",
+        "Rust",
+        "Vercel"
+      ],
+      "comment": "Vercel 出品的 Agent 浏览器自动化 CLI，连续三日在榜的 Agent 执行层主力，总星逼近 5 万；当日有推送，工程节奏稳定。"
+    },
+    {
+      "name": "ruvnet/RuView",
+      "url": "https://github.com/ruvnet/RuView",
+      "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+      "language": "Rust",
+      "stars": 103376,
+      "delta": "245 stars today",
+      "rank": 8,
+      "tags": [
+        "WiFi感知",
+        "物联网",
+        "Rust",
+        "边缘计算",
+        "传感"
+      ],
+      "comment": "用普通 WiFi 信号实现空间感知、生命体征监测与存在检测的零摄像头方案；10 万星老项目仅 +245 仍排第 8，排序与增量脱钩的极端样本。"
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 68755,
+      "delta": "505 stars today",
+      "rank": 9,
+      "tags": [
+        "LLM",
+        "量化分析",
+        "股票",
+        "数据可视化",
+        "中文项目"
+      ],
+      "comment": "LLM 驱动的多市场股票智能分析系统，本期唯一中文项目；68k 星长尾稳定，多源行情 + 零成本定时运行是核心卖点。"
+    },
+    {
+      "name": "homeassistant-ai/ha-mcp",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "stars": 5856,
+      "delta": "31 stars today",
+      "rank": 10,
+      "tags": [
+        "智能家居",
+        "MCP",
+        "Home Assistant",
+        "自动化",
+        "AI"
+      ],
+      "comment": "让 Claude/ChatGPT 等助手直接配置和自动化 Home Assistant 的 MCP 服务器；今日仅 +31，靠排序权重上榜的小而美智能家居 AI 入口。"
+    },
+    {
+      "name": "milind-soni/OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "language": "TypeScript",
+      "stars": 19565,
+      "delta": "1,589 stars today",
+      "rank": 11,
+      "tags": [
+        "Agent",
+        "聊天机器人",
+        "虚拟机",
+        "TypeScript",
+        "开源"
+      ],
+      "comment": "带虚拟机沙箱的开源 Grok Bot 替代，连续三日在榜；Agent + 可执行环境组合持续吸量，+1,589 增量列全榜第四。"
+    }
+  ]
+}
