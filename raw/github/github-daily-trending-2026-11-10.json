@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-10",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 12,
+  "items": [
+    {
+      "name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 22502,
+      "delta": "3,111 stars today",
+      "rank": 1,
+      "tags": [
+        "设计系统",
+        "前端",
+        "TypeScript",
+        "UI",
+        "Agent"
+      ],
+      "comment": "Meta 开源的完全可定制、Agent-ready 设计系统，今日登顶榜首并蝉联增量王（+3,111）。发布约一周总星突破 2.2 万，「设计系统 + Agent 适配」的大厂新叙事持续兑现。"
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills",
+      "language": "Python",
+      "stars": 192182,
+      "delta": "1,676 stars today",
+      "rank": 2,
+      "tags": [
+        "AI",
+        "Agent",
+        "技能包",
+        "Anthropic",
+        "Python"
+      ],
+      "comment": "Anthropic 官方 Agent Skills 仓库，今日增量较昨日明显放大，总星逼近 20 万；最后推送 11-06，无更新仍持续吸星，官方生态入口的惯性传播坐实。"
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 115064,
+      "delta": "465 stars today",
+      "rank": 3,
+      "tags": [
+        "AI",
+        "Agent",
+        "技能包",
+        "工程实践",
+        "JavaScript"
+      ],
+      "comment": "Google Chrome 团队 Addy Osmani 出品的生产级 AI 编码工程技能包，今日新面孔。总星已达 11.5 万，但最后推送 11-01（停更约 9 天），属头部作者存量惯性传播。"
+    },
+    {
+      "name": "anthropics/claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "language": "Python",
+      "stars": 20428,
+      "delta": "530 stars today",
+      "rank": 4,
+      "tags": [
+        "AI",
+        "Claude",
+        "API",
+        "示例项目",
+        "Python"
+      ],
+      "comment": "Claude API 官方快速上手项目集，与 anthropics/skills 组成 Anthropic 双仓同榜（连续第二日）。开发者生态入口型仓库的稳定热度。"
+    },
+    {
+      "name": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "stars": 17296,
+      "delta": "453 stars today",
+      "rank": 5,
+      "tags": [
+        "物理仿真",
+        "机器人",
+        "DeepMind",
+        "C++",
+        "具身智能"
+      ],
+      "comment": "DeepMind 通用物理仿真器，具身智能与机器人研究的标配底座，连续第三日在榜且今日有推送，属 AI 研究基础设施的常青热度。"
+    },
+    {
+      "name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 11816,
+      "delta": "184 stars today",
+      "rank": 6,
+      "tags": [
+        "个人财务",
+        "开源应用",
+        "Ruby",
+        "社区共建",
+        "生产力"
+      ],
+      "comment": "今日新面孔，「由所有人共建、为所有人服务」的开源个人财务应用，Ruby 阵营罕见上榜。社区共建叙事 + 实用赛道，总星已 1.18 万且今日有推送。"
+    },
+    {
+      "name": "homeassistant-ai/ha-mcp",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "stars": 6559,
+      "delta": "792 stars today",
+      "rank": 7,
+      "tags": [
+        "智能家居",
+        "MCP",
+        "Home Assistant",
+        "AI",
+        "自动化"
+      ],
+      "comment": "用 Claude/ChatGPT 等 AI 助手配置和自动化 Home Assistant 的 MCP 服务，昨日新面孔今日增量放大（+31 → +792）。智能家居 + MCP 是垂类 AI 应用里兑现最快的方向之一。"
+    },
+    {
+      "name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 49122,
+      "delta": "775 stars today",
+      "rank": 8,
+      "tags": [
+        "AI",
+        "Agent",
+        "浏览器自动化",
+        "CLI",
+        "Rust"
+      ],
+      "comment": "Vercel 出品的 AI Agent 浏览器自动化 CLI，Agent 执行层常青选手，总星逼近 5 万，增量稳定在数百级，是 Agent 基础设施赛道的基本盘。"
+    },
+    {
+      "name": "sherlock-project/sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 108798,
+      "delta": "2,387 stars today",
+      "rank": 9,
+      "tags": [
+        "OSINT",
+        "安全",
+        "Python",
+        "自动化",
+        "信息收集"
+      ],
+      "comment": "老牌社交账号追踪 OSINT 工具，今日增量第二（+2,387）却只排第 9，排序与增量脱钩再现。连续第三日在榜，安全圈复活性传播仍在延续。"
+    },
+    {
+      "name": "tokio-rs/topcoat",
+      "url": "https://github.com/tokio-rs/topcoat",
+      "description": "A batteries-included framework for building web apps",
+      "language": "Rust",
+      "stars": 6742,
+      "delta": "192 stars today",
+      "rank": 10,
+      "tags": [
+        "Rust",
+        "Web 框架",
+        "后端",
+        "tokio",
+        "全栈"
+      ],
+      "comment": "今日新面孔，tokio 官方团队出品的全家桶式 Web 应用框架，Rust 生态又一重磅基础设施。低增量高排位，属社区关注度先行的早期传播阶段。"
+    },
+    {
+      "name": "ranxianglei/billion-context",
+      "url": "https://github.com/ranxianglei/billion-context",
+      "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+      "language": "TypeScript",
+      "stars": 6228,
+      "delta": "374 stars today",
+      "rank": 11,
+      "tags": [
+        "AI",
+        "上下文压缩",
+        "LLM",
+        "TypeScript",
+        "省 token"
+      ],
+      "comment": "中文作者出品的 AI 长会话上下文压缩插件，隔期回归榜单且今日有推送。直击 Agent 长会话成本痛点，是中文项目里少见的实用型选手。"
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "language": "Shell",
+      "stars": 320787,
+      "delta": "1,223 stars today",
+      "rank": 12,
+      "tags": [
+        "AI",
+        "Agent",
+        "技能包",
+        "TypeScript 教学",
+        "Shell"
+      ],
+      "comment": "Total TypeScript 作者 Matt Pocock 的个人工程技能包，全榜总星第一（32 万+），隔期回归即拿下增量第三（+1,223）。技能包赛道三席格局形成。"
+    }
+  ]
+}
