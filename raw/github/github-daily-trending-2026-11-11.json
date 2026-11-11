@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-11",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 10,
+  "items": [
+    {
+      "name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 24757,
+      "delta": "2,842 stars today",
+      "rank": 1,
+      "tags": ["设计系统", "前端", "TypeScript", "UI", "Agent"],
+      "comment": "Meta 开源的完全可定制、Agent-ready 设计系统，连续第三日在榜并蝉联榜首与增量王（+2,842）。发布约一周总星突破 2.4 万，「设计系统 + Agent 适配」的大厂新叙事持续领跑，今日仍有推送，是当前最强连续传播样本。"
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 70106,
+      "delta": "429 stars today",
+      "rank": 2,
+      "tags": ["AI", "LLM", "股票分析", "量化", "Python"],
+      "comment": "LLM 驱动的多市场股票智能分析系统，集多源行情、实时新闻、决策看板与自动推送于一体，支持零成本定时运行。11-09 曾上榜、昨日掉榜，今日回归；7 万星级中文项目，垂类 AI 应用热度反复的典型样本。"
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Chrome 团队「现代 Web 开发指南」源码仓库（仓库自身未设置 About 描述）",
+      "language": "TypeScript",
+      "stars": 1659,
+      "delta": "133 stars today",
+      "rank": 3,
+      "tags": ["Web", "文档", "Chrome", "TypeScript", "最佳实践"],
+      "comment": "Google Chrome 团队的现代 Web 开发指南源码仓库（2026-01 创建）。榜单罕见的小体量官方文档型仓库（总星不足 2 千），靠内容权威性而非体量上榜，今日有推送。"
+    },
+    {
+      "name": "shadcn/improve",
+      "url": "https://github.com/shadcn/improve",
+      "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+      "language": "Unknown",
+      "stars": 10751,
+      "delta": "333 stars today",
+      "rank": 4,
+      "tags": ["AI", "代码审计", "开发工具", "CLI", "shadcn"],
+      "comment": "shadcn 出品的 AI 代码审计工具：用最强模型审计代码库并写出执行计划，再交给更便宜的模型执行，「贵模型规划 + 廉模型执行」的分工范式。⚠️ 最后推送 2026-09-12（停更约 2 个月），属于存量惯性传播。"
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 115839,
+      "delta": "788 stars today",
+      "rank": 5,
+      "tags": ["AI", "Agent", "技能包", "工程实践", "JavaScript"],
+      "comment": "Addy Osmani 出品的「生产级」AI 编码工程技能包，连续第三日在榜，总星逼近 12 万。最后推送 11-01（停更 10 天），头部作者存量惯性传播持续，技能包赛道今日仅剩此一席。"
+    },
+    {
+      "name": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "description": "Browser automation CLI for AI agents",
+      "language": "Rust",
+      "stars": 49795,
+      "delta": "712 stars today",
+      "rank": 6,
+      "tags": ["AI", "Agent", "浏览器自动化", "CLI", "Rust"],
+      "comment": "Vercel 出品的 AI Agent 浏览器自动化 CLI，连续多日在榜，今日 +712 增量第四、总星逼近 5 万，今日仍有推送。Agent 执行层工具中最稳定的热度样本。"
+    },
+    {
+      "name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 12829,
+      "delta": "1,079 stars today",
+      "rank": 7,
+      "tags": ["个人财务", "记账", "Ruby", "社区共建", "开源"],
+      "comment": "「by everyone」的社区共建个人财务应用，连续第二日在榜且增量仍居第二（+1,079）。Ruby 在趋势榜的罕见席位，社区共建叙事持续发酵，今日有推送。"
+    },
+    {
+      "name": "homeassistant-ai/ha-mcp",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "language": "Python",
+      "stars": 7255,
+      "delta": "640 stars today",
+      "rank": 8,
+      "tags": ["智能家居", "MCP", "Home Assistant", "AI", "Python"],
+      "comment": "用 Claude、ChatGPT 等 AI 助手配置与自动化 Home Assistant 的 MCP 服务。11-09 新面孔后连续第三日在榜，MCP 在智能家居场景的垂类落地样本，今日仍有推送。"
+    },
+    {
+      "name": "openai/codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 11633,
+      "delta": "20 stars today",
+      "rank": 9,
+      "tags": ["安全", "CLI", "SDK", "OpenAI", "TypeScript"],
+      "comment": "OpenAI 官方 Codex Security CLI 与 TypeScript SDK，用于发现、验证、修复代码安全漏洞（npm @openai/codex-security）。今日新面孔，增量仅 +20 却排第 9，排序与增量脱钩的极端再现；今日有推送。"
+    },
+    {
+      "name": "TheAlgorithms/Java",
+      "url": "https://github.com/TheAlgorithms/Java",
+      "description": "All Algorithms implemented in Java",
+      "language": "Java",
+      "stars": 66970,
+      "delta": "108 stars today",
+      "rank": 10,
+      "tags": ["算法", "Java", "教育", "数据结构", "开源"],
+      "comment": "老牌算法开源仓库（Java 实现全部常用算法与数据结构），6.7 万星常青树，增量温和（+108），昨日有推送。经典教育资源型仓库的惯性热度。"
+    }
+  ]
+}
