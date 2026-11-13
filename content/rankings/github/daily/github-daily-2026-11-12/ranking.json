@@ -1,0 +1,230 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-11-12",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 2981,
+      "delta": "739 stars today",
+      "tags": [
+        "Web",
+        "文档",
+        "Chrome",
+        "TypeScript",
+        "AI Agent"
+      ],
+      "comment": "Google Chrome 团队的「现代 Web 开发指南」源码仓库，定位是让编码 Agent 随时掌握最新 Web 最佳实践——官方文档型仓库直接把目标受众写成 AI Agent，连续第二日在榜并从第 3 位升至榜首，今日仍有推送。"
+    },
+    {
+      "rank": 2,
+      "name": "openai/codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 12432,
+      "delta": "643 stars today",
+      "tags": [
+        "安全",
+        "OpenAI",
+        "CLI",
+        "TypeScript",
+        "AI Agent"
+      ],
+      "comment": "OpenAI 官方的安全漏洞查找/验证/修复 CLI 与 SDK，昨日新面孔今日升至第 2，「AI 审代码」叙事持续发酵，增量从 +20 跳到 +643 说明传播刚起步，今日仍有推送。"
+    },
+    {
+      "rank": 3,
+      "name": "nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "stars": 96014,
+      "delta": "63 stars today",
+      "tags": [
+        "Node.js",
+        "版本管理",
+        "Shell",
+        "开发工具",
+        "常青树"
+      ],
+      "comment": "Node 版本管理器老牌常青树，9.6 万星，仅 +63 星却排第 3——排序权重与日增脱钩的极端样本，与 nodejs/node 同日上榜形成「Node 生态日」。"
+    },
+    {
+      "rank": 4,
+      "name": "pookjw/HermesEnabler",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "stars": 1540,
+      "delta": "218 stars today",
+      "tags": [
+        "Apple Watch",
+        "越狱",
+        "Objective-C",
+        "表盘",
+        "个性化"
+      ],
+      "comment": "让任意 Apple Watch 解锁 Hermès 专属表盘的小工具，单一功能、社区传播型项目，昨日有推送。越狱/个性化题材久违上榜，说明榜单口味在 AI 之外仍有弹性。"
+    },
+    {
+      "rank": 5,
+      "name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 13927,
+      "delta": "967 stars today",
+      "tags": [
+        "个人财务",
+        "Ruby",
+        "社区共建",
+        "开源",
+        "生产力"
+      ],
+      "comment": "社区共建记账应用（连续第三日在榜），今日 +967 为全榜增量第二，Ruby 罕见持续上榜。「by everyone」的众包模式是最大卖点，昨日仍有推送。"
+    },
+    {
+      "rank": 6,
+      "name": "QwenLM/qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "description": "An open-source AI coding agent that lives in your terminal.",
+      "language": "TypeScript",
+      "stars": 29817,
+      "delta": "151 stars today",
+      "tags": [
+        "AI Agent",
+        "终端",
+        "Qwen",
+        "TypeScript",
+        "LLM"
+      ],
+      "comment": "阿里 Qwen 团队的终端 AI 编码代理，3 万星级，今日仍有推送。与 OpenAI codex-security 同日入榜，「终端 AI 编码」赛道大厂直接对垒。"
+    },
+    {
+      "rank": 7,
+      "name": "ashhart/TensorFold",
+      "url": "https://github.com/ashhart/TensorFold",
+      "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "language": "Zig",
+      "stars": 1940,
+      "delta": "54 stars today",
+      "tags": [
+        "LLM推理",
+        "Zig",
+        "Metal",
+        "CUDA",
+        "Vulkan"
+      ],
+      "comment": "用 Zig 写的多后端（Metal/CUDA/Vulkan）LLM 推理引擎，主打 Apple 生态本地推理，+54 星排第 7 属排序权重加持，今日仍有推送。「Zig + 端侧推理」是本周新叙事。"
+    },
+    {
+      "rank": 8,
+      "name": "nodejs/node",
+      "url": "https://github.com/nodejs/node",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "language": "JavaScript",
+      "stars": 123601,
+      "delta": "62 stars today",
+      "tags": [
+        "Node.js",
+        "运行时",
+        "JavaScript",
+        "基础设施",
+        "常青树"
+      ],
+      "comment": "Node.js 官方运行时，12.3 万星常青树，仅 +62 星排第 8，与 nvm 同榜构成 Node 生态日，昨日有推送。"
+    },
+    {
+      "rank": 9,
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "language": "JavaScript",
+      "stars": 116679,
+      "delta": "816 stars today",
+      "tags": [
+        "AI Agent",
+        "技能包",
+        "工程实践",
+        "JavaScript",
+        "开源"
+      ],
+      "comment": "Addy Osmani 的生产级 AI 编码技能包，连续第四日在榜、总星逼近 11.7 万，但最后推送 11-01（停更 12 天），纯存量惯性传播，技能包赛道今日仅剩此一席。"
+    },
+    {
+      "rank": 10,
+      "name": "meta/astryx",
+      "url": "https://github.com/meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 26556,
+      "delta": "1,830 stars today",
+      "tags": [
+        "设计系统",
+        "前端",
+        "TypeScript",
+        "UI",
+        "Agent"
+      ],
+      "comment": "Meta 的 Agent-ready 设计系统，连续第四日在榜、蝉联增量王（+1,830）但排名从榜首跌至第 10——增量王却垫底后半区，脱钩极端再现。总星突破 2.6 万，今日仍有推送。"
+    },
+    {
+      "rank": 11,
+      "name": "CopilotKit/OpenBot",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "language": "TypeScript",
+      "stars": 11623,
+      "delta": "298 stars today",
+      "tags": [
+        "AI Agent",
+        "虚拟机",
+        "浏览器",
+        "TypeScript",
+        "CopilotKit"
+      ],
+      "comment": "CopilotKit 的开源「AI 同事」：每个 Agent 配一台自己的电脑（浏览器+文件+工具），行动前决策、行动后记录，兼容任意 AG-UI agent。延续本周「Agent 执行层资源栈」叙事，今日仍有推送。"
+    },
+    {
+      "rank": 12,
+      "name": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "stars": 69300,
+      "delta": "415 stars today",
+      "tags": [
+        "AI Agent",
+        "免费额度",
+        "Python",
+        "多模型",
+        "CLI"
+      ],
+      "comment": "聚合 Claude Code、Codex 等 12 种 harness 的免费使用方案（号称 13 亿+ 免费 token），现已支持浏览器原生会话。6.9 万星争议型项目，昨日有推送，蹭各家免费额度的「薅羊毛」基建。"
+    },
+    {
+      "rank": 13,
+      "name": "ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "language": "C++",
+      "stars": 134566,
+      "delta": "176 stars today",
+      "tags": [
+        "LLM推理",
+        "C++",
+        "端侧推理",
+        "基础设施",
+        "常青树"
+      ],
+      "comment": "13.4 万星的本地 LLM 推理标杆，+176 星却垫底第 13，常青树惯性上榜。与 TensorFold 同榜，「端侧推理引擎」题材今日双席位，今日仍有推送。"
+    }
+  ]
+}
