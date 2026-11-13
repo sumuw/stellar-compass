@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-13",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 12,
+  "items": [
+    {
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 50513,
+      "delta": "206 stars today",
+      "rank": 1,
+      "tags": [
+        "代码评审",
+        "LLM Agent",
+        "Go",
+        "安全",
+        "阿里巴巴"
+      ],
+      "comment": "阿里混合架构代码评审工具：确定性规则流水线 + LLM Agent，内置 NPE/线程安全/XSS/SQL 注入等跨语言规则集，行级精确评论，兼容 OpenAI/Anthropic。5 万星项目时隔一月回归即登顶，今日仍有推送。"
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 4676,
+      "delta": "1,875 stars today",
+      "rank": 2,
+      "tags": [
+        "Web",
+        "文档",
+        "Chrome",
+        "TypeScript",
+        "AI Agent"
+      ],
+      "comment": "Chrome 团队「现代 Web 指南」源码仓，受众直接写成 coding agent，连续第三日在榜退居第 2，+1,875 为增量王，总星两日翻倍逼近 5,000。"
+    },
+    {
+      "name": "openai/codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "stars": 13057,
+      "delta": "754 stars today",
+      "rank": 3,
+      "tags": [
+        "安全",
+        "OpenAI",
+        "CLI",
+        "TypeScript",
+        "AI Agent"
+      ],
+      "comment": "OpenAI 官方安全漏洞查找/验证/修复 CLI 与 SDK，连续第三日在榜（第 3），总星破 1.3 万，「AI 审代码」叙事持续，今日仍有推送。"
+    },
+    {
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "language": "Python",
+      "stars": 71510,
+      "delta": "272 stars today",
+      "rank": 4,
+      "tags": [
+        "LLM",
+        "股票分析",
+        "Python",
+        "数据分析",
+        "自动化"
+      ],
+      "comment": "LLM 驱动的多市场股票智能分析系统，7.1 万星中文头部项目，掉榜一日即回归，垂类刚需反复上榜能力强，今日仍有推送。"
+    },
+    {
+      "name": "we-promise/sure",
+      "url": "https://github.com/we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 14647,
+      "delta": "944 stars today",
+      "rank": 5,
+      "tags": [
+        "个人财务",
+        "Ruby",
+        "社区共建",
+        "开源",
+        "生产力"
+      ],
+      "comment": "社区共建记账应用，连续第四日在榜，+944 为全榜增量第二，总星破 1.4 万，「by everyone」众包模式是最大卖点，今日仍有推送。"
+    },
+    {
+      "name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 10393,
+      "delta": "100 stars today",
+      "rank": 6,
+      "tags": [
+        "AI Agent",
+        "协作",
+        "TypeScript",
+        "开发工具",
+        "工作流"
+      ],
+      "comment": "新面孔：面向「人类监督 Agent」的工作区——规划、批注、审代码、团队共享，一键把反馈发回 Agent，补齐 Agent 管理层，1 万星起步，今日仍有推送。"
+    },
+    {
+      "name": "louislam/uptime-kuma",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "description": "A fancy self-hosted monitoring tool",
+      "language": "JavaScript",
+      "stars": 93803,
+      "delta": "61 stars today",
+      "rank": 7,
+      "tags": [
+        "监控",
+        "自托管",
+        "JavaScript",
+        "运维",
+        "常青树"
+      ],
+      "comment": "自托管监控工具常青树久违上榜，9.4 万星仅 +61 星排第 7，排序权重扶持极端样本，今日仍有推送。"
+    },
+    {
+      "name": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "description": "A hive mind communication platform",
+      "language": "Rust",
+      "stars": 37272,
+      "delta": "95 stars today",
+      "rank": 8,
+      "tags": [
+        "Rust",
+        "通信平台",
+        "Block",
+        "协作",
+        "Agent"
+      ],
+      "comment": "新面孔：Block 开源「蜂群思维通信平台」，Rust 实现 3.7 万星，面向多 Agent/多人信息同步，Agent 基建的通信层拼图，今日仍有推送。"
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 4098,
+      "delta": "60 stars today",
+      "rank": 9,
+      "tags": [
+        "Claude Skills",
+        "交易",
+        "Python",
+        "金融",
+        "AI Agent"
+      ],
+      "comment": "新面孔：面向股票投资者的 Claude Code 技能包（市场分析/技术图表/经济日历/选股器/策略开发），技能包赛道换垂类方向回血，今日仍有推送。"
+    },
+    {
+      "name": "tailscale/tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "language": "Go",
+      "stars": 9390,
+      "delta": "324 stars today",
+      "rank": 10,
+      "tags": [
+        "网络",
+        "Tailscale",
+        "Go",
+        "CLI",
+        "开发工具"
+      ],
+      "comment": "新面孔：Tailscale 官方 netcat 替代品，走数据平面无需控制平面，+324 星排第 10 传播起步；注意最后推送 11-05（停更 8 天）。"
+    },
+    {
+      "name": "Likely7/Veyra-NRVideo",
+      "url": "https://github.com/Likely7/Veyra-NRVideo",
+      "description": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.",
+      "language": "C++",
+      "stars": 1574,
+      "delta": "245 stars today",
+      "rank": 11,
+      "tags": [
+        "视频增强",
+        "DLSS",
+        "C++",
+        "Windows",
+        "游戏画面"
+      ],
+      "comment": "新面孔：Windows 视频播放/采集增强工具，AI 超分 + DLSS5 + 帧生成，主打 PS5 GTA6 冲 120FPS，1,574 星小项目靠 +245 增量进榜，最后推送 11-11。"
+    },
+    {
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 55393,
+      "delta": "145 stars today",
+      "rank": 12,
+      "tags": [
+        "Chrome DevTools",
+        "MCP",
+        "TypeScript",
+        "AI Agent",
+        "调试"
+      ],
+      "comment": "新面孔：Chrome DevTools 官方 MCP 服务器，把浏览器调试能力开放给编码 Agent，5.5 万星重仓项目，与 modern-web-guidance 构成 Chrome 官方双子星，今日仍有推送。"
+    }
+  ]
+}
