@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-15",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 12,
+  "items": [
+    {
+      "name": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 25518,
+      "delta": "1,041 stars today",
+      "rank": 1,
+      "tags": [
+        "TypeScript",
+        "前端",
+        "电子表格",
+        "协作",
+        "Agent"
+      ],
+      "comment": "开源 AI 办公套件 SDK：表格/文档/幻灯片的编辑、计算、协作与文件处理能力统一打包，供人和 AI Agent 共用。国产开源团队作品，新上榜即登顶（+1,041），「AI 办公」叙事的直接受益者。"
+    },
+    {
+      "name": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 17772,
+      "delta": "393 stars today",
+      "rank": 2,
+      "tags": [
+        "TypeScript",
+        "Agent",
+        "协议",
+        "前端",
+        "开源标准"
+      ],
+      "comment": "Agent-用户交互协议（AG-UI），标准化把 Agent 接入前端应用的通信层。昨日 +9 排第 8，今日 +393 跳升第 2 加速明显，Agent-前端协议层赛道升温的信号。"
+    },
+    {
+      "name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9233,
+      "delta": "248 stars today",
+      "rank": 3,
+      "tags": [
+        "TypeScript",
+        "Agent",
+        "技能包",
+        "MCP",
+        "Google"
+      ],
+      "comment": "Google Labs 官方 Agent Skills 库，配合 Stitch MCP server 做 UI 设计生成，兼容 Antigravity、Gemini CLI、Claude Code、Cursor。注意：仓库最后推送 2026-08-17，停更约 3 个月靠惯性传播上榜。"
+    },
+    {
+      "name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 11763,
+      "delta": "860 stars today",
+      "rank": 4,
+      "tags": [
+        "TypeScript",
+        "Agent",
+        "代码审查",
+        "工作流",
+        "生产力"
+      ],
+      "comment": "人机协同工作台：对 Agent 的产出做计划、标注、审查与团队共享，反馈一键回发给 Agent。连续在榜第三天，+860/日稳居高位，「人在回路」监督赛道头部。"
+    },
+    {
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 56843,
+      "delta": "718 stars today",
+      "rank": 5,
+      "tags": [
+        "TypeScript",
+        "MCP",
+        "Chrome",
+        "调试",
+        "Agent"
+      ],
+      "comment": "Chrome 官方为编码 Agent 开放的 DevTools 通道（网络、性能、控制台）。5.7 万星体量仍保持 +718/日，连续在榜，官方背书的 Agent 调试基础设施。"
+    },
+    {
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 51950,
+      "delta": "688 stars today",
+      "rank": 6,
+      "tags": [
+        "Go",
+        "代码审查",
+        "LLM",
+        "静态分析",
+        "阿里"
+      ],
+      "comment": "混合架构代码评审工具：确定性流水线 + LLM Agent，行级精准评论，内置 NPE、线程安全、XSS、SQL 注入多语言规则集，在阿里规模生产验证。5.2 万星持续上榜。"
+    },
+    {
+      "name": "Tencent/LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "language": "Go",
+      "stars": 1401,
+      "delta": "484 stars today",
+      "rank": 7,
+      "tags": [
+        "Go",
+        "Agent",
+        "工作流",
+        "编排",
+        "腾讯"
+      ],
+      "comment": "腾讯官方新仓：自托管工作流编排 CodeBuddy、Codex、Claude Code 等编码 Agent，脚本驱动 + 人工审批门禁。连续在榜第三天，1,400 星体量 +484/日，Agent 交付流程工程化的代表。"
+    },
+    {
+      "name": "ggml-org/ggml",
+      "url": "https://github.com/ggml-org/ggml",
+      "description": "Tensor library for machine learning",
+      "language": "C++",
+      "stars": 15877,
+      "delta": "53 stars today",
+      "rank": 8,
+      "tags": [
+        "C++",
+        "推理",
+        "张量库",
+        "机器学习",
+        "端侧"
+      ],
+      "comment": "llama.cpp 背后的张量库本体独立仓，端侧推理的事实标准底座。+53 极低增量仍排第 8，排序与增量脱钩的极端样本，常青惯性上榜。"
+    },
+    {
+      "name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 6284,
+      "delta": "221 stars today",
+      "rank": 9,
+      "tags": [
+        "Python",
+        "安全",
+        "技能包",
+        "红队",
+        "Claude"
+      ],
+      "comment": "Claude Code 安全技能包：82 个技能 + 15 个 slash 命令 + 681 个已披露报告模式，覆盖 24 类核心漏洞与企业身份/基础设施攻击矩阵。安全垂类技能包新面孔，今日有推送。"
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 7031,
+      "delta": "1,220 stars today",
+      "rank": 10,
+      "tags": [
+        "TypeScript",
+        "Chrome",
+        "最佳实践",
+        "Agent",
+        "前端"
+      ],
+      "comment": "Google Chrome 团队为编码 Agent 提供最新 Web 最佳实践的规则源库。连续第五天在榜，今日 +1,220 为全榜增量王但仅排第 10，排序与增量脱钩再现。"
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 5432,
+      "delta": "707 stars today",
+      "rank": 11,
+      "tags": [
+        "Python",
+        "技能包",
+        "量化",
+        "金融",
+        "Claude"
+      ],
+      "comment": "面向股票投资者与交易员的 Claude Code 技能包：市场分析、技术图表、经济日历、选股器与策略开发。垂类技能包持续上榜，今日仍有推送。"
+    },
+    {
+      "name": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 1576,
+      "delta": "205 stars today",
+      "rank": 12,
+      "tags": [
+        "Python",
+        "评测",
+        "Agent",
+        "技能包",
+        "NVIDIA"
+      ],
+      "comment": "NVIDIA 官方技能评测框架：质量门禁、语义重叠检测、合成评测集生成，量化技能对 Agent 实际行为的影响。与技能包生产/分发/垂类各席同日上榜，技能生态闭环里补上了「评测」一环。"
+    }
+  ]
+}
