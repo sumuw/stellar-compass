@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-16",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 15,
+  "items": [
+    {
+      "name": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 18834,
+      "delta": "790 stars today",
+      "rank": 1,
+      "tags": ["Agent", "协议", "前端", "TypeScript", "开源标准"],
+      "comment": "Agent 与前端交互的开放协议，让 Agent 状态与事件直接驱动 UI 层。昨日仅 +9 星排第 8，今日跳升榜首，Agent-前端集成标准之争热度再起，排序权重与增量脱钩的又一例。"
+    },
+    {
+      "name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "stars": 12465,
+      "delta": "689 stars today",
+      "rank": 2,
+      "tags": ["Agent", "工作流", "代码审查", "TypeScript", "人机协作"],
+      "comment": "人在环上的 Agent 工作台：规划、批注、审代码、团队共享，反馈一键送回 Agent。昨日登顶后今日守住榜眼，「人监督 Agent」叙事持续发酵。"
+    },
+    {
+      "name": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 27708,
+      "delta": "1,878 stars today",
+      "rank": 3,
+      "tags": ["前端", "SDK", "协同办公", "TypeScript", "Agent"],
+      "comment": "国产开源 Office 引擎（表格/文档/幻灯），主打把编辑、计算、协作与文件处理接入 AI Agent。今日 +1,878 星为全榜增量王，AI 办公方向连续放量。"
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 6221,
+      "delta": "841 stars today",
+      "rank": 4,
+      "tags": ["Claude", "技能包", "金融", "量化", "Python"],
+      "comment": "面向股票投资者的 Claude Code 技能包：行情分析、技术图表、经济日历、选股器与策略开发一应俱全。金融垂类技能包连续多日上榜，今天增量还超过了榜首。"
+    },
+    {
+      "name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 7301,
+      "delta": "1,057 stars today",
+      "rank": 5,
+      "tags": ["安全", "技能包", "渗透测试", "红队", "Python"],
+      "comment": "82 个技能 + 15 个斜杠命令的漏洞猎手/红队技能包，覆盖 24 类漏洞模式与企业身份、基础设施攻击矩阵。昨日新面孔今日即上探第 5，安全垂类含金量得到验证。"
+    },
+    {
+      "name": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 8635,
+      "delta": "31 stars today",
+      "rank": 6,
+      "tags": ["Docker", "容器", "运维", "Go", "自托管"],
+      "comment": "面向所有人的现代化 Docker 管理平台，界面友好、开箱即用。今日仅 +31 星却排第 6，是排序权重与增量脱钩的极端样本。"
+    },
+    {
+      "name": "DeanChensj/jiangshan-map",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 6654,
+      "delta": "285 stars today",
+      "rank": 7,
+      "tags": ["可视化", "数字人文", "历史", "地图", "JavaScript"],
+      "comment": "中国历史交互地图时间轴：18 个朝代、198 幅疆域快照、古今地名谱系与诗词路线。中文数字人文项目罕见登上全球趋势榜，题材稀缺性是主要驱动力。"
+    },
+    {
+      "name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 9690,
+      "delta": "540 stars today",
+      "rank": 8,
+      "tags": ["Google", "技能包", "MCP", "设计", "TypeScript"],
+      "comment": "Google Labs 官方 Stitch MCP 技能库，遵循 Agent Skills 开放标准，兼容 Antigravity/Gemini CLI/Claude Code/Cursor。⚠️ 仓库最后推送停留在 2026-08-17，已停更约 3 个月，今日上榜属纯惯性传播。"
+    },
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 68045,
+      "delta": "122 stars today",
+      "rank": 9,
+      "tags": ["技能包", "信息检索", "舆情分析", "Agent", "Python"],
+      "comment": "让 Agent 跨 Reddit/X/YouTube/HN/Polymarket 与全网做话题研究，再合成带依据的综述。6.8 万星的个人技能包，是「技能包=新的 App」叙事下总星最高的样本之一。"
+    },
+    {
+      "name": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 2552,
+      "delta": "953 stars today",
+      "rank": 10,
+      "tags": ["NVIDIA", "评测框架", "技能包", "质量门禁", "Python"],
+      "comment": "NVIDIA 官方的 Agent 技能评测框架：质量门禁、语义重叠检测、合成评测集生成，还能实测技能对 Agent 行为的实际影响。技能生态从「生产」走向「评测」，连续第二日上榜。"
+    },
+    {
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 52873,
+      "delta": "946 stars today",
+      "rank": 11,
+      "tags": ["阿里", "代码审查", "LLM", "静态分析", "Go"],
+      "comment": "阿里大规模实战过的混合架构代码评审工具：确定性流水线 + LLM Agent，行级精准评论，内置 NPE/线程安全/XSS/SQL 注入多语言规则集。5.2 万星连榜多日，「AI 审代码」主线未断。"
+    },
+    {
+      "name": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 1368,
+      "delta": "306 stars today",
+      "rank": 12,
+      "tags": ["Google", "多Agent", "学术写作", "科研自动化", "Python"],
+      "comment": "Google Research 的多 Agent 学术论文自动写作框架，像指挥管弦乐队一样编排多个 Agent 完成检索、实验与写作。科研自动化方向的新面孔，发布首周即上榜。"
+    },
+    {
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "stars": 57622,
+      "delta": "837 stars today",
+      "rank": 13,
+      "tags": ["Chrome", "DevTools", "MCP", "调试", "TypeScript"],
+      "comment": "让编码 Agent 直接驱动 Chrome DevTools 的官方 MCP 服务器，网页调试、性能分析全流程 Agent 化。5.7 万星，Google 官方在 Agent 工具链的又一桩常驻席位。"
+    },
+    {
+      "name": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 88918,
+      "delta": "58 stars today",
+      "rank": 14,
+      "tags": ["前端框架", "编译器", "响应式", "JavaScript", "开源"],
+      "comment": "编译时响应式前端框架的代表，8.9 万星常青树。今日仅 +58 星回归榜单，与 arcane 同属低增量高权重样本，榜单在大厂与技能包之外短暂回摆到经典基建。"
+    },
+    {
+      "name": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "language": "Python",
+      "stars": 6553,
+      "delta": "475 stars today",
+      "rank": 15,
+      "tags": ["FFmpeg", "视频处理", "技能包", "MCP", "本地化"],
+      "comment": "给编码 Agent 用的本地视频剪辑台：42 个 FFmpeg 工具 + 机器可读契约 + MCP 服务器，剪片、字幕、响度、平台导出全本地零 API key。技能包赛道再添一个垂类样本。"
+    }
+  ]
+}
