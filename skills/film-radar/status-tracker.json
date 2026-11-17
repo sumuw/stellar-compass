@@ -1,7 +1,7 @@
 {
   "$schema": "影视雷达状态追踪模板",
   "$description": "记录所有推荐过的作品及其状态。每次执行时读取此文件进行去重。",
-  "$updatedAt": "2026-11-16T05:05:00+08:00",
+  "$updatedAt": "2026-11-17T05:05:00+08:00",
   "$historyNote": "如当前执行无法完整访问历史推荐状态，必须写明：⚠️ 当前无法完整访问历史推荐状态，本次去重可能不完整。",
   "$lagNote": "本文件已改为**派生索引**：由 scripts/sync-film-tracker.mjs 从 raw/film-radar 归档报告自动同步，不再依赖手工维护（手工维护曾于 2026-10-12 起中断 16 天）。F001–F023 保留早期人工录入的富字段；其后条目为脚本提取，字段粒度较粗，缺失字段可回溯 source 指向的报告原文。",
   "$currentExecution": {
@@ -1848,6 +1848,23 @@
       "releaseDate": "2026-10-13（Disney+，首日两集）",
       "regionLimit": "Disney+ 上线区可看；中国大陆无正版渠道",
       "source": "raw/film-radar/daily-film-radar-2026-11-16.md"
+    },
+    {
+      "id": "F091",
+      "title": "奥德赛 / The Odyssey",
+      "type": "电影（史诗 / 冒险 / 动作 / 奇幻）",
+      "country": "美国 / 英国",
+      "year": 2026,
+      "platform": "Amazon、Apple TV、Fandango at Home 等数字购买/租赁；4K Ultra HD / Blu-ray 同日发行",
+      "score": 93,
+      "tier": null,
+      "status": "NEW",
+      "firstRecommended": "2026-11-17",
+      "lastUpdated": "2026-11-17",
+      "currentStatus": "数字发行已上线（北美院线已映、国内院线已映）",
+      "releaseDate": null,
+      "regionLimit": "数字购买以美国区 11-17 先行，其他地区陆续跟进；中国大陆院线已下档、国内流媒体未上线；订阅制流媒体日期未官宣（环球系后续预计 Peacock）",
+      "source": "raw/film-radar/daily-film-radar-2026-11-17.md"
     }
   ],
   "statusEnum": {
@@ -1871,14 +1888,14 @@
     "80-84": "🧪 值得关注"
   },
   "stats": {
-    "totalRecommended": 87,
+    "totalRecommended": 88,
     "watchlist": 0,
     "watched": 0,
     "excluded": 0,
     "holding": 0,
     "todayNew": 0,
     "observationPool": 63,
-    "historyNote": "works 由 scripts/sync-film-tracker.mjs 从 raw/film-radar 归档报告派生，已回溯至 2026-11-16（共 84 期，87 部）。已用编号 F001–F090，下一可用 F091。编号水位以报告末尾水位行为准。"
+    "historyNote": "works 由 scripts/sync-film-tracker.mjs 从 raw/film-radar 归档报告派生，已回溯至 2026-11-17（共 85 期，88 部）。已用编号 F001–F091，下一可用 F092。编号水位以报告末尾水位行为准。"
   },
   "$instructions": {
     "update": "每次执行前读取此文件，进行身份归一化和去重。执行后追加新作品、更新状态。",

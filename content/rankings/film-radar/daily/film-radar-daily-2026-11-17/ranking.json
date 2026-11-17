@@ -1,0 +1,27 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-17",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F091",
+      "name": "奥德赛 / The Odyssey",
+      "url": "https://tv.apple.com",
+      "description": "豆瓣8.6(591,152) · Rotten Tomatoes94%（影评，CF）(515 篇) · Rotten Tomatoes96%（观众，Verified Hot）(25,000+) · Metacritic88(63 critics)",
+      "type": "电影（史诗 / 冒险 / 动作 / 奇幻）",
+      "platform": "Amazon、Apple TV、Fandango at Home 等数字购买/租赁；4K Ultra HD / Blu-ray 同日发行",
+      "score": "93/100 🔥",
+      "tags": [
+        "电影（史诗",
+        "冒险",
+        "动作",
+        "奇幻）",
+        "美国 / 英国"
+      ],
+      "comment": "诺兰首部全程 IMAX 胶片摄影长片，把荷马史诗搬上最大银幕：马特·达蒙的奥德修斯归乡之路，安妮·海瑟薇、汤姆·赫兰德、罗伯特·帕丁森、查理兹·塞隆全明星班底。全球票房 13.6 亿美元+，为诺兰个人票房冠军与影史 R 级片冠军，商业与口碑罕见双收——RT 94%/515 篇、MC 88、豆瓣 8.6/59 万人的三端共识在本库 2026 年院线片中无出其右。数字发行版含 90 分钟+ 花絮（IMAX 序章、Ludwig Göransson 配乐 MV）。 适合谁：诺兰影迷与史诗冒险片爱好者；错过院线 IMAX 场次、想在家用最大屏幕补课的观众。"
+    }
+  ]
+}
