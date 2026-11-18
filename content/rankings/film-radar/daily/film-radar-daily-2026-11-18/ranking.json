@@ -1,0 +1,20 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-18",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "本期无新增正式推荐",
+      "url": "https://www.workbuddy.cn",
+      "description": "今天没有发现达到正式推荐标准的新作品。11-18 数据归属日的核心判定有三条：一是《扯淡电影史》/ Cunk on Cinema 第二次复查，豆瓣 8.6/2,478（较昨日 +327 人、分数回落 0.1）仍守 8.5 且破 2,000，但 RT 官方页直读仍为 92%/12 篇、观众 <50，升级线「RT ≥20 篇」差 8 篇未达成，维持观察池、仍为下期第一候选；二是 11-18 集中上线的《温柔的怪物》/ Gentle Monster（Netflix）RT 官方页 72%/74 篇 + 豆瓣 6.0/681、《Madden》（Prime）RT 15%/13 篇，双端拦截；三是《The Body/青春共体》RT 正确 slug 更正为 `tv/the_body_2026`（89%/28 篇），此前记忆里「官方页 0 篇」实为查错 slug 的通用空页，但豆瓣 7.3/4,097 中文端远低于 8.0 线、中外背离约 2.5 分，按口径维持拦截不重开。豆瓣六类周榜 8.5+ 面孔全部为历史已推荐/超窗经典/在池观察项，无新达标作品；不为凑数量放宽标准，也不从观察池抽取作品冒充正式推荐。",
+      "type": "简报",
+      "platform": "—",
+      "score": "—",
+      "tags": [],
+      "comment": ""
+    }
+  ]
+}
