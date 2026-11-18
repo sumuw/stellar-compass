@@ -1,0 +1,350 @@
+{
+  "date": "2026-11-18",
+  "since": "daily",
+  "language": "all",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "limit": 25,
+  "pageCount": 20,
+  "items": [
+    {
+      "name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 11183,
+      "delta": "2,322 stars today",
+      "rank": 1,
+      "tags": [
+        "AI",
+        "安全",
+        "红队测试",
+        "Claude Code",
+        "技能包"
+      ],
+      "comment": "安全垂类技能包连续第三日上榜并登顶，+2,322 为今日增量王，榜首与增量王罕见重合。82 个技能 + 15 个斜杠命令，把 681 个已披露漏洞报告模式浓缩成 24 大漏洞类别的可复用攻击/排查矩阵，还带企业身份与基础设施攻击面清单。"
+    },
+    {
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 17158,
+      "delta": "315 stars today",
+      "rank": 2,
+      "tags": [
+        "Cursor",
+        "IDE",
+        "插件系统",
+        "AI 编程",
+        "TypeScript"
+      ],
+      "comment": "Cursor 官方插件规范仓库连续第二日上榜、排名升至第 2。AI 编辑器生态从「内置功能」走向「开放插件平台」，+315 的低位增量说明是规范发布后的持续传播而非单点爆发。"
+    },
+    {
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 59627,
+      "delta": "384 stars today",
+      "rank": 3,
+      "tags": [
+        "Agent",
+        "CLI",
+        "工具化",
+        "Python",
+        "开源"
+      ],
+      "comment": "港大 HKUDS 团队新面孔，主张「让一切软件 Agent-Native」——把传统软件封装成 CLI 供 Agent 调用，配套 CLI-Hub 索引站。近 6 万星却仅 +384，且最后推送停在 09-22（停更约 57 天），属长尾惯性上榜。"
+    },
+    {
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 69901,
+      "delta": "1,062 stars today",
+      "rank": 4,
+      "tags": [
+        "AI",
+        "Agent",
+        "信息检索",
+        "舆情分析",
+        "技能包"
+      ],
+      "comment": "任意话题在 Reddit/X/YouTube/HN/Polymarket 五源近 30 天讨论的聚合检索与有据综述生成器，6.9 万星的话题研究垂类头部，连续第三日上榜且 +1,062 保持放量。"
+    },
+    {
+      "name": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "language": "Go",
+      "stars": 9762,
+      "delta": "547 stars today",
+      "rank": 5,
+      "tags": [
+        "Docker",
+        "容器管理",
+        "运维",
+        "DevOps",
+        "Go"
+      ],
+      "comment": "面向所有人的现代化 Docker 管理面板，界面优先的轻量容器运维方案，连续第三日上榜且今日仍有活跃推送，需求面稳定。"
+    },
+    {
+      "name": "NVIDIA/SkillEvaluator",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "language": "Python",
+      "stars": 3657,
+      "delta": "323 stars today",
+      "rank": 6,
+      "tags": [
+        "AI",
+        "评测框架",
+        "Agent Skills",
+        "NVIDIA",
+        "质量门禁"
+      ],
+      "comment": "NVIDIA 官方技能评测框架隔日回归（11-16 曾上榜）：分层质量门禁、语义重叠检测、合成评测集生成、实测技能对 Agent 行为的影响，为「技能包赛道」补上评测层。"
+    },
+    {
+      "name": "nvm-sh/nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+      "language": "Shell",
+      "stars": 96145,
+      "delta": "111 stars today",
+      "rank": 7,
+      "tags": [
+        "Node.js",
+        "版本管理",
+        "Shell",
+        "开发工具",
+        "常青树"
+      ],
+      "comment": "Node 版本管理常青树回归，POSIX bash 脚本管理多版本 Node.js，9.6 万星 +111 低位上榜，无大事件惯性传播。"
+    },
+    {
+      "name": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "language": "Rust",
+      "stars": 92199,
+      "delta": "260 stars today",
+      "rank": 8,
+      "tags": [
+        "Python",
+        "包管理",
+        "Rust",
+        "开发工具",
+        "高性能"
+      ],
+      "comment": "Rust 编写的极速 Python 包/项目管理器，9.2 万星，本轮「经典基建回归」中工程完成度最高的一席，今日仍有活跃推送。"
+    },
+    {
+      "name": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "language": "Python",
+      "stars": 4169,
+      "delta": "1,529 stars today",
+      "rank": 9,
+      "tags": [
+        "Google",
+        "多智能体",
+        "科研自动化",
+        "Agent",
+        "学术"
+      ],
+      "comment": "Google Research 多智能体论文自动写作框架连续第三日上榜，+1,529 为今日增量第二却仅排第 9，脱钩延续；最后推送 11-15（停更 3 天）。"
+    },
+    {
+      "name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 10372,
+      "delta": "369 stars today",
+      "rank": 10,
+      "tags": [
+        "Google",
+        "Agent Skills",
+        "MCP",
+        "前端",
+        "技能包"
+      ],
+      "comment": "Google Labs 官方技能库，遵循 Agent Skills 开放标准、兼容 Antigravity/Gemini CLI/Claude Code/Cursor。此前长期停更（约 92 天）仍惯性上榜，⚠️ 今日 11-18 05:00 恢复推送，是官方库长尾传播里首个重新激活的样本。"
+    },
+    {
+      "name": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "language": "JavaScript",
+      "stars": 89739,
+      "delta": "694 stars today",
+      "rank": 11,
+      "tags": [
+        "前端框架",
+        "JavaScript",
+        "UI",
+        "编译",
+        "开源"
+      ],
+      "comment": "常青前端框架，编译时路线的代表选手，无大事件惯性上榜但今日仍有活跃推送，+694 在常青树里属放量。"
+    },
+    {
+      "name": "jquery/jquery",
+      "url": "https://github.com/jquery/jquery",
+      "description": "jQuery JavaScript Library",
+      "language": "JavaScript",
+      "stars": 60003,
+      "delta": "268 stars today",
+      "rank": 12,
+      "tags": [
+        "JavaScript",
+        "前端库",
+        "DOM",
+        "常青树",
+        "开源"
+      ],
+      "comment": "前端元老级 DOM 库在本轮「经典基建回归」中罕见现身，6 万星 +268，属于典型的长尾惯性传播而非新事件。"
+    },
+    {
+      "name": "appwrite/appwrite",
+      "url": "https://github.com/appwrite/appwrite",
+      "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+      "language": "TypeScript",
+      "stars": 58199,
+      "delta": "239 stars today",
+      "rank": 13,
+      "tags": [
+        "BaaS",
+        "后端",
+        "TypeScript",
+        "开源",
+        "Agent"
+      ],
+      "comment": "开源后端云（Auth/Database/Storage/Functions/Realtime/WAF 一体），本轮把定位改成「面向 Agent 与开发者的开源云」，5.8 万星 +239，是基建回归里唯一明确绑定 Agent 叙事的一席。"
+    },
+    {
+      "name": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "language": "C++",
+      "stars": 11301,
+      "delta": "18 stars today",
+      "rank": 14,
+      "tags": [
+        "AI 推理",
+        "模型优化",
+        "C++",
+        "Intel",
+        "边缘计算"
+      ],
+      "comment": "Intel 开源 AI 推理优化与部署工具包，+18 为全榜最低增量却仍进前 14，是今日「排序与增量脱钩」最极端样本；C++ 为今日唯一该语言席位。"
+    },
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 319953,
+      "delta": "823 stars today",
+      "rank": 15,
+      "tags": [
+        "Agent",
+        "技能框架",
+        "开发方法论",
+        "Shell",
+        "开源"
+      ],
+      "comment": "总星约 32 万、全榜总星第一的巨型技能框架，「头脑风暴 → 写计划 → TDD → 验证」的 Agent 开发方法论体系。⚠️ 最后推送 11-03（停更 15 天）仍保持 +823 日增，头部惯性依旧。"
+    },
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "stars": 306401,
+      "delta": "1,109 stars today",
+      "rank": 16,
+      "tags": [
+        "Agent",
+        "性能优化",
+        "Claude Code",
+        "记忆系统",
+        "JavaScript"
+      ],
+      "comment": "总星 30.6 万（全榜第二）的 Agent harness 性能优化体系，「技能 + 本能 + 记忆 + 安全 + 研究先行」五层结构，横跨 Claude Code/Codex/Opencode/Cursor，+1,109 排第 16 仍脱钩。"
+    },
+    {
+      "name": "DeanChensj/jiangshan-map",
+      "url": "https://github.com/DeanChensj/jiangshan-map",
+      "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+      "language": "JavaScript",
+      "stars": 7904,
+      "delta": "280 stars today",
+      "rank": 17,
+      "tags": [
+        "数据可视化",
+        "历史地图",
+        "JavaScript",
+        "中文项目",
+        "数字人文"
+      ],
+      "comment": "「江山时序」中国历史交互地图时间轴（公元前 403 年至今，18 朝代、198 幅疆域快照、古今地名谱系与古典诗词路线），昨日掉榜今日即回归，是榜单上罕见的中文数字人文项目。"
+    },
+    {
+      "name": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "language": "TypeScript",
+      "stars": 211009,
+      "delta": "315 stars today",
+      "rank": 18,
+      "tags": [
+        "工作流自动化",
+        "AI",
+        "TypeScript",
+        "开源",
+        "集成"
+      ],
+      "comment": "fair-code 工作流自动化平台，可视化编排 + 自定义代码、400+ 集成、原生 AI 能力，21 万星，本轮经典基建回归中体量最大的一席之一。"
+    },
+    {
+      "name": "solidjs/solid",
+      "url": "https://github.com/solidjs/solid",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "language": "TypeScript",
+      "stars": 36535,
+      "delta": "37 stars today",
+      "rank": 19,
+      "tags": [
+        "前端框架",
+        "响应式",
+        "TypeScript",
+        "UI",
+        "开源"
+      ],
+      "comment": "声明式细粒度响应式 UI 库，+37 为全榜倒数第二增量却仍上榜，与 openvino 一同构成今日排序权重与社区热度背离的样本。"
+    },
+    {
+      "name": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "description": "A collection of MCP servers.",
+      "language": "Unknown",
+      "stars": 97989,
+      "delta": "52 stars today",
+      "rank": 20,
+      "tags": [
+        "MCP",
+        "Agent",
+        "资源清单",
+        "开源",
+        "生态"
+      ],
+      "comment": "MCP Server 资源合集，9.8 万星 +52，属「MCP 生态清单」类 long-tail 常青条目，语言字段为 Unknown，今日仍在维护推送。"
+    }
+  ]
+}
