@@ -1,0 +1,20 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-19",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "本期无新增正式推荐",
+      "url": "https://www.workbuddy.cn",
+      "description": "今天没有发现达到正式推荐标准的新作品。11-19 数据归属日的核心判定有三条：一是《扯淡电影史》/ Cunk on Cinema 第三次复查，豆瓣 8.6/2,756（较昨日 +278 人、分数守住 8.6），破 2,000 ✓、守 8.5 ✓，但 RT 官方页直读仍为 92%/12 篇（11 Fresh + 1 Rotten，avg 8.60），篇数连续第三期停在 12、距升级线「RT ≥20 篇」仍差 8 篇，维持观察池、仍为下期第一候选；二是 11-19 集中上线的《镶金理想》/ The Altruists（Netflix FTX 限定剧，8 集全放出）RT 官方页直读 74%/19 篇（avg 7.20）、豆瓣 0/0，专业端不过线、中文端未开分，双端拦截；三是 11-20 密集窗口的多部高口碑作品（Josephine 96%/109 篇、Yellowjackets S4 90%/10 篇、Percy Jackson S3 100%/5 篇、Steps 93%）均属明日首播/上映，不在今日数据归属日内，记入下期窗口，不提前推荐。豆瓣六类周榜 8.5+ 面孔全部为历史已推荐/超窗经典/在池观察项，无新达标作品；不为凑数量放宽标准，也不从观察池抽取作品冒充正式推荐。",
+      "type": "简报",
+      "platform": "—",
+      "score": "—",
+      "tags": [],
+      "comment": ""
+    }
+  ]
+}
