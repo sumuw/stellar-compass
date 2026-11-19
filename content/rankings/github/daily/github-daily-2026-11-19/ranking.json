@@ -1,0 +1,281 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-11-19",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 12338,
+      "delta": "1,353 stars today",
+      "tags": [
+        "AI",
+        "安全",
+        "红队测试",
+        "Claude Code",
+        "技能包"
+      ],
+      "comment": "安全垂类技能包连续第四日上榜并蝉联榜首，+1,353 仍居前排但让出增量王。82 个技能 + 15 个斜杠命令把 681 个已披露漏洞报告模式沉淀成 24 大漏洞类别的排查/攻击矩阵，企业身份与基础设施攻击面清单是其差异化所在。"
+    },
+    {
+      "rank": 2,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 321988,
+      "delta": "2,029 stars today",
+      "tags": [
+        "Agent",
+        "技能框架",
+        "开发方法论",
+        "Shell",
+        "开源"
+      ],
+      "comment": "Agent 技能框架 + 软件开发方法论仓库，昨日回归今日即冲到第 2，+2,029 为今日增量王、总星 32.2 万全榜第一。最后推送停在 11-03（约 16 天），属高星惯性叠加社区持续发酵。"
+    },
+    {
+      "rank": 3,
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 60467,
+      "delta": "899 stars today",
+      "tags": [
+        "Agent",
+        "CLI",
+        "工具化",
+        "Python",
+        "港大"
+      ],
+      "comment": "港大 HKUDS 团队项目连续第三日上榜，主张「让一切软件 Agent-Native」，把传统软件封装成 CLI 供 Agent 调用并配套 CLI-Hub 索引站。近 6 万星 +899，但最后推送停在 09-22（停更约 58 天），是典型的长尾惯性上榜。"
+    },
+    {
+      "rank": 4,
+      "name": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "language": "Python",
+      "stars": 66796,
+      "delta": "301 stars today",
+      "tags": [
+        "LLM",
+        "大模型训练",
+        "中文",
+        "教育",
+        "Python"
+      ],
+      "comment": "中文社区项目隔期回归（上次 11-17），主打「两小时从 0 训出 64M 大模型」的极简教程式仓库。11-18 刚有推送、+301 稳定放量，低门槛 LLM 训练教案持续吸引新星。"
+    },
+    {
+      "rank": 5,
+      "name": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 17517,
+      "delta": "383 stars today",
+      "tags": [
+        "Cursor",
+        "IDE",
+        "插件系统",
+        "AI 编程",
+        "TypeScript"
+      ],
+      "comment": "Cursor 官方插件规范仓库连续第三日上榜，排名回落至第 5、+383。AI 编辑器从「内置功能」走向「开放插件平台」的规范层项目，增量温和说明是规范发布后的持续传播而非单点爆发。"
+    },
+    {
+      "rank": 6,
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+      "language": "TypeScript",
+      "stars": 204049,
+      "delta": "795 stars today",
+      "tags": [
+        "数据采集",
+        "Agent",
+        "API",
+        "搜索",
+        "TypeScript"
+      ],
+      "comment": "新面孔，20 万星的成熟 Agent 知识基础设施（搜索/抓取 + 550+ 数据供应商统一 API）首次进入本榜。今日 +795 且当天有推送，反映 Agent 数据采集层的价值被重新发现。"
+    },
+    {
+      "rank": 7,
+      "name": "nginx/nginx",
+      "url": "https://github.com/nginx/nginx",
+      "description": "The official NGINX Open Source repository.",
+      "language": "C",
+      "stars": 32295,
+      "delta": "66 stars today",
+      "tags": [
+        "基础设施",
+        "反向代理",
+        "Web 服务器",
+        "C",
+        "开源"
+      ],
+      "comment": "经典基建大盘再添一员——NGINX 官方开源仓库首次进入本榜，+66 的低位增量却排第 7，排序与增量脱钩。昨日有推送，属成熟基础设施的长尾稳定传播。"
+    },
+    {
+      "rank": 8,
+      "name": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "language": "C++",
+      "stars": 11532,
+      "delta": "246 stars today",
+      "tags": [
+        "AI 推理",
+        "模型优化",
+        "Intel",
+        "边缘计算",
+        "C++"
+      ],
+      "comment": "Intel OpenVINO 连续第二日上榜且排名从第 14 升至第 8，+246。AI 推理优化/部署工具在端侧与边缘场景的价值被持续发现，今日仍有推送。"
+    },
+    {
+      "rank": 9,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 68558,
+      "delta": "332 stars today",
+      "tags": [
+        "设计",
+        "图表",
+        "Claude Code",
+        "技能包",
+        "HTML"
+      ],
+      "comment": "回归项（上次 10-11~10-13 连榜），为 Claude Code / Codex / Copilot / Cursor 等提供 45 种编辑式图表设计的自包含 HTML + SVG 规范，主打「拒绝 Mermaid 模板感」。6.8 万星 +332，今日有推送。"
+    },
+    {
+      "rank": 10,
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 70717,
+      "delta": "952 stars today",
+      "tags": [
+        "Agent",
+        "技能包",
+        "话题研究",
+        "信息聚合",
+        "Python"
+      ],
+      "comment": "话题研究技能包连续第四日上榜，排名回落至第 10 但 +952 仍居增量前排。跨 Reddit/X/YouTube/HN/Polymarket 检索并生成有据可依的综述，是「给 Agent 装上网」的代表技能。"
+    },
+    {
+      "rank": 11,
+      "name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 10667,
+      "delta": "303 stars today",
+      "tags": [
+        "Google",
+        "Agent Skills",
+        "MCP",
+        "设计工具",
+        "TypeScript"
+      ],
+      "comment": "Google 官方 Agent Skills 库连续第四日上榜，配套 Stitch MCP server，遵循 Agent Skills 开放标准、兼容 Antigravity/Gemini CLI/Claude Code/Cursor。+303，昨日仍有推送，恢复更新后保持稳定。"
+    },
+    {
+      "rank": 12,
+      "name": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+      "language": "Shell",
+      "stars": 1749,
+      "delta": "542 stars today",
+      "tags": [
+        "合规",
+        "移动开发",
+        "App Store",
+        "技能包",
+        "Shell"
+      ],
+      "comment": "新面孔，把 App Store / Google Play 的 117 种拒审模式 + 隐私清单/Data safety 检查 + 95 个法规期限做成开源提审前守门清单，还附带 AI 编程 Agent 技能。+542 冲到第 12，是「合规即技能包」的新垂类。"
+    },
+    {
+      "rank": 13,
+      "name": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "description": "The open-source agent for CI/CD reliability.",
+      "language": "Python",
+      "stars": 13061,
+      "delta": "25 stars today",
+      "tags": [
+        "SRE",
+        "CI/CD",
+        "自动化",
+        "Agent",
+        "Python"
+      ],
+      "comment": "新面孔，「CI/CD 可靠性的开源 Agent」，+25 极低增量却排第 13，是本期排序与增量脱钩的最极端样本。今日有推送，属 Agent 向运维/SRE 层外溢的新信号。"
+    },
+    {
+      "rank": 14,
+      "name": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "language": "TypeScript",
+      "stars": 75068,
+      "delta": "170 stars today",
+      "tags": [
+        "知识库",
+        "开源",
+        "生产力",
+        "协作",
+        "TypeScript"
+      ],
+      "comment": "新面孔（本榜追踪期内首次），定位「不止 Notion 和 Miro」的开源下一代知识库，把规划、整理、创作合为一体，隐私优先。7.5 万星 +170，昨日有推送，属成熟生产力工具的长尾回榜。"
+    },
+    {
+      "rank": 15,
+      "name": "XiaoYouChR/Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "description": "The only downloader you need. 下载器的集大成者。",
+      "language": "Python",
+      "stars": 12589,
+      "delta": "449 stars today",
+      "tags": [
+        "下载器",
+        "中文",
+        "工具",
+        "开源",
+        "Python"
+      ],
+      "comment": "中文项目新面孔，自称「下载器的集大成者」，+449 排第 15。当天有推送，是工具类项目在中文社区持续传播的典型样本。"
+    },
+    {
+      "rank": 16,
+      "name": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "language": "Python",
+      "stars": 11147,
+      "delta": "110 stars today",
+      "tags": [
+        "AI 视频剪辑",
+        "中文",
+        "内容再利用",
+        "桌面工具",
+        "Python"
+      ],
+      "comment": "中文项目新面孔，开源 AI 视频剪辑桌面工具，「一个链接一键出片」——把播客/访谈/课程长视频自动切为短视频并生成字幕、封面、发布文案，适配抖音/小红书/TikTok/Reels/Shorts。+110，昨日有推送。"
+    }
+  ]
+}
