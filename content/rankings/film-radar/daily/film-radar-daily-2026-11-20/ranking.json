@@ -1,0 +1,20 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-20",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "name": "本期无新增正式推荐",
+      "url": "https://www.workbuddy.cn",
+      "description": "今天没有发现达到正式推荐标准的新作品。11-20 数据归属日的核心判定有四条：一是《扯淡电影史》/ Cunk on Cinema 升级条件不进反退——豆瓣 8.6/3,034（较昨日 +278 人、守 8.5 ✓、破 2,000 ✓），但 RT 官方页直读由 92%/12 篇（avg 8.60）跌至 86%/14 篇（avg 7.80，12 Fresh + 2 Rotten），不仅篇数距 ≥20 线仍差 6 篇，专业新鲜度也首次跌破 90% 守线，维持观察池；二是 11-20 密集窗口全部拦截：Josephine 虽在北美限制上映（RT 97%/119、豆瓣 8.3/688）但观众端仍 <50 无分且纯院线，Yellowjackets S4（RT 82%/22、avg 6.90）、Percy Jackson S3（RT 100%/12、豆瓣 0/0）、Steps（RT 73%/22、avg 6.20，较解禁前 93% 大幅回落）、《罪蓝之路》/ The Blue Road（Netflix 8 集全放出，豆瓣 0/0、RT 0 篇）、《饥饿游戏：日出收割》（RT 67%/157）均不达门槛；三是《一切如你所见》/ You Can See Everything 数字发行日被多源锁定在 11-24（Polygon 转 WhenToStream 等），官方页直读 RT 97%/242 篇（avg 9.20）、观众 90%/5,000+、豆瓣 8.7/10,657，但 11-20 当日窗口尚未生效，按「不提前推荐」原则维持池、列为 11-24 第一兑现点；四是豆瓣六类周榜 + 电影热门/最新榜 8.5+ 面孔全部为历史已推荐/超窗经典/在池项，无新达标作品。不为凑数量放宽标准，也不从观察池抽取作品冒充正式推荐。",
+      "type": "简报",
+      "platform": "—",
+      "score": "—",
+      "tags": [],
+      "comment": ""
+    }
+  ]
+}
