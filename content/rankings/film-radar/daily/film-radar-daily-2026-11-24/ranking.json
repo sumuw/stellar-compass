@@ -1,0 +1,26 @@
+{
+  "category": "film-radar",
+  "period": "daily",
+  "date": "2026-11-24",
+  "source": "automation-film-radar",
+  "sourceUrl": "https://www.workbuddy.cn",
+  "items": [
+    {
+      "rank": 1,
+      "id": "F092",
+      "name": "一切如你所见 / You Can See Everything",
+      "url": "https://www.primevideo.com",
+      "description": "豆瓣8.7(12,512) · Rotten Tomatoes97%（影评，CF，avg 9.20）(251 篇) · Rotten Tomatoes90%（观众）/ 95%（Verified）(5,000+ / 2,500+ Verified) · Metacritic97（官方页 JSON-LD 直读）(52 critics)",
+      "type": "纪录片（传记 / 真实犯罪 / 实验性非虚构）",
+      "platform": "Prime Video、Apple TV（THR 确认）；Fandango at Home、YouTube Movies & TV（Rolling Stone / Time News 确认）；租 $19.99 / 买 $24.99",
+      "score": "94/100 🔥",
+      "tags": [
+        "纪录片（传记",
+        "真实犯罪",
+        "实验性非虚构）",
+        "美国"
+      ],
+      "comment": "Nathan Fielder 与 Lance Oppenheim 花了三年时间，在 Theranos 创始人 Elizabeth Holmes 入狱前 34 天住进她家，把一个本可拍成标准商业犯罪纪录片的对象，拍成了关于「表演与真实边界」的实验。约 90 分钟处 Amanda Seyfried 的现身与重现段落是全片最广为讨论的设计，但真正稀缺的是它不靠旁白下判决，而让镜头与剪辑自己去逼问。RT 97%/251 篇均分 9.20、MC 97、豆瓣 8.7/1.25 万人构成的跨语种共识，在 2026 年纪录片里几乎无对手；全球票房已破 1.02 亿美元，进入影史纪录片票房前六。11-24 起终于可以合法在家观看，而 A24 与 HBO Max 的订阅窗口仍未官宣。 适合谁：喜欢非虚构写作式纪录片、Nathan for You 式尴尬田野调查、以及想看真实商业丑闻被拍出新形式的观众；不适合想要传统「证据链 + 结论」叙事节奏的人。"
+    }
+  ]
+}
